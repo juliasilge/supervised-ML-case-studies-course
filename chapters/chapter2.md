@@ -10,7 +10,7 @@ id: 2
 
 <exercise id="1" title="Essential copying and pasting from Stack Overflow" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter2_01">
 </slides>
 
 </exercise>
@@ -98,7 +98,7 @@ To fit a logistic regression model using the pipe operator `%>%`, specify your m
 
 <exercise id="5" title="Dealing with imbalanced data" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter2_05">
 </slides>
 
 </exercise>
@@ -215,7 +215,7 @@ We do not upsample all subsets of our data, because we do not want to artificial
 
 <exercise id="10" title="Predicting remote status" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter2_10">
 </slides>
 
 </exercise>

@@ -10,7 +10,7 @@ id: 1
 
 <exercise id="1" title="Making predictions using machine learning" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter1_01">
 </slides>
 
 </exercise>
@@ -88,7 +88,7 @@ Before embarking on more complex machine learning models, it's a good idea to bu
 
 <exercise id="5" title="Getting started with caret" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter1_05">
 </slides>
 
 </exercise>
@@ -183,7 +183,7 @@ Where you had `training` before, switch out to `testing`.
 
 <exercise id="10" title="Let's sample our data" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter1_10">
 </slides>
 
 </exercise>
