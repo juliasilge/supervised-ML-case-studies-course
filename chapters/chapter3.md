@@ -10,7 +10,7 @@ id: 3
 
 <exercise id="1" title="Predicting voter turnout from survey data" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter3_01">
 </slides>
 
 </exercise>
@@ -140,7 +140,7 @@ Start off a predictive modeling project by building the simplest possible model,
 
 <exercise id="7" title="VOTE 2016" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter3_07">
 </slides>
 
 </exercise>
@@ -181,7 +181,7 @@ To upsample the training set within the call to `train()`, use `sampling = "up"`
 
 <exercise id="10" title="Cross-validation" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter3_10">
 </slides>
 
 </exercise>
@@ -243,7 +243,7 @@ Similar to the logistic regression model, you need to use the `method` and `repe
 
 <exercise id="13" title="Comparing model performance" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter3_13">
 </slides>
 
 </exercise>

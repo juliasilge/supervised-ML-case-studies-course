@@ -10,7 +10,7 @@ id: 4
 
 <exercise id="1" title="Surveying Catholic sisters in 1967" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter4_01">
 </slides>
 
 </exercise>
@@ -113,7 +113,7 @@ When you implement `... %>% gather(key, value, -age)`, you transform the data se
 
 <exercise id="5" title="Exploratory data analysis with tidy data" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter4_05">
 </slides>
 
 </exercise>
@@ -209,7 +209,7 @@ The final evaluation is done with the testing set. It is important to do this fi
 
 <exercise id="10" title="Predicting age with supervised machine learning" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter4_10">
 </slides>
 
 </exercise>
@@ -287,7 +287,7 @@ You want to use the `testing` data along with the `rmse()` function.
 
 <exercise id="15" title="Wrapping up" type="slides">
 
-<slides source="chapter1_01_introduction">
+<slides source="chapter4_15">
 </slides>
 
 </exercise>
