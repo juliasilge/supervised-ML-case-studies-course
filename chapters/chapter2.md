@@ -56,7 +56,7 @@ Anytime you are planning to implement modeling, it is always a good idea to expl
 - Print the `stackoverflow` object.
 - In the calls to [`count()`](https://www.rdocumentation.org/packages/dplyr/topics/tally), check out the distributions for remote status first, and then country.
 
-<codeblock id="01_03">
+<codeblock id="02_03_1">
 
 To see how many developers work remotely and do *not* work remotely, use `count(Remote, sort = TRUE)`.
 
@@ -66,7 +66,7 @@ To see how many developers work remotely and do *not* work remotely, use `count(
 
 Use the appropriate column from the data set so you can plot a boxplot with remote status on the x-axis and professional experience on the y-axis.
 
-<codeblock id="01_03">
+<codeblock id="02_03_2">
 
 The column `Remote` contains the remote status of each developer while the `YearsCodedJob` column contains how many years of experience each developer has.
 
@@ -88,7 +88,7 @@ Build a simple logistic regression model predicting remote status.
 - Fit `Remote` as the predicted quantity, explained by all the predictors, i.e., `.` in the R formula input to `glm()`. Don't get confused with the two instances of `.`!
  In the calls to [`count()`](https://www.rdocumentation.org/packages/dplyr/topics/tally), check out the distributions for remote status first, and then country.
 
-<codeblock id="01_03">
+<codeblock id="02_04">
 
 To fit a logistic regression model using the pipe operator `%>%`, specify your model as `glm(Remote ~ ., family = "binomial", data = .)`. The first `.` here means that we want to predict `Remote` based on *all* the other columns in the data set, while the second `.` means that we have piped in the data set to the call to `glm()`.
 
@@ -117,7 +117,7 @@ Create a data partition that divides the original data into 80%/20% sections and
     - For the second argument to `createDataPartition()`, use a value for `p` of 0.8.
 - Assign the 80% partition to `training` and the 20% partition to `testing`.
 
-<codeblock id="01_03">
+<codeblock id="02_06">
 
 The `in_train` vector tells you which examples *should* be in your training set, while `-in_train` tells you which examples should *not* be in your training set.
 
@@ -136,7 +136,7 @@ There are multiple possible approaches to dealing with class imbalance. Here, yo
     - `y` should be the class memberships in `training`.
     - The label for the class column goes in `yname`; remember that it is `"Remote"`.
 	
-<codeblock id="01_03">
+<codeblock id="02_07">
 
 - The class memberships that must be assigned to `y` are `training$Remote`.
 - This function needs to also know the label for the class column, as `yname = "Remote"`.
@@ -230,7 +230,7 @@ To keep the code in this exercise evaluating quickly, the data sets in your envi
 
 Build a logistic regression model using `method = "glm"` and `family = "binomial"` while implementing upsampling to address class imbalance.
 
-<codeblock id="01_03">
+<codeblock id="02_11_1">
 
 To upsample the training set within the call to `train()`, use `sampling = "up"` inside of `trainControl()`.
 
@@ -240,7 +240,7 @@ To upsample the training set within the call to `train()`, use `sampling = "up"`
 
 Build a random forest model while implementing upsampling to address class imbalance.
 
-<codeblock id="01_03">
+<codeblock id="02_11_2">
 
 Use `method = "rf"` to build a random forest model.
 
@@ -258,7 +258,7 @@ Here you will use the [`confusionMatrix()`](https://www.rdocumentation.org/packa
 
 Print the confusion matrix for the `stack_glm` model on the `testing` data. Note that the first argument to `confusionMatrix()` is the *predicted* class from the model and the second argument is the *true* class.
 
-<codeblock id="01_03">
+<codeblock id="02_12_1">
 
 To upsample the training set within the call to `train()`, use `sampling = "up"` inside of `trainControl()`.
 
@@ -266,19 +266,9 @@ To upsample the training set within the call to `train()`, use `sampling = "up"`
 
 **Instructions**
 
-Build a random forest model while implementing upsampling to address class imbalance.
-
-<codeblock id="01_03">
-
-You are evaluating your models, so you should use the `testing` data set for all the possible arguments here.
-
-</codeblock>
-
-**Instructions**
-
 Print the confusion matrix for the `stack_rf` model on the `testing` data.
 
-<codeblock id="01_03">
+<codeblock id="02_12_2">
 
 Use the `confusionMatrix()` function to build a confusion matrix.
 
@@ -298,7 +288,7 @@ The models available in your environment, `stack_glm` and `stack_rf` were traine
 - Predict values for logistic regression (`stack_glm`) and random forest (`stack_rf`).  
 - Calculate both accuracy and positive predict value for these two models.
 	
-<codeblock id="01_03">
+<codeblock id="02_13">
 
 The function for accuracy is `accuracy()` and the function for positive predictive value is `ppv()`.
 
