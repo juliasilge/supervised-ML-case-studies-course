@@ -78,7 +78,7 @@ Before embarking on more complex machine learning models, it's a good idea to bu
 - Fit `MPG` as the predicted quantity, explained by all the predictors, i.e., `.` in the R formula input to `lm()`. (Don't worry about fitting the logarithm of fuel efficiency yet.) 
 - Print the summary of the model.
 
-<codeblock id="01_03">
+<codeblock id="01_04">
 
 - To deselect the `Model` column, use `cars2018 %>% select(-Model)`.
 
@@ -105,7 +105,7 @@ Creating training/testing splits reduces overfitting. When you evaluate your mod
 - Create a data partition that divides the original data into 80%/20% sections and (roughly) evenly divides the partitions between the different types of `Transmission`.
 - Assign the 80% partition to `training` and the 20% partition to `testing`.
 
-<codeblock id="01_03">
+<codeblock id="01_06">
 
 - To load a package in R, use `library(package_name)`.
 - `createDataPartition()` takes as its first argument the variable to partition evenly across and then `p`, the proportion of data to include in the training set.
@@ -126,7 +126,7 @@ Now that your `training` data is ready, you can fit a set of models with caret. 
 
 (Notice that we are fitting to `log(MPG)` since the fuel efficiency had a log normal distribution.)
 
-<codeblock id="01_03">
+<codeblock id="01_07_1">
 
 For linear regression, use `method = "lm"`.
 
@@ -136,7 +136,7 @@ For linear regression, use `method = "lm"`.
 
 - Train a random forest model on your `training` data.
 
-<codeblock id="01_03">
+<codeblock id="01_07_2">
 
 For linear regression, use `method = "lm"`.
 
@@ -156,7 +156,7 @@ The `fit_lm` and `fit_rf` models you just trained are in your environment. It's 
 
 (Notice that we are fitting to `log(MPG)` since the fuel efficiency had a log normal distribution.)
 
-<codeblock id="01_03">
+<codeblock id="01_08">
 
 - Use `fit_lm` to predict the values for linear regression and `fit_rf` to predict values for random forest.
 - The "truth" column in the original data is the column that holds fuel efficiency, `MPG`.
@@ -173,7 +173,7 @@ The `fit_lm` and `fit_rf` models you just trained are in your environment. It's 
 
 What do you need to change to evaluate how the models perform on the testing data, instead of the training data?
 
-<codeblock id="01_03">
+<codeblock id="01_09">
 
 Where you had `training` before, switch out to `testing`.
 
@@ -201,7 +201,7 @@ The data sets available in your environment are 10% of their original size, to a
 - Which data set should you train these models with, `training` or `testing`?
 - Train these models using bootstrap resampling. The method for this is `"boot"`.
 
-<codeblock id="01_03">
+<codeblock id="01_11">
 
 You should still use the `training` data set for training these models.
 
@@ -220,7 +220,7 @@ Notice in this code how we use [`gather()`](https://www.rdocumentation.org/packa
 - Use [`mutate()`](https://www.rdocumentation.org/packages/dplyr/topics/mutate) to create the new columns with the predictions from the two models you trained.
 - Choose which columns should be specified as `truth` and which should be `estimate` when calling `metrics()`.
 
-<codeblock id="01_03">
+<codeblock id="01_12_1">
 
 Specify the `MPG` column as `truth` and the column created from the prediction (either `Linear regression` or `Random forest`) as `estimate`.
 
@@ -230,7 +230,7 @@ Specify the `MPG` column as `truth` and the column created from the prediction (
 
 Wonderful! Sit back and run the given code to visualize the results!
 
-<codeblock id="01_03">
+<codeblock id="01_12_2">
 
 You just need to run the code given to you.
 
