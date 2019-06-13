@@ -57,7 +57,7 @@ The first step before you start modeling is to explore your data, and we are goi
 - Call `glimpse()` on `sisters67` to take a look at the structure of the data. Notice how many columns there are, and what their characteristics are.
 - Plot a histogram of age.
 
-<codeblock id="01_03">
+<codeblock id="04_03">
 
 You can build a histogram using [`geom_histogram()`](https://www.rdocumentation.org/packages/ggplot2/topics/geom_freqpoly).
 
@@ -76,7 +76,7 @@ Note: There is a column called `sister` in this dataset that is an identifier fo
 - Use the [`gather()`](https://www.rdocumentation.org/packages/tidyr/topics/gather) function to transform the wide data set with each survey question in a separate column to a narrow, tidy data set with each survey question in a separate row.
 - View the structure of this tidy data set using `glimpse()`.
 
-<codeblock id="01_03">
+<codeblock id="04_04_1">
 
 When you implement `... %>% gather(key, value, -age)`, you transform the data set from wide (non-tidy) to narrow (tidy). The argument `-age` specifies that we want to keep the `age` column for each row.
 
@@ -88,21 +88,10 @@ Note: There is a column called `sister` in this dataset that is an identifier fo
 
 **Instructions**
 
-- Use the [`gather()`](https://www.rdocumentation.org/packages/tidyr/topics/gather) function to transform the wide data set with each survey question in a separate column to a narrow, tidy data set with each survey question in a separate row.
-- View the structure of this tidy data set using `glimpse()`.
-
-<codeblock id="01_03">
-
-When you implement `... %>% gather(key, value, -age)`, you transform the data set from wide (non-tidy) to narrow (tidy). The argument `-age` specifies that we want to keep the `age` column for each row.
-
-</codeblock>
-
-**Instructions**
-
 - Group by `age` and summarize the `value` column to see how the overall agreement with all questions varied by age.
 - Count the `value` column to check out how many respondents agreed or disagreed overall.
 
-<codeblock id="01_03">
+<codeblock id="04_04_2">
 
 - Call the `group_by()` function first, and then `summarize()`. 
 - To count the `value` column, use `count(value)`.
@@ -130,7 +119,7 @@ In this exercise, we are using [`filter()`](https://www.rdocumentation.org/packa
 - Summarize for each grouping to find an average age.
 - Choose the correct `geom` to make a line plot.
 
-<codeblock id="01_03">
+<codeblock id="04_06">
 
 - You want to `group_by(key, value)` and `summarize(age)` to find the average age for each ansewr to each question.
 - You can build a line plot using [`geom_line()`](https://www.rdocumentation.org/packages/ggplot2/topics/geom_path).
@@ -149,7 +138,7 @@ You have gotten to know this data a bit through exploratory data analysis, and n
 - Use the correct variable on the left-hand side of the equation so that you build a model predicting age as a function of all other columns. 
 - Call `summary()` for the simple model you've built to see the results.
 
-<codeblock id="01_03">
+<codeblock id="04_07">
 
 - We want to predict age using all other variables, so the first argument to `lm()` should be `age ~ .`.
 - Remove the `sister` identifier from the data set with `select(sisters67, -sister)`.
@@ -171,7 +160,7 @@ We are going to split the data into 60% training, 20% validation, 20% testing.
     - Specify one to split between training (60%) and validation/testing (40%).
     - Specify another one to split between validation and testing (50% each).
 
-<codeblock id="01_03">
+<codeblock id="04_08">
 
 The [`createDataPartition()`](https://www.rdocumentation.org/packages/caret/topics/createDataPartition) function creates a vector that specifies which examples belong in the training set, or the test set.
 
@@ -226,7 +215,7 @@ To allow the code in this exercise to evaluate quickly, the training set in your
 
 When you don't give any specific [`trainControl()`](https://www.rdocumentation.org/packages/caret/topics/trainControl) argument to `train()`, the model training is implemented with a default resampling strategy, 25 bootstrap resamplings.
 
-<codeblock id="01_03">
+<codeblock id="04_11">
 
 - To train a model use the `train()` function. 
 - The `method` argument to `train()` should be `"rpart"`.
@@ -243,7 +232,7 @@ Three models are available in your environment (trained on the data set in its e
 
 - Which data set should you use to choose between these three models, `validation` or `testing`? Use that option to create a data frame for comparing the models.
 
-<codeblock id="01_03">
+<codeblock id="04_12">
 
 The validation data set is the appropriate option for choosing between models.
 
@@ -260,7 +249,7 @@ Now that you have created a data frame that contains all three models' predictio
 - Load `yardstick`. 
 - Use the [`metrics()`](https://www.rdocumentation.org/packages/yardstick/topics/metrics) function from the yardstick package to see how each model performed. There are two important arguments that you need to supply to `metrics()`, `truth` (the true age of each nun) and `estimate` (the predicted age of each nun). Which column in the data frame you created corresponds to each?
 
-<codeblock id="01_03">
+<codeblock id="04_13">
 
 The `truth` argument should always be `age`, while the `estimate` column changes with each model.
 
@@ -277,7 +266,7 @@ You just compared the three models you trained, and the `gbm` model performed be
 - Which data set would you use to estimate how your model will perform on new data? You have `training`, `validation`, and `testing` data sets available in your environment. Use the correct one *both* at the beginning of the pipe and within the call to `predict()`.
 - Calculate the RMSE (root mean squared error) using the appropriate function from [yardstick](https://www.rdocumentation.org/packages/yardstick).
 
-<codeblock id="01_03">
+<codeblock id="04_14">
 
 You want to use the `testing` data along with the `rmse()` function.
 
