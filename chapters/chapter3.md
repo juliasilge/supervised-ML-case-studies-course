@@ -57,7 +57,7 @@ To do a good job with predictive modeling, you need to explore your dataset to u
 - Print `voters` to check out the data.
 - In the call to `count()`, use the appropriate variable to see how many examples you have of those who voted and did not vote.
 
-<codeblock id="01_03">
+<codeblock id="03_03_1">
 
 To see how many people did and did not vote, use `count(turnout16_2016)`.
 
@@ -67,7 +67,7 @@ To see how many people did and did not vote, use `count(turnout16_2016)`.
 
 Check out how three responses on the survey vary with voting behavior by using [`group_by()`](https://www.rdocumentation.org/packages/dplyr/topics/group_by) and [`summarise()`](https://www.rdocumentation.org/packages/dplyr/topics/summarise).
 
-<codeblock id="01_03">
+<codeblock id="03_03_2">
 
 First call `group_by()`, and then `summarise()`.
 
@@ -86,7 +86,7 @@ Visualization is a powerful tool for exploratory data analysis. Plotting your da
 
 On this question about how the economy is doing, an answer of 1 indicates "getting better", 2 indicates "about the same", 3 indicates "getting worse", and 4 indicates "don't know".
 
-<codeblock id="01_03">
+<codeblock id="03_04">
 
 To make a histogram, use [`geom_histogram()`](https://www.rdocumentation.org/packages/ggplot2/topics/geom_freqpoly).
 
@@ -129,7 +129,7 @@ Start off a predictive modeling project by building the simplest possible model,
 - Use [`select()`](https://www.rdocumentation.org/packages/dplyr/topics/select) to remove the column `case_identifier` from `voters` and assign it to `voters_select`. 
 - Fit a logistic regression model to predict `turnout16_2016` explained by all the other variables in `voters_select`.
 
-<codeblock id="01_03">
+<codeblock id="03_06">
 
 - The formula for your model should be `turnout16_2016 ~ .` . 
 - To fit a logistic regression model, use `family = "binomial"`.
@@ -155,7 +155,7 @@ It's time to split your data into training and testing sets, in the same way tha
 - Use the correct function to create a data partition that divides `voters_select` into 80%/20% sections.
 - Assign the 80% partition to `training` and the 20% partition to `testing`.
 
-<codeblock id="01_03">
+<codeblock id="03_08">
 
 The `createDataPartition()` function sets up the data partitioning, and then `in_train` tells you which observations should be *in* your training set and `-in_train` tells you which observations should be *out* of your training set, i.e., in the testing set.
 
@@ -171,7 +171,7 @@ It's time to start training your predictive models using caret's [train()](https
 
 Build a logistic regression model with no resampling of data, but add the specification for upsampling. If you can't remember, check out the documentation for [`trainControl()`](https://www.rdocumentation.org/packages/caret/topics/trainControl).
 
-<codeblock id="01_03">
+<codeblock id="03_09">
 
 To upsample the training set within the call to `train()`, use `sampling = "up"` inside `trainControl()`.
 
@@ -223,7 +223,7 @@ To allow the code in this exercise to evaluate in a short time, the training set
 - Use `method = "repeatedcv"` to implement 10-fold cross-validation (10 folds or subsets is the default, but this can be changed) for the logistic regression model.
 - Specify `repeats = 2` to repeat the 10-fold cross-validation 2 times.
 
-<codeblock id="01_03">
+<codeblock id="03_12_1">
 
 Your call to `trainControl()` should look like `trainControl(method = "repeatedcv", repeats = 2, sampling = "up")`.
 
@@ -233,7 +233,7 @@ Your call to `trainControl()` should look like `trainControl(method = "repeatedc
 
 Now, train a Random forest model by implementing 10-fold cross validation 2 times.
 
-<codeblock id="01_03">
+<codeblock id="03_12_2">
 
 Similar to the logistic regression model, you need to use the `method` and `repeats` arguments inside `trainControl()`.
 
@@ -258,7 +258,7 @@ Here we want to see how your model performed on the **training** data, the data 
 
 Print the confusion matrix for the logistic regression model on the training data.
 
-<codeblock id="01_03">
+<codeblock id="03_14_1">
 
 - Use the `confusionMatrix()` function to build a confusion matrix. 
 - We aren't evaluating your models on the testing data yet, so use the `training` data for all the arguments here.
@@ -269,7 +269,7 @@ Print the confusion matrix for the logistic regression model on the training dat
 
 Print the confusion matrix for the random forest model (`vote_rf`) on the training data.
 
-<codeblock id="01_03">
+<codeblock id="03_14_2">
 
 The first argument to `confusionMatrix()` is the vector of `predict`ed values.
 
@@ -285,21 +285,13 @@ Now, let's evaluate how the models perform on the testing data. This is what you
 
 Print the confusion matrix for the logistic regression model on the training data.
 
-<codeblock id="01_03">
-
 - Generate a confusion matrix for the logistic regression model (`vote_glm`). 
 - Instead of the `training` data, now use the `testing` data.
 
-</codeblock>
-
-**Instructions**
+<codeblock id="03_15_1">
 
 - Generate a confusion matrix for the logistic regression model (`vote_glm`). 
 - Instead of the `training` data, now use the `testing` data.
-
-<codeblock id="01_03">
-
-The first argument to the `confusionMatrix()` function is the vector of `predict`ed values and the second is the vector of "true" values.
 
 </codeblock>
 
@@ -308,7 +300,7 @@ The first argument to the `confusionMatrix()` function is the vector of `predict
 - Generate a confusion matrix for the random forest model (`vote_rf`). 
 - Instead of the `training` data, now use the `testing` data.
 
-<codeblock id="01_03">
+<codeblock id="03_15_2">
 
 The first argument to the `confusionMatrix()` function is the vector of `predict`ed values and the second is the vector of "true" values.
 
