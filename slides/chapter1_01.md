@@ -140,7 +140,7 @@ Notes: Notice that some of these column names have spaces in them; you may not h
 
 # Special characters in variable names
 
-```r
+```out
 > cars2018 %>%
 +     select(`Fuel injection`)
 
