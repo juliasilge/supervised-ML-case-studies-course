@@ -12,7 +12,7 @@ Notes: In the first chapter of this course, you practiced how to build regressio
 
 ---
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/so-logo.png)
+![](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/so-logo.png?raw=true)
 
 Notes: Stack Overflow is the world's largest, most trusted online community for developers (you may have heard of it) and every year there is a large survey of developers, to learn about developers' opinions on different technologies, work habits, and so forth. 
 
@@ -20,7 +20,7 @@ Notes: Stack Overflow is the world's largest, most trusted online community for 
 
 # Stack Overflow Developer Survey
 
-```r
+```out
 > stackoverflow
 
 # A tibble: 6,991 x 22
@@ -58,7 +58,7 @@ Notes: Every year, the data for the Stack Overflow Developer Survey is made publ
 
 ---
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/remote_size.png)
+![](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/remote_size.png?raw=true)
 
 Notes: But the specific question we are going to address is what makes a developer more likely to work remotely. Developers can work in their company offices, or they can work remotely, and it turns out that there are specific characteristics of developers, such as the size of the company that they work for, how much experience they have, or where in the world they live, that affect how likely they are to be a remote developer.
 
@@ -66,7 +66,7 @@ Notes: But the specific question we are going to address is what makes a develop
 
 # Class imbalance
 
-```r
+```out
 > stackoverflow %>% 
 +         count(Remote)
 
@@ -83,7 +83,7 @@ Notes: That is what you are going to model! One of the things you'll notice righ
 
 # Building a simple model
 
-```r
+```out
 > simple_glm <- stackoverflow %>%
 +     select(-Respondent) %>%
 +     glm(Remote ~ .,
@@ -106,7 +106,7 @@ The second dot there says "data equals .", and we are using this because we are 
 
 # Special characters in variable names
 
-```r
+```out
 > cars2018 %>%
 +     select(`Fuel injection`)
 

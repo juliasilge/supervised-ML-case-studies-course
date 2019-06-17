@@ -24,7 +24,7 @@ Notes: It's good that we're going to talk about class imbalance because it comes
 
 # Class imbalance
 
-```r
+```out
 > stackoverflow %>% 
 +     count(Remote)
 
@@ -48,14 +48,14 @@ Notes: In this case study, we're going to implement upsampling, also known as ov
 
 ---
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/upsample1.png)
+![](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/upsample1.png?raw=true)
 
 Notes: In our case study, there are roughly ten times more non-remote developers compared to the remote developers.
 
 
 ---
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/upsample2.png)
+![](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/upsample2.png?raw=true)
 
 Notes: When we implement upsampling, we add more of the remote developers (just more of the same ones we already have) until the proportion is equal, or until the classes are balanced. This approach is simple to implement and understand, but it can lead a classifier to overfit to just a few examples, if you're not lucky. There are other more complex approaches to class imbalance available as well, but we will focus on upsampling here.
 

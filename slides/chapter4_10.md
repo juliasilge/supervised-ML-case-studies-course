@@ -42,7 +42,7 @@ Notes: You will use your training dataset when you train the models, as you have
 
 ---
 
-![Alt text](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/validation.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/validation.png?raw=true)
 
 Notes: Once you start exploring multiple kinds of models, say linear regression plus random forest plus gradient boosting plus maybe trying out different kinds of resampling techniques, then you need to take a step back and recognize that you need three datasets. You will train your models on the training data, use the validation data to compare all these different models you are trying out, and then estimate uncertainty or error using the test data, which is a separate set of data that you have not touched yet in this whole process.
 

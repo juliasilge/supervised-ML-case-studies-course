@@ -74,7 +74,7 @@ Notes: Where 1 corresponds to "disagree very much" and 5 corresponds to "agree v
 
 ---
 
-![Alt text](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/age_histogram.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/age_histogram.png?raw=true)
 
 Notes: The original survey question asked for age in bins of 10 years, under 20, from 21 to 30, from 31 to 40, and so forth. I have recoded these as numeric values corresponding to the top of each age bin, 20, 30, 40, and so on. This means that this isn't quite a continuous variable, since we haven't measured these women's ages very precisely, but we can do a pretty good job modeling it as if it is. There are more sophisticated modeling approaches possible with these kinds of measurements that you could explore.  
 

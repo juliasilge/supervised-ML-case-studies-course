@@ -13,7 +13,7 @@ Notes: Congratulations! You finished our fourth and final case study in this cou
 
 # Predicting age
 
-```r
+```out
 > metrics(model_results, truth = age, estimate = CART)
 
 # A tibble: 1 x 2
@@ -91,7 +91,7 @@ Notes: The high level takeaways that you should remember from this course are fi
 
 # Never skip exploratory data analysis
 
-![](http://s3.amazonaws.com/assets.datacamp.com/production/repositories/1918/datasets/7d0cbe343a142dd59b7981db7c4edf97b67a3bf6/checklist.jpg)
+![](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/checklist.jpg?raw=true)
 
 Notes: And perhaps most importantly, never skip exploratory data analysis when you build machine learning models. It is time well spent, because when you understand a data set better, you can do a better job of building accurate models that perform better.
 

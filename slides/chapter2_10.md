@@ -89,7 +89,7 @@ Notes: Classification models can be evaluated using a confusion matrix. This kin
 
 # Evaluating your models
 
-```r
+```out
 library(yardstick)
 
 > accuracy(testing_results, truth = Remote, estimate = `Logistic regression`)

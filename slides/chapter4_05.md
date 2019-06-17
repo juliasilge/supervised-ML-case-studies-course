@@ -72,13 +72,13 @@ Notes: We can go a few steps further and dig into how the answers to individual 
 
 ---
 
-![Alt text](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/plots-for-ml-case-studies.001.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/plots-for-ml-case-studies.001.png?raw=true)
 
 Notes: This plot shows that subset of the questions on the survey. Let's talk through a few of them. 
 
 ---
 
-![Alt text](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/plots-for-ml-case-studies.002.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/plots-for-ml-case-studies.002.png?raw=true)
 
 Notes: The first question in this plot, v153, slopes downward. This means that the more a respondent agreed with this statement, the younger she was. What was v153 on the survey?
 
@@ -92,7 +92,7 @@ Notes: This item was a statement about support of freedom of speech, regardless 
 
 ---
 
-![Alt text](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/plots-for-ml-case-studies.003.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/plots-for-ml-case-studies.003.png?raw=true)
 
 Notes: Other panels of this plot look different. v161, for example, slopes upward, which means that the more a respondent agreed with this statement, the older she was. What was this statement?
 
@@ -106,7 +106,7 @@ Notes: This item on the survey was a statement about identifying with conservati
 
 ---
 
-![Alt text](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/plots-for-ml-case-studies.004.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/plots-for-ml-case-studies.004.png?raw=true)
 
 Notes: Notice that some panels in the plot don't slope up or down; there is no strong trend with age for some statements. Let's look at v165; see how it is flat and we don't see any trends up or down.
 
@@ -120,13 +120,13 @@ Notes: This statement was about the Vietnam War, which was in a pivotal period i
 
 ---
 
-![Alt text](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/plots-for-ml-case-studies.001.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/plots-for-ml-case-studies.001.png?raw=true)
 
 Notes: These are the relationships that we want to build a machine learning model to understand and use for prediction. Exploratory data analysis is an important first step so that you as a machine learning practitioner understand something about your data and what your model will be capable of learning. Once you have done that important exploration, you can build a very simple model and then create training and testing sets.
 
 ---
 
-![Alt text](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/validation.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/validation.png?raw=true)
 
 Notes: In this case study, you are going to split the original data into three sets, training, validation, and test sets. You've already used training and test sets throughout this course, and in this last case study we're going to talk about how to use a validation set to choose a model.
 
