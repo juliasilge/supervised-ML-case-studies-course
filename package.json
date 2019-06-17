@@ -1,9 +1,9 @@
 {
-    "name": "course-starter-r",
+    "name": "supervised-ML-case-studies-course",
     "private": true,
-    "description": "Starter package to build interactive R courses",
+    "description": "Supervised machine learning case studies in R! A free interactive course ",
     "version": "0.0.1",
-    "author": "Ines Montani <ines@explosion.ai>",
+    "author": "Julia Silge <julia.silge@gmail.com>",
     "dependencies": {
         "@illinois/react-use-local-storage": "^1.1.0",
         "@jupyterlab/outputarea": "^0.19.1",
@@ -52,6 +52,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ines/course-starter-python"
+        "url": "https://github.com/juliasilge/supervised-ML-case-studies-course"
     }
 }

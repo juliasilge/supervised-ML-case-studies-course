@@ -2,7 +2,7 @@ library(caret)
 library(tidyverse)
 library(yardstick)
 
-testing <- readRDS("/usr/local/share/datasets/c1_testing_full.rds")
+car_test <- readRDS("/usr/local/share/datasets/c1_testing_full.rds")
 fit_lm <- readRDS("/usr/local/share/datasets/c1_fit_lm.rds")
 fit_rf <- readRDS("/usr/local/share/datasets/c1_fit_rf.rds")
 

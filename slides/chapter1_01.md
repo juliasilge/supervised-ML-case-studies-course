@@ -2,12 +2,10 @@
 type: slides
 ---
 
-# Welcome!
+# Welcome to supervised machine learning case studies in R!
 
-Julia Silge
-Data Scientist at Stack Overflow
 
-Notes: Hi! I'm Julia Silge, and welcome to "Case Studies in Supervised Learning in R". Supervised machine learning, otherwise known as predictive modeling, is a powerful tool for using data to make predictions about the world around us. 
+Notes: Hi! I'm Julia Silge, and I built this free interactive course so you can learn more about supervised machine learning. Supervised machine learning, otherwise known as predictive modeling, is a powerful tool for using data to make predictions about the world around us. 
 
 
 ---
@@ -18,7 +16,7 @@ Notes: Hi! I'm Julia Silge, and welcome to "Case Studies in Supervised Learning 
 - explore which modeling approaches to use for different kinds of data
 - practice implementing supervised machine learning for classification and regression
 
-Notes: Once you understand the basics of supervised machine learning, the next step is to practice your skills so you can apply these techniques wisely and appropriately. We are going to practice how to implement regression and classification, when to use each, and how to use exploratory data analysis to prepare for training models.
+Notes: This course is intended for learners who have already been exposed to some introductory ideas about predicting modeling. Once you understand the basics of supervised machine learning, the next step is to **practice your skills** so you can apply these techniques wisely and appropriately. We are going to practice how to implement regression and classification, when to use each, and how to use exploratory data analysis to prepare for training models.
 
 
 
@@ -29,7 +27,7 @@ Notes: Once you understand the basics of supervised machine learning, the next s
 - Regression
 - Classification
 
-Notes: The two types of models we'll train in this course are regression and classification. Think of regression models as predicting numeric, continuous quantities and classification models as predicting discrete quantities or class membership or labels.
+Notes: The two types of models we'll train in this course are **regression** and **classification**. Think of regression models as predicting numeric, continuous quantities and classification models as predicting discrete quantities or class membership or labels.
 
 ---
 
@@ -40,13 +38,17 @@ Notes: The two types of models we'll train in this course are regression and cla
 - Voter turnout 
 - Predict age of nuns from survey responses 
 
-Notes: In this course, you will work through four case studies using data from the real world. First, a dataset on fuel effiency of cars. 
+Notes: In this course, you will work through four case studies using data from the real world. 
+
+First, a dataset on fuel effiency of cars. 
 
 Second, the annual Stack Overflow Developer Survey where we will predict whether a developer works remotely or not. 
 
 Next, a survey on voter attitudes where we will predict voter turnout. 
 
-And lastly, a large survey of nuns (yes, you heard that right, nuns) where you will predict the age of the nuns from their responses on the survey. Each of these case studies will provide you the opportunity to practice your data handling and model training skills. Some of these datasets are large enough that it is not realistic to work with them in their entirety for all parts of a machine learning workflow here on the DataCamp platform, so in those cases you'll work with subsets of these datasets. I'll be sure to point out when that occurs.
+And lastly, a large survey of nuns (yes, that's right -- nuns) where you will predict the age of the nuns from their responses on the survey. 
+
+Each of these case studies will provide you the opportunity to practice your data handling and model training skills. Some of these datasets are large enough that it is not realistic to work with them in their entirety for all parts of a machine learning workflow here in this browser environment, so in those cases you'll work with subsets of these datasets. I'll be sure to point out when that occurs.
 
 ---
 
@@ -82,7 +84,9 @@ Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
 AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
 ```
 
-Notes: In this first case study, we are going to use the mtcars dataset to train regression models. No, I'm kidding! I would never do that to you! I can only imagine that you are as sick of mtcars as I am.
+Notes: In this first case study, we are going to use the mtcars dataset to train regression models. 
+
+No, I'm kidding! I would never do that to you! I can only imagine that *you* are as sick of mtcars as *I* am.
 
 ---
 
@@ -112,7 +116,7 @@ From the [US Department of Energy](https://www.fueleconomy.gov/feg/download.shtm
 #   `Fuel injection` <chr>
 ```
 
-Notes: Instead, we are going to use a dataset of real cars from today. This data is from the United States Department of Energy, and tabulates how much gas new cars use per mile, along with many characteristics of these cars, like the size of the engine, the type of transmission, the type of fuel injecton, and so forth. There's a lot more here than in mtcars, and just a lot more cars, and it's not from the 1970s.
+Notes: Instead, we are going to use a dataset of real cars from today. This data is from the United States Department of Energy, and tabulates how much gas new cars use per mile, along with many characteristics of these cars, like the size of the engine, the type of transmission, the type of fuel injecton, and so forth. There's a lot more here than in `mtcars`, and just a lot more cars, and...it's not from the 1970s!
 
 ---
 
@@ -160,15 +164,15 @@ Notes: Notice that some of these column names have spaces in them; you may not h
 # ... with 1,134 more rows
 ```
 
-Notes: And we deal with them by surrounding the variable name with backticks when we need to access it.
+Notes: We deal with them by surrounding the variable name with backticks when we need to access it.
 
 ---
 
 # Exploratory data analysis
 
-![tidyverse](http://s3.amazonaws.com/assets.datacamp.com/production/repositories/1918/datasets/1b8cb74ef89e0981385bd422e79e3050eaeaa8aa/tidyverse.png)
+![tidyverse](/static/tidyverse.png)
 
-Notes: A hugely important part of any modeling approach is exploratory data analysis. In this course, we'll be using tidyverse packages for getting to know your data, manipulating it, and visualizing it. The tidyverse is a collection of R packages designed for data science that share common APIs and an underlying philosophy.
+Notes: A hugely important part of any modeling approach is exploratory data analysis. In this course, we'll be using [tidyverse](https://www.tidyverse.org/) packages for getting to know your data, manipulating it, and visualizing it. The tidyverse is a collection of R packages designed for data science that share common APIs and an underlying philosophy.
 
 ---
 
@@ -181,9 +185,11 @@ Notes: A hugely important part of any modeling approach is exploratory data anal
 - **tidyr**
 - others!
 
-To learn more about the tidyverse, visit this [page](https://www.datacamp.com/tidyverse-tutorials).
+To learn more about the tidyverse, visit this [page](https://www.tidyverse.org/learn/).
 
-Notes: When you type "library(tidyverse)", what you're doing is loading this collection of related packages for handling data using tidy data principles. These packages include ggplot2 for data visualization, and dplyr and tidyr for data manipulation and transformation. During this course, I'll point out when we use functions from these different packages. I typically load the tidyverse packages all at once in my daily work because these functions all work together and are so convenient for dealing with real world data.
+Notes: When you type `library(tidyverse)`, what you're doing is loading this collection of related packages for handling data using tidy data principles. These packages include ggplot2 for data visualization, and dplyr and tidyr for data manipulation and transformation. During this course, I'll point out when we use functions from these different packages. 
+
+I typically load the tidyverse packages all at once in my daily work because these functions all work together and are so convenient for dealing with real world data.
 
 ---
 
