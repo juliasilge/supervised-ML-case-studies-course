@@ -41,7 +41,7 @@ This approach does take longer, obviously, than training the data one time. In y
 
 # Bootstrap resampling with caret
 
-```r
+```out
 > cars_rf_bt <- train(log(MPG) ~ ., 
 +                     method = "rf", 
 +                     data = training, 
