@@ -20,7 +20,7 @@ Let's think about...cars! Let's say our training dataset has 900 cars in it.
 ---
 
 
-![Alt text](/static/datasets/bootstrap.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/bootstrap.png?raw=true)
 
 Notes: To make a bootstrap sample, we draw with replacement 900 times from that training data to get the same size sample that we started with. 
 
@@ -30,7 +30,7 @@ Then we do that again.
 
 ---
 
-![Alt text](http://s3.amazonaws.com/assets.datacamp.com/production/course_6013/datasets/bootstrap2.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/bootstrap2.png?raw=true)
 
 
 Notes: We draw 900 times from the training dataset with replacement again and fit another model. We repeat that some number of times, look at all the models we fit on the bootstrap samples, combine them, and then take an average of some kind.
@@ -79,7 +79,7 @@ Each car has a real fuel efficiency as reported by the Department of Energy and 
 
 # Visualizing model predictions
 
-![Alt text](/static/cars_metrics.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/cars_metrics.png?raw=true)
 
 Notes: In this lesson, you also are going to visualize these differences, like you see here. The x-axis has the actual fuel efficiency and the y-axis has the predicted fuel efficiency for each kind of model. 
 
