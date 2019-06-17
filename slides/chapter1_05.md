@@ -27,7 +27,7 @@ Notes: We are going to use packages from the tidymodels toolkit, as well as the 
 
 ---
 
-![Alt text](/static/testtrain.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/testtrain.png?raw=true)
 
 Notes: It is best practice to hold out some of your data for **testing** in order to get a better estimate of how your models will perform on new data, especially when you use very powerful machine learning techniques. Linear regression doesn't really fall into that category, but we are going to practice this anyway. The tidymodels package [rsample](https://tidymodels.github.io/rsample/) has functions that help you specify training and testing sets.
 
