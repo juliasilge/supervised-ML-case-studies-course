@@ -11,7 +11,7 @@ Notes: You just performed some exploratory data analysis and built a simple line
 
 # Predicting fuel efficiency
 
-![Alt text](/static/histogram.png)
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/histogram.png?raw=true)
 
 Notes: You were able to see how the fuel efficiency for these cars is distributed and to get an idea about whether you will be able to train accurate models. Now it's time to bring out a more powerful and flexible set of tools for predictive modeling. 
 
