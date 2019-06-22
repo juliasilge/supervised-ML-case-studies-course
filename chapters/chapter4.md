@@ -32,13 +32,13 @@ Clustering is an example of unsupervised machine learning, which we will not cov
 
 </opt>
 
-<opt text="Classification" correct="true">
+<opt text="Classification">
 
 A classification model predicts a group membership or discrete class label, not a numeric/continuous value or response.
 
 </opt>
 
-<opt text="Regression">
+<opt text="Regression" correct="true">
 
 Correct! To predict a continuous, numeric quantity like age, use regression models.
 
