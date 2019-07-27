@@ -9,3 +9,6 @@ simple_glm <- stackoverflow %>%
             family = "binomial",
             data = ___)
 
+
+# Print the summary of the model
+summary(simple_glm)

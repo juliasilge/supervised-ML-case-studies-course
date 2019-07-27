@@ -1,7 +1,7 @@
 ---
 title: 'Chapter 2: Stack Overflow Developer Survey'
 description:
-  'Stack Overflow is the world''s largest online community for developers, and you have probably used it to find an answer to a programming question. The second chapter uses data from the annual Stack Overflow Developer Survey to practice predictive modeling and find which developers are more likely to work remotely.'
+  'Stack Overflow is the world''s largest online community for developers, and you have probably used it to find an answer to a programming question. The second chapter of this course uses data from the annual Stack Overflow Developer Survey to practice predictive modeling and find which developers are more likely to work remotely.'
 prev: /chapter1
 next: /chapter3
 type: chapter
@@ -76,7 +76,7 @@ The column `Remote` contains the remote status of each developer while the `Year
 
 <exercise id="4" title="Start with a simple model">
 
-Before starting the process of building machine learning models, let's start by building an extremely simple model to get our bearings. This is not a model you would want to use to make predictions on new data, but it can give you an idea about how successful you may eventually be and which predictors are most important.
+Before starting the process of building machine learning models, let's start by building an extremely simple model to get our bearings. This is not a model you would probably want to use to make predictions on new data, but it can give you an idea about how successful you may eventually be and which predictors are most important.
 
 Recall that when you use the pipe operator `%>%` with a function like [`glm()`](https://www.rdocumentation.org/packages/stats/topics/glm) (whose first argument is not `data`), you must specify `data = .` to indicate that you are piping in the modeling data set.
 
@@ -109,17 +109,17 @@ Before you deal with the imbalance in the remote/not remote classes, first split
 
 **Instructions**
 
-Create a data partition that divides the original data into 80%/20% sections and about evenly divides the partitions between the different classes of `Remote`.
+Create a data split that divides the original data into 80%/20% sections and about evenly divides the sections between the different classes of `Remote`.
 
-- Load the `caret` package.
-- Create `in_train`:
-    - For the first argument to [`createDataPartition()`](https://www.rdocumentation.org/packages/caret/topics/createDataPartition), pass the vector that contains the remote status of each developer in `stack_select`.
-    - For the second argument to `createDataPartition()`, use a value for `p` of 0.8.
-- Assign the 80% partition to `training` and the 20% partition to `testing`.
+- Load the `rsample` package.
+- Create `stack_split`:
+    - For the first argument to [`initial_split()`](https://tidymodels.github.io/rsample/reference/initial_split.html), use a value for `p` of 0.8.
+    - For the second argument to `initial_split()`, pass the name of the variable that contains remote status as a string.
+- Assign the 80% partition to `stack_train` and the 20% partition to `stack_test`.
 
 <codeblock id="02_06">
 
-The `in_train` vector tells you which examples *should* be in your training set, while `-in_train` tells you which examples should *not* be in your training set.
+Use the output of `initial_split()` as the input of `training()` and `testing()`.
 
 </codeblock>
 
@@ -127,13 +127,13 @@ The `in_train` vector tells you which examples *should* be in your training set,
 
 <exercise id="7" title="Upsampling">
 
-There are multiple possible approaches to dealing with class imbalance. Here, you will implement upsampling using caret's [`upSample()`](https://www.rdocumentation.org/packages/caret/topics/downSample) function.
+There are multiple possible approaches to dealing with class imbalance. Here, you will implement upsampling using caret's [`upSample()`](https://topepo.github.io/caret/subsampling-for-class-imbalances.html#subsampling-techniques) function.
 
 **Instructions**
 
-- Use the `training` data set for upsampling: 
+- Use the `stack_train` data set for upsampling: 
     - `x` should use `select()` to grab only the predictors from the data.
-    - `y` should be the class memberships in `training`.
+    - `y` should be the class memberships in `stack_train` as a vector (use `$` notation).
     - The label for the class column goes in `yname`; remember that it is `"Remote"`.
 	
 <codeblock id="02_07">
@@ -147,7 +147,7 @@ There are multiple possible approaches to dealing with class imbalance. Here, yo
 
 <exercise id="8" title="Understanding upsampling">
 
-You have the original data set `stackoverflow`, the training set that you created `training`, and the upsampled set you created `up_train` in your environment. You can explore them in the console. Both `stackoverflow` and `training` have almost 10 times as many non-remote developers as remote developers. 
+You have the original data set `stackoverflow`, the training set that you created `stack_train`, and the upsampled set you created `up_train` in your environment. Both `stackoverflow` and `stack_train` have almost 10 times as many non-remote developers as remote developers. 
 
 How do the remote and non-remote developers in `up_train` compare?
 
@@ -179,29 +179,21 @@ Correct! Upsampling samples with replacement until the class distributions are e
 We are starting to add more steps into the machine learning workflow. Think about when we implemented upsampling to deal with class imbalance. Which data set did we upsample?
 
 <choice>
-<opt text="There are more remote developers.">
+<opt text="The original data.">
 
 We used upsampling only on a subset of the data, because its purpose is only applicable for part of the predictive modeling workflow. Does upsampling help you do a better job of training your model or testing your model?
 
 </opt>
 
-<opt text="The original data." correct="true">
+<opt text="The training data." correct="true">
 
 Correct! Adjusting class imbalance helps you train a model that performs better.
 
 </opt>
 
-<opt text="The training data.">
-
-We do not want to artificially balance the test set; the test set needs to be close to what we will see when applying our model on new data.
-
-</opt>
-
 <opt text="The testing data.">
 
-Correct! Upsampling samples with replacement until the class distributions are equal, so there are the same number of remote and non-remote developers after upsampling.
-
-</opt>
+We do not want to artificially balance the test set; the test set needs to be close to what we will see when applying our model on new data.
 
 <opt text="It doesn't matter! We'll upsample it all eventually anyway.">
 
@@ -222,7 +214,7 @@ We do not upsample all subsets of our data, because we do not want to artificial
 
 <exercise id="11" title="Training models">
 
-Finally! It's time to train predictive models for this data set of Stack Overflow Developer Survey responses. We will continue to use the powerful, flexible [`train()`](https://www.rdocumentation.org/packages/caret/versions/topics/train) function from caret to specify our machine learning models.
+Finally! It's time to train predictive models for this data set of Stack Overflow Developer Survey responses. We will continue to use the powerful, flexible [`train()`](https://topepo.github.io/caret/model-training-and-tuning.html#model-training-and-parameter-tuning) function from caret to specify our machine learning models.
 
 To keep the code in this exercise evaluating quickly, the data sets in your environment are 1% of their original size. (This means you may see some warnings due to the subsampling.)
 
@@ -252,25 +244,25 @@ Use `method = "rf"` to build a random forest model.
 
 A confusion matrix describes how well a classification model (like the ones you just trained!) performs. A confusion matrix tabulates how many examples in each class were correctly classified by a model. In your case, it will show you how many remote developers were classified as remote and how many non-remote developers were classified as non-remote; the confusion matrix also shows you how many were classified into the **wrong** categories.
 
-Here you will use the [`confusionMatrix()`](https://www.rdocumentation.org/packages/caret/topics/confusionMatrix) function from caret to evaluate the performance of the two models you trained, `stack_glm` and `stack_rf`. The models available in your environment were trained on all the training data, not only 1%. Notice that the sample code contains a `set.seed()` call; this is to ensure reproducibility of results throughout different attempts.
+Here you will use the [`conf_mat()`](https://tidymodels.github.io/yardstick/reference/conf_mat.html) function from yardstick to evaluate the performance of the two models you trained, `stack_glm` and `stack_rf`. The models available in your environment were trained on all the training data, not only 1%.
 
 **Instructions**
 
-Print the confusion matrix for the `stack_glm` model on the `testing` data. Note that the first argument to `confusionMatrix()` is the *predicted* class from the model and the second argument is the *true* class.
+Print the confusion matrix for the `stack_glm` model on the `stack_test` data. Note that the first argument to `conf_mat()` is `truth` and the second is `estimate`.
 
 <codeblock id="02_12_1">
 
-To upsample the training set within the call to `train()`, use `sampling = "up"` inside of `trainControl()`.
+You are evaluating your models, so you should use the testing data set for all the possible arguments here.
 
 </codeblock>
 
 **Instructions**
 
-Print the confusion matrix for the `stack_rf` model on the `testing` data.
+Print the confusion matrix for the `stack_rf` model on the `stack_glm` data.
 
 <codeblock id="02_12_2">
 
-Use the `confusionMatrix()` function to build a confusion matrix.
+Use the `conf_mat()` function to build a confusion matrix.
 
 </codeblock>
 
@@ -278,7 +270,7 @@ Use the `confusionMatrix()` function to build a confusion matrix.
 
 <exercise id="13" title="Classification model metrics">
 
-The `confusionMatrix()` function is helpful but often you want to store specific performance estimates for later, perhaps in a dataframe-friendly form. The yardstick package is built to handle such needs. For this kind of classifier model, you might look at the [positive or negative predictive value](https://www.rdocumentation.org/packages/yardstick/topics/sens) or perhaps overall [accuracy](https://www.rdocumentation.org/packages/yardstick/topics/accuracy).
+The `conf_mat()` function is helpful but often you also want to store specific performance estimates for later, perhaps in a dataframe-friendly form. The yardstick package is built to handle such needs. For this kind of classifier model, you might look at the [positive or negative predictive value](https://tidymodels.github.io/yardstick/reference/ppv.html) or perhaps overall [accuracy](https://tidymodels.github.io/yardstick/reference/accuracy.html).
 
 The models available in your environment, `stack_glm` and `stack_rf` were trained on all the training data, not only 1%.
 
@@ -286,7 +278,7 @@ The models available in your environment, `stack_glm` and `stack_rf` were traine
 
 - Load the yardstick package. 
 - Predict values for logistic regression (`stack_glm`) and random forest (`stack_rf`).  
-- Calculate both accuracy and positive predict value for these two models.
+- Calculate both accuracy and positive predictive value for these two models.
 	
 <codeblock id="02_13">
 

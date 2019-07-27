@@ -14,7 +14,7 @@ Notes: In the first chapter of this course, you practiced how to build regressio
 
 ![](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/so-logo.png?raw=true)
 
-Notes: Stack Overflow is the world's largest, most trusted online community for developers (you may have heard of it) and every year there is a large survey of developers, to learn about developers' opinions on different technologies, work habits, and so forth. 
+Notes: Stack Overflow is the world's largest, most trusted online community for developers (I bet you have used it!) and every year there is a large survey of developers, to learn about developers' opinions on different technologies, work habits, and so forth. 
 
 ---
 
@@ -60,7 +60,7 @@ Notes: Every year, the data for the Stack Overflow Developer Survey is made publ
 
 ![](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/remote_size.png?raw=true)
 
-Notes: But the specific question we are going to address is what makes a developer more likely to work remotely. Developers can work in their company offices, or they can work remotely, and it turns out that there are specific characteristics of developers, such as the size of the company that they work for, how much experience they have, or where in the world they live, that affect how likely they are to be a remote developer.
+Notes: The specific question we are going to address is what makes a developer more likely to work remotely. Developers can work in their company offices or they can work remotely, and it turns out that there are specific characteristics of developers, such as the size of the company that they work for, how much experience they have, or where in the world they live, that affect how likely they are to be a remote developer.
 
 ---
 
@@ -96,37 +96,11 @@ Notes: That is what you are going to model! One of the things you'll notice righ
 - `Remote ~ .` 
 - `data = .` 
 
-Notes: It's a good idea to start any predictive modeling project by building the simplest possible model. In this case, that's a logistic regression model, trained on all the data without any special tricks. Let's talk about the syntax shown here on this slide because there are two instances of the dot. The first dot you see is in the formula that specifies the model that is being trained.
+Notes: It's a good idea to start any predictive modeling project by building the simplest possible model. In this case, that's a logistic regression model, trained on all the data without any special tricks. Let's talk about the syntax shown here on this slide because there are two instances of the dot. 
 
-It says "Remote tilde dot", which means let's predict remote status with all the other variables in the dataset. 
+The first dot you see is in the formula that specifies the model that is being trained. It says `Remote ~ .`, which means let's predict remote status with all the other variables in the dataset. 
 
-The second dot there says "data equals .", and we are using this because we are piping in our dataset using the pipe operator from dplyr and magrittr. That dot is telling the modeling function where the data is coming from, that it is the first argument we're sending it. So there are two dots and they mean different things. Try to keep that in mind as we move forward doing exploratory data analysis.
-
----
-
-# Special characters in variable names
-
-```out
-> cars2018 %>%
-+     select(`Fuel injection`)
-
-# A tibble: 1,144 x 1
-   `Fuel injection`              
-   <chr>                         
- 1 Direct ignition               
- 2 Direct ignition               
- 3 Direct ignition               
- 4 Direct ignition               
- 5 Direct ignition               
- 6 Direct ignition               
- 7 Direct ignition               
- 8 Direct ignition               
- 9 Multipoint/sequential ignition
-10 Direct ignition               
-# ... with 1,134 more rows
-```
-
-Notes: And we deal with them by surrounding the variable name with backticks when we need to access it.
+The second dot there says `data = .`, and we are using *this* because we are piping in our dataset using the pipe operator from dplyr and magrittr. That dot is telling the modeling function where the data is coming from, i.e., that it is the first argument we're sending it. So there are two dots and they mean different things! Try to keep that in mind as we move forward doing exploratory data analysis.
 
 ---
 

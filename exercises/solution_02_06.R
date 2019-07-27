@@ -2,8 +2,8 @@ library(tidyverse)
 stackoverflow <- read_csv("/usr/local/share/datasets/stackoverflow.csv") %>%
     mutate(Remote = factor(Remote, levels = c("Remote", "Not remote")))
 
-# Load caret
-library(caret)
+# Load rsample
+library(rsample)
 
 # Create stack_select dataset
 stack_select <- stackoverflow %>%
@@ -11,6 +11,9 @@ stack_select <- stackoverflow %>%
 
 # Split the data into training and testing sets
 set.seed(1234)
-in_train <- createDataPartition(stack_select$Remote, p = .8, list = FALSE)
-training <- stack_select[in_train,]
-testing <- stack_select[-in_train,]
+stack_split <- stackoverflow %>%
+    initial_split(p = 0.8,
+                  strata = "Remote")
+
+stack_train <- training(stack_split)
+stack_test <- testing(stack_split)
