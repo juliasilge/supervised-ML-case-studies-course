@@ -35,7 +35,7 @@ Notes: It is best practice to hold out some of your data for **testing** in orde
 
 # Training data and testing data with [rsample](https://tidymodels.github.io/rsample/)
 
-```out
+```r
 > library(rsample)
 > 
 > car_split <- car_vars %>%
@@ -66,7 +66,7 @@ It's also possible to divide your data into *three* partitions as you build, cho
 
 # Training a model
 
-```out
+```r
 > fit_lm <- train(log(MPG) ~ ., 
 +                 method = "lm", 
 +                 data = car_training,

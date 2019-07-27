@@ -49,11 +49,11 @@ Correct! To predict a continuous, numeric quantity like fuel efficiency, use reg
 
 <exercise id="3" title="Visualizing the fuel efficiency distribution">
 
-The first step before you start modeling is to explore your data. In this course we'll practice using tidyverse functions for exploratory data analysis. Start off this case study by examinig your data set and visualizing the distribution of fuel efficiency. The ggplot2 package, with functions like [`ggplot()`](https://www.rdocumentation.org/packages/ggplot2/topics/ggplot) and [`geom_histogram()`](https://www.rdocumentation.org/packages/ggplot2/topics/geom_freqpoly) are included in the tidyverse.
+The first step before you start modeling is to explore your data. In this course we'll practice using tidyverse functions for exploratory data analysis. Start off this case study by examinig your data set and visualizing the distribution of fuel efficiency. The ggplot2 package, with functions like [`ggplot()`](https://ggplot2.tidyverse.org/reference/ggplot.html) and [`geom_histogram()`](https://ggplot2.tidyverse.org/reference/geom_histogram.html) are included in the tidyverse.
 
 **Instructions**
 
-`tidyverse` is loaded in your workspace. 
+`tidyverse` is loaded for you. 
 
 - Print the `cars2018` object. Notice that some of the column names have spaces in them and are surrounded by backticks, like `` `Recommended Fuel` ``.
 - Use the appropriate column from the data set in the call to `aes()` so you can plot a histogram of fuel efficiency (MPG).
@@ -75,7 +75,7 @@ Before embarking on more complex machine learning models, it's a good idea to bu
 **Instructions**
 
 - Use [`select()`](https://www.rdocumentation.org/packages/dplyr/topics/select) to deselect the two columns `Model` and `Model Index` from the model; these columns tell us the individual identifiers for each car and it would *not* make sense to include them in modeling. 
-- Fit `MPG` as the predicted quantity, explained by all the predictors, i.e., `.` in the R formula input to `lm()`. (Don't worry about fitting the logarithm of fuel efficiency yet.) 
+- Fit `MPG` as the predicted quantity, explained by all the predictors, i.e., `.` in the R formula input to `lm()`. (You may have noticed the log distribution of MPG in the last exercise, but don't worry about fitting the logarithm of fuel efficiency yet.) 
 - Print the summary of the model.
 
 <codeblock id="01_04">
@@ -153,8 +153,6 @@ The `fit_lm` and `fit_rf` models you just trained are in your environment. It's 
 - Load the yardstick package. 
 - Create new columns for model predictions from each of the models you have trained, first linear regression and then random forest.
 - Evaluate the performance of these models using [`metrics()`](https://www.rdocumentation.org/packages/yardstick/topics/metrics) by specifying the column in the original data that contains the real fuel efficiency.
-
-(Notice that we are fitting to `log(MPG)` since the fuel efficiency had a log normal distribution.)
 
 <codeblock id="01_08">
 

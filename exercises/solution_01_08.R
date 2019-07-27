@@ -1,7 +1,7 @@
 library(caret)
 library(tidyverse)
 
-training <- readRDS("/usr/local/share/datasets/c1_training_full.rds")
+car_train <- readRDS("/usr/local/share/datasets/c1_training_full.rds")
 fit_lm <- readRDS("/usr/local/share/datasets/c1_fit_lm.rds")
 fit_rf <- readRDS("/usr/local/share/datasets/c1_fit_rf.rds")
 
@@ -9,7 +9,7 @@ fit_rf <- readRDS("/usr/local/share/datasets/c1_fit_rf.rds")
 library(yardstick)
 
 # Create the new columns
-results <- training %>%
+results <- car_train %>%
     mutate(`Linear regression` = predict(fit_lm, training),
            `Random forest` = predict(fit_rf, training))
 

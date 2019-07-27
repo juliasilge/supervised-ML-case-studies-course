@@ -170,7 +170,7 @@ Notes: We deal with them by surrounding the variable name with backticks when we
 
 # Exploratory data analysis
 
-![tidyverse](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/tidyverse.png?raw=true)
+![tidyverse](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/tidyverse_small.png?raw=true)
 
 Notes: A hugely important part of any modeling approach is exploratory data analysis. In this course, we'll be using [tidyverse](https://www.tidyverse.org/) packages for getting to know your data, manipulating it, and visualizing it. The tidyverse is a collection of R packages designed for data science that share common APIs and an underlying philosophy.
 
