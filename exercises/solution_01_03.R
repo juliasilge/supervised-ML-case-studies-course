@@ -7,5 +7,5 @@ cars2018
 # Plot the histogram
 ggplot(cars2018, aes(x = MPG)) +
     geom_histogram(bins = 25) +
-    labs(y = "Number of cars",
-         x = "Fuel efficiency (mpg)")
+    labs(x = "Fuel efficiency (mpg)",
+         y = "Number of cars")
