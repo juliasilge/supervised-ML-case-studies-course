@@ -42,8 +42,7 @@ Notes: In this course, you will work through four case studies using data from t
 
 First, a dataset on fuel effiency of cars. 🚙
 
-Second, the annual Stack Overflow Developer Survey where we will predict whether a developer works remotely or not. 👩
-💻
+Second, the annual Stack Overflow Developer Survey where we will predict whether a developer works remotely or not. 💻
 
 Next, a survey on voter attitudes where we will predict voter turnout. 🗳
 
