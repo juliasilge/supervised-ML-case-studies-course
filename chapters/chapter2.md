@@ -49,9 +49,7 @@ A regression model predicts a numeric/continuous value or response, not a group 
 
 <exercise id="3" title="Exploring the Stack Overflow survey">
 
-Anytime you are planning to implement modeling, it is always a good idea to explore your dataset. Start off this modeling analysis by checking out how many remote and non-remote developers 👨
-💻👩
-💻 you have to work with, where they live, and how much experience they have.
+Anytime you are planning to implement modeling, it is always a good idea to explore your dataset. Start off this modeling analysis by checking out how many remote and non-remote developers have to work with, where they live, and how much experience they have.
 
 **Instructions**
 
