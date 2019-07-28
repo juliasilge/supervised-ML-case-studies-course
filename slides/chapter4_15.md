@@ -99,9 +99,10 @@ Notes: And perhaps most importantly, never skip exploratory data analysis when y
 
 # Go train some models!
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U4WG9B)
+
 Notes: And that's our goal here! Thanks for spending time with me on this course. Now it's time for you to take what you've been practicing here and go apply it in the real world.
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U4WG9B)
 
 
 
