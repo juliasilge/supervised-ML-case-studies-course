@@ -92,13 +92,13 @@ Notes: For example, one of the questions asked survey respondents how much they 
 # Predicting voter turnout
 
 
-```out
-> vr>+oters %>%
+```r
+voters %>%
     count(turnout16_2016)
 ```
 
 ```out
-# A ti x 2
+# A tibble: 2 x 2
   turnout16_2016     n
   <fct>          <int>
 1 Did not vote     264
@@ -109,11 +109,9 @@ Notes: We are going to build machine learning models to predict whether a respon
 
 ---
 
-# Let's get started!
+# Let's get started! 🙌
 
-Notes 🙌
-
-Notes ime for you to get started with this new dataset and see what you can learn.
+Notes: It's time for you to get started with this new dataset and see what you can learn.
 
 ---
 
