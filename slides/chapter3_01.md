@@ -8,8 +8,8 @@ Notes: So far, you have built one regression model and one classification model,
 
 ---
 
-# Views of the Electorate Research Survey (VOTER)
- 🇺🇸
+# Views of the Electorate Research Survey (VOTER) 🇺🇸
+
 - Democracy Fund Voter Study Group
 - Politically diverse group of analysts and scholars in the United States
 - Data is [freely available](https://www.voterstudygroup.org/publications/2016-elections/data)
@@ -18,9 +18,9 @@ Notes: This data comes from a research collaboration of about two dozen analysts
 
 ---
 
-# Views of the Electorate Research Survey (VOTER)
+# Views of the Electorate Research Survey (VOTER) 🇺🇸
 
-- 🇺🇸 Life in America today for people like you compared to fifty years ago is better? about the same? worse?
+- Life in America today for people like you compared to fifty years ago is better? about the same? worse?
 - Was your vote primarily a vote in favor of your choice or was it mostly a vote against his/her opponent?
 - How important are the following issues to you?
   - Crime
@@ -32,11 +32,11 @@ Notes: There are a lot of questions on this survey, so many that I can't go over
 
 ---
 
-# Views of the Electorate Research Survey (VOTER)
+# Views of the Electorate Research Survey (VOTER) 🇺🇸
 
 
-`` 🇺🇸`out
-> vrs
+```out
+> voters
 
 # A tibble: 6,692 x 43
    case_identifier turnout16_2016 RIGGED_SYSTEM_1_2016 RIGGED_SYSTEM_2_2016
@@ -93,11 +93,12 @@ Notes: For example, one of the questions asked survey respondents how much they 
 
 
 ```out
-> vrr%>%
-+     c    count(turnout16_2016)
+> vr>+oters %>%
+    count(turnout16_2016)
 ```
 
-```outbble: 2 x 2
+```out
+# A ti x 2
   turnout16_2016     n
   <fct>          <int>
 1 Did not vote     264
@@ -110,7 +111,9 @@ Notes: We are going to build machine learning models to predict whether a respon
 
 # Let's get started!
 
-Notes 🙌: It's time for you to get started with this new dataset and see what you can learn.
+Notes 🙌
+
+Notes ime for you to get started with this new dataset and see what you can learn.
 
 ---
 
