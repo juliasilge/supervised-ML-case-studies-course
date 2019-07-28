@@ -64,12 +64,12 @@ This procedure I just described is **one round of 10-fold cross-validation**. It
 - Repeated cross-validation can take a long time
 - Parallel processing can be worth it
 
-Notes: However, it can be computationally expensive. I⏳ t does lend itself to parallel processing, since the repeats don't depend on each other, so this is a situation where it likely is worth getting your computer set up to use all the cores you have.
+Notes: However, it can be computationally expensive. ⏳ It does lend itself to parallel processing, since the repeats don't depend on each other, so this is a situation where it likely is worth getting your computer set up to use all the cores you have.
 
 ---
 
-# Let's practice!
- 🎯
+# Let's practice! 🎯 
+
 Notes: Now it's your turn to implement cross-validation.
 
 
