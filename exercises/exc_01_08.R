@@ -1,12 +1,12 @@
-library(caret)
-library(tidyverse)
+data/(caret)
+data/(tidyverse)
 
-car_train <- readRDS("/usr/local/share/datasets/c1_training_full.rds")
-fit_lm <- readRDS("/usr/local/share/datasets/c1_fit_lm.rds")
-fit_rf <- readRDS("/usr/local/share/datasets/c1_fit_rf.rds")
+car_train <- readRDS("data/c1_training_full.rds")
+fit_lm <- readRDS("data/c1_fit_lm.rds")
+fit_rf <- readRDS("data/c1_fit_rf.rds")
 
 # Load yardstick
-library(___)
+data/(___)
 
 # Create the new columns
 results <- car_train %>%

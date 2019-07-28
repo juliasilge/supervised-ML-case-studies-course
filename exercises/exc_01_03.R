@@ -1,5 +1,5 @@
-library(tidyverse)
-cars2018 <- read_csv("/usr/local/share/datasets/cars2018.csv")
+data/(tidyverse)
+cars2018 <- read_csv("data/cars2018.csv")
 
 # Print the cars2018 object
 ___

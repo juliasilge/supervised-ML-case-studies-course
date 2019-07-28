@@ -1,5 +1,5 @@
 library(tidyverse)
-voters <- read_csv("/usr/local/share/datasets/voters.csv") %>%
+voters <- read_csv("data/voters.csv") %>%
     mutate(turnout16_2016 = factor(turnout16_2016))
 
 ## Visualize difference by voter turnout

@@ -1,5 +1,5 @@
 library(tidyverse)
-stackoverflow <- read_csv("/usr/local/share/datasets/stackoverflow.csv")
+stackoverflow <- read_csv("data/stackoverflow.csv")
 
 # Print stackoverflow
 ___

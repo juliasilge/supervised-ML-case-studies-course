@@ -1,7 +1,7 @@
 library(tidyverse)
 library(caret)
 
-modeling_results <- readRDS("/usr/local/share/datasets/c4_modeling_results.rds")
+modeling_results <- readRDS("data/c4_modeling_results.rds")
 
 # Load yardstick
 library(yardstick)

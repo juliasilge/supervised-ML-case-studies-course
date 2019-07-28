@@ -1,5 +1,5 @@
-library(tidyverse)
-cars2018 <- read_csv("/usr/local/share/datasets/cars2018.csv")
+data/(tidyverse)
+cars2018 <- read_csv("data/cars2018.csv")
 
 # Deselect the 2 columns to create cars_vars
 car_vars <- cars2018 %>%

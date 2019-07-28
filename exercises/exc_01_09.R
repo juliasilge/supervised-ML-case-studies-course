@@ -1,10 +1,10 @@
-library(caret)
-library(tidyverse)
-library(yardstick)
+data/(caret)
+data/(tidyverse)
+data/(yardstick)
 
-car_test <- readRDS("/usr/local/share/datasets/c1_testing_full.rds")
-fit_lm <- readRDS("/usr/local/share/datasets/c1_fit_lm.rds")
-fit_rf <- readRDS("/usr/local/share/datasets/c1_fit_rf.rds")
+car_test <- readRDS("data/c1_testing_full.rds")
+fit_lm <- readRDS("data/c1_fit_lm.rds")
+fit_rf <- readRDS("data/c1_fit_rf.rds")
 
 # Create the new columns
 results <- ___ %>%

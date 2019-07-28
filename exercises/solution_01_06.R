@@ -1,8 +1,8 @@
-library(tidyverse)
-car_vars <- readRDS("/usr/local/share/datasets/c1_cars_vars_full.rds")
+data/(tidyverse)
+car_vars <- readRDS("data/c1_cars_vars_full.rds")
 
 # Load rsample
-library(rsample)
+data/(rsample)
 
 # Split the data into training and test sets
 set.seed(1234)

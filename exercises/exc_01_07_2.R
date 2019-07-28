@@ -1,8 +1,8 @@
-library(tidyverse)
-library(caret)
+data/(tidyverse)
+data/(caret)
 
-car_train <- readRDS("/usr/local/share/datasets/c1_training_full.rds")
-car_test <- readRDS("/usr/local/share/datasets/c1_testing_full.rds")
+car_train <- readRDS("data/c1_training_full.rds")
+car_test <- readRDS("data/c1_testing_full.rds")
 
 # Train a random forest model
 fit_rf <- ___(log(MPG) ~ ., 

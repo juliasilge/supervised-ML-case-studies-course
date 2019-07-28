@@ -1,8 +1,8 @@
 library(tidyverse)
 library(caret)
 
-stack_train <- readRDS("/usr/local/share/datasets/c2_training_full.rds")
-stack_test <- readRDS("/usr/local/share/datasets/c2_testing_full.rds")
+stack_train <- readRDS("data/c2_training_full.rds")
+stack_test <- readRDS("data/c2_testing_full.rds")
 
 # Create the upsampled training set
 up_train <- upSample(x = select(stack_train, -Remote),

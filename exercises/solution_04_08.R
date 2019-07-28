@@ -1,6 +1,6 @@
 library(tidyverse)
 library(rsample)
-sisters_select <- read_csv("/usr/local/share/datasets/sisters.csv") %>%
+sisters_select <- read_csv("data/sisters.csv") %>%
     select(-sister)
 
 # Split the data into training and validation/test sets

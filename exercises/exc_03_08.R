@@ -1,5 +1,5 @@
 library(tidyverse)
-voters_select <- read_csv("/usr/local/share/datasets/voters.csv") %>%
+voters_select <- read_csv("data/voters.csv") %>%
     mutate(turnout16_2016 = factor(turnout16_2016)) %>% 
     select(-case_identifier)
 
