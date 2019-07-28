@@ -103,7 +103,7 @@ Notes: Does it make sense to try to change the class imbalance of the test set?
 - **Training set?**
 - ~~Testing set?~~
 
-Notes: **No, it does not!** You🙅  want the test set to look like new data that your model will see in the future, so you don't want to mess with the class balance there; you want to see how your model will perform on imbalanced data, even if you have trained it on artificially balanced data.
+Notes: **No, it does not!** 🙅 You want the set to look like new data that your model will see in the future, so you don't want to mess with the class balance there; you want to see how your model will perform on imbalanced data, even if you have trained it on artificially balanced data.
 
 ---
 

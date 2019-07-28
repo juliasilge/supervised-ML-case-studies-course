@@ -100,13 +100,13 @@ Notes: It's a good idea to start any predictive modeling project by building the
 
 The first dot you see is in the formula that specifies the model that is being trained. It says `Remote ~ .`, which means let's predict remote status with all the other variables in the dataset. 
 
-The second dot there says `data = .`, and we are using *this* because we are piping in our dataset using the pipe operator from dplyr and magrittr. That dot is telling the modeling function where the data is coming from, i.e., that it is the first argument we're sending it. So there are two dots and they mean different things! T😵 ry to keep that in mind as we move forward doing exploratory data analysis.
+The second dot there says `data = .`, and we are using *this* because we are piping in our dataset using the pipe operator from dplyr and magrittr. That dot is telling the modeling function where the data is coming from, i.e., that it is the first argument we're sending it. So there are two dots and they mean different things! 😵 Try to keep that in mind as we move forward doing exploratory data analysis.
 
 ---
 
-# Let's explore the data!
+# Let's explore the data! 🌟
 
- 🌟Notes: Let's start by thinking through our modeling approach and exploring this new dataset.
+Notes: Let's start by thinking through our modeling approach and exploring this new dataset.
 
 ---
 

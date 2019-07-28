@@ -44,12 +44,12 @@ stack_rf <- train(Remote ~ ., method = "rf",
 
 Notes: We are going to use the `train()` function from caret to set up the models. Notice here that one model is logistic regression while the other is random forest, but for both we are implementing bootstrap resampling and upsampling to deal with the class imbalance of remote developers in our dataset.
 
-Bootstrap resampling can take a while s⏳ o when you implement this code in an exercise, you'll have a subset of the data to work with in your environment.
+Bootstrap resampling can take a while ⏳ so when you implement this code in an exercise, you'll have a subset of the data to work with in your environment.
 
 ---
 
-# Evaluating your models
- 📏 
+# Evaluating your models 📏
+  
 ```r
 library(yardstick)
  
@@ -70,9 +70,10 @@ Notes: Classification models can be evaluated using a confusion matrix. This kin
 
 ---
 
-# Evaluating your models
+# Evaluating your models 📏
 
- 📏```ouibrary(yardstick)
+```out
+library(yardstick)
 
 > accuracy(testing_results, truth = Remote, estimate = `Logistic regression`)
 [1] 0.6456693
@@ -90,9 +91,9 @@ Here we can see the overall accuracy, as well as the positive and negative predi
 
 ---
 
-# Let's practice!
+# Let's practice! 👯
 
-N 👯otes: It's time for you to take this knowledge about model training and model evaluation and try your hand at it.
+Notes: It's time for you to take this knowledge about model training and model evaluation and try your hand at it.
 
 
 
