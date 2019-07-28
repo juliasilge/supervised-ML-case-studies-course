@@ -17,7 +17,7 @@ id: 1
 
 <exercise id="2" title="Choosing an appropriate model">
 
-In this case study, you will predict the fuel efficiency of modern cars from characteristics of these cars, like transmission and engine displacement. Fuel efficiency is a numeric value that ranges smoothly from about 15 to 40 miles per gallon. What kind of model will you build?
+In this case study, you will predict the fuel efficiency ⛽  of modern cars from characteristics of these cars, like transmission and engine displacement. Fuel efficiency is a numeric value that ranges smoothly from about 15 to 40 miles per gallon. What kind of model will you build?
 
 <choice>
 <opt text="Summarization">
@@ -40,7 +40,7 @@ A classification model predicts a group membership or discrete class label, not 
 
 <opt text="Regression" correct="true">
 
-Correct! To predict a continuous, numeric quantity like fuel efficiency, use regression models.
+Correct! 👏 To predict a continuous, numeric quantity like fuel efficiency, use regression models.
 
 </opt>
 </choice>
@@ -95,7 +95,7 @@ Before embarking on more complex machine learning models, it's a good idea to bu
 
 <exercise id="6" title="Training and testing data">
 
-Training models based on all of your data at once is typically not the best choice. Instead, you can create subsets of your data that you use for different purposes, such as *training* your model and then *testing* your model. 
+Training models based on all of your data at once is typically not the best choice. 🚫 Instead, you can create subsets of your data that you use for different purposes, such as *training* your model and then *testing* your model. 
 
 Creating training/testing splits reduces overfitting. When you evaluate your model on data that it was not trained on, you get a better estimate of how it will perform on new data.
 
@@ -146,7 +146,7 @@ For random forest, use `method = "rf"`.
 
 <exercise id="8" title="Evaluating your models">
 
-The `fit_lm` and `fit_rf` models you just trained are in your environment. It's time to evaluate them! For regression models, we will focus on evaluating using the **root mean squared error**. This quantity is measured in the same units as the original data (miles per gallon, in our case). Lower values indicate a better fit to the data. It's not too hard to calculate root mean squared error manually, but the [yardstick](https://tidymodels.github.io/yardstick/) package offers convenient functions for this and other model performance metrics.
+The `fit_lm` and `fit_rf` models you just trained are in your environment. It's time to evaluate them! 🤩 For regression models, we will focus on evaluating using the **root mean squared error**. This quantity is measured in the same units as the original data (log of miles per gallon, in our case). Lower values indicate a better fit to the data. It's not too hard to calculate root mean squared error manually, but the [yardstick](https://tidymodels.github.io/yardstick/) package offers convenient functions for this and other model performance metrics.
 
 **Instructions**
 
@@ -165,7 +165,7 @@ The `fit_lm` and `fit_rf` models you just trained are in your environment. It's 
 
 <exercise id="9" title="Using the testing data">
 
-"But wait!" you say, because you have been paying attention. "That is how these models perform on the *training* data, the data that we used to build these models in the first place." Let's evaluate how these simple models perform on the testing data.
+"But wait!" you say, because you have been paying attention. 🤔 "That is how these models perform on the *training* data, the data that we used to build these models in the first place." Let's evaluate how these simple models perform on the testing data.
 
 **Instructions**
 

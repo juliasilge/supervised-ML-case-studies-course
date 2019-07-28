@@ -49,7 +49,7 @@ Correct! To predict a continuous, numeric quantity like age, use regression mode
 
 <exercise id="3" title="Visualizing the age distribution">
 
-The first step before you start modeling is to explore your data, and we are going to spend a little more time on this step in this last case study. To start with, check out the distribution of ages for the respondents in this survey. (Keep in mind throughout this case study that the data you have in your environment is one quarter of the real survey data.)
+The first step before you start modeling is to explore your data, and we are going to spend a little more time on this step in this last case study. To start with, check out the distribution of ages for the respondents in this survey. 📊 (Keep in mind throughout this case study that the data you have in your environment is one quarter of the real survey data.)
 
 **Instructions**
 
@@ -108,7 +108,7 @@ Next look at question agreement overall.
 <exercise id="6" title="Visualizing agreement with age">
 
 The tidied version of the survey data that you constructed is available in your environment. You have many options at your fingertips with this tidy data now. Make a plot that shows how agreement on a subset of the questions changes with age.
-
+ 📉
 In this exercise, we are using [`filter()`](https://dplyr.tidyverse.org/reference/filter.html) to subset the data to just a subset of the questions on the survey to look at.
 
 **Instructions**

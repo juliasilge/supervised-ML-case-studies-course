@@ -4,10 +4,8 @@ type: slides
 
 # Cross-validation
 
-Julia Silge
-Data Scientist at Stack Overflow
 
-Notes: You have created a training set and testing set and laid out how to deal with class imbalance via upsampling. Now it's time to talk about a new resampling approach. In the first two case studies, we used bootstrap resampling and talked through what that means. In this chapter, we're going to use cross-validation.
+Notes: You have created a training set and testing set and laid out how to deal with class imbalance via upsampling. Now it's time to talk about a new resampling approach. In the first two case studies, we used bootstrap resampling and talked through what that means. In this chapter, we're going to use **cross-validation**.
 
 ---
 
@@ -15,7 +13,9 @@ Notes: You have created a training set and testing set and laid out how to deal 
 
 Partitioning your data into subsets and using one subset for validation
 
-Notes: Cross-validation means taking your training set and randomly dividing it up evenly into subsets, sometimes called "folds". A fold here means a group or subset or partition. You use one of the folds for validation and the rest for training, then you repeat these steps with all the subsets and combine the results, usually by taking the mean. The reason we do this is the same reason we would use bootstrap resampling; cross-validation allows you to reduce overfitting and get a more accurate estimate of how your model will perform on new data.
+Notes: Cross-validation means taking your training set and randomly dividing it up evenly into subsets, sometimes called "folds". A fold here means a group or subset or partition. 
+
+You use one of the folds for validation and the rest for training, then you repeat these steps with all the subsets and combine the results, usually by taking the mean. The reason we do this is the same reason we would use bootstrap resampling; cross-validation allows you to reduce overfitting and get a more accurate estimate of how your model will perform on new data.
 
 ---
 
@@ -27,7 +27,7 @@ Partitioning your data into subsets and using one subset for validation
 - `method = "repeatedcv"`
 
 
-Notes: In caret, you implement this within the call to `trainControl()` with `method = "cv"` or `method = "repeatedcv"`. Let's look at this in more detail.
+Notes: In caret, you implement this within the call to `trainControl()` with `method = "cv"` or `method = "repeatedcv"`. Let's look at this in more detail. 🧐
 
 ---
 
@@ -64,12 +64,12 @@ This procedure I just described is **one round of 10-fold cross-validation**. It
 - Repeated cross-validation can take a long time
 - Parallel processing can be worth it
 
-Notes: However, it can be computationally expensive. It does lend itself to parallel processing, since the repeats don't depend on each other, so this is a situation where it likely is worth getting your computer set up to use all the cores you have.
+Notes: However, it can be computationally expensive. I⏳ t does lend itself to parallel processing, since the repeats don't depend on each other, so this is a situation where it likely is worth getting your computer set up to use all the cores you have.
 
 ---
 
 # Let's practice!
-
+ 🎯
 Notes: Now it's your turn to implement cross-validation.
 
 

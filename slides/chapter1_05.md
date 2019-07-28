@@ -2,14 +2,14 @@
 type: slides
 ---
 
-# Getting started with caret
+# Getting started with caret 💫
 
 Notes: You just performed some exploratory data analysis and built a simple linear model using base R's `lm()` function.
 
 
 ---
 
-# Predicting fuel efficiency
+# Predicting fuel efficiency ⛽ 
 
 ![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/histogram.png?raw=true)
 
@@ -21,7 +21,7 @@ Notes: You were able to see how the fuel efficiency for these cars is distribute
 
 ### the [tidymodels](https://github.com/tidymodels/tidymodels) metapackage
 
-### the [caret](https://topepo.github.io/caret/index.html) package
+### the [caret](https://topepo.github.io/caret/) package
 
 Notes: We are going to use packages from the tidymodels toolkit, as well as the caret package, in this course and the first thing we are going to practice is splitting your data into a training set and a testing set.
 
@@ -36,17 +36,17 @@ Notes: It is best practice to hold out some of your data for **testing** in orde
 # Training data and testing data with [rsample](https://tidymodels.github.io/rsample/)
 
 ```r
-> library(rsample)
-> 
-> car_split <- car_vars %>%
-+    initial_split(prop = 0.8,
-+                  strata = "Aspiration")
-+
-> car_training <- training(car_split)
-> car_testing <- testing(car_split)
+library(rsample)
+ 
+car_split <- car_vars %>%
+    initial_split(prop = 0.8,
+                  strata = "Aspiration")
+
+car_training <- training(car_split)
+car_testing <- testing(car_split)
 ```
 
-Notes: You can create these sets so that they balance some characteristic in your dataset. For example, the code here takes an input data set and puts 80% of it into a training dataset and 20% of it into a testing dataset; it chooses the individual cases so that both sets are balanced in aspiration types.
+Notes: You can create these sets so that they balance some characteristic in your dataset. ⚖️ For example, the code here takes an input data set and puts 80% of it into a training dataset and 20% of it into a testing dataset; it chooses the individual cases so that both sets are balanced in aspiration types.
 
 ---
 
@@ -67,10 +67,10 @@ It's also possible to divide your data into *three* partitions as you build, cho
 # Training a model
 
 ```r
-> fit_lm <- train(log(MPG) ~ ., 
-+                 method = "lm", 
-+                 data = car_training,
-+                 trControl = trainControl(method = "none"))
+fit_lm <- train(log(MPG) ~ ., 
+                method = "lm", 
+                data = car_training,
+                trControl = trainControl(method = "none"))
 
 ```
 
@@ -88,7 +88,7 @@ We're going to start with `method = "none"` in `trainControl()`, as you see here
 # Evaluating a model
 
 
-### the [yardstick](https://tidymodels.github.io/yardstick/) package
+### the [yardstick](https://tidymodels.github.io/yardstick/) package 📏
 
 
 Notes:  In this course, we're going to use tidymodels package [yardstick](https://tidymodels.github.io/yardstick/) package for that. Functions from this package will give us metrics to measure how well our models are doing.
@@ -97,7 +97,7 @@ Notes:  In this course, we're going to use tidymodels package [yardstick](https:
 
 # Let's practice!
 
-Notes: OK, it's time! Let's try some examples where you train a linear regression model and random forest model on our fuel efficiency data.
+Notes: OK, it's time! Let's try some examples where you train a linear regression model and random forest model on our fuel efficiency data. ⛽ 
 
 
 

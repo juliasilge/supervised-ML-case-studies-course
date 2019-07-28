@@ -2,7 +2,7 @@
 type: slides
 ---
 
-# Welcome to supervised machine learning case studies in R!
+# Welcome to supervised machine learning case studies in R! 👋
 
 
 Notes: Hi! I'm Julia Silge, and I built this free interactive course so you can learn more about supervised machine learning. Supervised machine learning, otherwise known as predictive modeling, is a powerful tool for using data to make predictions about the world around us. 
@@ -40,13 +40,14 @@ Notes: The two types of models we'll train in this course are **regression** and
 
 Notes: In this course, you will work through four case studies using data from the real world. 
 
-First, a dataset on fuel effiency of cars. 
+First, a dataset on fuel effiency of cars. 🚙
 
-Second, the annual Stack Overflow Developer Survey where we will predict whether a developer works remotely or not. 
+Second, the annual Stack Overflow Developer Survey where we will predict whether a developer works remotely or not. 👩
+💻
 
-Next, a survey on voter attitudes where we will predict voter turnout. 
+Next, a survey on voter attitudes where we will predict voter turnout. 🗳
 
-And lastly, a large survey of nuns (yes, that's right -- nuns) where you will predict the age of the nuns from their responses on the survey. 
+And lastly, a large survey of nuns (yes, that's right -- nuns) where you will predict the age of the nuns from their responses on the survey. ⛪
 
 Each of these case studies will provide you the opportunity to practice your data handling and model training skills. Some of these datasets are large enough that it is not realistic to work with them in their entirety for all parts of a machine learning workflow here in this browser environment, so in those cases you'll work with subsets of these datasets. I'll be sure to point out when that occurs.
 
@@ -55,7 +56,7 @@ Each of these case studies will provide you the opportunity to practice your dat
 # Fuel efficiency
 
 
-```out
+```
 > mtcars
 
                      mpg cyl  disp  hp drat    wt  qsec vs am gear carb
@@ -86,7 +87,7 @@ AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
 
 Notes: In this first case study, we are going to use the mtcars dataset to train regression models. 
 
-No, I'm kidding! I would never do that to you! I can only imagine that *you* are as sick of mtcars as *I* am.
+No, I'm kidding! 😜 I would never do that to you! I can only imagine that *you* are as sick of mtcars as *I* am. 😩
 
 ---
 
@@ -94,7 +95,7 @@ No, I'm kidding! I would never do that to you! I can only imagine that *you* are
 
 From the [US Department of Energy](https://www.fueleconomy.gov/feg/download.shtml)
 
-```out
+```
 > cars2018
 
 # A tibble: 1,144 x 15
@@ -125,7 +126,7 @@ Notes: Instead, we are going to use a dataset of real cars from today. This data
 
 From the [US Department of Energy](https://www.fueleconomy.gov/feg/download.shtml)
 
-```out
+```
 > names(cars2018)
 
  [1] "Model"                   "Model Index"            
@@ -138,16 +139,18 @@ From the [US Department of Energy](https://www.fueleconomy.gov/feg/download.shtm
 [15] "Fuel injection"
 ```
 
-Notes: Notice that some of these column names have spaces in them; you may not have run into that before. R can handle some weird characters in variable names.
+Notes: Notice that some of these column names have spaces in them; you may not have run into that before. R can handle some weird characters in variable names. 
 
 ---
 
 # Special characters in variable names
 
+```r
+cars2018 %>%
+    select(`Fuel injection`)
+    
+```
 ```out
-> cars2018 %>%
-+     select(`Fuel injection`)
-
 # A tibble: 1,144 x 1
    `Fuel injection`              
    <chr>                         
@@ -172,7 +175,7 @@ Notes: We deal with them by surrounding the variable name with backticks when we
 
 ![tidyverse](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/tidyverse_small.png?raw=true)
 
-Notes: A hugely important part of any modeling approach is exploratory data analysis. In this course, we'll be using [tidyverse](https://www.tidyverse.org/) packages for getting to know your data, manipulating it, and visualizing it. The tidyverse is a collection of R packages designed for data science that share common APIs and an underlying philosophy.
+Notes: A hugely important part of any modeling approach is exploratory data analysis. In this course, we'll be using [tidyverse](https://www.tidyverse.org/) packages for getting to know your data, manipulating it, and visualizing it. The tidyverse is a collection of R packages designed for data science that share common APIs and an underlying philosophy. 💖
 
 ---
 
@@ -193,7 +196,7 @@ I typically load the tidyverse packages all at once in my daily work because the
 
 ---
 
-#  Time to train some models!
+#  Time to train some models! 🕚 
 
 Notes: OK, it's time to get started with our first case study. Let's take this updated fuel efficiency data and practice some machine learning skills.
 

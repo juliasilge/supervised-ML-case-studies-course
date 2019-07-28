@@ -49,7 +49,9 @@ A regression model predicts a numeric/continuous value or response, not a group 
 
 <exercise id="3" title="Exploring the Stack Overflow survey">
 
-Anytime you are planning to implement modeling, it is always a good idea to explore your dataset. Start off this modeling analysis by checking out how many remote and non-remote developers you have to work with, where they live, and how much experience they have.
+Anytime you are planning to implement modeling, it is always a good idea to explore your dataset. Start off this modeling analysis by checking out how many remote and non-remote developers 👨
+💻👩
+💻 you have to work with, where they live, and how much experience they have.
 
 **Instructions**
 
@@ -127,7 +129,7 @@ Use the output of `initial_split()` as the input of `training()` and `testing()`
 
 <exercise id="7" title="Upsampling">
 
-There are multiple possible approaches to dealing with class imbalance. Here, you will implement upsampling using caret's [`upSample()`](https://topepo.github.io/caret/subsampling-for-class-imbalances.html#subsampling-techniques) function.
+There are multiple possible approaches to dealing with class imbalance. ⚖️ Here, you will implement upsampling using caret's [`upSample()`](https://topepo.github.io/caret/subsampling-for-class-imbalances.html#subsampling-techniques) function.
 
 **Instructions**
 
@@ -147,7 +149,7 @@ There are multiple possible approaches to dealing with class imbalance. Here, yo
 
 <exercise id="8" title="Understanding upsampling">
 
-You have the original data set `stackoverflow`, the training set that you created `stack_train`, and the upsampled set you created `up_train` in your environment. Both `stackoverflow` and `stack_train` have almost 10 times as many non-remote developers as remote developers. 
+Consider the original data set `stackoverflow`, the training set that you created `stack_train`, and the upsampled set you created `up_train`. Both `stackoverflow` and `stack_train` have almost 10 times as many non-remote developers as remote developers. 
 
 How do the remote and non-remote developers in `up_train` compare?
 
@@ -187,7 +189,7 @@ We used upsampling only on a subset of the data, because its purpose is only app
 
 <opt text="The training data." correct="true">
 
-Correct! Adjusting class imbalance helps you train a model that performs better.
+Correct! ⭐️ Adjusting class imbalance helps you train a model that performs better.
 
 </opt>
 
@@ -214,7 +216,7 @@ We do not upsample all subsets of our data, because we do not want to artificial
 
 <exercise id="11" title="Training models">
 
-Finally! It's time to train predictive models for this data set of Stack Overflow Developer Survey responses. We will continue to use the powerful, flexible [`train()`](https://topepo.github.io/caret/model-training-and-tuning.html#model-training-and-parameter-tuning) function from caret to specify our machine learning models.
+Finally! 😁 It's time to train predictive models for this data set of Stack Overflow Developer Survey responses. We will continue to use the powerful, flexible [`train()`](https://topepo.github.io/caret/model-training-and-tuning.html#model-training-and-parameter-tuning) function from caret to specify our machine learning models.
 
 To keep the code in this exercise evaluating quickly, the data sets in your environment are 1% of their original size. (This means you may see some warnings due to the subsampling.)
 
@@ -270,7 +272,7 @@ Use the `conf_mat()` function to build a confusion matrix.
 
 <exercise id="13" title="Classification model metrics">
 
-The `conf_mat()` function is helpful but often you also want to store specific performance estimates for later, perhaps in a dataframe-friendly form. The yardstick package is built to handle such needs. For this kind of classifier model, you might look at the [positive or negative predictive value](https://tidymodels.github.io/yardstick/reference/ppv.html) or perhaps overall [accuracy](https://tidymodels.github.io/yardstick/reference/accuracy.html).
+The `conf_mat()` function is helpful but often you also want to store specific performance estimates for later, perhaps in a dataframe-friendly form. The yardstick package is built to handle such needs. For this kind of classification model, you might look at the [positive or negative predictive value](https://tidymodels.github.io/yardstick/reference/ppv.html) or perhaps overall [accuracy](https://tidymodels.github.io/yardstick/reference/accuracy.html).
 
 The models available in your environment, `stack_glm` and `stack_rf` were trained on all the training data, not only 1%.
 

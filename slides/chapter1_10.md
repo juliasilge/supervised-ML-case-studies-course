@@ -5,7 +5,7 @@ type: slides
 # Training a model with resampling
 
 
-Notes: You just built and then evaluated models that were trained one time on the whole training set at once. Data scientists have come up with a slew of approaches to build models that perform better than this approach; a lot of important ones fall under the category of **resampling**.
+Notes: You just built and then evaluated models that were trained one time on the whole training set at once. Data scientists have come up with a slew of approaches to build models that perform better than this; a lot of important ones fall under the category of **resampling**.
 
 ---
 
@@ -15,7 +15,7 @@ Sample with replacement from the original dataset
 
 Notes: The first resampling approach we're going to try in this course is called the bootstrap. Bootstrap resampling means drawing with replacement from our original dataset and then fitting on that dataset.
 
-Let's think about...cars! Let's say our training dataset has 900 cars in it. 
+Let's think about...cars! 🚗🚌🚙🚕 Let's say our training dataset has 900 cars in it. 
 
 ---
 
@@ -42,10 +42,10 @@ This approach does take longer, obviously, than training the data one time. In y
 # Bootstrap resampling with caret
 
 ```r
-> cars_rf_bt <- train(log(MPG) ~ ., 
-+                     method = "rf", 
-+                     data = car_train, 
-+                     trControl = trainControl(method = "boot"))
+> ca_rf_bt <- train(log(MPG) ~ ., 
++                   method = "rf", 
++                   data = car_train, 
++                   trControl = trainControl(method = "boot"))
 ```
 
 Notes: I am very happy to be able to tell you that training a model with bootstrap resampling is not too complicated with caret. 
@@ -54,7 +54,7 @@ All you have to do is specify `method = "boot"` in `trainControl()`, like you se
 
 ---
 
-# Comparing predicted to real values
+# Comparing predicted to real values ⛽ 
 
 ```out
   `log(MPG)` `Linear regression` `Random forest`
@@ -89,7 +89,7 @@ The difference between linear regression and random forest isn't huge here, but 
 
 # Let's practice!
 
-Notes: OK, now it's your turn. Let's see if you can fit these kinds of models with bootstrap resampling and find which model performs better.
+No ⚡️tes: OK, now it's your turn. Let's see if you can fit these kinds of models with bootstrap resampling and find which model performs better.
 
 
 

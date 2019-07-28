@@ -2,10 +2,8 @@
 type: slides
 ---
 
-# Essential copying and pasting from Stack Overflow
+# Essential copying and pasting from Stack Overflow 💻
 
-## Julia Silge
-## Data Scientist at Stack Overflow
 
 Notes: In the first chapter of this course, you practiced how to build regression models to predict fuel efficiency. Our second case study uses a dataset from the Stack Overflow Developer Survey.
 
@@ -20,7 +18,7 @@ Notes: Stack Overflow is the world's largest, most trusted online community for 
 
 # Stack Overflow Developer Survey
 
-```out
+```
 > stackoverflow
 
 # A tibble: 6,991 x 22
@@ -64,12 +62,14 @@ Notes: The specific question we are going to address is what makes a developer m
 
 ---
 
-# Class imbalance
+# Class imbalance ⚖️
+
+```r
+stackoverflow %>% 
+        count(Remote)
+```
 
 ```out
-> stackoverflow %>% 
-+         count(Remote)
-
 # A tibble: 2 x 2
   Remote         n
   <fctr>     <int>
@@ -83,14 +83,14 @@ Notes: That is what you are going to model! One of the things you'll notice righ
 
 # Building a simple model
 
-```out
-> simple_glm <- stackoverflow %>%
-+     select(-Respondent) %>%
-+     glm(Remote ~ .,
-+         family = "binomial",
-+         data = .)
-> 
-> summary(simple_glm)
+```r
+simple_glm <- stackoverflow %>%
+    select(-Respondent) %>%
+    glm(Remote ~ .,
+        family = "binomial",
+        data = .)
+
+summary(simple_glm)
 ```
 
 - `Remote ~ .` 
@@ -100,13 +100,13 @@ Notes: It's a good idea to start any predictive modeling project by building the
 
 The first dot you see is in the formula that specifies the model that is being trained. It says `Remote ~ .`, which means let's predict remote status with all the other variables in the dataset. 
 
-The second dot there says `data = .`, and we are using *this* because we are piping in our dataset using the pipe operator from dplyr and magrittr. That dot is telling the modeling function where the data is coming from, i.e., that it is the first argument we're sending it. So there are two dots and they mean different things! Try to keep that in mind as we move forward doing exploratory data analysis.
+The second dot there says `data = .`, and we are using *this* because we are piping in our dataset using the pipe operator from dplyr and magrittr. That dot is telling the modeling function where the data is coming from, i.e., that it is the first argument we're sending it. So there are two dots and they mean different things! T😵 ry to keep that in mind as we move forward doing exploratory data analysis.
 
 ---
 
 # Let's explore the data!
 
-Notes: Let's start by thinking through our modeling approach and exploring this new dataset.
+ 🌟Notes: Let's start by thinking through our modeling approach and exploring this new dataset.
 
 ---
 

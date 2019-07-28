@@ -2,10 +2,8 @@
 type: slides
 ---
 
-# Dealing with imbalanced data
+# Dealing with imbalanced data ⚖️
 
-Julia Silge
-Data Scientist at Stack Overflow
 
 Notes: You just fit a simple logistic regression model to these survey results in order to predict which developers work remotely and which do not. Before we go any further, we need to talk about the class imbalance in our dataset.
 
@@ -16,7 +14,7 @@ Notes: You just fit a simple logistic regression model to these survey results i
 Class imbalance
 
 - is a common problem!
-- often negatively affects the performance of your model
+- often negatively affects the performance of your model 🙀
 
 Notes: It's good that we're going to talk about class imbalance because it comes up a lot in real life. In many practical, real-world situations, there are a lot more of one kind of category in a dataset than another. In our example here, there are about ten times more non-remote developers than there are remote developers. What can happen in a situation like this is that a machine learning model will always predict the majority class or otherwise exhibit poor performance on the metrics that we care about.
 
@@ -24,10 +22,12 @@ Notes: It's good that we're going to talk about class imbalance because it comes
 
 # Class imbalance
 
-```out
-> stackoverflow %>% 
-+     count(Remote)
+```r
+stackoverflow %>% 
+    count(Remote)
+```
 
+```out
 # A tibble: 2 x 2
   Remote         n
   <fctr>     <int>
@@ -35,7 +35,7 @@ Notes: It's good that we're going to talk about class imbalance because it comes
 2 Not remote  6273
 ```
 
-Notes: This is in fact what happens with our dataset here (I know because I tested it out) so we need to do something to address this imbalance. There are a variety of options available to you, which vary from quite simple to more complex, and we're going to start with a simple option.
+Notes: This is in fact what happens with our dataset here (I know because I tested it out ✅) so we need to do something to address this imbalance. There are a variety of options available to you, which vary from quite simple to more complex, and we're going to start with a simple option.
 
 ---
 
@@ -44,7 +44,7 @@ Notes: This is in fact what happens with our dataset here (I know because I test
 - Add more of the minority class so it has more effect on the predictive model
 - Randomly sample with replacement from the minority class until it is the same size as the majority class
 
-Notes: In this case study, we're going to implement upsampling, also known as oversampling. With this approach, we randomly sample with replacement from the minority class until it's just as big as the majority class and it can have just as much effect on the machine learning model we're training.
+Notes: In this case study, we're going to implement **upsampling**, also known as oversampling. With this approach, we randomly sample with replacement from the minority class until it's just as big as the majority class and it can have just as much effect on the machine learning model we're training.
 
 ---
 
@@ -89,7 +89,7 @@ Notes: That second option is probably the best approach in most circumstances be
 
 ---
 
-# When do you balance classes?
+# When do you balance classes? 🤔
 
 - Training set?
 - Testing set?
@@ -98,12 +98,12 @@ Notes: Does it make sense to try to change the class imbalance of the test set?
 
 ---
 
-# When do you balance classes?
+# When do you balance classes? 🤔
 
 - **Training set?**
 - ~~Testing set?~~
 
-Notes: **No, it does not!** You want the test set to look like new data that your model will see in the future, so you don't want to mess with the class balance there; you want to see how your model will perform on imbalanced data, even if you have trained it on artificially balanced data.
+Notes: **No, it does not!** You🙅  want the test set to look like new data that your model will see in the future, so you don't want to mess with the class balance there; you want to see how your model will perform on imbalanced data, even if you have trained it on artificially balanced data.
 
 ---
 

@@ -2,7 +2,7 @@
 type: slides
 ---
 
-# VOTE 2016
+# VOTE 2016 🇺🇸
 
 Julia Silge
 Data Scientist at Stack Overflow
@@ -27,7 +27,7 @@ Notes: ...and how much of a difference you see in survey responses between the t
 
 ![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/econtrend.png?raw=true)
 
-Notes: Visualizing your data before modeling is always a good idea. Here, for example, we can see that people who say the economy is getting better are more likely to vote.
+Notes: Visualizing your data before modeling is always a good idea. He👍 re, for example, we can see that people who say the economy is getting better are more likely to vote.
 
 ---
 
@@ -39,6 +39,7 @@ simple_glm <- glm(turnout16_2016 ~ .,  family = "binomial",
  
 summary(simple_glm)
 ```
+
 ```out
 Call:
 glm(formula = turnout16_2016 ~ ., family = "binomial", 
@@ -127,11 +128,11 @@ tidy(simple_glm) %>%
 14         imiss_n_2016 -0.44161183 0.09003981 -4.904628 9.360434e-07
 ```
 
-Notes: If you look at what these survey questions are, you'll see that when a respondent thinks that crime is an important issue, tabulated in the column imiss_a_2016, they are less likely to vote but when a respondent thinks that infrastructure improvements are an important issue, the column imiss_n_2016, they are more likely to vote.
+Notes: If you look at what these survey questions are, you'll see that when a respondent thinks that crime is an important issue, tabulated in the column `imiss_a_2016`, they are less likely to vote but when a respondent thinks that infrastructure improvements are an important issue, the column `imiss_n_2016`, they are more likely to vote.
 
 ---
 
 # Let's build some models!
 
-Notes: Now that you have explored your data and have some understanding of it, it's time to move into preparing for machine learning.
+ ✨Notes: Now that you have explored your data and have some understanding of it, it's time to move into preparing for machine learning.
 
