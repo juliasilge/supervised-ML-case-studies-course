@@ -50,8 +50,7 @@ Notes: You divided your data into three subsets, used a training set to train yo
 # Diverse data, powerful tools
 
 - Fuel efficiency of cars 🚗
-- Developers working remotely in the Stack Overflow survey 👩
-💻
+- Developers working remotely in the Stack Overflow survey 💻
 - Voter turnout in 2016 🗳
 - Catholic nuns' ages based on beliefs and attitudes ⛪
 
@@ -83,7 +82,7 @@ Notes: By contrast, we haven't talked about hyperparameter tuning for any of the
 # Practical machine learning
 
 - Try out multiple modeling approaches for each new problem 
-- Overall, [gradient tree boosting and random forest](https://arxiv.org/abs/1708.05070v1) 🌳perform well
+- Overall, [gradient tree boosting and random forest](https://arxiv.org/abs/1708.05070v1) 🌳 perform well
 
 Notes: The high level takeaways that you should remember from this course are first, that each time you have a new predictive modeling problem you are working on, you need to try out multiple different kinds of models. You don't know ahead of time which kind of model is going to perform best. This paper linked here uses some super interesting analysis to show that most often, the two kinds of models that perform best are gradient tree boosting and random forest. 
 
@@ -101,10 +100,10 @@ Notes: And perhaps most importantly, never skip exploratory data analysis when y
 
 # Go train some models!
 
+Notes: And that's our ultimate goal here! Thanks for spending time with me on this course. Now it's time for you to take what you've been practicing here and go apply it in the real world.
+
 If this course has been helpful to you, you can [buy me a coffee](https://ko-fi.com/U7U4WG9B) or chip in for hosting costs.
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U4WG9B)
-
-Notes: And that's our ultimate goal here! Thanks for spending time with me on this course. Now it's time for you to take what you've been practicing here and go apply it in the real world.
 
 
 
