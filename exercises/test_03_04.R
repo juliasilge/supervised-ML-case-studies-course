@@ -1,2 +1,2 @@
-test <- function(){success('What an illuminating plot!')}
+test <- function(){success('What an illuminating plot! 📊')}
 

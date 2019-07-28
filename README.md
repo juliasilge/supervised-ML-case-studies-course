@@ -2,8 +2,7 @@
 <img src="static/logo.svg" align="center" width="450px"/>
 </p>
 
-# Welcome to the course repo for **Supervised Machine Learning: Case Studies in R**! 🎉 Y
-
+# Welcome to the course repo for **Supervised Machine Learning: Case Studies in R**! 🎉 
 ou can access [this course for free online](linkylink).
 
 This course approaches supervised machine learning using:

@@ -1,2 +1,2 @@
-test <- function(){success('Great job! You just trained two models with caret.')}
+test <- function(){success('Great job! You just trained two models with caret. 💪')}
 

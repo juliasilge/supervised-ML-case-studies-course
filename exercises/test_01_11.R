@@ -1,2 +1,2 @@
-test <- function(){success('Fabulous! You bootstrapped!')}
+test <- function(){success('Fabulous! 💫 You bootstrapped!')}
 
