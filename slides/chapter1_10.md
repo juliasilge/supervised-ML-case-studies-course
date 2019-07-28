@@ -87,9 +87,9 @@ The difference between linear regression and random forest isn't huge here, but 
 
 ---
 
-# Let's practice!
+# Let's practice!⚡️
 
-No ⚡️ ⚡️t OK, now it's your turn. Let's see if you can fit these kinds of models with bootstrap resampling and find which model performs better.
+Notes: OK, now it's your turn. Let's see if you can fit these kinds of models with bootstrap resampling and find which model performs better.
 
 
 
