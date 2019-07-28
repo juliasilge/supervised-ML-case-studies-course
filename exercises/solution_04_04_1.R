@@ -1,6 +1,5 @@
 library(tidyverse)
 sisters67 <- read_csv("/usr/local/share/datasets/sisters.csv")
-tidy_sisters <- readRDS("/usr/local/share/datasets/c4_tidy_sisters.rds")
 
 # Print the structure of sisters67
 glimpse(sisters67)

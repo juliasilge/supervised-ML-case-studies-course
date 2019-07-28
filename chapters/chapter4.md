@@ -1,7 +1,7 @@
 ---
 title: 'Chapter 4: But what do the nuns think?'
 description:
-  'The last case study uses an extensive survey of Catholic nuns fielded in 1967 to once more put your practical machine learning skills to use. You will predict the age of these religious women from their responses about their beliefs and attitudes.'
+  'The last case study in this course uses an extensive survey of Catholic nuns fielded in 1967 to once more put your practical machine learning skills to use. You will predict the age of these religious women from their responses about their beliefs and attitudes.'
 prev: /chapter3
 next: /chapter1
 type: chapter
@@ -17,7 +17,7 @@ id: 4
 
 <exercise id="2" title="Choosing an appropriate model">
 
-In this case study, you will predict whether a person voted or not in the United States 2016 presidential election from responses that person gave on a survey. The survey focuses on opinions about political and economic topics. What kind of model will you build?
+In this case study, you will predict the age of Catholic nuns from their answers on a survey fielded in 1967 focusing on questions about social and religious issues. What kind of model will you build?
 
 <choice>
 <opt text="Summarization">
@@ -53,9 +53,9 @@ The first step before you start modeling is to explore your data, and we are goi
 
 **Instructions**
 
-- Load the tidyverse package, for functions to manipulate data from [dplyr](https://www.rdocumentation.org/packages/dplyr/) and [tidyr](https://www.rdocumentation.org/packages/tidyr/) and visualize data from [ggplot2](https://www.rdocumentation.org/packages/ggplot2/).
+- Load the tidyverse package, for functions to manipulate data from [dplyr](https://dplyr.tidyverse.org/) and [tidyr](https://tidyr.tidyverse.org/) and visualize data from [ggplot2](https://ggplot2.tidyverse.org/).
 - Call `glimpse()` on `sisters67` to take a look at the structure of the data. Notice how many columns there are, and what their characteristics are.
-- Plot a histogram of age.
+- Plot a histogram of `age`.
 
 <codeblock id="04_03">
 
@@ -67,13 +67,13 @@ You can build a histogram using [`geom_histogram()`](https://www.rdocumentation.
 
 <exercise id="4" title="Tidying the survey data">
 
-Embracing [tidy data principles](http://r4ds.had.co.nz/tidy-data.html) is a powerful option for exploratory data analysis. When your data is tidy, you can quickly iterate in getting to know your data better and making exploratory plots. Let's transform this wide data set into a tidy data frame with one observation per row, and then check out some characteristics of this subset of the original survey.
+Embracing [tidy data principles](https://tidyverse.tidyverse.org/articles/manifesto.html) is a powerful option for exploratory data analysis. When your data is tidy, you can quickly iterate in getting to know your data better and making exploratory plots. Let's transform this wide data set into a tidy data frame with one observation per row, and then check out some characteristics of this subset of the original survey.
 
-Note: There is a column called `sister` in this dataset that is an identifier for each survey respondent. We are removing this column in the exercise using [`select()`](https://www.rdocumentation.org/packages/dplyr/topics/select)._
+Note: There is a column called `sister` in this dataset that is an identifier for each survey respondent. We are removing this column in the exercise using [`select()`](https://dplyr.tidyverse.org/reference/select.html).
 
 **Instructions**
 
-- Use the [`gather()`](https://www.rdocumentation.org/packages/tidyr/topics/gather) function to transform the wide data set with each survey question in a separate column to a narrow, tidy data set with each survey question in a separate row.
+- Use the [`gather()`](https://tidyr.tidyverse.org/reference/gather.html) function to transform the wide data set with each survey question in a separate column to a narrow, tidy data set with each survey question in a separate row.
 - View the structure of this tidy data set using `glimpse()`.
 
 <codeblock id="04_04_1">
@@ -82,9 +82,7 @@ When you implement `... %>% gather(key, value, -age)`, you transform the data se
 
 </codeblock>
 
-Embracing [tidy data principles](http://r4ds.had.co.nz/tidy-data.html) is a powerful option for exploratory data analysis. When your data is tidy, you can quickly iterate in getting to know your data better and making exploratory plots. Let's transform this wide data set into a tidy data frame with one observation per row, and then check out some characteristics of this subset of the original survey.
-
-Note: There is a column called `sister` in this dataset that is an identifier for each survey respondent. We are removing this column in the exercise using [`select()`](https://www.rdocumentation.org/packages/dplyr/topics/select)._
+Next look at question agreement overall.
 
 **Instructions**
 
@@ -111,7 +109,7 @@ Note: There is a column called `sister` in this dataset that is an identifier fo
 
 The tidied version of the survey data that you constructed is available in your environment. You have many options at your fingertips with this tidy data now. Make a plot that shows how agreement on a subset of the questions changes with age.
 
-In this exercise, we are using [`filter()`](https://www.rdocumentation.org/packages/dplyr/topics/filter) to subset the data to just a subset of the questions on the survey to look at.
+In this exercise, we are using [`filter()`](https://dplyr.tidyverse.org/reference/filter.html) to subset the data to just a subset of the questions on the survey to look at.
 
 **Instructions**
 
@@ -122,7 +120,7 @@ In this exercise, we are using [`filter()`](https://www.rdocumentation.org/packa
 <codeblock id="04_06">
 
 - You want to `group_by(key, value)` and `summarize(age)` to find the average age for each ansewr to each question.
-- You can build a line plot using [`geom_line()`](https://www.rdocumentation.org/packages/ggplot2/topics/geom_path).
+- You can build a line plot using [`geom_line()`](https://ggplot2.tidyverse.org/reference/geom_path.html).
 
 </codeblock>
 
@@ -130,7 +128,7 @@ In this exercise, we are using [`filter()`](https://www.rdocumentation.org/packa
 
 <exercise id="7" title="Building a simple linear model">
 
-You have gotten to know this data a bit through exploratory data analysis, and now it's time to build the simplest possible model, in preparation for more complex predictive modeling. For this data set where we want to predict age from the survey responses (age coded as integers), we can build a simple linear model for all our data using only the [`lm()`](https://www.rdocumentation.org/packages/stats/topics/lm) function.
+You have gotten to know this data a bit through exploratory data analysis, and now it's time to build the simplest possible model, in preparation for more complex predictive modeling. For this data set where we want to predict age from the survey responses (coded as integers), we can build a simple linear model for all our data using only the [`lm()`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/lm.html) function.
 
 **Instructions**
 
@@ -162,7 +160,7 @@ We are going to split the data into 60% training, 20% validation, 20% testing.
 
 <codeblock id="04_08">
 
-The [`createDataPartition()`](https://www.rdocumentation.org/packages/caret/topics/createDataPartition) function creates a vector that specifies which examples belong in the training set, or the test set.
+The [`initial_split()`](https://tidymodels.github.io/rsample/reference/initial_split.html) function creates a vector that specifies which examples belong in the training set, or the test set.
 
 </codeblock>
 
@@ -171,8 +169,6 @@ The [`createDataPartition()`](https://www.rdocumentation.org/packages/caret/topi
 <exercise id="9" title="Using your validation set">
 
 This new validation set you just created will be used to...
-
-Hint: The validation data is used after the training data but before the testing data.
 
 <choice>
 <opt text="train your models.">
@@ -205,15 +201,15 @@ The final evaluation is done with the testing set. It is important to do this fi
 
 <exercise id="11" title="Training, validation, and testing data">
 
-In this chapter, you will explore a few new kinds of models. Fun! The `"gbm"` gradient boosting and `"xbgLinear"` extreme gradient boosting models take a very long time to train, so we'll upload trained models for you to evaluate in the next exercises. In this exercise, train a CART model with `"rpart"` to predict age with all the other columns.
+In this chapter, you will explore a few new kinds of models. Fun! 💃The `"gbm"` gradient boosting and `"xbgLinear"` extreme gradient boosting models take a very long time to train, so we'll upload trained models for you to evaluate in the next exercises. In this exercise, train a CART model with `"rpart"` to predict age with all the other columns.
 
 To allow the code in this exercise to evaluate quickly, the training set in your environment only contains 500 rows. (You'll see a warning because the training set here is so small.)
 
 **Instructions**
 
-- Using caret, train a CART model to predict `age` based on all other variables on `training` data. 
+- Using caret, train a CART model to predict `age` based on all other variables on `sisters_train` data. 
 
-When you don't give any specific [`trainControl()`](https://www.rdocumentation.org/packages/caret/topics/trainControl) argument to `train()`, the model training is implemented with a default resampling strategy, 25 bootstrap resamplings.
+When you don't give any specific [`trainControl()`](https://topepo.github.io/caret/model-training-and-tuning.html#basic-parameter-tuning) argument to `train()`, the model training is implemented with a default resampling strategy, 25 bootstrap resamplings.
 
 <codeblock id="04_11">
 
@@ -230,7 +226,7 @@ Three models are available in your environment (trained on the data set in its e
 
 **Instructions**
 
-- Which data set should you use to choose between these three models, `validation` or `testing`? Use that option to create a data frame for comparing the models.
+- Which data set should you use to choose between these three models, `sisters_validate` or `sisters_test`? Use that option to create a data frame for comparing the models.
 
 <codeblock id="04_12">
 
@@ -263,12 +259,12 @@ You just compared the three models you trained, and the `gbm` model performed be
 
 **Instructions**
 
-- Which data set would you use to estimate how your model will perform on new data? You have `training`, `validation`, and `testing` data sets available in your environment. Use the correct one *both* at the beginning of the pipe and within the call to `predict()`.
-- Calculate the RMSE (root mean squared error) using the appropriate function from [yardstick](https://www.rdocumentation.org/packages/yardstick).
+- Which data set would you use to estimate how your model will perform on new data? You have `sisters_train`, `sisters_validate`, and `sisters_test` data sets available in your environment. Use the correct one *both* at the beginning of the pipe and within the call to `predict()`.
+- Calculate the RMSE (root mean squared error) using the appropriate function from [yardstick](https://tidymodels.github.io/yardstick/).
 
 <codeblock id="04_14">
 
-You want to use the `testing` data along with the `rmse()` function.
+You want to use the `sisters_test` data along with the `rmse()` function.
 
 </codeblock>
 

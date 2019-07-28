@@ -4,10 +4,7 @@ type: slides
 
 # Surveying Catholic sisters in 1967
 
-## Julia Silge
-## Data Scientist at Stack Overflow
-
-Notes: You have made it to the last case study of our course and it is a particularly compelling one, where we are going to practice some advanced skills in modeling.
+Notes: You have made it to the last case study of our course! 🎉 It is a particularly compelling one, where we are going to practice some advanced skills in modeling.
 
 ---
 
@@ -19,7 +16,7 @@ Notes: You have made it to the last case study of our course and it is a particu
 
 Notes: In 1967, a Catholic nun named Sister Marie Augusta Neal who had a PhD in sociology from Harvard fielded a survey of all members of Catholic women's religious communities, i.e., nuns. It was a survey with over 600 questions that went out to over 130,000 individual sisters and was fielded in a time of significant change both for the Catholic church and society in general.
 
-This survey is so big with so much data that we're actually only giving you a subset, about one quarter of it, in your environment here on DataCamp during the case study. The whole survey is available online here at this link, and it is pretty interesting so I encourage you to take a look for yourself.
+This survey is so big with so much data that we're actually only giving you a subset, about one quarter of it, in your environment here during the case study. The whole survey is available online and it is pretty interesting, so I encourage you to take a look for yourself.
 
 ---
 
@@ -35,13 +32,13 @@ Agree very much | 5
 
 Check out the survey's [codebook](https://curate.nd.edu/downloads/0v838051f6x).
 
-Notes: There is demographic information in the survey, along with a lot of diverse kinds of questions. About 60 of the survey questions were agreement questions, with a statment of some kind that the survey asked the respondent to agree or disagree with on this scale. The answers are coded as integers from 1 to 5.
+Notes: There is demographic information in the survey, along with a lot of diverse kinds of questions. About 60 of the survey questions were agreement questions, with a *statment* (of some kind) that the survey asked the respondent to agree or disagree with on this scale. The answers are coded as integers from 1 to 5.
 
 ---
 
 # Opinions and attitudes in the 1960s
 
-```out
+```
 > sisters67
 
 # A tibble: 77,112 x 67
@@ -69,7 +66,7 @@ Notes: There is demographic information in the survey, along with a lot of diver
 #   v176 <int>, v177 <int>, v178 <int>, v179 <int>, v180 <int>
 ```
 
-Notes: Where 1 corresponds to "disagree very much" and 5 corresponds to "agree very much". This kind of coding is convenient for our modeling purposes here. The data that you will have available within this case study is just this subset of the survey, that is, the agree/disagree statements, plus age.
+Notes: The integer 1 corresponds to "disagree very much" and 5 corresponds to "agree very much". This kind of coding is convenient for our modeling purposes here. The data that you will have available within this case study is only this subset of the survey: the agree/disagree statements, plus age.
 
 
 ---
@@ -87,16 +84,21 @@ Notes: The original survey question asked for age in bins of 10 years, under 20,
 - "In the past 25 years, this country has moved dangerously close to socialism."
 - "I would rather be called an idealist than a practical person."
 
-Notes: These agreement questions on the survey are mostly social and religious in nature, focusing on what the respondents believes about society, the place of religion within the world, and her own role. I do want to emphasize that this survey was fielded during the 1960s and there are some words used, for example for people of color, that are not used in professional or academic environments today. This is a historical dataset that we can approach and understand as centered in its context.
+Notes: These agreement questions on the survey are mostly social and religious in nature, focusing on what the respondent believes about society, the place of religion within the world, and her own role. 
+
+I do want to point out that this survey was fielded during the 1960s and there are some words used, for example for people of color, that are not used in professional or academic environments today. This is a historical dataset that we can approach and understand as centered in its context.
 
 ---
 
 # Tidy your data
 
+```r
+sisters67 %>%
+    select(-sister) %>%
+    gather(key, value, -age)
+```
+
 ```out
-> sisters67 %>%
-+     select(-sister) %>%
-+     gather(key, value, -age)
 # A tibble: 5,012,280 x 3
      age key   value
    <dbl> <chr> <int>
@@ -113,13 +115,13 @@ Notes: These agreement questions on the survey are mostly social and religious i
 # ... with 5,012,270 more rows
 ```
 
-Notes: In this case study, we are going to spend a bit more effort on exploratory data analysis and you are going to create a tidy version of the survey data with one row per observation. In the original way the data is structured, there is one row per respondent with a separate column for each answer. After you tidy the data, using the function gather(), you will have one row for each combination of respondent and question, a much longer and skinnier dataset. This kind of tidy data structure is well suited to exploratory data analysis.
+Notes: In this case study, we are going to spend a bit more effort on exploratory data analysis. You are going to create a tidy version of the survey data with one row per observation. In the original way the data is structured, there is one row per respondent with a separate column for each answer. After you tidy the data, using the function [`gather()`](https://tidyr.tidyverse.org/reference/gather.html), you will have one row for each combination of respondent and question, a much longer and skinnier dataset. This kind of tidy data structure is well suited to exploratory data analysis.
 
 ---
 
 # Let's practice!
 
-Notes: Let's go learn something about Catholic nuns in the 1960s.
+Notes: Let's go learn something about Catholic nuns in the 1960s. 😳
 
 
 
