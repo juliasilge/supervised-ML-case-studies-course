@@ -14,7 +14,7 @@ Notes: To do a good job with predictive modeling, you need to explore and unders
 # Exploratory data analysis
 
 Elections don't matter |Gay rights are very important |Crime is very important
----	| ---	| ---	| ---	
+---	| ---	| ---	| ---
 Did not vote   |55.3%                  |17.0%                     |66.3%                  
 Voted          |34.1%                  |25.3%                     |57.6%                  
 
@@ -27,7 +27,7 @@ Notes: ...and how much of a difference you see in survey responses between the t
 
 ![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/econtrend.png?raw=true)
 
-Notes: Visualizing your data before modeling is always a good idea. He👍 re, for example, we can see that people who say the economy is getting better are more likely to vote.
+Notes: Visualizing your data before modeling is always a good idea. 👍 Here, for example, we can see that people who say the economy is getting better are more likely to vote.
 
 ---
 
@@ -132,7 +132,7 @@ Notes: If you look at what these survey questions are, you'll see that when a re
 
 ---
 
-# Let's build some models!
+# Let's build some models!✨
 
- ✨Notes: Now that you have explored your data and have some understanding of it, it's time to move into preparing for machine learning.
+Notes: Now that you have explored your data and have some understanding of it, it's time to move into preparing for machine learning.
 
