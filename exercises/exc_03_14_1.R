@@ -1,12 +1,14 @@
 library(tidyverse)
 library(caret)
+library(yardstick)
 
-training <- readRDS("/usr/local/share/datasets/c3_training_full.rds")
+vote_train <- readRDS("/usr/local/share/datasets/c3_training_full.rds")
+vote_test <- readRDS("/usr/local/share/datasets/c3_testing_full.rds")
 vote_glm <- readRDS("/usr/local/share/datasets/vote_glm.rds")
 vote_rf <- readRDS("/usr/local/share/datasets/vote_rf.rds")
-set.seed(123)
 
 # Confusion matrix for logistic regression model on training data
-___(predict(vote_glm, ___),
-                ___$turnout16_2016)
+vote_train %>%
+    mutate(`Logistic regression` = predict(vote_glm, ___)) %>%
+    ___(truth = ___, estimate = "Logistic regression")
 

@@ -7,19 +7,19 @@ type: slides
 Julia Silge
 Data Scientist at Stack Overflow
 
-Notes: To do a good job with predictive modeling, you need to explore and understand your data before you start building machine learning models. When you do exploratory data analysis, you learn important things, such as how imbalanced the class you are trying to predict is.
+Notes: To do a good job with predictive modeling, you need to explore and understand your data before you start building machine learning models. When you do exploratory data analysis, you learn important things, such as how imbalanced the class you are trying to predict is...
 
 ---
 
 # Exploratory data analysis
 
-|Elections don't matter |Gay rights are very important |Crime is very important
-|---	|---	|---	|---	
-|Did not vote   |55.3%                  |17.0%                     |66.3%                  
-|Voted          |34.1%                  |25.3%                     |57.6%                  
+Elections don't matter |Gay rights are very important |Crime is very important
+---	| ---	| ---	| ---	
+Did not vote   |55.3%                  |17.0%                     |66.3%                  
+Voted          |34.1%                  |25.3%                     |57.6%                  
 
 
-Notes: ... and how much of a difference you see in survey responses between the two groups. We see here that people who say that elections don't matter and things stay the same no matter who we vote in were less likely to vote, while people who think that gay rights are important were more likely to vote. We can see differences like this for many of the survey questions.
+Notes: ...and how much of a difference you see in survey responses between the two groups. We see here that people who say that elections don't matter and things stay the same no matter who we vote in were less likely to vote, while people who think that gay rights are important were more likely to vote. We can see differences like this for many of the survey questions.
 
 ---
 
@@ -33,12 +33,13 @@ Notes: Visualizing your data before modeling is always a good idea. Here, for ex
 
 # Fitting a simple model
 
+```r
+simple_glm <- glm(turnout16_2016 ~ .,  family = "binomial", 
+                  data = select(voters, -case_identifier))
+ 
+summary(simple_glm)
+```
 ```out
-> simple_glm <- glm(turnout16_2016 ~ .,  family = "binomial", 
-+                   data = select(voters, -case_identifier))
-> 
-> summary(simple_glm)
-
 Call:
 glm(formula = turnout16_2016 ~ ., family = "binomial", 
     data = select(voters, -case_identifier))
@@ -100,14 +101,15 @@ Notes: Another good step before you start training more complex models is to sta
 
 # Fitting a simple model
 
-```out
-> library(broom)
-> 
-> simple_glm %>%
-+     tidy() %>%
-+     filter(p.value < 0.05) %>%
-+     arrange(desc(estimate))
+```r
+library(broom)
+ 
+tidy(simple_glm) %>%
+    filter(p.value < 0.05) %>%
+    arrange(desc(estimate))
+```
 
+```out
                    term    estimate  std.error statistic      p.value
 1           (Intercept)  2.45703562 0.73272138  3.353301 7.985370e-04
 2          imiss_a_2016  0.39712084 0.13898678  2.857256 4.273207e-03

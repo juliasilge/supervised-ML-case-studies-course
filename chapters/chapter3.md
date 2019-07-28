@@ -53,7 +53,7 @@ To do a good job with predictive modeling, you need to explore your dataset to u
  
 **Instructions**
 
-- Load [tidyverse](https://www.rdocumentation.org/packages/tidyverse/).
+- Load [tidyverse](https://tidyverse.tidyverse.org/).
 - Print `voters` to check out the data.
 - In the call to `count()`, use the appropriate variable to see how many examples you have of those who voted and did not vote.
 
@@ -96,7 +96,7 @@ To make a histogram, use [`geom_histogram()`](https://www.rdocumentation.org/pac
 
 <exercise id="5" title="Imbalanced data">
 
-This is real data from the real world, so you need to think through important modeling concerns, including how imbalanced the class is that you want to predict. The `voters` data set is available in your environment. What is your assessment?
+This is real data from the real world, so you need to think through important modeling concerns, including how imbalanced the class is that you want to predict. You have been exploring this data set in the past few exercises. What is your assessment?
 
 <choice>
 <opt text="This data set is imbalanced." correct="true">
@@ -126,7 +126,7 @@ Start off a predictive modeling project by building the simplest possible model,
 
 **Instructions**
 
-- Use [`select()`](https://www.rdocumentation.org/packages/dplyr/topics/select) to remove the column `case_identifier` from `voters` and assign it to `voters_select`. 
+- Use [`select()`](https://dplyr.tidyverse.org/reference/select.html) to remove the column `case_identifier` from `voters` and assign it to `voters_select`. 
 - Fit a logistic regression model to predict `turnout16_2016` explained by all the other variables in `voters_select`.
 
 <codeblock id="03_06">
@@ -151,13 +151,13 @@ It's time to split your data into training and testing sets, in the same way tha
 
 **Instructions**
 
-- Load the caret package, for using the functions to split your data (and for the models you are about to train).
-- Use the correct function to create a data partition that divides `voters_select` into 80%/20% sections.
-- Assign the 80% partition to `training` and the 20% partition to `testing`.
+- Load the rsample package, for using the functions to split your data.
+- Use the correct function to create a data split that divides `voters_select` into 80%/20% sections.
+- Assign the 80% partition to `vote_train` and the 20% partition to `vote_test`.
 
 <codeblock id="03_08">
 
-The `createDataPartition()` function sets up the data partitioning, and then `in_train` tells you which observations should be *in* your training set and `-in_train` tells you which observations should be *out* of your training set, i.e., in the testing set.
+The `initial_split()` function sets up the data partitioning, and then you can use that as input to call `training()` and `testing()`.
 
 </codeblock>
 
@@ -165,11 +165,11 @@ The `createDataPartition()` function sets up the data partitioning, and then `in
 
 <exercise id="9" title="Upsampling for imbalanced data">
 
-It's time to start training your predictive models using caret's [train()](https://www.rdocumentation.org/packages/caret/versions/topics/train) function. This survey data set is imbalanced, with many more examples of people who voted than people who did not. To build a model that performs better, you should deal with this class imbalance. In this exercise, use upsampling, the same approach we used in the last case study.
+It's time to start training your predictive models using caret's [train()](https://topepo.github.io/caret/model-training-and-tuning.html#model-training-and-parameter-tuning) function. This survey data set is imbalanced, with many more examples of people who said they voted than people who did not. To build a model that performs better, you should deal with this class imbalance. In this exercise, use upsampling, the same approach we used in the last case study.
 
 **Instructions**
 
-Build a logistic regression model with no resampling of data, but add the specification for upsampling. If you can't remember, check out the documentation for [`trainControl()`](https://www.rdocumentation.org/packages/caret/topics/trainControl).
+Build a logistic regression model with no resampling of data, but add the specification for upsampling. If you can't remember, learn more about [`trainControl()`](https://topepo.github.io/caret/model-training-and-tuning.html#control).
 
 <codeblock id="03_09">
 
@@ -214,7 +214,7 @@ If you divide your data into 5 subsets, that would be called 5-fold cross-valida
 
 <exercise id="12" title="Training models with cross-validation">
 
-You can build models both with the upsampling you implemented before, *and* the cross-validation we just discussed. Here, try 10-fold cross-validation repeated 5 times.
+You can build models both with the upsampling you implemented before, *and* the cross-validation we just discussed. Here, try 10-fold cross-validation repeated 2 times.
 
 To allow the code in this exercise to evaluate in a short time, the training set in your environment is 2% of the real training set. Expect to see some warnings because of this.
 
@@ -231,7 +231,7 @@ Your call to `trainControl()` should look like `trainControl(method = "repeatedc
 
 **Instructions**
 
-Now, train a Random forest model by implementing 10-fold cross validation 2 times.
+Now, train a random forest model by implementing 10-fold cross validation 2 times.
 
 <codeblock id="03_12_2">
 
@@ -260,8 +260,8 @@ Print the confusion matrix for the logistic regression model on the training dat
 
 <codeblock id="03_14_1">
 
-- Use the `confusionMatrix()` function to build a confusion matrix. 
-- We aren't evaluating your models on the testing data yet, so use the `training` data for all the arguments here.
+- Use the `conf_mat()` function to build a confusion matrix. 
+- We aren't evaluating your models on the testing data yet, so use the `vote_train` data for all the arguments here.
 
 </codeblock>
 
@@ -271,7 +271,7 @@ Print the confusion matrix for the random forest model (`vote_rf`) on the traini
 
 <codeblock id="03_14_2">
 
-The first argument to `confusionMatrix()` is the vector of `predict`ed values.
+Use `mutate()` to make a new column of `predict`ed values.
 
 </codeblock>
 
@@ -286,23 +286,24 @@ Now, let's evaluate how the models perform on the testing data. This is what you
 Print the confusion matrix for the logistic regression model on the training data.
 
 - Generate a confusion matrix for the logistic regression model (`vote_glm`). 
-- Instead of the `training` data, now use the `testing` data.
+- Instead of the `vote_train` data, now use the `vote_test` data.
 
 <codeblock id="03_15_1">
 
-- Generate a confusion matrix for the logistic regression model (`vote_glm`). 
-- Instead of the `training` data, now use the `testing` data.
+- Find the predictions using `predict(vote_glm, vote_test)`.
+- Choose the real voting status for the `truth` argument to `conf_mat()`, and the predicted voting status for `estimate`. 
 
 </codeblock>
 
 **Instructions**
 
 - Generate a confusion matrix for the random forest model (`vote_rf`). 
-- Instead of the `training` data, now use the `testing` data.
+- Instead of the `vote_train` data, now use the `vote_test` data.
 
 <codeblock id="03_15_2">
 
-The first argument to the `confusionMatrix()` function is the vector of `predict`ed values and the second is the vector of "true" values.
+- Use `mutate()` to make the new column with predicted values.
+- Remember that `conf_mat()` is the function to find a confusion matrix.
 
 </codeblock>
 
@@ -314,14 +315,7 @@ You have just spent a whole chapter of this course exploring how to predict vote
 
 Which model performed better on the **testing** data?
 
-<choice>
-<opt text="randomly divide your training data into 50 subsets and train on 49 at a time (validating on the other subset), iterating through all 50 subsets for validation.">
-
-If you divide your data into 50 subsets, that would be called 50-fold cross-validation. For most practical situations, 50 folds is overkill.
-
-</opt>
-
-<opt text="Random forest" correct="true">
+<opt text="Random forest">
 
 Random forest models are very powerful and the random forest model had higher accuracy than the logistic regression model on the training data, but on the testing data, the random forest model could not identify any of the people who voted.
 

@@ -1,3 +1,6 @@
+library(tidyverse)
+voters <- read_csv("/usr/local/share/datasets/voters.csv")
+
 # How do the reponses on the survey vary with voting behavior?
 voters %>%
     group_by(turnout16_2016) %>%

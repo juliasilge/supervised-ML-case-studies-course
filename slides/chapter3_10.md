@@ -27,7 +27,7 @@ Partitioning your data into subsets and using one subset for validation
 - `method = "repeatedcv"`
 
 
-Notes: In caret, you implement this within the call to trainControl() with method = cv or method = repeatedcv. Let's look at this in more detail.
+Notes: In caret, you implement this within the call to `trainControl()` with `method = "cv"` or `method = "repeatedcv"`. Let's look at this in more detail.
 
 ---
 
@@ -53,7 +53,9 @@ Notes: We do it again using another of our folds as the validation fold, trainin
 
 ![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/crossvalidation4.png?raw=true)
 
-Notes: ... until we do them all, and have trained the model 10 times, on 10 different subsets of the data, with 10 different validation sets. We then combine all those models together to get one, better performing model. This procedure I just described is one round of 10-fold cross-validation. It's typical practice to do this more than once, perhaps 5 times. In that case, you repeat the whole process of 10-fold cross-validation 5 times, with 5 different random partitionings into 10 subsets. This is an approach to training models that has demonstrated good performance, 
+Notes: ... until we do them all, and have trained the model 10 times, on 10 different subsets of the data, with 10 different validation sets. We then combine all those models together to get one, better performing model. 
+
+This procedure I just described is **one round of 10-fold cross-validation**. It's typical practice to do this more than once, perhaps 5 times. In that case, you repeat the whole process of 10-fold cross-validation 5 times, with 5 different random partitionings into 10 subsets. This is an approach to training models that has demonstrated good performance.
 
 ---
 
@@ -62,7 +64,7 @@ Notes: ... until we do them all, and have trained the model 10 times, on 10 diff
 - Repeated cross-validation can take a long time
 - Parallel processing can be worth it
 
-Notes: ... but it can be computationally expensive. It does lend itself to parallel processing, since the repeats don't depend on each other, so this is a situation where it likely is worth getting your computer set up to use all the cores you have.
+Notes: However, it can be computationally expensive. It does lend itself to parallel processing, since the repeats don't depend on each other, so this is a situation where it likely is worth getting your computer set up to use all the cores you have.
 
 ---
 

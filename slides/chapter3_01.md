@@ -4,20 +4,6 @@ type: slides
 
 # Predicting voter turnout from survey data
 
-Julia Silge
-Data Scientist at Stack Overflow
-
-Notes: Hi! I'm Julia Silge, and welcome to "Case Studies in Supervised Learning in R". Supervised machine learning, otherwise known as predictive modeling, is a powerful tool for using data to make predictions about the world around us. 
-
-
----
-
-# In this course, you will...
-
-- use exploratory data analysis to prepare for predictive modeling
-- explore which modeling approaches to use for different kinds of data
-- practice implementing supervised machine learning for classification and regression
-
 Notes: So far, you have built one regression model and one classification model, and now it's time for our third case study. In this case study, we are going to use a survey of voters in the United States to predict voter turnout, whether someone did or did not vote, based on their responses on the survey.
 
 ---
@@ -42,7 +28,7 @@ Notes: This data comes from a research collaboration of about two dozen analysts
   - The environment
   - Gay rights
 
-Notes: There are a lot of questions on this survey, so many that I can't go over them all with you in this video, but they are all about people's opinions on political and economic topics. The survey asks respondents how they feel about where the US economy is headed, whether they think their vote makes a difference, and how important various issues are to them.
+Notes: There are a lot of questions on this survey, so many that I can't go over them all with you in this course, but they are all about people's opinions on political and economic topics. The survey asks respondents how they feel about where the US economy is headed, whether they think their vote makes a difference, and how important various issues are to them.
 
 ---
 
@@ -82,7 +68,7 @@ Notes: There are a lot of questions on this survey, so many that I can't go over
 ```
 
 
-Notes: The dataset that you have to work with in these exercises has about 40 variables, or questions on the survey, and the variable "turnout16_2016" tells us whether that respondent said they voted in the 2016 election or not. Notice that the answers to the survey questions have been coded as integers. This is actually pretty convenient for modeling, but in a situation like this, you need to look at a data dictionary or guide to understand what the integers mean.
+Notes: The dataset that you have to work with in these exercises has about 40 variables, or questions on the survey, and the variable `turnout16_2016` tells us whether that respondent said they voted in the 2016 election or not. Notice that the answers to the survey questions have been coded as integers. This is actually pretty convenient for modeling, but in a situation like this, you need to look at a data dictionary or guide to understand what the integers mean.
 
 ---
 

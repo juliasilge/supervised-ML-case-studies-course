@@ -4,11 +4,12 @@ voters_select <- read_csv("/usr/local/share/datasets/voters.csv") %>%
     select(-case_identifier)
 
 # Load caret
-library(caret)
+library(rsample)
 
 # Split data into training and testing sets
 set.seed(1234)
-in_train <- createDataPartition(voters_select$turnout16_2016, 
-                                p = 0.8, list = FALSE)
-training <- voters_select[in_train, ]
-testing <- voters_select[-in_train, ]
+vote_split <- voters_select %>%
+    initial_split(p = 0.8,
+                  strata = "turnout16_2016")
+vote_train <- training(vote_split)
+vote_test <- testing(vote_split)
