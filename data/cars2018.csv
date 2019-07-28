@@ -1,0 +1,1145 @@
+Model,Model Index,Displacement,Cylinders,Gears,Transmission,MPG,Aspiration,Lockup Torque Converter,Drive,Max Ethanol,Recommended Fuel,Intake Valves Per Cyl,Exhaust Valves Per Cyl,Fuel injection
+Acura NSX,57,3.5,6,9,Manual,21,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+ALFA ROMEO 4C,410,1.8,4,6,Manual,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Audi R8 AWD,65,5.2,10,7,Manual,17,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi R8 RWD,71,5.2,10,7,Manual,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi R8 Spyder AWD,66,5.2,10,7,Manual,17,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi R8 Spyder RWD,72,5.2,10,7,Manual,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi TT Roadster quattro,46,2,4,6,Manual,26,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+BMW M4 DTM Champions Edition,488,3,6,7,Manual,20,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Bugatti Chiron,38,8,16,7,Manual,11,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+Chevrolet CORVETTE,278,6.2,8,8,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet CORVETTE,223,6.2,8,8,Automatic,16,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet CORVETTE,285,6.2,8,7,Manual,18,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet CORVETTE,276,6.2,8,7,Manual,19,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+"Ferrari North America, Inc. 488 gtb",142,3.9,8,7,Manual,18,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+"Ferrari North America, Inc. 488 gtb",143,3.9,8,7,Manual,18,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+"Ferrari North America, Inc. 488 Spider",145,3.9,8,7,Manual,18,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+"Ferrari North America, Inc. 488 Spider",144,3.9,8,7,Manual,18,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+"Ferrari North America, Inc. 812 Superfast",154,6.5,12,7,Manual,13,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+FIAT 124 Spider,405,1.4,4,6,Automatic,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+FIAT 124 Spider,406,1.4,4,6,Manual,30,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford FORD GT,322,3.5,6,7,Manual,14,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+Jaguar F-TYPE Convertible,185,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE Convertible,161,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE Convertible Manual,171,3,6,6,Manual,19,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE Coupe,184,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE Coupe,160,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE Coupe Manual,170,3,6,6,Manual,19,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE R AWD Convertible,159,5,8,8,Automatic,18,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE R AWD Coupe,158,5,8,8,Automatic,18,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE S AWD Convertible,165,3,6,8,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE S AWD Coupe,164,3,6,8,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE S Convertible,163,3,6,8,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE S Convertible Manual,173,3,6,6,Manual,18,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE S Coupe,162,3,6,8,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-TYPE S Coupe Manual,172,3,6,6,Manual,18,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Lamborghini Aventador Coupe,31,6.5,12,7,Manual,12,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+Lamborghini Aventador Roadster,33,6.5,12,7,Manual,12,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+Lamborghini Aventador S Coupe,30,6.5,12,7,Manual,12,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+Lamborghini Aventador S Roadster,32,6.5,12,7,Manual,12,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+Lamborghini Huracan,67,5.2,10,7,Manual,16,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Lamborghini Huracan 2WD,69,5.2,10,7,Manual,16,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Lamborghini Huracan Spyder,68,5.2,10,7,Manual,15,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Lamborghini Huracan Spyder 2WD,70,5.2,10,7,Manual,16,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+MAZDA MX-5,14,2,4,6,Automatic,29,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+MAZDA MX-5,13,2,4,6,Manual,29,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mercedes-Benz AMG GT (coupe),191,4,8,7,Manual,18,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GT (roadster),234,4,8,7,Manual,18,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GT C (coupe),192,4,8,7,Manual,17,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GT C (roadster),235,4,8,7,Manual,17,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GT R (coupe),194,4,8,7,Manual,17,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GT S (coupe),190,4,8,7,Manual,18,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG SL 63,226,5.5,8,7,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG SL 65,228,6,12,7,Automatic,16,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,1,Multipoint/sequential ignition
+Mercedes-Benz AMG SLC 43,239,3,6,9,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz SL 450,223,3,6,9,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz SL 550,222,4.7,8,9,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz SLC 300,232,2,4,9,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+NISSAN 370Z,56,3.7,6,7,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+NISSAN 370Z,57,3.7,6,6,Manual,21,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+NISSAN 370Z Roadster,58,3.7,6,7,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+NISSAN 370Z Roadster,59,3.7,6,6,Manual,20,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+Porsche 911 GT3,132,4,6,7,Manual,17,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 GT3,131,4,6,6,Manual,16,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Boxster,202,2,4,7,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Boxster,201,2,4,6,Manual,24,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Boxster GTS,224,2.5,4,7,Manual,22,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Boxster GTS,223,2.5,4,6,Manual,21,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Boxster S,222,2.5,4,7,Manual,24,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Boxster S,221,2.5,4,6,Manual,22,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Cayman,212,2,4,7,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Cayman,211,2,4,6,Manual,24,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Cayman GTS,234,2.5,4,7,Manual,22,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Cayman GTS,233,2.5,4,6,Manual,21,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Cayman S,232,2.5,4,7,Manual,24,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Cayman S,231,2.5,4,6,Manual,22,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+"Aston Martin Lagonda Ltd Vanquish, S and Zagato",4,6,12,8,Automatic,16,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+"Ferrari North America, Inc. California T",250,3.9,8,7,Manual,19,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+"Ferrari North America, Inc. California T",249,3.9,8,7,Manual,18,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+"Ferrari North America, Inc. GTC4Lusso",152,6.3,12,7,Manual,13,Naturally Aspirated,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+"Ferrari North America, Inc. GTC4Lusso T",162,3.9,8,7,Manual,17,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mini COOPER CONVERTIBLE,36,1.5,3,6,Automatic,30,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER CONVERTIBLE,37,1.5,3,6,Manual,32,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S CONVERTIBLE,58,2,4,6,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S CONVERTIBLE,59,2,4,6,Manual,26,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini JOHN COOPER WORKS CONVERTIBLE,82,2,4,6,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini JOHN COOPER WORKS CONVERTIBLE,83,2,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Porsche 911 Carrera,102,3,6,7,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera,101,3,6,7,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4,110,3,6,7,Manual,24,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4,109,3,6,7,Manual,23,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4 Cabriolet,112,3,6,7,Manual,24,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4 Cabriolet,111,3,6,7,Manual,22,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4 GTS,126,3,6,7,Manual,22,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4 GTS,125,3,6,7,Manual,21,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4 GTS Cabriolet,128,3,6,7,Manual,22,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4 GTS Cabriolet,127,3,6,7,Manual,21,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4S,114,3,6,7,Manual,24,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4S,113,3,6,7,Manual,23,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4S Cabriolet,116,3,6,7,Manual,24,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera 4S Cabriolet,115,3,6,7,Manual,22,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera Cabriolet,104,3,6,7,Manual,24,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera Cabriolet,103,3,6,7,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera GTS,122,3,6,7,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera GTS,121,3,6,7,Manual,21,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera GTS Cabriolet,124,3,6,7,Manual,22,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera GTS Cabriolet,123,3,6,7,Manual,21,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera S,106,3,6,7,Manual,24,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera S,105,3,6,7,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera S Cabriolet,108,3,6,7,Manual,24,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Carrera S Cabriolet,107,3,6,7,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Targa 4,118,3,6,7,Manual,24,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Targa 4,117,3,6,7,Manual,22,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Targa 4 GTS,130,3,6,7,Manual,22,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Targa 4 GTS,129,3,6,7,Manual,21,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Targa 4S,120,3,6,7,Manual,24,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Targa 4S,119,3,6,7,Manual,22,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Turbo,521,3.8,6,7,Manual,21,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Turbo Cabriolet,522,3.8,6,7,Manual,21,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Turbo S,523,3.8,6,7,Manual,21,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Turbo S Cabriolet,524,3.8,6,7,Manual,21,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche 911 Turbo S Exclusive,525,3.8,6,7,Manual,19,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Subaru BRZ,2,2,4,6,Automatic,27,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Subaru BRZ,1,2,4,6,Manual,24,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Subaru BRZ tS,31,2,4,6,Manual,23,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Aston Martin Lagonda Ltd Rapide S,5,6,12,8,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+Audi A3,83,2,4,7,Manual,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Audi A3 Cabriolet,84,2,4,7,Manual,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Audi A3 Cabriolet quattro,49,2,4,6,Manual,25,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Audi A3 quattro,48,2,4,6,Manual,27,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Audi A5 Cabriolet quattro,3,2,4,7,Manual,27,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A5 quattro,5,2,4,7,Manual,27,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A5 quattro,16,2,4,6,Manual,27,Turbocharged/Supercharged,N,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi RS3,25,2.5,5,7,Manual,22,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi RS5,73,2.9,6,8,Manual,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi S3,59,2,4,7,Manual,25,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi S5,8,3,6,8,Manual,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi S5 Cabriolet,10,3,6,8,Manual,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi TT Coupe quattro,47,2,4,6,Manual,26,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Audi TT RS,26,2.5,5,7,Manual,22,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi TTS Coupe,23,2,4,6,Manual,25,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Bentley Continental GT Convertible,75,6,12,8,Automatic,14,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+Bentley Continental Supersports Convt,77,6,12,8,Automatic,14,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+BMW 230i Convertible,204,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 230i Coupe,200,2,4,8,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 230i Coupe,201,2,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 230i xDrive Convertible,206,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 230i xDrive Coupe,202,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 430i Convertible,404,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 430i xDrive Convertible,406,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 440i Convertible,414,3,6,8,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 440i xDrive Convertible,416,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 640i Convertible,641,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 640i xDrive Convertible,645,3,6,8,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 650i Convertible,654,4.4,8,8,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 650i xDrive Convertible,656,4.4,8,8,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M2,281,3,6,7,Manual,22,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M2,280,3,6,6,Manual,21,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M240i Convertible,238,3,6,8,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M240i Convertible,239,3,6,6,Manual,22,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M240i Coupe,235,3,6,8,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M240i Coupe,236,3,6,6,Manual,22,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M240i xDrive Convertible,240,3,6,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M240i xDrive Coupe,237,3,6,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M4 Convertible,483,3,6,7,Manual,19,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M4 Convertible,482,3,6,6,Manual,20,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+BMW M6 Convertible,663,4.4,8,7,Manual,16,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M6 Convertible,662,4.4,8,6,Manual,17,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Buick CASCADA,238,1.6,4,6,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet CAMARO,243,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Chevrolet CAMARO,255,2,4,6,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Chevrolet CAMARO,92,3.6,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet CAMARO,360,3.6,6,6,Manual,20,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet CAMARO,158,6.2,8,10,Automatic,15,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet CAMARO,157,6.2,8,8,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet CAMARO,152,6.2,8,6,Manual,16,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet CAMARO,153,6.2,8,6,Manual,19,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet SPARK,83,1.4,4,1,CVT,33,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet SPARK,85,1.4,4,5,Manual,33,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet SPARK ACTIV,84,1.4,4,1,CVT,33,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet SPARK ACTIV,86,1.4,4,5,Manual,32,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford Fiesta FWD,67,1.6,4,6,Manual,31,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford Fiesta FWD,68,1.6,4,5,Manual,30,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford MUSTANG,212,2.3,4,10,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford MUSTANG,34,2.3,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford MUSTANG,225,5,8,10,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford MUSTANG,84,5,8,6,Manual,18,Naturally Aspirated,N,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford MUSTANG CONVERTIBLE,196,2.3,4,10,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford MUSTANG CONVERTIBLE,36,2.3,4,6,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford MUSTANG CONVERTIBLE,235,5,8,10,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford MUSTANG PERFORMANCE PACKAGE,223,2.3,4,10,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford MUSTANG PERFORMANCE PACKAGE,35,2.3,4,6,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford SHELBY GT350 MUSTANG,90,5.2,8,6,Manual,16,Naturally Aspirated,N,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+INFINITI Q60,163,2,4,7,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q60,136,3,6,7,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q60 AWD,164,2,4,7,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q60 AWD,233,3,6,7,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q60 AWD RED SPORT,230,3,6,7,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q60 RED SPORT,138,3,6,7,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS LC 500,50,5,8,10,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS LC 500h,19,3.5,6,10,CVT,30,Naturally Aspirated,N,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+MASERATI GRANTURISMO,21,4.7,8,6,Automatic,16,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+MASERATI GRANTURISMO CONVERTIBLE,25,4.7,8,6,Automatic,15,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+Mercedes-Benz AMG C 43 4MATIC (convertible),314,3,6,9,Automatic,22,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG C 43 4MATIC (coupe),313,3,6,9,Automatic,22,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG C 63 (convertible),115,4,8,7,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG C 63 (coupe),117,4,8,7,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG C 63 S (convertible),114,4,8,7,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG C 63 S (coupe),116,4,8,7,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz C 300 (convertible),128,2,4,9,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz C 300 (Coupe),118,2,4,9,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz C 300 4MATIC (convertible),127,2,4,9,Automatic,25,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz C 300 4MATIC (Coupe),119,2,4,9,Automatic,25,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz E 400 (convertible),143,3,6,9,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz E 400 (coupe),134,3,6,9,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz E 400 4MATIC (convertible),144,3,6,9,Automatic,22,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz E 400 4MATIC (coupe),135,3,6,9,Automatic,22,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mini COOPER HARDTOP 2 DOOR,32,1.5,3,6,Automatic,30,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER HARDTOP 2 DOOR,33,1.5,3,6,Manual,32,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER HARDTOP 4 DOOR,34,1.5,3,6,Automatic,30,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER HARDTOP 4 DOOR,35,1.5,3,6,Manual,32,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S HARDTOP 2 DOOR,54,2,4,6,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S HARDTOP 2 DOOR,55,2,4,6,Manual,26,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S HARDTOP 4 DOOR,56,2,4,6,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S HARDTOP 4 DOOR,57,2,4,6,Manual,26,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini JOHN COOPER WORKS HARDTOP,84,2,4,6,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini JOHN COOPER WORKS HARDTOP,85,2,4,6,Manual,26,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+NISSAN GT-R,71,3.8,6,6,Manual,18,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+TOYOTA YARIS iA,203,1.5,4,6,Automatic,35,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA YARIS iA,202,1.5,4,6,Manual,34,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Beetle Convertible,43,2,4,6,Automatic,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Beetle Dune Convertible,41,2,4,6,Automatic,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Acura ILX,39,2.4,4,8,Manual,29,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Acura TLX AWD,6,3.5,6,9,Automatic,24,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Acura TLX AWD A-SPEC,7,3.5,6,9,Automatic,23,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Acura TLX FWD,3,2.4,4,8,Manual,27,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Acura TLX FWD,4,3.5,6,9,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Acura TLX FWD A-SPEC,5,3.5,6,9,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A4 quattro,6,2,4,7,Manual,27,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A4 quattro,15,2,4,6,Manual,27,Turbocharged/Supercharged,N,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A4 Ultra,55,2,4,7,Manual,31,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi Q3,22,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi Q3 quattro,21,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi S4,7,3,6,8,Manual,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 320i,320,2,4,8,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 320i,321,2,4,6,Manual,27,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 320i xDrive,322,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 330i,300,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 330i,301,2,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 330i xDrive,304,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 340i,335,3,6,8,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 340i,336,3,6,6,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 340i xDrive,339,3,6,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 340i xDrive,340,3,6,6,Manual,23,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 430i Coupe,400,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 430i Coupe,401,2,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 430i Gran Coupe,408,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 430i xDrive Coupe,402,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 430i xDrive Gran Coupe,409,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 440i Coupe,410,3,6,8,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 440i Coupe,411,3,6,6,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 440i Gran Coupe,455,3,6,8,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 440i xDrive Coupe,412,3,6,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 440i xDrive Coupe,413,3,6,6,Manual,23,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 440i xDrive Gran Coupe,457,3,6,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 640i Gran Coupe,642,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 640i xDrive Gran Coupe,644,3,6,8,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 650i Gran Coupe,657,4.4,8,8,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 650i xDrive Gran Coupe,658,4.4,8,8,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW Alpina B6 xDrive Gran Coupe,659,4.4,8,8,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M3,381,3,6,7,Manual,20,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M3,380,3,6,6,Manual,20,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+BMW M4 Coupe,481,3,6,7,Manual,20,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M4 Coupe,480,3,6,6,Manual,20,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+BMW M6 Gran Coupe,665,4.4,8,7,Manual,16,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M6 Gran Coupe,664,4.4,8,6,Manual,17,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Cadillac ATS,109,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Cadillac ATS,415,2,4,6,Manual,23,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Cadillac ATS,410,3.6,6,8,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac ATS AWD,403,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Cadillac ATS AWD,66,3.6,6,8,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac ATS-V,396,3.6,6,8,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Cadillac ATS-V,409,3.6,6,6,Manual,19,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Chevrolet CRUZE,11,1.4,4,6,Automatic,33,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet CRUZE,15,1.4,4,6,Manual,32,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet CRUZE PREMIER,12,1.4,4,6,Automatic,33,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet SONIC,55,1.4,4,6,Automatic,30,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet SONIC,57,1.4,4,6,Manual,32,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet SONIC,50,1.8,4,6,Automatic,28,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet SONIC,52,1.8,4,5,Manual,29,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford Fiesta ST FWD,66,1.6,4,6,Manual,29,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FOCUS FWD,181,1,3,6,Automatic,31,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FOCUS FWD,182,1,3,6,Manual,34,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FOCUS FWD,174,2,4,6,Manual,31,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FOCUS FWD,176,2,4,6,Manual,28,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FOCUS FWD,178,2,4,5,Manual,28,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 2Dr,47,1.5,4,1,CVT,35,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 2Dr,46,1.5,4,6,Manual,35,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 2Dr,49,1.5,4,6,Manual,32,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 2Dr,43,2,4,1,CVT,34,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Honda CIVIC 2Dr,42,2,4,6,Manual,32,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+HYUNDAI MOTOR COMPANY Accent,35,1.6,4,6,Automatic,32,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Accent,36,1.6,4,6,Manual,31,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+INFINITI Q50 HYBRID,142,3.5,6,7,Automatic,29,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+INFINITI Q50 HYBRID AWD,144,3.5,6,7,Automatic,28,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+INFINITI QX30,171,2,4,7,Manual,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI QX30 AWD,173,2,4,7,Manual,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Jaguar XE,760,2,4,8,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XE,763,3,6,8,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XE (296 Hp),767,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XE AWD,771,2,4,8,Automatic,28,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XE AWD,764,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XE AWD (296 Hp),772,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Rio,28,1.6,4,6,Automatic,32,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Rio,29,1.6,4,6,Manual,32,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+LEXUS GS F,72,5,8,8,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS IS 300,76,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS IS 300 AWD,119,3.5,6,6,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS IS 350,120,3.5,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS IS 350 AWD,121,3.5,6,6,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Direct ignition
+MAZDA CX-3 2WD,9,2,4,6,Automatic,31,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+MAZDA CX-3 4WD,10,2,4,6,Automatic,29,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+MAZDA MAZDA2,2,1.5,4,6,Automatic,35,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+MAZDA MAZDA2,1,1.5,4,6,Manual,34,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+MAZDA MAZDA3 4-Door,4,2,4,6,Automatic,31,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+MAZDA MAZDA3 4-Door,3,2,4,6,Manual,31,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+MAZDA MAZDA3 4-Door,7,2.5,4,6,Automatic,30,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Mercedes-Benz AMG C 43 4MATIC,312,3,6,9,Automatic,23,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG C 63,108,4,8,7,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG C 63 S,110,4,8,7,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG CLA 45 4MATIC,210,2,4,7,Manual,26,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG CLS 63 S 4MATIC,329,5.5,8,7,Automatic,18,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz C 300,113,2,4,9,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz C 300 4MATIC,106,2,4,9,Automatic,26,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz CLA 250,240,2,4,7,Manual,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz CLA 250 4MATIC,212,2,4,7,Manual,27,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz CLA 250 4MATIC,36,2,4,7,Manual,27,Turbocharged/Supercharged,Y,4-Wheel Drive,85,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz CLS 550,319,4.7,8,9,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz CLS 550 4MATIC,320,4.7,8,9,Automatic,20,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mitsubishi Motors Corporation MIRAGE,102,1.2,3,1,CVT,39,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Mitsubishi Motors Corporation MIRAGE,101,1.2,3,5,Manual,36,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Mitsubishi Motors Corporation MIRAGE G4,104,1.2,3,1,CVT,37,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Mitsubishi Motors Corporation MIRAGE G4,103,1.2,3,5,Manual,35,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN VERSA,103,1.6,4,4,Automatic,29,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN VERSA,101,1.6,4,1,CVT,34,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN VERSA,102,1.6,4,5,Manual,30,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Rolls-Royce Motor Cars Limited Dawn,8,6.6,12,8,Automatic,14,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Subaru WRX,25,2,4,8,CVT,21,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Subaru WRX,24,2,4,6,Manual,23,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Subaru WRX,26,2.5,4,6,Manual,19,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+Subaru WRX STI TYPE RA,32,2.5,4,6,Manual,18,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+TOYOTA C-HR,7,2,4,7,CVT,29,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA PRIUS c,18,1.5,4,1,CVT,46,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA YARIS,1,1.5,4,4,Automatic,32,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA YARIS,2,1.5,4,5,Manual,33,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Volkswagen Beetle,42,2,4,6,Automatic,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Beetle Dune,40,2,4,6,Automatic,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Golf R,45,2,4,7,Manual,25,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Volkswagen Golf R,44,2,4,6,Manual,24,Turbocharged/Supercharged,N,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Volkswagen GTI,79,2,4,6,Manual,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen GTI,78,2,4,6,Manual,28,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Jetta,50,1.4,4,6,Automatic,32,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Jetta,51,1.4,4,5,Manual,33,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Jetta,52,1.8,4,6,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Jetta,53,2,4,6,Manual,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC S60 AWD",107,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC S60 AWD",101,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+"Volvo Cars of North America, LLC S60 CC AWD",116,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC S60 FWD",87,2,4,8,Automatic,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC S60 Inscription AWD",106,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC S60 Inscription FWD",32,2,4,8,Automatic,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC S60 Polestar AWD",111,2,4,8,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Acura RLX,26,3.5,6,7,Manual,28,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Acura RLX,25,3.5,6,10,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+ALFA ROMEO Giulia,400,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+ALFA ROMEO Giulia,401,2.9,6,8,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+ALFA ROMEO Giulia AWD,402,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A5 Sportback quattro,4,2,4,7,Manual,27,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A6,2,2,4,7,Manual,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A6 quattro,1,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A6 quattro,34,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A7 quattro,35,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi RS7,62,4,8,8,Automatic,17,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi S5 Sportback,9,3,6,8,Manual,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi S6,60,4,8,7,Manual,18,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi S7,61,4,8,7,Manual,18,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi S8,63,4,8,8,Automatic,18,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Bentley Flying Spur,57,4,8,8,Automatic,16,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Bentley Flying Spur,76,6,12,8,Automatic,14,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+Bentley Mulsanne,64,6.8,8,8,Automatic,14,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,1,1,Multipoint/sequential ignition
+BMW 530i,530,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 530i xDrive,532,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 540i,540,3,6,8,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 540i xDrive,541,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M550i xDrive,550,4.4,8,8,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Buick LACROSSE,265,2.5,4,6,Automatic,29,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Buick LACROSSE,379,3.6,6,9,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Buick LACROSSE AWD,234,3.6,6,9,Automatic,23,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac CTS,110,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Cadillac CTS,411,3.6,6,8,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac CTS,407,3.6,6,8,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Cadillac CTS AWD,404,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Cadillac CTS AWD,67,3.6,6,8,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac CTS-V,412,6.2,8,8,Automatic,17,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet CRUZE HATCHBACK,13,1.4,4,6,Automatic,32,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet CRUZE HATCHBACK,16,1.4,4,6,Manual,31,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet CRUZE PREMIER HATCHBACK,14,1.4,4,6,Automatic,31,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet MALIBU,180,1.5,4,6,Automatic,30,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet MALIBU,260,1.8,4,1,CVT,46,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet MALIBU,337,2,4,9,Automatic,26,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+Dodge Challenger,21,3.6,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Challenger,22,5.7,8,8,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Multipoint/sequential ignition
+Dodge Challenger,24,5.7,8,6,Manual,18,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Multipoint/sequential ignition
+Dodge Challenger,23,6.4,8,8,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Multipoint/sequential ignition
+Dodge Challenger,25,6.4,8,6,Manual,17,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Multipoint/sequential ignition
+Dodge Challenger GT,30,3.6,6,8,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Challenger SRT,26,6.2,8,8,Automatic,16,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Multipoint/sequential ignition
+Dodge Challenger SRT,28,6.2,8,6,Manual,16,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Multipoint/sequential ignition
+Dodge Challenger SRT,27,6.4,8,8,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Multipoint/sequential ignition
+Dodge Challenger SRT,29,6.4,8,6,Manual,17,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Multipoint/sequential ignition
+Ford FOCUS RS AWD,259,2.3,4,6,Manual,22,Turbocharged/Supercharged,N,All Wheel Drive,15,Premium Unleaded Required,2,2,Direct ignition
+Ford Focus ST FWD,180,2,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FUSION AWD,42,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FUSION AWD,46,2.7,6,6,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FUSION FWD,37,1.5,4,6,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FUSION FWD,39,2,4,6,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FUSION FWD,38,2.5,4,6,Automatic,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford FUSION HYBRID FWD,43,2,4,1,CVT,42,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Honda ACCORD 2.0T SPORT/TOURING,52,2,4,10,Automatic,26,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 4Dr,45,1.5,4,1,CVT,36,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 4Dr,44,1.5,4,6,Manual,35,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 4Dr,48,1.5,4,6,Manual,32,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 4Dr,41,2,4,1,CVT,34,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Honda CIVIC 4Dr,40,2,4,6,Manual,32,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+HYUNDAI MOTOR COMPANY Elantra,34,1.4,4,7,Manual,35,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Elantra,16,1.6,4,7,Manual,29,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Elantra,17,1.6,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Elantra,13,2,4,6,Automatic,32,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+HYUNDAI MOTOR COMPANY Elantra,14,2,4,6,Manual,29,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+HYUNDAI MOTOR COMPANY Elantra SE,15,2,4,6,Automatic,33,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+INFINITI Q50,161,2,4,7,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q50,131,3,6,7,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q50 AWD,162,2,4,7,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q50 AWD,132,3,6,7,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q50 AWD RED SPORT,135,3,6,7,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q50 RED SPORT,133,3,6,7,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q70,151,3.7,6,7,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+INFINITI Q70,111,5.6,8,7,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q70 AWD,152,3.7,6,7,Automatic,20,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+INFINITI Q70 AWD,112,5.6,8,7,Automatic,18,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+INFINITI Q70 HYBRID,141,3.5,6,7,Automatic,30,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+Jaguar XF,260,2,4,8,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XF,262,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XF AWD,264,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XF AWD,263,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XF AWD (296 Hp),267,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Forte,30,2,4,6,Automatic,32,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+KIA MOTORS CORPORATION Forte,32,2,4,6,Automatic,28,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Forte,31,2,4,6,Manual,28,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+KIA MOTORS CORPORATION Optima Hybrid,45,2,4,6,Manual,42,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Stinger AWD,38,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Stinger AWD,36,3.3,6,8,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Stinger RWD,39,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Stinger RWD,37,3.3,6,8,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+LEXUS ES 300h,25,2.5,4,6,CVT,40,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+LEXUS ES 350,27,3.5,6,6,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+LEXUS GS 300,88,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS GS 300 F SPORT,89,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS GS 350,117,3.5,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS GS 350 AWD,118,3.5,6,6,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS GS 350 F SPORT,84,3.5,6,8,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS GS 450h,85,3.5,6,8,CVT,31,Naturally Aspirated,N,"2-Wheel Drive, Rear",15,Premium Unleaded Required,2,2,Direct ignition
+Lincoln MKZ AWD,41,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln MKZ AWD,47,3,6,6,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln MKZ FWD,40,2,4,6,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln MKZ FWD,48,3,6,6,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln MKZ HYBRID FWD,44,2,4,1,CVT,40,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+MASERATI Ghibli  S RWD,38,3,6,8,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+MASERATI Ghibli V6 Rear Wheel Drive (RWD),36,3,6,8,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+MASERATI Ghibli V6 SQ4 AWD,35,3,6,8,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+MAZDA MAZDA3 5-Door,6,2,4,6,Automatic,32,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+MAZDA MAZDA3 5-Door,5,2,4,6,Manual,31,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+MAZDA MAZDA3 5-Door,8,2.5,4,6,Automatic,30,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Mercedes-Benz AMG E 43 4MATIC,317,3,6,9,Automatic,21,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG E 63 S 4MATIC,360,4,8,9,Automatic,18,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz E 300,332,2,4,9,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz E 300 4MATIC,338,2,4,9,Automatic,24,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz E 400 4MATIC,302,3,6,9,Automatic,23,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mini COOPER CLUBMAN,30,1.5,3,6,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER CLUBMAN,31,1.5,3,6,Manual,28,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER CLUBMAN ALL4,40,1.5,3,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER CLUBMAN ALL4,41,1.5,3,6,Manual,26,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER COUNTRYMAN,38,1.5,3,6,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER COUNTRYMAN,39,1.5,3,6,Manual,28,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER COUNTRYMAN ALL4,48,1.5,3,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER COUNTRYMAN ALL4,49,1.5,3,6,Manual,26,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S CLUBMAN,50,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S CLUBMAN,51,2,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S CLUBMAN ALL4,70,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S CLUBMAN ALL4,71,2,4,6,Manual,24,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S COUNTRYMAN,60,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S COUNTRYMAN ALL4,62,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini COOPER S COUNTRYMAN ALL4,63,2,4,6,Manual,24,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini JCW COUNTRYMAN ALL4,86,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini JCW COUNTRYMAN ALL4,87,2,4,6,Manual,24,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini JOHN COOPER WORKS CLUBMAN ALL4,80,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Mini JOHN COOPER WORKS CLUBMAN ALL4,81,2,4,6,Manual,24,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+NISSAN ALTIMA,23,2.5,4,1,CVT,31,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN ALTIMA,41,3.5,6,7,CVT,26,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN ALTIMA SR,21,2.5,4,7,CVT,30,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN MAXIMA,45,3.5,6,7,CVT,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN SENTRA,128,1.6,4,7,CVT,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Premium Unleaded Recommended,2,2,Direct ignition
+NISSAN SENTRA,126,1.6,4,6,Manual,28,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Premium Unleaded Recommended,2,2,Direct ignition
+NISSAN SENTRA,9,1.8,4,1,CVT,32,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN SENTRA,6,1.8,4,6,Manual,30,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN SENTRA NISMO,129,1.6,4,7,CVT,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Premium Unleaded Recommended,2,2,Direct ignition
+NISSAN SENTRA NISMO,127,1.6,4,6,Manual,27,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Premium Unleaded Recommended,2,2,Direct ignition
+Rolls-Royce Motor Cars Limited Wraith,7,6.6,12,8,Automatic,14,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Subaru IMPREZA 4-Door,5,2,4,7,CVT,32,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Subaru IMPREZA 4-Door,3,2,4,5,Manual,27,Naturally Aspirated,N,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Subaru IMPREZA SPORT 4-Door,30,2,4,7,CVT,30,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Subaru IMPREZA SPORT 4-Door,29,2,4,5,Manual,26,Naturally Aspirated,N,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Subaru LEGACY,8,2.5,4,7,CVT,29,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Subaru LEGACY,13,3.6,6,6,CVT,23,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA AVALON,49,3.5,6,6,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA AVALON HYBRID,48,2.5,4,6,CVT,40,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA CAMRY,22,2.5,4,8,Automatic,34,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA CAMRY,43,3.5,6,8,Automatic,26,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA CAMRY HYBRID LE,14,2.5,4,6,CVT,52,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA CAMRY HYBRID XLE/SE,15,2.5,4,6,CVT,46,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA CAMRY LE/SE,45,2.5,4,8,Automatic,32,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA CAMRY XLE/XSE,46,2.5,4,8,Automatic,32,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA CAMRY XSE,44,3.5,6,8,Automatic,26,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA COROLLA,28,1.8,4,1,CVT,32,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA COROLLA,29,1.8,4,7,CVT,31,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA COROLLA,30,1.8,4,6,Manual,30,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA COROLLA iM,51,1.8,4,7,CVT,31,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA COROLLA iM,52,1.8,4,6,Manual,30,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA COROLLA LE ECO,31,1.8,4,1,CVT,34,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA COROLLA LE ECO,32,1.8,4,1,CVT,33,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA PRIUS,74,1.8,4,1,CVT,52,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA PRIUS Eco,75,1.8,4,1,CVT,56,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Volkswagen Passat,39,2,4,6,Automatic,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Passat,54,3.6,6,6,Manual,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC S90 AWD",119,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+"Volvo Cars of North America, LLC S90 AWD",118,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+"Volvo Cars of North America, LLC S90 FWD",117,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+Audi A8L,36,3,6,8,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi A8L,58,4,8,8,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 330i xDrive Gran Turismo,326,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 340i xDrive Gran Turismo,343,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 640i xDrive Gran Turismo,646,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 740i,741,3,6,8,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 740i xDrive,742,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 750i,750,4.4,8,8,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 750i xDrive,753,4.4,8,8,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW Alpina B7 xDrive,757,4.4,8,8,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW M760i xDrive,760,6.6,12,8,Automatic,16,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X1 sDrive28i,152,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X1 xDrive28i,150,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Buick REGAL,32,2,4,9,Automatic,26,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+Buick REGAL AWD,34,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Buick REGAL AWD,235,3.6,6,9,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac CT6,111,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Cadillac CT6 AWD,82,3,6,8,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Cadillac CT6 AWD,68,3.6,6,8,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac XTS,331,3.6,6,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac XTS AWD,353,3.6,6,6,Automatic,20,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac XTS AWD,98,3.6,6,6,Automatic,18,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Chevrolet IMPALA,79,2.5,4,6,Automatic,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet IMPALA,202,3.6,6,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet IMPALA,174,3.6,6,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Direct ignition
+Chrysler 300,4,3.6,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chrysler 300,5,3.6,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chrysler 300,6,5.7,8,8,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Multipoint/sequential ignition
+Chrysler 300 AWD,8,3.6,6,8,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chrysler 300 AWD,7,3.6,6,8,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Charger,12,3.6,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Charger,13,3.6,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Charger,14,5.7,8,8,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Multipoint/sequential ignition
+Dodge Charger,15,6.4,8,8,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Multipoint/sequential ignition
+Dodge Charger AWD,20,3.6,6,8,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Charger AWD,19,3.6,6,8,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Charger SRT,16,6.2,8,8,Automatic,16,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Multipoint/sequential ignition
+Dodge Charger SRT,17,6.4,8,8,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Multipoint/sequential ignition
+Ford C-MAX Hybrid FWD,63,2,4,1,CVT,40,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford TAURUS AWD,159,3.5,6,6,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford TAURUS AWD,160,3.5,6,6,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford TAURUS AWD FFV,163,3.5,6,6,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford TAURUS FWD,161,3.5,6,6,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford TAURUS FWD FFV,164,3.5,6,6,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+GENESIS G80 AWD,1,3.3,6,8,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+GENESIS G80 AWD,3,3.8,6,8,Automatic,20,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+GENESIS G80 AWD,5,5,8,8,Automatic,18,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+GENESIS G80 RWD,2,3.3,6,8,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+GENESIS G80 RWD,4,3.8,6,8,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+GENESIS G80 RWD,6,5,8,8,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+GENESIS G90 AWD,25,3.3,6,8,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+GENESIS G90 AWD,27,5,8,8,Automatic,18,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+GENESIS G90 RWD,26,3.3,6,8,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+GENESIS G90 RWD,28,5,8,8,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Honda ACCORD,32,1.5,4,1,CVT,33,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda ACCORD,33,1.5,4,7,CVT,31,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda ACCORD,31,1.5,4,6,Manual,30,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda ACCORD,51,2,4,10,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda ACCORD,50,2,4,6,Manual,26,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 5Dr,22,1.5,4,1,CVT,34,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 5Dr,23,1.5,4,7,CVT,32,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 5Dr,20,1.5,4,6,Manual,33,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 5Dr,21,1.5,4,6,Manual,33,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Honda CIVIC 5Dr,24,2,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Elantra GT,21,1.6,4,7,Manual,28,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Elantra GT,22,1.6,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Elantra GT,23,2,4,6,Automatic,27,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Elantra GT,24,2,4,6,Manual,26,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Ioniq,44,1.6,4,6,Manual,55,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Ioniq Blue,38,1.6,4,6,Manual,58,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Sonata,29,1.6,4,7,Manual,31,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Sonata,20,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Sonata,18,2.4,4,6,Automatic,28,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Sonata SE,19,2.4,4,6,Automatic,29,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Jaguar XJ,354,3,6,8,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XJ,352,5,8,8,Automatic,18,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XJ AWD,355,3,6,8,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XJL,362,3,6,8,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XJL,353,5,8,8,Automatic,18,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar XJL AWD,356,3,6,8,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Cadenza,46,3.3,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Forte5,34,1.6,4,7,Manual,27,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Forte5,35,1.6,4,6,Manual,25,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Forte5,33,2,4,6,Automatic,28,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION K900,18,3.8,6,8,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION K900,17,5,8,8,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Premium Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Optima,26,1.6,4,7,Manual,31,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Optima,8,2,4,6,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Optima,9,2.4,4,6,Automatic,28,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Optima FE,10,2.4,4,6,Automatic,29,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln CONTINENTAL AWD,69,2.7,6,6,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln CONTINENTAL AWD,73,3,6,6,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln CONTINENTAL AWD,72,3.7,6,6,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln CONTINENTAL FWD,70,2.7,6,6,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln CONTINENTAL FWD,71,3.7,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+MASERATI QUATTROPORTE S,37,3,6,8,Automatic,18,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+MASERATI QUATTROPORTE SQ4 V6,33,3,6,8,Automatic,18,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+MASERATI QUATTROPORTE V8,30,3.8,8,8,Automatic,17,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG S 63 4MATIC,205,4,8,9,Automatic,20,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG S 65,208,6,12,7,Automatic,16,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,1,Multipoint/sequential ignition
+Mercedes-Benz Maybach S 650,203,6,12,7,Automatic,16,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,1,Multipoint/sequential ignition
+Mercedes-Benz S 450,520,3,6,9,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz S 450 4MATIC,521,3,6,9,Automatic,22,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz S 560 4MATIC,207,4,8,9,Automatic,21,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz S 560 4MATIC Maybach,326,4,8,9,Automatic,19,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Panamera,601,3,6,8,Manual,24,Turbocharged/Supercharged,N,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Panamera 4,606,3,6,8,Manual,23,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Panamera 4 Executive,607,3,6,8,Manual,23,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Panamera 4S,616,2.9,6,8,Manual,23,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Panamera 4S Executive,617,2.9,6,8,Manual,23,Turbocharged/Supercharged,N,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Panamera Turbo,631,4,8,8,Manual,21,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Panamera Turbo Executive,632,4,8,8,Manual,21,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Rolls-Royce Motor Cars Limited Ghost,5,6.6,12,8,Automatic,14,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Rolls-Royce Motor Cars Limited Ghost EWB,6,6.6,12,8,Automatic,14,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Rolls-Royce Motor Cars Limited Phantom,1,6.7,12,8,Automatic,14,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Rolls-Royce Motor Cars Limited Phantom EWB,2,6.7,12,8,Automatic,14,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Audi allroad quattro,27,2,4,7,Manual,25,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+BMW 330i xDrive Sports Wagon,323,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Buick REGAL TOURX  AWD,33,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Chevrolet SONIC 5,56,1.4,4,6,Automatic,30,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet SONIC 5,58,1.4,4,6,Manual,32,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet SONIC 5,51,1.8,4,6,Automatic,28,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet SONIC 5,53,1.8,4,5,Manual,29,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+FIAT 500L,404,1.4,4,6,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+Honda FIT,10,1.5,4,1,CVT,36,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda FIT,11,1.5,4,7,CVT,33,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda FIT,12,1.5,4,6,Manual,31,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda HR-V AWD,18,1.8,4,1,CVT,29,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Honda HR-V AWD,19,1.8,4,7,CVT,29,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Honda HR-V FWD,16,1.8,4,1,CVT,31,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Honda HR-V FWD,17,1.8,4,7,CVT,31,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Honda HR-V FWD,15,1.8,4,6,Manual,28,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+KIA MOTORS CORPORATION Niro,40,1.6,4,6,Manual,49,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Niro FE,41,1.6,4,6,Manual,50,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Niro Touring,42,1.6,4,6,Manual,43,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Soul,21,1.6,4,7,Manual,28,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Soul,19,1.6,4,6,Automatic,27,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Soul,20,1.6,4,6,Manual,27,Naturally Aspirated,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Soul,22,2,4,6,Automatic,27,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+NISSAN Rogue Sport,201,2,4,7,CVT,28,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+NISSAN Rogue Sport AWD,203,2,4,7,CVT,27,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Subaru IMPREZA 5-Door,6,2,4,7,CVT,31,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Subaru IMPREZA 5-Door,4,2,4,5,Manual,26,Naturally Aspirated,N,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Subaru IMPREZA SPORT 5-Door,28,2,4,7,CVT,30,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Subaru IMPREZA SPORT 5-Door,27,2,4,5,Manual,25,Naturally Aspirated,N,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Golf Alltrack,74,1.8,4,6,Manual,25,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC V60 AWD",113,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC V60 AWD",102,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+"Volvo Cars of North America, LLC V60 CC AWD",105,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC V60 FWD",88,2,4,8,Automatic,29,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC V60 Polestar AWD",112,2,4,8,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Jaguar XF Sportbrake AWD,268,3,6,8,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Mercedes-Benz AMG E 63 S 4MATIC (Station Wagon,361,4,8,9,Automatic,18,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GLA 45 4MATIC,245,2,4,7,Manual,25,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz E 400 4MATIC (station wagon),303,3,6,9,Automatic,21,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+NISSAN MURANO AWD,43,3.5,6,7,CVT,24,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN MURANO FWD,42,3.5,6,7,CVT,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+"Volvo Cars of North America, LLC V90 AWD",109,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+"Volvo Cars of North America, LLC V90 CC AWD",115,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+"Volvo Cars of North America, LLC V90 CC AWD",124,2,4,8,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+"Volvo Cars of North America, LLC V90 FWD",104,2,4,8,Automatic,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+Chevrolet COLORADO 2WD,586,2.5,4,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet COLORADO 2WD,588,2.5,4,6,Manual,22,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet COLORADO 2WD,634,3.6,6,8,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC CANYON 2WD,587,2.5,4,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC CANYON 2WD,589,2.5,4,6,Manual,22,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC CANYON 2WD,636,3.6,6,8,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda RIDGELINE FWD,13,3.5,6,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+NISSAN FRONTIER 2WD,83,2.5,4,5,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN FRONTIER 2WD,84,2.5,4,5,Manual,21,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN FRONTIER 2WD,181,4,6,5,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN FRONTIER 2WD,182,4,6,6,Manual,19,Naturally Aspirated,N,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN FRONTIER 2WD FFV,291,4,6,5,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA TACOMA 2WD,94,2.7,4,6,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA TACOMA 2WD,90,3.5,6,6,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet COLORADO 4WD,591,2.5,4,6,Automatic,21,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet COLORADO 4WD,639,3.6,6,8,Automatic,19,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet COLORADO ZR2 4WD,640,3.6,6,8,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC CANYON 4WD,592,2.5,4,6,Automatic,21,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC CANYON 4WD,641,3.6,6,8,Automatic,19,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+NISSAN FRONTIER 4WD,183,4,6,5,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN FRONTIER 4WD,184,4,6,6,Manual,18,Naturally Aspirated,N,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN FRONTIER 4WD FFV,292,4,6,5,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA TACOMA 4WD,95,2.7,4,6,Automatic,20,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA TACOMA 4WD,91,3.5,6,6,Automatic,20,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA TACOMA 4WD,92,3.5,6,6,Manual,18,Naturally Aspirated,N,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA TACOMA 4WD D-CAB V6 MT OFF-ROAD,93,3.5,6,6,Manual,18,Naturally Aspirated,N,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet C15 SILVERADO 2WD,673,4.3,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet C15 SILVERADO 2WD,572,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet C15 SILVERADO 2WD,659,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet C15 SILVERADO 2WD,645,5.3,8,8,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet C15 SILVERADO 2WD,550,5.3,8,8,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet C15 SILVERADO 2WD,675,6.2,8,8,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Ford F150 2.7L 2WD GVWR>6649 LBS,27,2.7,6,10,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 2WD BASE PAYLOAD LT TIRE,26,2.7,6,10,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 2WD BASE PAYLOAD LT TIRE,261,3.3,6,6,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford F150 2WD BASE PAYLOAD LT TIRE,3,3.5,6,10,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 2WD BASE PAYLOAD LT TIRE,200,5,8,10,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 2WD FFV BASE PAYLOAD LT,199,5,8,10,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 2WD FFV BASE PAYLOAD LT TIRE,263,3.3,6,6,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford F150 3.5L 2WD GVWR>7599 LBS,4,3.5,6,10,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 5.0L 2WD FFV GVWR>7599 LBS,33,5,8,10,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 5.0L 2WD GVWR>7599 LBS,185,5,8,10,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 PICKUP 2WD,25,2.7,6,10,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 PICKUP 2WD,120,3.3,6,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford F150 PICKUP 2WD,2,3.5,6,10,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 PICKUP 2WD,184,5,8,10,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 PICKUP 2WD FFV,15,3.3,6,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford F150 PICKUP 2WD FFV,32,5,8,10,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,2,2,Direct ignition
+GMC C15 SIERRA 2WD,674,4.3,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,1,1,Direct ignition
+GMC C15 SIERRA 2WD,576,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC C15 SIERRA 2WD,662,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,1,1,Direct ignition
+GMC C15 SIERRA 2WD,646,5.3,8,8,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC C15 SIERRA 2WD,551,5.3,8,8,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC C15 SIERRA 2WD,676,6.2,8,8,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+NISSAN TITAN 2WD,385,5.6,8,7,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+RAM 1500 4X2,532,3.6,6,8,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+RAM 1500 4X2,533,5.7,8,8,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Multipoint/sequential ignition
+TOYOTA TUNDRA 2WD,23,4.6,8,6,Automatic,16,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA TUNDRA 2WD,38,5.7,8,6,Automatic,15,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet K15 SILVERADO 4WD,655,4.3,6,6,Automatic,19,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet K15 SILVERADO 4WD,665,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet K15 SILVERADO 4WD,580,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet K15 SILVERADO 4WD,643,5.3,8,8,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet K15 SILVERADO 4WD,558,5.3,8,8,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet K15 SILVERADO 4WD,548,6.2,8,8,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Premium Unleaded Required,1,1,Direct ignition
+Ford F150 2.7L 4WD GVWR>6799 LBS,30,2.7,6,10,Automatic,21,Turbocharged/Supercharged,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 3.5L 4WD GVWR>7599 LBS,7,3.5,6,10,Automatic,18,Turbocharged/Supercharged,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 4WD BASE PAYLOAD LT TIRE,29,2.7,6,10,Automatic,20,Turbocharged/Supercharged,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 4WD BASE PAYLOAD LT TIRE,262,3.3,6,6,Automatic,19,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford F150 4WD BASE PAYLOAD LT TIRE,6,3.5,6,10,Automatic,19,Turbocharged/Supercharged,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 4WD BASE PAYLOAD LT TIRE,187,5,8,10,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 4WD FFV BASE PAYLOAD LT,173,5,8,10,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 4WD FFV BASE PAYLOAD LT TIRE,264,3.3,6,6,Automatic,19,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford F150 5.0L 4WD FFV GVWR>7599 LBS,124,5,8,10,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 5.0L 4WD GVWR>7599 LBS,125,5,8,10,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 PICKUP 4WD,28,2.7,6,10,Automatic,21,Turbocharged/Supercharged,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 PICKUP 4WD,122,3.3,6,6,Automatic,20,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford F150 PICKUP 4WD,5,3.5,6,10,Automatic,19,Turbocharged/Supercharged,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 PICKUP 4WD,186,5,8,10,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 PICKUP 4WD FFV,14,3.3,6,6,Automatic,20,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford F150 PICKUP 4WD FFV,31,5,8,10,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,2,2,Direct ignition
+Ford F150 RAPTOR 4WD,1,3.5,6,10,Automatic,16,Turbocharged/Supercharged,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+GMC K15 SIERRA 4WD,656,4.3,6,6,Automatic,19,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,1,1,Direct ignition
+GMC K15 SIERRA 4WD,668,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,1,1,Direct ignition
+GMC K15 SIERRA 4WD,584,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC K15 SIERRA 4WD,644,5.3,8,8,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC K15 SIERRA 4WD,559,5.3,8,8,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC K15 SIERRA 4WD,549,6.2,8,8,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Premium Unleaded Required,1,1,Direct ignition
+Honda RIDGELINE AWD,14,3.5,6,6,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+NISSAN TITAN 4WD,386,5.6,8,7,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+NISSAN TITAN 4WD PRO-4X,387,5.6,8,7,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+RAM 1500 4X4,536,3.6,6,8,Automatic,19,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+RAM 1500 4X4,534,5.7,8,6,Automatic,14,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Multipoint/sequential ignition
+RAM 1500 4X4,537,5.7,8,8,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Multipoint/sequential ignition
+TOYOTA TUNDRA 4WD,24,4.6,8,6,Automatic,16,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA TUNDRA 4WD,39,5.7,8,6,Automatic,14,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA TUNDRA 4WD FFV,35,5.7,8,6,Automatic,15,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford Transit T150 Wagon,91,3.5,6,6,Automatic,16,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford Transit T150 Wagon,142,3.7,6,6,Automatic,16,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford TRANSIT T150 WAGON FFV,92,3.7,6,6,Automatic,16,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Cadillac XTS HEARSE,77,3.6,6,6,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac XTS LIMO,78,3.6,6,6,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+CHEVROLET City Express Cargo Van,682,2,4,1,CVT,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford Transit Connect Van 2WD,60,2.5,4,6,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford TRANSIT CONNECT VAN FFV,57,2.5,4,6,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford TRANSIT CONNECT WAGON FFV,59,2.5,4,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford TRANSIT CONNECT WAGON FWD,62,2.5,4,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford TRANSIT CONNECT WAGON LWB FFV,58,2.5,4,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford Transit Connect Wagon LWB FWD,61,2.5,4,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Mercedes-Benz Metris (Cargo Van),411,2,4,7,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz Metris (Passenger Van),410,2,4,7,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+NISSAN NV200 Cargo Van,681,2,4,1,CVT,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN NV200 NYC Taxi,11,2,4,1,CVT,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+RAM Promaster City,403,2.4,4,9,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Lincoln MKT LIVERY AWD,52,3.7,6,6,Automatic,18,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chevrolet C15 SILVERADO 2WD CAB CHASSIS,573,5.3,8,6,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet COLORADO CAB CHASSIS 2WD,635,3.6,6,8,Automatic,15,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet K15 SILVERADO 4WD CAB CHASSIS,581,5.3,8,6,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC C15 SIERRA 2WD CAB CHASSIS,577,5.3,8,6,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC CANYON CAB CHASSIS 2WD,637,3.6,6,8,Automatic,15,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC K15 SIERRA 4WD CAB CHASSIS,585,5.3,8,6,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+Chrysler Pacifica,524,3.6,6,9,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Chrysler Pacifica,525,3.6,6,9,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Grand Caravan,538,3.6,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Grand Caravan,35,3.6,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Honda ODYSSEY FWD,2,3.5,6,10,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda ODYSSEY FWD,1,3.5,6,9,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sedona,23,3.3,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sedona SX,24,3.3,6,6,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sedona SXL,25,3.3,6,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA SIENNA,59,3.5,6,8,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA SIENNA AWD,60,3.5,6,8,Automatic,20,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Acura MDX FWD,36,3.5,6,9,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Acura MDX FWD,35,3.5,6,9,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Direct ignition
+Acura RDX FWD,8,3.5,6,6,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+Buick ENCORE,487,1.4,4,6,Automatic,30,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Buick ENCORE,181,1.4,4,6,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Buick ENVISION FWD,37,2.5,4,6,Automatic,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac XT5,672,3.6,6,8,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet EQUINOX FWD,6,1.5,4,6,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet EQUINOX FWD,120,2,4,9,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+Chevrolet TRAX,184,1.4,4,6,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Journey,33,2.4,4,4,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Journey,34,3.6,6,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+FIAT 500X,412,1.4,4,6,Manual,28,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+FIAT 500X,411,2.4,4,9,Automatic,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford ECOSPORT FWD,194,1,3,6,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EDGE FWD,321,2,4,6,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EDGE FWD,79,2,4,6,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EDGE FWD,81,3.5,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford ESCAPE FWD,95,1.5,4,6,Automatic,26,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford ESCAPE FWD,96,2,4,6,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford ESCAPE FWD,98,2.5,4,6,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford ESCAPE FWD FFV,97,2.5,4,6,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+GMC TERRAIN FWD,200,1.5,4,9,Automatic,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC TERRAIN FWD,121,2,4,9,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+Honda CR-V FWD,29,1.5,4,1,CVT,30,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CR-V FWD,27,2.4,4,1,CVT,28,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda PILOT FWD,54,3.5,6,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda PILOT FWD,53,3.5,6,9,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Santa Fe FWD,30,3.3,6,6,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Santa Fe Sport FWD,9,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Santa Fe Sport FWD,7,2.4,4,6,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Santa Fe Sport ULTIMATE FWD,11,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Santa Fe Ultimate FWD,32,3.3,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Tucson FWD,41,1.6,4,7,Manual,27,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Tucson FWD,43,2,4,6,Automatic,26,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Tucson FWD,46,2.4,4,6,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+INFINITI QX60 FWD,93,3.5,6,7,CVT,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Premium Unleaded Recommended,2,2,Direct ignition
+Jeep Cherokee FWD,1,2.4,4,9,Automatic,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Cherokee FWD,2,2.4,4,9,Automatic,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Cherokee FWD,3,3.2,6,9,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Compass 4X2,31,2.4,4,6,Automatic,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Compass 4X2,32,2.4,4,6,Manual,26,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Renegade 4x2,409,1.4,4,6,Manual,26,Turbocharged/Supercharged,N,"2-Wheel Drive, Front",10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Renegade 4x2,408,2.4,4,9,Automatic,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+KIA MOTORS CORPORATION Sorento FWD,7,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sorento FWD,5,2.4,4,6,Automatic,24,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sorento FWD,3,3.3,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sportage FE FWD,13,2.4,4,6,Automatic,26,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sportage FWD,15,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sportage FWD,11,2.4,4,6,Automatic,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+LEXUS NX 300,61,2,4,6,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Premium Unleaded Required,2,2,Direct ignition
+Lincoln MKC  FWD,99,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln MKX FWD,82,2.7,6,6,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln MKX FWD,83,3.7,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+MAZDA CX-5 2WD,15,2.5,4,6,Automatic,28,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+MAZDA CX-9 2WD,11,2.5,4,6,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Mercedes-Benz GLA 250,506,2,4,7,Manual,27,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz GLC 300,111,2,4,9,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+Mitsubishi Motors Corporation OUTLANDER 2WD,211,2.4,4,6,CVT,27,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Mitsubishi Motors Corporation OUTLANDER SPORT 2WD,222,2,4,6,CVT,27,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Mitsubishi Motors Corporation OUTLANDER SPORT 2WD,221,2,4,5,Manual,25,Naturally Aspirated,N,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Mitsubishi Motors Corporation OUTLANDER SPORT 2WD,225,2.4,4,6,CVT,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN PATHFINDER 2WD,591,3.5,6,1,CVT,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+NISSAN ROGUE FWD,81,2.5,4,1,CVT,29,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN ROGUE FWD Hybrid,782,2,4,7,CVT,34,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA HIGHLANDER,116,2.7,4,6,Automatic,22,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA HIGHLANDER,126,3.5,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA HIGHLANDER LE/XLE/SE/LTD,125,3.5,6,8,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA RAV4,97,2.5,4,6,Automatic,25,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA RAV4 LE/XLE,100,2.5,4,6,Automatic,26,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Volkswagen Atlas,56,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Atlas,11,3.6,6,8,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Tiguan,29,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Tiguan Limited,81,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Premium Unleaded Recommended,2,2,Direct ignition
+Acura MDX AWD,37,3.5,6,9,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Acura MDX AWD,38,3.5,6,9,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Acura RDX AWD,9,3.5,6,6,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+ALFA ROMEO Stelvio AWD,500,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Audi Q5,17,2,4,7,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi SQ5,14,3,6,8,Manual,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X3 M40i,372,3,6,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X3 xDrive30i,370,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X4 M40i,473,3,6,8,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X4 xDrive28i,470,2,4,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Buick ENCORE AWD,607,1.4,4,6,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Buick ENCORE AWD,606,1.4,4,6,Automatic,28,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Buick ENVISION AWD,527,2,4,6,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Buick ENVISION AWD,590,2.5,4,6,Automatic,24,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac XT5 AWD,633,3.6,6,8,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet EQUINOX AWD,503,1.5,4,6,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Chevrolet EQUINOX AWD,538,2,4,9,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Chevrolet TRAX AWD,608,1.4,4,6,Automatic,27,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Journey AWD,529,3.6,6,6,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+FIAT 500X AWD,545,2.4,4,9,Automatic,24,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford ECOSPORT AWD,195,2,4,6,Automatic,25,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EDGE AWD,74,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EDGE AWD,76,2.7,6,6,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EDGE AWD,75,3.5,6,6,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford ESCAPE AWD,93,1.5,4,6,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford ESCAPE AWD,94,2,4,6,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+GMC TERRAIN AWD,628,1.5,4,9,Automatic,26,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC TERRAIN AWD,539,2,4,9,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Honda CR-V AWD,30,1.5,4,1,CVT,29,Turbocharged/Supercharged,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda CR-V AWD,28,2.4,4,1,CVT,27,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda PILOT AWD,56,3.5,6,6,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Honda PILOT AWD,55,3.5,6,9,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Santa Fe AWD,31,3.3,6,6,Automatic,20,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Santa Fe Sport AWD,10,2,4,6,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Santa Fe Sport AWD,8,2.4,4,6,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Santa Fe Sport ULTIMATE AWD,12,2,4,6,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Santa Fe Ultimate AWD,33,3.3,6,6,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Tucson AWD,40,1.6,4,7,Manual,25,Turbocharged/Supercharged,N,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Tucson AWD,42,2,4,6,Automatic,23,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+HYUNDAI MOTOR COMPANY Tucson AWD,45,2.4,4,6,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+INFINITI QX60 AWD,94,3.5,6,7,CVT,22,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-Pace,768,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-Pace,761,3,6,8,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar F-Pace (296 Hp),769,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar Jaguar E-Pace,540,2,4,9,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jaguar Jaguar E-Pace (296 Hp),541,2,4,9,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Jeep Cherokee 4X4,516,2.4,4,9,Automatic,23,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Cherokee 4X4,517,2.4,4,9,Automatic,23,Naturally Aspirated,Y,All Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Cherokee 4X4,518,3.2,6,9,Automatic,23,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Cherokee 4x4 Active Drive II,519,2.4,4,9,Automatic,23,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Cherokee 4x4 Active Drive II,520,3.2,6,9,Automatic,21,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Cherokee Trailhawk 4X4,521,2.4,4,9,Automatic,22,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Cherokee Trailhawk 4X4,522,3.2,6,9,Automatic,21,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Compass 4X4,527,2.4,4,9,Automatic,25,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Compass 4X4,528,2.4,4,6,Manual,25,Naturally Aspirated,N,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep New Wrangler Unlimited 4X4,548,3.6,6,8,Automatic,20,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep New Wrangler Unlimited 4X4,550,3.6,6,6,Manual,19,Naturally Aspirated,N,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Renegade 4x4,541,1.4,4,6,Manual,26,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Renegade 4x4,540,2.4,4,9,Automatic,24,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Wrangler 4X4,512,3.6,6,5,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Wrangler 4X4,513,3.6,6,6,Manual,18,Naturally Aspirated,N,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Wrangler Unlimited 4X4,514,3.6,6,5,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Wrangler Unlimited 4X4,515,3.6,6,6,Manual,18,Naturally Aspirated,N,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+KIA MOTORS CORPORATION Sorento AWD,6,2,4,6,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sorento AWD,4,2.4,4,6,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sorento AWD,12,3.3,6,6,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sorento AWD FE,2,3.3,6,6,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sportage AWD,16,2,4,6,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sportage AWD,1,2.4,4,6,Automatic,23,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+KIA MOTORS CORPORATION Sportage FE AWD,14,2.4,4,6,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Land Rover Range Rover Evoque (286 Hp),72,2,4,9,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Land Rover Range Rover Evoque Cabriolet,71,2,4,9,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Land Rover Range Rover Velar,562,2,4,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Land Rover Range Rover Velar,560,3,6,8,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+LEXUS NX 300 AWD,62,2,4,6,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS NX 300 AWD F SPORT,63,2,4,6,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Required,2,2,Direct ignition
+LEXUS NX 300h AWD,26,2.5,4,6,CVT,31,Naturally Aspirated,N,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Lincoln MKC  AWD,101,2,4,6,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln MKC  AWD,100,2,4,6,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln MKC  AWD,102,2.3,4,6,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln MKX AWD,77,2.7,6,6,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln MKX AWD,78,3.7,6,6,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+MAZDA CX-5 4WD,16,2.5,4,6,Automatic,26,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+MAZDA CX-9 4WD,12,2.5,4,6,Automatic,23,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Mercedes-Benz AMG GLC 43 4MATIC,310,3,6,9,Automatic,20,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GLC 43 4MATIC (coupe),311,3,6,9,Automatic,20,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz GLA 250 4MATIC,35,2,4,7,Manual,26,Turbocharged/Supercharged,Y,4-Wheel Drive,85,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz GLA 250 4MATIC,505,2,4,7,Manual,26,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz GLC 300 4MATIC,112,2,4,9,Automatic,24,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz GLC 300 4MATIC (Coupe),130,2,4,9,Automatic,24,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mitsubishi Motors Corporation OUTLANDER 4WD,212,2.4,4,6,CVT,26,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Mitsubishi Motors Corporation OUTLANDER 4WD,214,3,6,6,Automatic,22,Naturally Aspirated,Y,4-Wheel Drive,10,Premium Unleaded Recommended,2,2,Multipoint/sequential ignition
+Mitsubishi Motors Corporation OUTLANDER SPORT 4WD,224,2,4,6,CVT,26,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Mitsubishi Motors Corporation OUTLANDER SPORT 4WD,226,2.4,4,6,CVT,25,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN PATHFINDER 4WD,592,3.5,6,1,CVT,22,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+NISSAN PATHFINDER 4WD PLATINUM,593,3.5,6,1,CVT,21,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+NISSAN ROGUE AWD,82,2.5,4,1,CVT,27,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+NISSAN ROGUE AWD Hybrid,783,2,4,7,CVT,33,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Porsche Macan,301,2,4,7,Manual,22,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Macan GTS,312,3,6,7,Manual,19,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Macan S,311,3,6,7,Manual,19,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Macan Turbo,321,3.6,6,7,Manual,19,Turbocharged/Supercharged,N,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Subaru CROSSTREK,15,2,4,7,CVT,29,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Subaru CROSSTREK,14,2,4,6,Manual,25,Naturally Aspirated,N,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Subaru FORESTER,20,2,4,8,CVT,25,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Subaru FORESTER,18,2.5,4,6,CVT,28,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Subaru FORESTER,16,2.5,4,6,Manual,24,Naturally Aspirated,N,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Subaru OUTBACK,19,2.5,4,7,CVT,28,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Subaru OUTBACK,21,3.6,6,6,CVT,22,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA RAV4 AWD,98,2.5,4,6,Automatic,25,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA RAV4 HYBRID AWD,101,2.5,4,6,CVT,32,Naturally Aspirated,N,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA RAV4 Limited AWD/SE AWD,99,2.5,4,6,Automatic,24,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Volkswagen Atlas 4Motion,12,3.6,6,8,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Tiguan 4Motion,28,2,4,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Volkswagen Tiguan Limited 4Motion,80,2,4,6,Automatic,22,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+"Volvo Cars of North America, LLC XC60 AWD",122,2,4,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+"Volvo Cars of North America, LLC XC60 AWD",121,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+BMW X5 sDrive35i,574,3,6,8,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X6 sDrive35i,674,3,6,8,Automatic,21,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Buick ENCLAVE,519,3.6,6,9,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac ESCALADE 2WD,540,6.2,8,10,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet C1500 SUBURBAN 2WD,571,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet C1500 SUBURBAN 2WD,658,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet C1500 TAHOE 2WD,570,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet C1500 TAHOE 2WD,657,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet C1500 TAHOE 2WD,541,6.2,8,10,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet TRAVERSE,609,2,4,9,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+Chevrolet TRAVERSE,520,3.6,6,9,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+Dodge Durango RWD,502,3.6,6,8,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Durango RWD,501,5.7,8,8,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Multipoint/sequential ignition
+Ford Expedition 2WD,107,3.5,6,10,Automatic,20,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford Expedition MAX 2WD,108,3.5,6,10,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EXPLORER FFV 2WD,132,3.5,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford EXPLORER FWD,134,2.3,4,6,Automatic,22,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EXPLORER FWD,136,3.5,6,6,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford Flex FWD,50,3.5,6,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+GMC ACADIA FWD,610,2.5,4,6,Automatic,23,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC ACADIA FWD,671,3.6,6,6,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Front",10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC C1500 YUKON 2WD,574,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC C1500 YUKON 2WD,660,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,1,1,Direct ignition
+GMC C1500 YUKON 2WD,542,6.2,8,10,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+GMC C1500 YUKON XL 2WD,575,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC C1500 YUKON XL 2WD,661,5.3,8,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Rear",85,Regular Unleaded Recommended,1,1,Direct ignition
+GMC C1500 YUKON XL 2WD,543,6.2,8,10,Automatic,17,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,1,1,Direct ignition
+INFINITI QX80 2WD,381,5.6,8,7,Automatic,16,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Recommended,2,2,Direct ignition
+Jeep Grand Cherokee 4X2,506,3.6,6,8,Automatic,21,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Lincoln MKT FWD,53,3.7,6,6,Automatic,19,Naturally Aspirated,Y,"2-Wheel Drive, Front",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Lincoln Navigator 2WD,117,3.5,6,10,Automatic,19,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln Navigator L 2WD,118,3.5,6,10,Automatic,18,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Direct ignition
+Mercedes-Benz GLE 350,401,3.5,6,7,Automatic,20,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
+NISSAN ARMADA 2WD,282,5.6,8,7,Automatic,16,Naturally Aspirated,Y,"2-Wheel Drive, Rear",10,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA 4RUNNER 2WD,57,4,6,5,Automatic,18,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA SEQUOIA 2WD,36,5.7,8,6,Automatic,15,Naturally Aspirated,Y,"2-Wheel Drive, Rear",15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+"Volvo Cars of North America, LLC XC90 FWD",50,2,4,8,Automatic,25,Turbocharged/Supercharged,Y,"2-Wheel Drive, Front",10,Premium Unleaded Required,2,2,Direct ignition
+Audi Q7,19,2,4,8,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Audi Q7,37,3,6,8,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+Bentley Bentayga,20,6,12,8,Automatic,15,Turbocharged/Supercharged,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X5 M,590,4.4,8,8,Automatic,16,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X5 xDrive35i,571,3,6,8,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X5 xDrive50i,572,4.4,8,8,Automatic,17,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X6 M,690,4.4,8,8,Automatic,16,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X6 xDrive35i,671,3,6,8,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+BMW X6 xDrive50i,672,4.4,8,8,Automatic,17,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Buick ENCLAVE AWD,521,3.6,6,9,Automatic,20,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Cadillac ESCALADE 4WD,544,6.2,8,10,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet K1500 SUBURBAN 4WD,664,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet K1500 SUBURBAN 4WD,579,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet K1500 TAHOE 4WD,578,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet K1500 TAHOE 4WD,663,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,1,1,Direct ignition
+Chevrolet K1500 TAHOE 4WD,545,6.2,8,10,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Premium Unleaded Required,1,1,Direct ignition
+Chevrolet TRAVERSE AWD,522,3.6,6,9,Automatic,20,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Dodge Durango AWD,504,3.6,6,8,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Dodge Durango AWD,503,5.7,8,8,Automatic,17,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,1,1,Multipoint/sequential ignition
+Dodge Durango SRT AWD,523,6.4,8,8,Automatic,15,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Recommended,1,1,Multipoint/sequential ignition
+Ford Expedition 4WD,109,3.5,6,10,Automatic,19,Turbocharged/Supercharged,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford Expedition MAX 4WD,110,3.5,6,10,Automatic,18,Turbocharged/Supercharged,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EXPLORER AWD,133,2.3,4,6,Automatic,21,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EXPLORER AWD,137,3.5,6,6,Automatic,18,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford EXPLORER AWD,135,3.5,6,6,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford EXPLORER FFV AWD,131,3.5,6,6,Automatic,18,Naturally Aspirated,Y,All Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Ford FLEX AWD,51,3.5,6,6,Automatic,17,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Ford FLEX AWD,49,3.5,6,6,Automatic,18,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+GMC ACADIA AWD,593,2.5,4,6,Automatic,23,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC ACADIA AWD,632,3.6,6,6,Automatic,20,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+GMC K1500 YUKON 4WD,583,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC K1500 YUKON 4WD,667,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,1,1,Direct ignition
+GMC K1500 YUKON 4WD,547,6.2,8,10,Automatic,17,Naturally Aspirated,Y,4-Wheel Drive,10,Premium Unleaded Required,1,1,Direct ignition
+GMC K1500 YUKON XL 4WD,666,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,1,1,Direct ignition
+GMC K1500 YUKON XL 4WD,582,5.3,8,6,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,1,1,Direct ignition
+GMC K1500 YUKON XL 4WD,546,6.2,8,10,Automatic,16,Naturally Aspirated,Y,4-Wheel Drive,10,Premium Unleaded Required,1,1,Direct ignition
+INFINITI QX80 4WD,382,5.6,8,7,Automatic,15,Naturally Aspirated,Y,4-Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Jeep Grand Cherokee 4X4,509,3.6,6,8,Automatic,21,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+Jeep Grand Cherokee 4X4,508,5.7,8,8,Automatic,17,Naturally Aspirated,Y,All Wheel Drive,10,Regular Unleaded Recommended,1,1,Multipoint/sequential ignition
+Jeep Grand Cherokee SRT 4x4,511,6.4,8,8,Automatic,15,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Recommended,1,1,Multipoint/sequential ignition
+Jeep Grand Cherokee TrackHawk 4x4,543,6.2,8,8,Automatic,13,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Recommended,1,1,Multipoint/sequential ignition
+LEXUS GX 460,47,4.6,8,6,Automatic,16,Naturally Aspirated,Y,4-Wheel Drive,15,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+LEXUS LX 570,87,5.7,8,8,Automatic,15,Naturally Aspirated,Y,4-Wheel Drive,15,Premium Unleaded Required,2,2,Multipoint/sequential ignition
+Lincoln MKT AWD,54,3.5,6,6,Automatic,17,Turbocharged/Supercharged,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+Lincoln Navigator 4WD,115,3.5,6,10,Automatic,18,Turbocharged/Supercharged,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+MASERATI LEVANTE,41,3,8,8,Automatic,16,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+MASERATI LEVANTE S,40,3,8,8,Automatic,16,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG G 63,440,5.5,8,7,Automatic,13,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG G 65,441,6,12,7,Automatic,12,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,1,Multipoint/sequential ignition
+Mercedes-Benz AMG GLE 43 4MATIC,270,3,6,9,Automatic,19,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GLE 43 4MATIC (coupe),271,3,6,9,Automatic,19,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GLE 63,406,5.5,8,7,Automatic,15,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GLE 63 S,272,5.5,8,7,Automatic,15,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GLE 63 S (coupe),274,5.5,8,7,Automatic,15,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz AMG GLS 63,424,5.5,8,7,Automatic,15,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz G 550,435,4,8,7,Automatic,13,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz GLE 350 4MATIC,821,3.5,6,7,Automatic,19,Naturally Aspirated,Y,4-Wheel Drive,85,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz GLE 350 4MATIC,402,3.5,6,7,Automatic,19,Naturally Aspirated,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz GLS 450 4MATIC,421,3,6,9,Automatic,19,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Mercedes-Benz GLS 550 4MATIC,423,4.7,8,9,Automatic,16,Turbocharged/Supercharged,Y,4-Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+NISSAN ARMADA 4WD,283,5.6,8,7,Automatic,15,Naturally Aspirated,Y,4-Wheel Drive,10,Regular Unleaded Recommended,2,2,Direct ignition
+Porsche Cayenne,401,3.6,6,8,Automatic,20,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Porsche Cayenne GTS,412,3.6,6,8,Automatic,19,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Cayenne Platinum,402,3.6,6,8,Automatic,19,Naturally Aspirated,Y,All Wheel Drive,10,Premium Unleaded Recommended,2,2,Direct ignition
+Porsche Cayenne S,411,3.6,6,8,Automatic,20,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Cayenne Turbo,421,4.8,8,8,Automatic,17,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+Porsche Cayenne Turbo S,422,4.8,8,8,Automatic,17,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+TOYOTA 4RUNNER 4WD,58,4,6,5,Automatic,18,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA 4RUNNER 4WD,207,4,6,5,Automatic,18,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA HIGHLANDER AWD,102,3.5,6,8,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA HIGHLANDER AWD,103,3.5,6,8,Automatic,22,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA HIGHLANDER AWD LE,108,3.5,6,8,Automatic,23,Naturally Aspirated,Y,All Wheel Drive,15,Regular Unleaded Recommended,2,2,Direct ignition
+TOYOTA LAND CRUISER WAGON 4WD,86,5.7,8,8,Automatic,15,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA SEQUOIA 4WD,37,5.7,8,6,Automatic,14,Naturally Aspirated,Y,4-Wheel Drive,15,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+TOYOTA SEQUOIA 4WD FFV,33,5.7,8,6,Automatic,14,Naturally Aspirated,Y,4-Wheel Drive,85,Regular Unleaded Recommended,2,2,Multipoint/sequential ignition
+"Volvo Cars of North America, LLC XC90 AWD",53,2,4,8,Automatic,24,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
+"Volvo Cars of North America, LLC XC90 AWD",52,2,4,8,Automatic,23,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
