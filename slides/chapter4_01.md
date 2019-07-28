@@ -8,8 +8,8 @@ Notes: You have made it to the last case study of our course! 🎉 It is a parti
 
 ---
 
-# Conference of Major Superiors of Women Sisters' Survey
- ⛪
+# Conference of Major Superiors of Women Sisters' Survey 
+
 - Fielded in 1967 with over 600 questions
 - Responses from over 130,000 sisters in almost 400 congregations
 - Data is [freely available](https://curate.nd.edu/show/0r967368551)
@@ -119,8 +119,8 @@ Notes: In this case study, we are going to spend a bit more effort on explorator
 
 ---
 
-# Let's practice!
- 🌟
+# Let's practice!🌟
+
 Notes: Let's go learn something about Catholic nuns in the 1960s. 
 
 
