@@ -74,7 +74,7 @@ Before embarking on more complex machine learning models, it's a good idea to bu
 
 **Instructions**
 
-- Use [`select()`](https://www.rdocumentation.org/packages/dplyr/topics/select) to deselect the two columns `Model` and `Model Index` from the model; these columns tell us the individual identifiers for each car and it would *not* make sense to include them in modeling. 
+- Use [`select()`](https://dplyr.tidyverse.org/reference/select.html) to deselect the two columns `Model` and `Model Index` from the model; these columns tell us the individual identifiers for each car and it would *not* make sense to include them in modeling. 
 - Fit `MPG` as the predicted quantity, explained by all the predictors, i.e., `.` in the R formula input to `lm()`. (You may have noticed the log distribution of MPG in the last exercise, but don't worry about fitting the logarithm of fuel efficiency yet.) 
 - Print the summary of the model.
 
@@ -152,7 +152,7 @@ The `fit_lm` and `fit_rf` models you just trained are in your environment. It's 
 
 - Load the yardstick package. 
 - Create new columns for model predictions from each of the models you have trained, first linear regression and then random forest.
-- Evaluate the performance of these models using [`metrics()`](https://www.rdocumentation.org/packages/yardstick/topics/metrics) by specifying the column in the original data that contains the real fuel efficiency.
+- Evaluate the performance of these models using [`metrics()`](https://tidymodels.github.io/yardstick/reference/metrics.html) by specifying the column in the original data that contains the real fuel efficiency.
 
 <codeblock id="01_08">
 
@@ -190,7 +190,7 @@ Where you had `car_train` before, switch out to `car_test`.
 
 In the last set of exercises, you trained linear regression and random forest models without any resampling. Resampling can improve the accuracy of machine learning models, and reduce overfitting.
 
-Let's try bootstrap resampling, which means creating data sets the same size as the original one by randomly drawing with replacement from the original. In caret, the default behavior for bootstrapping is 25 resamplings, but you can change this using [`trainControl()`](https://www.rdocumentation.org/packages/caret/topics/trainControl) if desired.
+Let's try bootstrap resampling, which means creating data sets the same size as the original one by randomly drawing with replacement from the original. In caret, the default behavior for bootstrapping is 25 resamplings, but you can change this using [`trainControl()`](https://topepo.github.io/caret/model-training-and-tuning.html#tune) if desired.
 
 **Instructions**
 

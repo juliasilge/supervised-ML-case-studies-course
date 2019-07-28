@@ -54,7 +54,7 @@ Anytime you are planning to implement modeling, it is always a good idea to expl
 **Instructions**
 
 - Print the `stackoverflow` object.
-- In the calls to [`count()`](https://www.rdocumentation.org/packages/dplyr/topics/tally), check out the distributions for remote status first, and then country.
+- In the calls to [`count()`](https://dplyr.tidyverse.org/reference/tally.html), check out the distributions for remote status first, and then country.
 
 <codeblock id="02_03_1">
 
@@ -78,7 +78,7 @@ The column `Remote` contains the remote status of each developer while the `Year
 
 Before starting the process of building machine learning models, let's start by building an extremely simple model to get our bearings. This is not a model you would probably want to use to make predictions on new data, but it can give you an idea about how successful you may eventually be and which predictors are most important.
 
-Recall that when you use the pipe operator `%>%` with a function like [`glm()`](https://www.rdocumentation.org/packages/stats/topics/glm) (whose first argument is not `data`), you must specify `data = .` to indicate that you are piping in the modeling data set.
+Recall that when you use the pipe operator `%>%` with a function like [`glm()`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/glm.html) (whose first argument is not `data`), you must specify `data = .` to indicate that you are piping in the modeling data set.
 
 **Instructions**
 
@@ -86,7 +86,7 @@ Build a simple logistic regression model predicting remote status.
 
 - Use `select()` to deselect the column `Respondent` from the data set before using it in modeling.
 - Fit `Remote` as the predicted quantity, explained by all the predictors, i.e., `.` in the R formula input to `glm()`. Don't get confused with the two instances of `.`!
- In the calls to [`count()`](https://www.rdocumentation.org/packages/dplyr/topics/tally), check out the distributions for remote status first, and then country.
+ In the calls to [`count()`](https://dplyr.tidyverse.org/reference/tally.html), check out the distributions for remote status first, and then country.
 
 <codeblock id="02_04">
 

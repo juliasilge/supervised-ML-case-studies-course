@@ -65,7 +65,7 @@ To see how many people did and did not vote, use `count(turnout16_2016)`.
 
 **Instructions**
 
-Check out how three responses on the survey vary with voting behavior by using [`group_by()`](https://www.rdocumentation.org/packages/dplyr/topics/group_by) and [`summarise()`](https://www.rdocumentation.org/packages/dplyr/topics/summarise).
+Check out how three responses on the survey vary with voting behavior by using [`group_by()`](https://dplyr.tidyverse.org/reference/group_by.html) and [`summarise()`](https://dplyr.tidyverse.org/reference/summarise.html).
 
 <codeblock id="03_03_2">
 
@@ -81,14 +81,14 @@ Visualization is a powerful tool for exploratory data analysis. Plotting your da
  
 **Instructions**
 
-- Call [`ggplot()`](https://www.rdocumentation.org/packages/ggplot2/topics/ggplot) to initialize a new plot.
+- Call [`ggplot()`](https://ggplot2.tidyverse.org/reference/ggplot.html) to initialize a new plot.
 - Use the correct ggplot2 `geom` to make a histogram of survey responses for one question (`econtrend_2016`) and examine the difference by voting behavior. 
 
 On this question about how the economy is doing, an answer of 1 indicates "getting better", 2 indicates "about the same", 3 indicates "getting worse", and 4 indicates "don't know".
 
 <codeblock id="03_04">
 
-To make a histogram, use [`geom_histogram()`](https://www.rdocumentation.org/packages/ggplot2/topics/geom_freqpoly).
+To make a histogram, use [`geom_histogram()`](https://ggplot2.tidyverse.org/reference/geom_histogram.html).
 
 </codeblock>
 
