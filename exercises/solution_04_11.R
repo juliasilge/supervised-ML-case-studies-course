@@ -1,5 +1,5 @@
 library(tidyverse)
-sisters_train <- readRDS("/usr/local/share/datasets/c4_training_500.rds")
+sisters_train <- readRDS("data/c4_training_500.rds")
 
 # Load caret
 library(caret)

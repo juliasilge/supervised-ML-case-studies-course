@@ -1,5 +1,5 @@
 library(tidyverse)
-voters <- read_csv("/usr/local/share/datasets/voters.csv")
+voters <- read_csv("data/voters.csv")
 
 # How do the reponses on the survey vary with voting behavior?
 voters %>%

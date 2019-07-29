@@ -1,7 +1,7 @@
-library(caret)
-library(tidyverse)
+data/(caret)
+data/(tidyverse)
 
-car_train <- readRDS("/usr/local/share/datasets/c1_training_one_percent.rds")
+car_train <- readRDS("data/c1_training_one_percent.rds")
 
 # Fit the models with bootstrap resampling
 cars_lm_bt <- train(log(MPG) ~ ., 

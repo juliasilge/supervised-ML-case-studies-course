@@ -1,7 +1,7 @@
 # Load tidyverse
 library(tidyverse)
 
-voters <- read_csv("/usr/local/share/datasets/voters.csv")
+voters <- read_csv("data/voters.csv")
 
 # Print voters
 voters

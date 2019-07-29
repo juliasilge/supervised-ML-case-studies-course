@@ -1,5 +1,5 @@
 library(tidyverse)
-sisters67 <- read_csv("/usr/local/share/datasets/sisters.csv")
+sisters67 <- read_csv("data/sisters.csv")
 
 # Load tidyverse
 library(tidyverse)

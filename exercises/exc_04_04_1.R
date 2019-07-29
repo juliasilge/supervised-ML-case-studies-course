@@ -1,5 +1,5 @@
 library(tidyverse)
-sisters67 <- read_csv("/usr/local/share/datasets/sisters.csv")
+sisters67 <- read_csv("data/sisters.csv")
 
 # Print the structure of sisters67
 glimpse(sisters67)

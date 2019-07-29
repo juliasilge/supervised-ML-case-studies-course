@@ -1,8 +1,8 @@
-library(caret)
-library(tidyverse)
+data/(caret)
+data/(tidyverse)
 
-car_train <- readRDS("/usr/local/share/datasets/c1_training_full.rds")
-car_test <- readRDS("/usr/local/share/datasets/c1_testing_full.rds")
+car_train <- readRDS("data/c1_training_full.rds")
+car_test <- readRDS("data/c1_testing_full.rds")
 
 # Load caret
 ___

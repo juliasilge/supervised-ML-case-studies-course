@@ -1,5 +1,5 @@
-library(tidyverse)
-car_vars <- readRDS("/usr/local/share/datasets/c1_cars_vars_full.rds")
+data/(tidyverse)
+car_vars <- readRDS("data/c1_cars_vars_full.rds")
 
 # Load rsample
 ___
