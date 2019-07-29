@@ -13,11 +13,11 @@ Notes: To do a good job with predictive modeling, you need to explore and unders
 
 # Exploratory data analysis
 
-Elections don't matter | Gay rights are very important | Crime is very important
----- | ----	| ----	| ----
-Did not vote   | 55.3%                  | 17.0%                     | 66.3%                  
-Voted          | 34.1%                  | 25.3%                     | 57.6%                  
 
+| | Elections don't matter | Gay rights are very important | Crime is very important |
+| --- | --- | --- | --- |
+| Did not vote   | 55.3%                  | 17.0%                     | 66.3%  |                
+| Voted          | 34.1%                  | 25.3%                     | 57.6%  |                
 
 Notes: ...and how much of a difference you see in survey responses between the two groups. We see here that people who say that elections don't matter and things stay the same no matter who we vote in were less likely to vote, while people who think that gay rights are important were more likely to vote. We can see differences like this for many of the survey questions.
 
