@@ -3,7 +3,8 @@
 </p>
 
 # Welcome to the course repo for **Supervised Machine Learning: Case Studies in R**! 🎉 
-ou can access [this course for free online](linkylink).
+
+You can access [this course for free online](linkylink).
 
 This course approaches supervised machine learning using:
 
@@ -18,5 +19,5 @@ back-end code execution uses [Binder](https://mybinder.org). [Florencia D'Andrea
 To learn more about building a course on this framework, see Ines's starter repos for making courses in [Python](https://github.com/ines/course-starter-python) and [R](https://github.com/ines/course-starter-r), and her explanation of how the framework works at [the original course repo](https://github.com/ines/spacy-course#-faq).
 
 
-Te course material in this course is licensed [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/), meaning you are free to use it, change it, and remix it as long as you give appropriate credit and distribute any new materials under the same license.  The _code_ is [MIT](https://opensource.org/licenses/MIT)-licensed.
+The course material in this course is licensed [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/), meaning you are free to use it, change it, and remix it as long as you give appropriate credit and distribute any new materials under the same license.  The _code_ is [MIT](https://opensource.org/licenses/MIT)-licensed.
 
