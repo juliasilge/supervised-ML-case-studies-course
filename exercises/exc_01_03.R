@@ -1,4 +1,4 @@
-data/(tidyverse)
+library(tidyverse)
 cars2018 <- read_csv("data/cars2018.csv")
 
 # Print the cars2018 object

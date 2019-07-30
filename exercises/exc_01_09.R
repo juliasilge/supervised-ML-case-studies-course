@@ -1,6 +1,6 @@
-data/(caret)
-data/(tidyverse)
-data/(yardstick)
+library(caret)
+library(tidyverse)
+library(yardstick)
 
 car_test <- readRDS("data/c1_testing_full.rds")
 fit_lm <- readRDS("data/c1_fit_lm.rds")
