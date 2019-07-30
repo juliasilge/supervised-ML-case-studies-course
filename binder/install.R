@@ -1,2 +1,5 @@
 install.packages("tidyverse")
 install.packages("rjson")
+install.packages("rsample")
+install.packages("yardstick")
+install.packages("caret")
