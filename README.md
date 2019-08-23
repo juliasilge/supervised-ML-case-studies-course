@@ -9,7 +9,7 @@ You can access [this course for free online](linkylink).
 This course approaches supervised machine learning using:
 
 - [tidyverse](https://tidyverse.tidyverse.org/) tools
-- tmore mature parts of he [tidymodels](https://github.com/tidymodels) suite of packages
+- more mature parts of the [tidymodels](https://github.com/tidymodels) suite of packages
 - [caret](https://topepo.github.io/caret/)
 
 The interactive course site is built on the amazing framework created by [Ines Montani](https://ines.io/), originally built for her [spaCy course](https://course.spacy.io).  The front-end is powered by
