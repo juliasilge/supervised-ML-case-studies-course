@@ -1,3 +1,6 @@
+
+library(tidyverse)
+
 results %>%
     gather(Method, Result, `Linear regression`:`Random forest`) %>%
     ggplot(aes(log(MPG), Result, color = Method)) +
