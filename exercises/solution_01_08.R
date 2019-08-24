@@ -6,7 +6,7 @@ fit_lm <- readRDS("data/c1_fit_lm.rds")
 fit_rf <- readRDS("data/c1_fit_rf.rds")
 
 # Load yardstick
-data/(yardstick)
+library(yardstick)
 
 # Create the new columns
 results <- car_train %>%
