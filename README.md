@@ -2,9 +2,9 @@
 <img src="static/logo.svg" align="center" width="450px"/>
 </p>
 
-# Welcome to the course repo for **Supervised Machine Learning: Case Studies in R**! 🎉 
+# Welcome to the course repo for **[Supervised Machine Learning: Case Studies in R](https://supervised-ml-course.netlify.com/)**! 🎉 
 
-You can access [this course for free online](linkylink).
+You can access [this course for free online](https://supervised-ml-course.netlify.com/).
 
 This course approaches supervised machine learning using:
 
