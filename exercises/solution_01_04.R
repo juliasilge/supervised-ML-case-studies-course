@@ -1,4 +1,4 @@
-data/(tidyverse)
+library(tidyverse)
 cars2018 <- read_csv("data/cars2018.csv")
 
 # Deselect the 2 columns to create cars_vars
