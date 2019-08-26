@@ -55,7 +55,7 @@ Each of these case studies will provide you the opportunity to practice your dat
 # Fuel efficiency
 
 
-```
+```out
 > mtcars
 
                      mpg cyl  disp  hp drat    wt  qsec vs am gear carb
@@ -94,7 +94,7 @@ No, I'm kidding! 😜 I would never do that to you! I can only imagine that *you
 
 From the [US Department of Energy](https://www.fueleconomy.gov/feg/download.shtml)
 
-```
+```out
 > cars2018
 
 # A tibble: 1,144 x 15
@@ -125,7 +125,7 @@ Notes: Instead, we are going to use a dataset of real cars from today. This data
 
 From the [US Department of Energy](https://www.fueleconomy.gov/feg/download.shtml)
 
-```
+```out
 > names(cars2018)
 
  [1] "Model"                   "Model Index"            
