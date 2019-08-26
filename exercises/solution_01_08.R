@@ -10,8 +10,8 @@ library(yardstick)
 
 # Create the new columns
 results <- car_train %>%
-    mutate(`Linear regression` = predict(fit_lm, .),
-           `Random forest` = predict(fit_rf, .))
+    mutate(`Linear regression` = predict(fit_lm, car_train),
+           `Random forest` = predict(fit_rf, car_train))
 
 # Evaluate the performance
 metrics(results, truth = MPG, estimate = `Linear regression`)
