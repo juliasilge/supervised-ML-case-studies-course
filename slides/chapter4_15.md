@@ -103,6 +103,7 @@ Notes: And perhaps most importantly, never skip exploratory data analysis when y
 Notes: And that's our ultimate goal here! Thanks for spending time with me on this course. Now it's time for you to take what you've been practicing here and go apply it in the real world.
 
 If this course has been helpful to you, you can [buy me a coffee](https://ko-fi.com/U7U4WG9B) or chip in for hosting costs.
+
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U4WG9B)
 
 

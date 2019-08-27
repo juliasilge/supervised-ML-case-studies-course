@@ -17,7 +17,7 @@ The interactive course site is built on the amazing framework created by [Ines M
 back-end code execution uses [Binder](https://mybinder.org). [Florencia D'Andrea](https://florencia.netlify.com/) helped port the course materials and made the fun logo.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/juliasilge/supervised-ML-case-studies-course/binder) 
-![Netlify Status](https://api.netlify.com/api/v1/badges/0a868ddd-58ad-421b-af91-1a084b011f44/deploy-status)
+![Netlify Status](https://api.netlify.com/api/v1/badges/3ba21376-9a18-4cf0-960e-2c65e6bc2bbd/deploy-status)
 
 To learn more about building a course on this framework, see Ines's starter repos for making courses in [Python](https://github.com/ines/course-starter-python) and [R](https://github.com/ines/course-starter-r), and her explanation of how the framework works at [the original course repo](https://github.com/ines/spacy-course#-faq).
 
