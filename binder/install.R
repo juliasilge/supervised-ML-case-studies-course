@@ -1,5 +1,6 @@
 install.packages("tidyverse")
-install.packages("tidymodels")
+install.packages("rsample")
+install.packages("yardstick")
 install.packages("randomForest")  
 install.packages("caret")    
 install.packages("rjson")  
