@@ -8,8 +8,8 @@ fit_rf <- readRDS("data/c1_fit_rf.rds")
 
 # Create the new columns
 results <- car_test %>%
-    mutate(`Linear regression` = predict(fit_lm, testing),
-           `Random forest` = predict(fit_rf, testing))
+    mutate(`Linear regression` = predict(fit_lm, car_test),
+           `Random forest` = predict(fit_rf, car_test))
 
 # Evaluate the performance
 metrics(results, truth = MPG, estimate = `Linear regression`)

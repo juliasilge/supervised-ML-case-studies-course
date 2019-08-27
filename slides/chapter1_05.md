@@ -67,6 +67,8 @@ It's also possible to divide your data into *three* partitions as you build, cho
 # Training a model
 
 ```r
+library(caret)
+
 fit_lm <- train(log(MPG) ~ ., 
                 method = "lm", 
                 data = car_training,

@@ -10,8 +10,8 @@ library(___)
 
 # Create the new columns
 results <- car_train %>%
-    mutate(`Linear regression` = predict(___, training),
-           `Random forest` = predict(___, training))
+    mutate(`Linear regression` = predict(___, car_train),
+           `Random forest` = predict(___, car_train))
 
 # Evaluate the performance
 metrics(results, truth = ___, estimate = `Linear regression`)
