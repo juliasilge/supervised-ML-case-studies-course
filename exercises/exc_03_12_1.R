@@ -1,7 +1,7 @@
 library(tidyverse)
 library(caret)
 
-vote_train <- readRDS("data/c3_training_two_percent.rds")
+training <- readRDS("data/c3_training_two_percent.rds")
 
 # Logistic regression
 vote_glm <- train(turnout16_2016 ~ ., 
