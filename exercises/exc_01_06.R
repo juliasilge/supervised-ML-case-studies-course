@@ -11,6 +11,3 @@ car_split <- car_vars %>%
 
 car_train <- training(___)
 car_test <- testing(___)
-
-
-
