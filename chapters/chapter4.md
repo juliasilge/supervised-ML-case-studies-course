@@ -243,7 +243,7 @@ Now that you have created a data frame that contains all three models' predictio
 **Instructions**
 
 - Load `yardstick`. 
-- Use the [`metrics()`](https://wtidymodels.github.io/yardstick/reference/metrics.html) function from the yardstick package to see how each model performed. There are two important arguments that you need to supply to `metrics()`, `truth` (the true age of each nun) and `estimate` (the predicted age of each nun). Which column in the data frame you created corresponds to each?
+- Use the [`metrics()`](https://tidymodels.github.io/yardstick/reference/metrics.html) function from the yardstick package to see how each model performed. There are two important arguments that you need to supply to `metrics()`, `truth` (the true age of each nun) and `estimate` (the predicted age of each nun). Which column in the data frame you created corresponds to each?
 
 <codeblock id="04_13">
 
@@ -255,7 +255,7 @@ The `truth` argument should always be `age`, while the `estimate` column changes
 
 <exercise id="14" title="Estimating uncertainty for new data">
 
-You just compared the three models you trained, and the `gbm` model performed best on the validation data set. Gradient boosting models are very effective and are a powerful tool in your machine learning arsenal. Before you take a trained model like this and use it to make predictions on new data, you must estimate how your final chosen model will perform. Specifically, let's estimate the [`rmse()`](https://wtidymodels.github.io/yardstick/reference/rmse.html for this model.
+You just compared the three models you trained, and the `gbm` model performed best on the validation data set. Gradient boosting models are very effective and are a powerful tool in your machine learning arsenal. Before you take a trained model like this and use it to make predictions on new data, you must estimate how your final chosen model will perform. Specifically, let's estimate the [`rmse()`](https://tidymodels.github.io/yardstick/reference/rmse.html) for this model.
 
 **Instructions**
 
