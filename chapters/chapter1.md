@@ -53,6 +53,8 @@ The first step before you start modeling is to explore your data. In this course
 
 **Instructions**
 
+The first time you run a code exercise, it may take a little while for the environment to load.
+
 `tidyverse` is loaded for you. 
 
 - Print the `cars2018` object. Notice that some of the column names have spaces in them and are surrounded by backticks, like `` `Recommended Fuel` ``.
