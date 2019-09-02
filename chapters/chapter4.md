@@ -243,7 +243,7 @@ Now that you have created a data frame that contains all three models' predictio
 **Instructions**
 
 - Load `yardstick`. 
-- Use the [`metrics()`](https://wtidymodels.github.io/yardstick/reference/metrics.html function from the yardstick package to see how each model performed. There are two important arguments that you need to supply to `metrics()`, `truth` (the true age of each nun) and `estimate` (the predicted age of each nun). Which column in the data frame you created corresponds to each?
+- Use the [`metrics()`](https://wtidymodels.github.io/yardstick/reference/metrics.html) function from the yardstick package to see how each model performed. There are two important arguments that you need to supply to `metrics()`, `truth` (the true age of each nun) and `estimate` (the predicted age of each nun). Which column in the data frame you created corresponds to each?
 
 <codeblock id="04_13">
 
