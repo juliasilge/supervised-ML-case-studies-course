@@ -1,4 +1,4 @@
-install.packages("tidyverse", dependencies = TRUE)
+install.packages("tidyverse")
 install.packages("rsample")
 install.packages("yardstick")
 install.packages("randomForest")  
