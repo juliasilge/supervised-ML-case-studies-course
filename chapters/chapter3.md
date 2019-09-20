@@ -315,6 +315,7 @@ You have just spent a whole chapter of this course exploring how to predict vote
 
 Which model performed better on the **testing** data?
 
+<choice>
 <opt text="Random forest">
 
 Random forest models are very powerful and the random forest model had higher accuracy than the logistic regression model on the training data, but on the testing data, the random forest model could not identify any of the people who voted.
