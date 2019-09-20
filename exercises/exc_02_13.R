@@ -9,7 +9,7 @@ stack_rf <- readRDS("data/stack_rf.rds")
 library(___)
 
 # Predict values
-testing_results <- testing %>%
+testing_results <- stack_test %>%
     mutate(`Logistic regression` = predict(___, stack_test),
            `Random forest` = predict(___, stack_test))
 

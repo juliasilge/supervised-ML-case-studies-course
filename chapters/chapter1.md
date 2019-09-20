@@ -53,7 +53,7 @@ The first step before you start modeling is to explore your data. In this course
 
 **Instructions**
 
-The first time you run a code exercise, it may take a little while for the environment to load.
+The first time you run a code exercise, it may take a little while for tyourDocker container on [mybinder.org](https://mybinder.org/v2/gh/juliasilge/supervised-ML-case-studies-course/binder) to load. ⏳ Try to be patient!
 
 `tidyverse` is loaded for you. 
 
