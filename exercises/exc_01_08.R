@@ -16,4 +16,3 @@ results <- car_train %>%
 # Evaluate the performance
 metrics(results, truth = ___, estimate = `Linear regression`)
 metrics(results, truth = ___, estimate = `Random forest`)
-
