@@ -32,7 +32,7 @@ Agree very much | 5
 
 Check out the survey's [codebook](https://curate.nd.edu/downloads/0v838051f6x).
 
-Notes: There is demographic information in the survey, along with a lot of diverse kinds of questions. About 60 of the survey questions were agreement questions, with a *statment* (of some kind) that the survey asked the respondent to agree or disagree with on this scale. The answers are coded as integers from 1 to 5.
+Notes: There is demographic information in the survey, along with a lot of diverse kinds of questions. About 60 of the survey questions were agreement questions, with a *statement* (of some kind) that the survey asked the respondent to agree or disagree with on this scale. The answers are coded as integers from 1 to 5.
 
 ---
 
