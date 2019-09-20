@@ -85,7 +85,7 @@ library(yardstick)
 [1] 0.9428238
 ```
 
-Notes: Often you want other measures of model performance o, thoughin a format that will be friendlier to data frames, and for that you can use the yardstick package. 
+Notes: Often you want other measures of model performance, though, in a format that will be friendlier to data frames, and for that you can use the yardstick package. 
 
 Here we can see the overall accuracy, as well as the positive and negative predictive values, for the logistic regression model evaluated on the testing data. We'll pass three arguments to these functions: first, a data frame with real data on remote status and predicted remote status for our observations, and then the columns in that data frame that give us the true class and the predicted class for each developer in our data set.
 
