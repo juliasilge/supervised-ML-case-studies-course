@@ -196,7 +196,7 @@ Let's try bootstrap resampling, which means creating data sets the same size as 
 
 **Instructions**
 
-The data sets available in your environment are 10% of their original size, to allow the code in this exercise to evaluate quickly. (This means you may see some warnings.)
+The data sets available in your environment are 10% of their original size, to allow the code in this exercise to evaluate quickly. (This means you may see some warnings, such as about rank-deficient fits.)
 
 - Which data set should you train these models with, `car_train` or `car_test`?
 - Train these models using bootstrap resampling. The method for this is `"boot"`.
