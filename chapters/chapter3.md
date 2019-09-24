@@ -55,7 +55,7 @@ To do a good job with predictive modeling, you need to explore your dataset to u
 
 - Load [tidyverse](https://tidyverse.tidyverse.org/).
 - Print `voters` to check out the data.
-- In the call to `count()`, use the appropriate variable to see how many examples you have of those who voted and did not vote.
+- In the call to `count()`, use the appropriate variable (`turnout16_2016`) to see how many examples you have of those who voted and did not vote.
 
 <codeblock id="03_03_1">
 

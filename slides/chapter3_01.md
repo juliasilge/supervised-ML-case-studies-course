@@ -113,7 +113,6 @@ Notes: We are going to build machine learning models to predict whether a respon
 
 Notes: It's time for you to get started with this new dataset and see what you can learn.
 
----
 
 
 

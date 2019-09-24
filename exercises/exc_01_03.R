@@ -2,7 +2,7 @@ library(tidyverse)
 cars2018 <- read_csv("data/cars2018.csv")
 
 # Print the cars2018 object
-___
+glimpse(___)
 
 # Plot the histogram
 ggplot(cars2018, aes(x = ___)) +

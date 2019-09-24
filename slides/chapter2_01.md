@@ -108,7 +108,6 @@ The second dot there says `data = .`, and we are using *this* because we are pip
 
 Notes: Let's start by thinking through our modeling approach and exploring this new dataset.
 
----
 
 
 

@@ -82,9 +82,3 @@ Notes: This dataset of extensive survey responses from Catholic nuns in the 1960
 
 Notes: It's time to finish out this course with the final models that you need to train and evaluate.
 
----
-
-
-
-
-
