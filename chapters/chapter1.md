@@ -55,6 +55,8 @@ The first step before you start modeling is to explore your data. In this course
 
 The first time you run a code exercise, it may take a little while for your Docker container on [mybinder.org](https://mybinder.org/v2/gh/juliasilge/supervised-ML-case-studies-course/binder) to load. ⏳ Try to be patient!
 
+**Wherever you see `___` in a code exercise, replace it with the correct code as instructed. Run the code (via the button) to see if it will run, and submit it (via the other button) to check if it's correct.**
+
 `tidyverse` is loaded for you. 
 
 - Print the `cars2018` object. Notice that some of the column names have spaces in them and are surrounded by backticks, like `` `Recommended Fuel` ``.

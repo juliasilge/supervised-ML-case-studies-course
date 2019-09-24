@@ -18,4 +18,4 @@ validation_split <- validate_test %>%
                   strata = "age")
 
 sisters_validate <- training(___)
-sisters_text <- testing(___)
+sisters_test <- testing(___)
