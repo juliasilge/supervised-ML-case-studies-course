@@ -258,7 +258,7 @@ You are evaluating your models, so you should use the testing data set for all t
 
 **Instructions**
 
-Print the confusion matrix for the `stack_rf` model on the `stack_glm` data.
+Print the confusion matrix for the `stack_rf` model on the `stack_test` data.
 
 <codeblock id="02_12_2">
 
