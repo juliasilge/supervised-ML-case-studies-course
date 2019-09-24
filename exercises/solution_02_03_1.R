@@ -2,7 +2,7 @@ library(tidyverse)
 stackoverflow <- read_csv("data/stackoverflow.csv")
 
 # Print stackoverflow
-stackoverflow
+glimpse(stackoverflow)
 
 # First count for Remote
 stackoverflow %>% 

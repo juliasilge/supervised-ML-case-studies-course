@@ -4,7 +4,7 @@ ___
 voters <- read_csv("data/voters.csv")
 
 # Print voters
-___
+glimpse(___)
 
 # How many people voted?
 voters %>%

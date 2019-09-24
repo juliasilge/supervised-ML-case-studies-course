@@ -5,7 +5,7 @@ sisters67 <- read_csv("data/sisters.csv")
 ___
 
 # View sisters67
-___
+glimpse(___)
 
 # Plot the histogram
 ggplot(sisters67, aes(x = ___)) +

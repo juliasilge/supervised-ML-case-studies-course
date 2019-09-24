@@ -4,7 +4,7 @@ library(tidyverse)
 voters <- read_csv("data/voters.csv")
 
 # Print voters
-voters
+glimpse(voters)
 
 # How many people voted?
 voters %>%
