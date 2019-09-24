@@ -40,7 +40,7 @@ sisters_gbm <- train(age ~ ., method = "gbm", data = sisters_train)
 
 Notes: You will use your training dataset when you train the models, as you have throughout this course. In the other case studies, we stuck with just two kinds of models and didn't explore a lot of ways to tune them. We trained the models using the training set, and then tested them using the testing test. 
 
-If you stop 🛑 to think  aout what we were doing when we used the test set, though, you'll realize there is more than one thing going on. We looked at model performance on the test set, decided which model was best, and then assumed that same model performance would apply to new data.
+If you stop 🛑 to think about what we were doing when we used the test set, though, you'll realize there is more than one thing going on. We looked at model performance on the test set, decided which model was best, and then assumed that same model performance would apply to new data.
 
 ---
 
