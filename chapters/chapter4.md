@@ -53,7 +53,6 @@ The first step before you start modeling is to explore your data, and we are goi
 
 **Instructions**
 
-- Load the tidyverse package, for functions to manipulate data from [dplyr](https://dplyr.tidyverse.org/) and [tidyr](https://tidyr.tidyverse.org/) and visualize data from [ggplot2](https://ggplot2.tidyverse.org/).
 - Call `glimpse()` on `sisters67` to take a look at the structure of the data. Notice how many columns there are, and what their characteristics are.
 - Plot a histogram of `age`.
 
