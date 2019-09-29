@@ -10,7 +10,7 @@ ___
 
 # ...CART model
 metrics(modeling_results, truth = ___, estimate = ___)
-# ...xgboost model
-metrics(modeling_results, truth = ___, estimate = ___)
 # ...gbm model
 ___(modeling_results, truth = ___, estimate = ___)
+# ...xgboost model
+metrics(modeling_results, truth = ___, estimate = ___)
