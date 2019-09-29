@@ -1,9 +1,6 @@
 library(tidyverse)
 sisters67 <- read_csv("data/sisters.csv")
 
-# Load tidyverse
-___
-
 # View sisters67
 glimpse(___)
 
