@@ -53,7 +53,6 @@ The first step before you start modeling is to explore your data, and we are goi
 
 **Instructions**
 
-- Load the tidyverse package, for functions to manipulate data from [dplyr](https://dplyr.tidyverse.org/) and [tidyr](https://tidyr.tidyverse.org/) and visualize data from [ggplot2](https://ggplot2.tidyverse.org/).
 - Call `glimpse()` on `sisters67` to take a look at the structure of the data. Notice how many columns there are, and what their characteristics are.
 - Plot a histogram of `age`.
 
@@ -255,7 +254,7 @@ The `truth` argument should always be `age`, while the `estimate` column changes
 
 <exercise id="14" title="Estimating uncertainty for new data">
 
-You just compared the three models you trained, and the `gbm` model performed best on the validation data set. Gradient boosting models are very effective and are a powerful tool in your machine learning arsenal. Before you take a trained model like this and use it to make predictions on new data, you must estimate how your final chosen model will perform. Specifically, let's estimate the [`rmse()`](https://tidymodels.github.io/yardstick/reference/rmse.html) for this model.
+You just compared the three models you trained, and the `xgboost` model performed best on the validation data set. Gradient boosting models are very effective and are a powerful tool in your machine learning arsenal. Before you take a trained model like this and use it to make predictions on new data, you must estimate how your final chosen model will perform. Specifically, let's estimate the [`rmse()`](https://tidymodels.github.io/yardstick/reference/rmse.html) for this model.
 
 **Instructions**
 

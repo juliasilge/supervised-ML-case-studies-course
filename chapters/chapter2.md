@@ -86,7 +86,6 @@ Build a simple logistic regression model predicting remote status.
 
 - Use `select()` to deselect the column `Respondent` from the data set before using it in modeling.
 - Fit `Remote` as the predicted quantity, explained by all the predictors, i.e., `.` in the R formula input to `glm()`. Don't get confused with the two instances of `.`!
- In the calls to [`count()`](https://dplyr.tidyverse.org/reference/tally.html), check out the distributions for remote status first, and then country.
 
 <codeblock id="02_04">
 

@@ -10,7 +10,7 @@ library(yardstick)
 
 # ...CART model
 metrics(modeling_results, truth = age, estimate = CART)
-# ...xgboost model
-metrics(modeling_results, truth = age, estimate = XGB)
 # ...gbm model
 metrics(modeling_results, truth = age, estimate = GBM)
+# ...xgboost model
+metrics(modeling_results, truth = age, estimate = XGB)
