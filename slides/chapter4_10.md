@@ -68,7 +68,7 @@ Notes: In some cases, this approach is overkill, just too much and not appropria
 +     rmse(truth = age, estimate = prediction)
 [1] 13.27101
 >
-> sisters_text %>%
+> sisters_test %>%
 +     mutate(prediction = predict(sisters_xg, sisters_text)) %>%
 +     rmse(truth = age, estimate = prediction)
 [1] 13.36945
