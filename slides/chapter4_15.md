@@ -11,42 +11,36 @@ Notes: Congratulations! You finished our fourth and final case study in this cou
 # Predicting age
 
 ```r
-metrics(modeling_results, truth = age, estimate = CART)
+rmse(modeling_results, truth = age, estimate = CART)
 ```
 
 ```out
 # A tibble: 3 x 3
   .metric .estimator .estimate
   <chr>   <chr>          <dbl>
-1 rmse    standard      14.7  
-2 rsq     standard       0.167
-3 mae     standard      12.0  
+1 rmse    standard        14.7
 ```
 
 ```r
-metrics(modeling_results, truth = age, estimate = GBM)
+rmse(modeling_results, truth = age, estimate = GBM)
 ```
 
 ```out
 # A tibble: 3 x 3
   .metric .estimator .estimate
   <chr>   <chr>          <dbl>
-1 rmse    standard      12.6  
-2 rsq     standard       0.389
-3 mae     standard      10.2  
+1 rmse    standard        12.6 
 ```
 
 ```r
-metrics(modeling_results, truth = age, estimate = XBG)
+rmse(modeling_results, truth = age, estimate = XBG)
 ```
 
 ```out
 # A tibble: 3 x 3
   .metric .estimator .estimate
   <chr>   <chr>          <dbl>
-1 rmse    standard      12.5  
-2 rsq     standard       0.394
-3 mae     standard      10.0  
+1 rmse    standard        12.5
 ```
 
 Notes: You found that in this case study on the beliefs and opinions of Catholic nuns in the 1960s, the XGBoost gradient boosting model performed best, at least using the defaults for the various tuning parameters. 

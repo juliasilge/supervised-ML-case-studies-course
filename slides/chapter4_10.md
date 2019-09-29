@@ -32,7 +32,7 @@ The third type of model is a different implementation of gradient boosting regre
 sisters_cart <- train(age ~ ., method = "rpart", data = sisters_train)
 
 ## xgboost
-sisters_rf <- train(age ~ ., method = "xgbLinear", data = sisters_train)
+sisters_xg <- train(age ~ ., method = "xgbLinear", data = sisters_train)
 
 ## gbm
 sisters_gbm <- train(age ~ ., method = "gbm", data = sisters_train)
