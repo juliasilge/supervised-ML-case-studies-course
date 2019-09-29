@@ -62,16 +62,27 @@ Notes: In some cases, this approach is overkill, just too much and not appropria
 
 # Why three data partitions?
 
+```r
+sisters_validate %>%
+    mutate(prediction = predict(sisters_gbm, sisters_validate)) %>%
+    rmse(truth = age, estimate = prediction)
 ```
-> sisters_validate %>%
-+     mutate(prediction = predict(sisters_xg, sisters_validate)) %>%
-+     rmse(truth = age, estimate = prediction)
-[1] 13.27101
->
-> sisters_test %>%
-+     mutate(prediction = predict(sisters_xg, sisters_text)) %>%
-+     rmse(truth = age, estimate = prediction)
-[1] 13.36945
+```out
+# A tibble: 1 x 3
+  .metric .estimator .estimate
+  <chr>   <chr>          <dbl>
+1 rmse    standard        12.6
+```
+```r
+sisters_test %>%
+    mutate(prediction = predict(sisters_gbm, sisters_test)) %>%
+    rmse(truth = age, estimate = prediction)
+```
+```out
+# A tibble: 1 x 3
+  .metric .estimator .estimate
+  <chr>   <chr>          <dbl>
+1 rmse    standard        12.7
 ```
 
 Notes: This dataset of extensive survey responses from Catholic nuns in the 1960s is a great demonstration of all of these issues. As you work through the final set of exercises, you will see all of this come together, along with all the other practical predictive modeling skills we've explored in this course.
