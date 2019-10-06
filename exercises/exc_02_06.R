@@ -11,7 +11,7 @@ stack_select <- stackoverflow %>%
 
 # Split the data into training and testing sets
 set.seed(1234)
-stack_split <- stackoverflow %>%
+stack_split <- stack_select %>%
     initial_split(___,
                   strata = "___")
 
