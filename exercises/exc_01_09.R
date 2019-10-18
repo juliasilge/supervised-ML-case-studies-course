@@ -8,7 +8,8 @@ fit_rf <- readRDS("data/c1_fit_rf.rds")
 
 # Create the new columns
 results <- ___ %>%
-    mutate(`Linear regression` = predict(fit_lm, ___),
+    mutate(MPG = log(MPG),
+           `Linear regression` = predict(fit_lm, ___),
            `Random forest` = predict(fit_rf, ___))
 
 # Evaluate the performance
