@@ -34,7 +34,7 @@ Clustering is an example of unsupervised machine learning, which we will not cov
 
 <opt text="Classification" correct="true">
 
-Correct! To predict group membership or discrete class labels, use classification models.
+To predict group membership or discrete class labels, use classification models.
 
 </opt>
 
@@ -101,7 +101,7 @@ This is real data from the real world, so you need to think through important mo
 <choice>
 <opt text="This data set is imbalanced." correct="true">
 
-Correct! There are over 20 times more people in this survey who said they did vote than who said they did not.
+There are over 20 times more people in this survey who said they did vote than who said they did not.
 
 </opt>
 
@@ -199,7 +199,7 @@ If you divide your data into 50 subsets, that would be called 50-fold cross-vali
 
 <opt text="randomly divide your training data into 10 subsets and train on 9 at a time (validating on the other subset), iterating through all 10 subsets for validation. Then you repeat that process 5 times." correct="true">
 
-Correct! ⚡️ Simulations and practical experience show that 10-fold cross-validation repeated 5 times is a great resampling approach for many situations. This approach involves randomly dividing your training data into 10 folds, or subsets or groups, and training on only 9 while using the other fold for validation. You iterate through all 10 folds being used for validation; this is one round of cross-validation. You can then repeat the whole process multiple, perhaps 5, times.
+⚡️ Simulations and practical experience show that 10-fold cross-validation repeated 5 times is a great resampling approach for many situations. This approach involves randomly dividing your training data into 10 folds, or subsets or groups, and training on only 9 while using the other fold for validation. You iterate through all 10 folds being used for validation; this is one round of cross-validation. You can then repeat the whole process multiple, perhaps 5, times.
 
 </opt>
 
@@ -324,7 +324,7 @@ Random forest models are very powerful and the random forest model had higher ac
 
 <opt text="Logistic regression" correct="true">
 
-Correct! Logistic regression is a simpler model, but in this case, it performed better on the testing data and you can expect it to do a better job predicting on new data.
+Logistic regression is a simpler model, but in this case, it performed better on the testing data and you can expect it to do a better job predicting on new data.
 
 </opt>
 </choice>
