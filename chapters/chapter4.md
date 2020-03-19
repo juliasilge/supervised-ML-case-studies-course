@@ -40,7 +40,7 @@ A classification model predicts a group membership or discrete class label, not 
 
 <opt text="Regression" correct="true">
 
-Correct! To predict a continuous, numeric quantity like age, use regression models.
+To predict a continuous, numeric quantity like age, use regression models.
 
 </opt>
 </choice>
@@ -178,7 +178,7 @@ Training is done with the training set.
 
 <opt text="compare models you have trained and choose which one to use." correct="true">
 
-Correct! A validation test is used to compare models or tune hyperparameters.
+A validation test is used to compare models or tune hyperparameters.
 
 </opt>
 
