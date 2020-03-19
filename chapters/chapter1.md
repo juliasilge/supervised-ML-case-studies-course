@@ -40,7 +40,7 @@ A classification model predicts a group membership or discrete class label, not 
 
 <opt text="Regression" correct="true">
 
-Correct! 👏 To predict a continuous, numeric quantity like fuel efficiency, use regression models.
+👏 To predict a continuous, numeric quantity like fuel efficiency, use regression models.
 
 </opt>
 </choice>
@@ -49,7 +49,7 @@ Correct! 👏 To predict a continuous, numeric quantity like fuel efficiency, us
 
 <exercise id="3" title="Visualizing the fuel efficiency distribution">
 
-The first step before you start modeling is to explore your data. In this course we'll practice using tidyverse functions for exploratory data analysis. Start off this case study by examinign your data set and visualizing the distribution of fuel efficiency. The ggplot2 package, with functions like [`ggplot()`](https://ggplot2.tidyverse.org/reference/ggplot.html) and [`geom_histogram()`](https://ggplot2.tidyverse.org/reference/geom_histogram.html) are included in the tidyverse.
+The first step before you start modeling is to explore your data. In this course we'll practice using tidyverse functions for exploratory data analysis. Start off this case study by examining your data set and visualizing the distribution of fuel efficiency. The ggplot2 package, with functions like [`ggplot()`](https://ggplot2.tidyverse.org/reference/ggplot.html) and [`geom_histogram()`](https://ggplot2.tidyverse.org/reference/geom_histogram.html) are included in the tidyverse.
 
 **Instructions**
 

@@ -34,7 +34,7 @@ Clustering is an example of unsupervised machine learning, which we will not cov
 
 <opt text="Classification" correct="true">
 
-Correct! To predict group membership or discrete class labels, use classification models.
+To predict group membership or discrete class labels, use classification models.
 
 </opt>
 
@@ -49,7 +49,7 @@ A regression model predicts a numeric/continuous value or response, not a group 
 
 <exercise id="3" title="Exploring the Stack Overflow survey">
 
-Anytime you are planning to implement modeling, it is always a good idea to explore your dataset. Start off this modeling analysis by checking out how many remote and non-remote developers have to work with, where they live, and how much experience they have.
+Anytime you are planning to implement modeling, it is always a good idea to explore your dataset. Start off this modeling analysis by checking out how many remote and non-remote developers you have to work with, where they live, and how much experience they have.
 
 **Instructions**
 
@@ -165,7 +165,7 @@ Although there were more non-remote developers in the original dataset, upsampli
 
 <opt text="There are the same number of remote and non-remote developers." correct="true">
 
-Correct! Upsampling samples with replacement until the class distributions are equal, so there are the same number of remote and non-remote developers after upsampling.
+Upsampling samples with replacement until the class distributions are equal, so there are the same number of remote and non-remote developers after upsampling.
 
 </opt>
 
@@ -186,7 +186,7 @@ We used upsampling only on a subset of the data, because its purpose is only app
 
 <opt text="The training data." correct="true">
 
-Correct! ⭐️ Adjusting class imbalance helps you train a model that performs better.
+⭐️ Adjusting class imbalance helps you train a model that performs better.
 
 </opt>
 
