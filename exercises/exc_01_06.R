@@ -1,7 +1,6 @@
-library(tidyverse)
-car_vars <- readRDS("data/c1_cars_vars_full.rds")
+car_vars <- readRDS("data/c1_car_vars.rds")
 
-# Load rsample
+# Load tidymodels
 ___
 
 # Split the data into training and test sets
@@ -11,3 +10,6 @@ car_split <- car_vars %>%
 
 car_train <- training(___)
 car_test <- testing(___)
+
+glimpse(car_train)
+glimpse(car_test)

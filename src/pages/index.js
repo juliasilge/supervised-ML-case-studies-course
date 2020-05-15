@@ -21,7 +21,7 @@ export default ({ data }) => {
                 <h1 className={classes.subtitle}>A Free, Interactive Course Using Tidy Tools</h1>
                 <div className={classes.introduction}>
                 <p>
-                    Predictive modeling, or supervised machine learning, is a powerful tool for using data to make predictions about the world around us. Once you understand the basic ideas of supervised machine learning, the next step is to practice your skills so you know how to apply these techniques wisely and appropriately. In this course, you will work through four case studies using data from the real world; you will gain experience in exploratory data analysis, preparing data so it is ready for predictive modeling, training supervised machine learning models, and evaluating those models.
+                    Predictive modeling, or supervised machine learning, is a powerful tool for using data to make predictions about the world around us. Once you understand the basic ideas of supervised machine learning, the next step is to practice your skills so you know how to apply these techniques wisely and appropriately. In this course, you will work through four case studies using data from the real world; you will gain experience in exploratory data analysis, preparing data so it is ready for predictive modeling, training supervised machine learning models using tidymodels, and evaluating those models.
                 </p>
                 <p>
                     To take this course, you need some familiarity with tidyverse packages like <strong>dplyr</strong> and <strong>ggplot2</strong> and exposure to machine learning basics. Now let's get started!

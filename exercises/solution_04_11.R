@@ -1,11 +1,8 @@
-library(tidyverse)
-sisters_train <- readRDS("data/c4_training_500.rds")
+library(tidymodels)
 
-# Load caret
-library(caret)
+tree_grid <- grid_regular(num_comp(c(3, 12)),
+                          cost_complexity(),
+                          tree_depth(),
+                          levels = 5)
 
-# Fit a CART model
-sisters_cart <- train(age ~ ., method = "rpart", data = sisters_train)
-
-# Print the CART model
-sisters_cart
+glimpse(tree_grid)

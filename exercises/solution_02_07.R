@@ -1,15 +1,12 @@
-library(tidyverse)
-library(caret)
+library(tidymodels)
 
-stack_train <- readRDS("data/c2_training_full.rds")
-stack_test <- readRDS("data/c2_testing_full.rds")
+stack_train <- readRDS("data/c2_train.rds")
 
-# Create the upsampled training set
-up_train <- upSample(x = select(stack_train, -Remote),
-                     y = stack_train$Remote,
-                     yname = "Remote") %>%
-    as_tibble()
+stack_recipe <- recipe(remote ~ ., data = stack_train) %>% 
+    step_downsample(remote)
 
-# Count the number of each type of Remote employee
-up_train %>%
-    count(Remote)
+stack_prep <- prep(stack_recipe)
+stack_down <- juice(stack_prep)
+
+stack_down %>%
+    count(remote)

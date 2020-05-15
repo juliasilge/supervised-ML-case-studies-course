@@ -1,14 +1,23 @@
 library(tidyverse)
-stackoverflow <- read_csv("data/stackoverflow.csv") %>%
-    mutate(Remote = factor(Remote, levels = c("Remote", "Not remote")))
+stack_overflow <- read_csv("data/stack_overflow.csv") %>%
+    mutate(remote = factor(remote, levels = c("Remote", "Not remote"))) %>%
+    mutate_if(is.character, factor)
 
-# Build a simple logistic regression model
-simple_glm <- stackoverflow %>%
-        select(-___) %>%
-        glm(___,
-            family = "binomial",
-            data = ___)
+# Load tidymodels
+library(___)
 
+# Create stack_select dataset
+stack_select <- stack_overflow %>%
+    select(-respondent)
 
-# Print the summary of the model
-summary(simple_glm)
+# Split the data into training and testing sets
+set.seed(1234)
+stack_split <- stack_select %>%
+    initial_split(___,
+                  strata = ___)
+
+stack_train <- ___(stack_split)
+stack_test <- ___(stack_split)
+
+glimpse(stack_train)
+glimpse(stack_test)

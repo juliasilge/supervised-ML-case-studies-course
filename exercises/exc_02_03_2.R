@@ -1,7 +1,7 @@
 library(tidyverse)
-stackoverflow <- read_csv("data/stackoverflow.csv")
+stack_overflow <- read_csv("data/stack_overflow.csv")
 
-ggplot(stackoverflow, aes(___, ___)) +
+ggplot(stack_overflow, aes(___, ___)) +
     geom_boxplot() +
     labs(x = NULL,
          y = "Years of professional coding experience") 

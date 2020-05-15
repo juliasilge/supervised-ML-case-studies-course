@@ -1,19 +1,30 @@
-library(caret)
-library(tidyverse)
+library(tidymodels)
 
-car_train <- readRDS("data/c1_training_one_percent.rds")
+car_train <- readRDS("data/c1_train_10_percent.rds")
 
-# Fit the models with bootstrap resampling
-cars_lm_bt <- train(log(MPG) ~ ., 
-                    method = "lm", 
-                    data = ___,
-                    trControl = trainControl(method = ___))
+lm_mod <- linear_reg() %>%
+    set_engine("lm")
 
-cars_rf_bt <- train(log(MPG) ~ ., 
-                    method = "rf", 
-                    data = ___,
-                    trControl = ___(method = ___))
-                   
-# Quick look at the models
-cars_lm_bt
-cars_rf_bt
+rf_mod <- rand_forest() %>%
+    set_engine("randomForest") %>%
+    set_mode("regression")
+
+## Create bootstrap resamples
+car_boot <- ___(car_train)
+
+# Evaluate the models with bootstrap resampling
+lm_res <- ___ %>%
+    fit_resamples(
+        log(MPG) ~ .,
+        resamples = ___,
+        control = control_resamples(save_pred = TRUE)
+    )
+
+rf_res <- ___ %>%
+    fit_resamples(
+        log(MPG) ~ .,
+        resamples = ___,
+        control = control_resamples(save_pred = TRUE)
+    )
+
+glimpse(rf_res)

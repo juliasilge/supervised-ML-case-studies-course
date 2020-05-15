@@ -1,17 +1,17 @@
-library(tidyverse)
+car_train <- readRDS("data/c1_train.rds")
+car_test <- readRDS("data/c1_test.rds")
 
-car_train <- readRDS("data/c1_training_full.rds")
-car_test <- readRDS("data/c1_testing_full.rds")
-
-# Load caret
+# Load tidymodels
 ___
 
+# Build a linear regression model specification
+lm_mod <- ___ %>%
+    set_engine("lm")
+
 # Train a linear regression model
-fit_lm <- train(log(MPG) ~ ., 
-                method = ___, 
-                data = ___,
-                trControl = trainControl(method = "none"))
+fit_lm <- lm_mod %>%
+    fit(log(MPG) ~ ., 
+        data = ___)
 
 # Print the model object
 fit_lm
-

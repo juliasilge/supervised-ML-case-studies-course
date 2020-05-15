@@ -15,7 +15,7 @@ id: 3
 
 </exercise>
 
-<exercise id="2" title="Choosing an appropriate model">
+<exercise id="2" title="Choose an appropriate model">
 
 In this case study, you will predict whether a person voted or not in the United States 2016 presidential election from responses that person gave on a survey. The survey focuses on opinions about political and economic topics. What kind of model will you build?
 
@@ -47,14 +47,14 @@ A regression model predicts a numeric/continuous value or response, not a group 
 
 </exercise>
 
-<exercise id="3" title="Exploring the VOTER data">
+<exercise id="3" title="Explore the VOTER data">
 
 To do a good job with predictive modeling, you need to explore your dataset to understand it first. Start off this modeling analysis by checking out how many people voted or did not vote, and the answers to a few questions. The answers to the questions on this survey have been coded as integers, and the corresponding text has been provided for you here.
  
 **Instructions**
 
 - Load [tidyverse](https://tidyverse.tidyverse.org/).
-- Print `voters` to check out the data.
+- Take a look at `voters` to check out the data.
 - In the call to `count()`, use the appropriate variable (`turnout16_2016`) to see how many examples you have of those who voted and did not vote.
 
 <codeblock id="03_03_1">
@@ -120,19 +120,19 @@ We can tell whether our data is imbalanced by examining the data set and noticin
 
 </exercise>
 
-<exercise id="6" title="Fit a simple model">
+<exercise id="6" title="Training and testing data">
 
-Start off a predictive modeling project by building the simplest possible model, to learn about the data and questions you are dealing with. Here, you will fit a simple logistic regression model on the whole data set to get an idea of what is going on.
+It's time to split your data into training and testing sets, in the same way that you created these subsets in the previous case studies. You want to split your data about evenly on the class `turnout16_2016`.
 
 **Instructions**
 
-- Use [`select()`](https://dplyr.tidyverse.org/reference/select.html) to remove the column `case_identifier` from `voters` and assign it to `voters_select`. 
-- Fit a logistic regression model to predict `turnout16_2016` explained by all the other variables in `voters_select`.
+- Load the tidymodels metapackage, for using the functions to split your data.
+- Use the correct function to create a data split that divides `voters_select` into 80%/20% sections.
+- Assign the 80% partition to `vote_train` and the 20% partition to `vote_test`.
 
 <codeblock id="03_06">
 
-- The formula for your model should be `turnout16_2016 ~ .` . 
-- To fit a logistic regression model, use `family = "binomial"`.
+The `initial_split()` function sets up the data partitioning, and then you can use that as input to call `training()` and `testing()`.
 
 </codeblock>
 
@@ -145,35 +145,35 @@ Start off a predictive modeling project by building the simplest possible model,
 
 </exercise>
 
-<exercise id="8" title="Training and testing data">
+<exercise id="8" title="Preprocess with a recipe">
 
-It's time to split your data into training and testing sets, in the same way that you created these subsets in the previous case studies. You want to split your data about evenly on the class `turnout16_2016`.
+This dataset needs to prepared for modeling.
 
 **Instructions**
 
-- Load the rsample package, for using the functions to split your data.
-- Use the correct function to create a data split that divides `voters_select` into 80%/20% sections.
-- Assign the 80% partition to `vote_train` and the 20% partition to `vote_test`.
+- Use a `recipe()` to preprocess your training data, `vote_train`.
+- Upsample this training data with the function `step_upsample()`.
 
 <codeblock id="03_08">
 
-The `initial_split()` function sets up the data partitioning, and then you can use that as input to call `training()` and `testing()`.
+When you set up a recipe with `recipe(turnout16_2016 ~ ., data = vote_train)`, you are specifying that the following steps should be applied to your data to get it ready for data analysis.
 
 </codeblock>
 
 </exercise>
 
-<exercise id="9" title="Upsampling for imbalanced data">
+<exercise id="9" title="Create a modeling workflow">
 
-It's time to start training your predictive models using caret's [train()](https://topepo.github.io/caret/model-training-and-tuning.html#model-training-and-parameter-tuning) function. This survey data set is imbalanced, with many more examples of people who said they voted than people who did not. To build a model that performs better, you should deal with this class imbalance. In this exercise, use upsampling, the same approach we used in the last case study.
+In this case study, we'll experiment with a new engine for the random forest model, the ranger package. You can combine the model with your preprocessing steps (your recipe) in a [workflow()](https://tidymodels.github.io/workflows/) for convenience.
 
 **Instructions**
 
-Build a logistic regression model with no resampling of data, but add the specification for upsampling. If you can't remember, learn more about [`trainControl()`](https://topepo.github.io/caret/model-training-and-tuning.html#control).
+- Use `rand_forest()` to specify a random forest model. Notice that we are using a different engine than in the first case study.
+- Add the recipe and the model specification to the workflow.
 
 <codeblock id="03_09">
 
-To upsample the training set within the call to `train()`, use `sampling = "up"` inside `trainControl()`.
+You add a recipe with `add_recipe()` and you add a model specification with `add_model()`.
 
 </codeblock>
 
@@ -191,19 +191,19 @@ To upsample the training set within the call to `train()`, use `sampling = "up"`
 When you implement 10-fold cross-validation repeated 5 times, you...
 
 <choice>
-<opt text="randomly divide your training data into 50 subsets and train on 49 at a time (validating on the other subset), iterating through all 50 subsets for validation.">
+<opt text="randomly divide your training data into 50 subsets and train on 49 at a time (assessing on the other subset), iterating through all 50 subsets for assessment.">
 
 If you divide your data into 50 subsets, that would be called 50-fold cross-validation. For most practical situations, 50 folds is overkill.
 
 </opt>
 
-<opt text="randomly divide your training data into 10 subsets and train on 9 at a time (validating on the other subset), iterating through all 10 subsets for validation. Then you repeat that process 5 times." correct="true">
+<opt text="randomly divide your training data into 10 subsets and train on 9 at a time (assessing on the other subset), iterating through all 10 subsets for assessment. Then you repeat that process 5 times." correct="true">
 
-⚡️ Simulations and practical experience show that 10-fold cross-validation repeated 5 times is a great resampling approach for many situations. This approach involves randomly dividing your training data into 10 folds, or subsets or groups, and training on only 9 while using the other fold for validation. You iterate through all 10 folds being used for validation; this is one round of cross-validation. You can then repeat the whole process multiple, perhaps 5, times.
+⚡️ Simulations and practical experience show that 10-fold cross-validation repeated 5 times is a great resampling approach for many situations. This approach involves randomly dividing your training data into 10 folds, or subsets or groups, and training on only 9 while using the other fold for assessment. You iterate through all 10 folds being used for assessment; this is one round of cross-validation. You can then repeat the whole process multiple, perhaps 5, times.
 
 </opt>
 
-<opt text="randomly divide your training data into 5 subsets and train on 4 at a time (validating on the other subset), iterating through all 5 subsets. Then you repeat that process 10 times.">
+<opt text="randomly divide your training data into 5 subsets and train on 4 at a time (assessing on the other subset), iterating through all 5 subsets. Then you repeat that process 10 times.">
 
 If you divide your data into 5 subsets, that would be called 5-fold cross-validation. In many practical situations, 5 folds is not enough to get the maximum performance improvement possible.
 
@@ -212,98 +212,70 @@ If you divide your data into 5 subsets, that would be called 5-fold cross-valida
 
 </exercise>
 
-<exercise id="12" title="Training models with cross-validation">
+<exercise id="12" title="Create cross-validation folds">
 
-You can build models both with the upsampling you implemented before, *and* the cross-validation we just discussed. Here, try 10-fold cross-validation repeated 2 times.
-
-To allow the code in this exercise to evaluate in a short time, the training set in your environment is 2% of the real training set. Expect to see some warnings because of this.
+You can use tidymodels functions to create the kind of cross-validation folds appropriate for your use case. Here, try 10-fold cross-validation repeated 5 times.
 
 **Instructions**
 
-- Use `method = "repeatedcv"` to implement 10-fold cross-validation (10 folds or subsets is the default, but this can be changed) for the logistic regression model.
-- Specify `repeats = 2` to repeat the 10-fold cross-validation 2 times.
+- The argument `v` specifies the number of folds for cross-validation.
+- The argument `repeats` specifies the number of repeats.
 
-<codeblock id="03_12_1">
+<codeblock id="03_12">
 
-Your call to `trainControl()` should look like `trainControl(method = "repeatedcv", repeats = 2, sampling = "up")`.
-
-</codeblock>
-
-**Instructions**
-
-Now, train a random forest model by implementing 10-fold cross validation 2 times.
-
-<codeblock id="03_12_2">
-
-Similar to the logistic regression model, you need to use the `method` and `repeats` arguments inside `trainControl()`.
+Use argument `v = 10` and `repeats = 5` to implement 10-fold cross-validation repeated 5 times.
 
 </codeblock>
 
 </exercise>
 
-<exercise id="13" title="Comparing model performance" type="slides">
+<exercise id="13" title="Evaluate model performance" type="slides">
 
 <slides source="chapter3_13">
 </slides>
 
 </exercise>
 
-<exercise id="14" title="Confusion matrix for your training data">
+<exercise id="14" title="Resampling two models">
 
-Let's start by seeing how these two models perform on your training data by looking at some confusion matrices. A confusion matrix tabulates how many examples in each class were correctly classified by a model. In this case study, it will show you how many voters were classified as voters and how many non-voters were classified as non-voters; the confusion matrix also shows you how many were classified into the wrong categories. 
+Let's use cross-validation resampling to evaluate performance for two kinds of models with this vote data. You've already learned how to create resamples, preprocess data for modeling, build a model specification, and combine this in a workflow; now it's time to put this all together and evaluate this model's performance. 
 
-Here we want to see how your model performed on the **training** data, the data the model used when it was trained. The models available in your environment were trained on all the training data, not just a subset, with 10-fold cross-validation repeated 5 times.
+The training data available in your environment is 10% of its original size, to allow the code in this exercise to evaluate quickly. (This means you may see some warnings.)
 
 **Instructions**
 
-Print the confusion matrix for the logistic regression model on the training data.
+Use `fit_resamples()` to evaluate how this logistic regression model performs on the cross-validation resamples.
 
 <codeblock id="03_14_1">
 
-- Use the `conf_mat()` function to build a confusion matrix. 
-- We aren't evaluating your models on the testing data yet, so use the `vote_train` data for all the arguments here.
+The workflow `vote_wf` contains both the recipe and the model specification, and can be fit to the resamples `vote_folds`.
 
 </codeblock>
 
 **Instructions**
 
-Print the confusion matrix for the random forest model (`vote_rf`) on the training data.
+- Now fit the resamples `vote_folds` to the random forest model.
+- Compute the metrics `roc_auc`, `sens`, and `spec`.
 
 <codeblock id="03_14_2">
 
-Use `mutate()` to make a new column of `predict`ed values.
+The function `metric_set()` takes as its arguments the metrics you want to compute.
 
 </codeblock>
 
 </exercise>
 
-<exercise id="15" title="Confusion matrix for your testing data">
+<exercise id="15" title="Performance metrics from resampling">
 
-Now, let's evaluate how the models perform on the testing data. This is what you use to estimate how your model will perform on new data.
-
-**Instructions**
-
-Print the confusion matrix for the logistic regression model on the training data.
-
-- Generate a confusion matrix for the logistic regression model (`vote_glm`). 
-- Instead of the `vote_train` data, now use the `vote_test` data.
-
-<codeblock id="03_15_1">
-
-- Find the predictions using `predict(vote_glm, vote_test)`.
-- Choose the real voting status for the `truth` argument to `conf_mat()`, and the predicted voting status for `estimate`. 
-
-</codeblock>
+Now, let's evaluate these results from resampling.
 
 **Instructions**
 
-- Generate a confusion matrix for the random forest model (`vote_rf`). 
-- Instead of the `vote_train` data, now use the `vote_test` data.
+Use the function `collect_metrics()` to obtain the metrics we specified from the resampling results.
 
-<codeblock id="03_15_2">
+<codeblock id="03_15">
 
-- Use `mutate()` to make the new column with predicted values.
-- Remember that `conf_mat()` is the function to find a confusion matrix.
+You can obtain the metrics from the random forest results with `collect_metrics(rf_res)`.
 
 </codeblock>
 
@@ -311,22 +283,40 @@ Print the confusion matrix for the logistic regression model on the training dat
 
 <exercise id="16" title="Which model is best?">
 
-You have just spent a whole chapter of this course exploring how to predict voter turnout based on survey responses. Of the two types of models you tried, which is the better choice? Which do you expect to perform better on new data?
-
-Which model performed better on the **testing** data?
+You have just spent most of this chapter exploring how to predict voter turnout based on survey responses. Of the two types of models you tried, which is the better choice? Which do you expect to perform better on new data?
 
 <choice>
 <opt text="Random forest">
 
-Random forest models are very powerful and the random forest model had higher accuracy than the logistic regression model on the training data, but on the testing data, the random forest model could not identify any of the people who voted.
+Random forest models are very powerful, but the random forest model could not identify any of the people who did _not_ vote.
 
 </opt>
 
 <opt text="Logistic regression" correct="true">
 
-Logistic regression is a simpler model, but in this case, it performed better on the testing data and you can expect it to do a better job predicting on new data.
+Logistic regression is a simpler model, but in this case, it performed better and you can expect it to do a better job predicting on new data.
 
 </opt>
 </choice>
 
 </exercise>
+
+<exercise id="17" title="Back to the testing data">
+
+When we used resampling to evaluate model performance with the **training set**, the logistic regression model performed better. Now, let's put this model to the test! 😎 
+
+Let's use the `last_fit()` function to fit to the entire training set one time and evaluate one time on the **testing set**, with everything we've learned during this case study. Our model has not yet seen the testing data, so this last step is the best way to estimate how well the model will perform when predicting with new data.
+
+**Instructions**
+
+- Fit to the training set and evaluate on the testing set using `last_fit()`. 
+- Create a confusion matrix for the results from the testing set.
+
+<codeblock id="03_17">
+
+Remember that `conf_mat()` is the function to find a confusion matrix.
+
+</codeblock>
+
+</exercise>
+

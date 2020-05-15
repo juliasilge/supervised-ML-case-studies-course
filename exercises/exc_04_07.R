@@ -1,13 +1,17 @@
 library(tidyverse)
-sisters67 <- read_csv("data/sisters.csv")
+library(tidymodels)
+sisters_select <- read_csv("data/sisters.csv") %>%
+    select(-sister)
 
-# Remove the sister column
-sisters_select <- sisters67 %>% 
-    ___(-sister)
+# Split off the testing set
+set.seed(123)
+sisters_split <- ___(sisters_select, strata = age)
 
-# Build a simple linear regression model
-simple_lm <- lm(___, 
-                data = sisters_select)
+sisters_other <- training(___)
+sisters_test <- testing(___)
 
-# Print the summary of the model
-___(simple_lm)
+# Create the validation split
+set.seed(123)
+sisters_val <- ___(sisters_other, strata = age)
+
+glimpse(sisters_val)

@@ -2,122 +2,95 @@
 type: slides
 ---
 
-# Comparing model performance
+# Evaluate model performance
 
-Notes: Excellent job! You trained logistic regression models and random forest models with oversampling to account for class imbalance and cross-validation to get a more accurate estimate for model performance. 😎 Let's talk about that model performance now.
+Notes: Excellent job! You preprocessed this data, built a modeling workflow, and created cross-validation folds to evaluate model performance. 😎 
 
+Let's talk about that model performance now, how to set _non-default performance metrics_ and save _predictions_ from resampled data.
+
+---
+
+# Evaluate models with resampling
+
+```r
+vote_wf %>%
+    fit_resamples(
+        vote_folds,
+        metrics = metric_set(roc_auc, sens, spec),
+        control = control_resamples(save_pred = TRUE)
+    )
+```    
+
+Notes: Just like in our first case study, we can use the function `fit_resamples()` to fit a model (a workflow in this case, actually, that holds both a preprocessor and a model specification) to each cross-validation fold and compute performance metrics. The code shown on this slide will fit our workflow `vote_wf` to the cross-validation folds in `vote_folds` and determine how well the model performed each time.
+
+The fitted models themselves are not kept or stored because they are only used for computing performance metrics. However, we are saving the predictions with `save_pred = TRUE` so we can build a confusion matrix, and we have also set _specific performance metrics_ to be computed (instead of the defaults) with `metric_set(roc_auc, sens, spec)`. We will have: 
+
+- the area under the ROC curve, 
+- sensitivity, and 
+- specificity.
+
+---
+
+# Metrics for classification models
+
+```r
+collect_metrics(glm_res)
+```
+```out
+# A tibble: 3 x 5
+  .metric .estimator  mean     n std_err
+  <chr>   <chr>      <dbl> <int>   <dbl>
+1 roc_auc binary     0.726    10 0.0131 
+2 sens    binary     0.639    10 0.0330 
+3 spec    binary     0.706    10 0.00810
+```
+
+Notes: If we start by looking at the metrics for the logistic regression model, you can see that sensitivity and specificity (the true positive and true negative rates) are both around 0.6 or 0.7, which means that most people are being classified into the right categories but we are not getting fantastic results with this model.
+
+---
+
+# Metrics for classification models
+
+```r
+collect_metrics(rf_res)
+```
+```out
+# A tibble: 3 x 5
+  .metric .estimator  mean     n  std_err
+  <chr>   <chr>      <dbl> <int>    <dbl>
+1 roc_auc binary     0.746    10 0.0159  
+2 sens    binary     0        10 0       
+3 spec    binary     1.00     10 0.000193
+```
+
+Notes: When we look at the metrics for the random forest model, we see that the AUC is higher, but sensitivity (the true positive rate, or recall) has dropped to zero! 😱 The random forest model is not able to identify **any** of the people who did not vote.  
+
+What we're seeing here is evidence of dramatic overfitting, despite the fact that we used cross-validation. For the amount of data we have available to train this model, the power of a random forest ends up resulting in memorization of the features of the training set, instead of building a useful predictive model. Our choice to use upsampling (where the same small number of positive cases were drawn from again and again) likely made this worse!
+
+Notice that this is the first time that this has happened in this course. In the first and second case studies we did, the more powerful machine learning algorithm outperformed the simpler model.
 ---
 
 # Confusion matrix
 
 ```r
-vote_train %>%
-    mutate(`Logistic regression` = predict(vote_glm, vote_train)) %>%
-    conf_mat(truth = turnout16_2016, estimate = "Logistic regression")
-```
-```out
-              Truth
-Prediction     Did not vote Voted
-  Did not vote          160  1557
-  Voted                  62  3575
-```
+vote_final <- vote_wf %>%
+    last_fit(vote_split)
 
-Notes: If we start by looking at the confusion matrix for the training data and the logistic regression model, you can see that sensitivity and specificity (the true positive and true negative rates) are both around 70%, which means that most people are being classified into the right categories.
-
-
----
-
-# Confusion matrix
-
-```r
-vote_train %>%
-    mutate(`Random forest` = predict(vote_rf, vote_train)) %>%
-    conf_mat(truth = turnout16_2016, estimate = "Random forest")
+vote_final %>% 
+    collect_predictions() %>% 
+    conf_mat(turnout16_2016, .pred_class)
 ```
 
 ```out
               Truth
 Prediction     Did not vote Voted
-  Did not vote          222     0
-  Voted                   0  5132   
+  Did not vote           25   372
+  Voted                  23   918
 ```
 
-Notes: When we look at the confusion matrix for the training data and the random forest model, we see much higher performance. Random forest models are much more powerful and in general, capable of much higher accuracy than logistic regression models. This model has done a perfect job of classifying the training data into these two categories. Almost *too* perfect, we might suspect. 😒 To evaluate how the models will perform on new data, we don't want to look at the training data; we want to look at the **testing data**.
+Notes: The logistic regression model will likely be the best option, so we can evaluate its performance on the testing data. We can use the [`last_fit()`](https://tidymodels.github.io/tune/reference/last_fit.html) function with a workflow to fit to the entire training set and evaluate on the testing set. You only need to give this function the **split** object!
 
----
-
-# Confusion matrix for the testing data
-
-```r
-vote_test %>%
-    mutate(`Logistic regression` = predict(vote_glm, vote_test)) %>%
-    conf_mat(truth = turnout16_2016, estimate = "Logistic regression")
-```
-
-```out
-              Truth
-Prediction     Did not vote Voted
-  Did not vote           28   359
-  Voted                  14   937
-```
-
-Notes: When we look at the testing data and the logistic regression model, we see performance that is about the same as what we saw with the training data. This means that this model is not overfit. We will expect this model to perform about this well on any new data. 😊
-
-
----
-
-# Confusion matrix for the testing data
-
-
-```r
-vote_test %>%
-    mutate(`Random forest` = predict(vote_rf, vote_test)) %>%
-    conf_mat(truth = turnout16_2016, estimate = "Random forest")
-```
-
-```out
-              Truth
-Prediction     Did not vote Voted
-  Did not vote            0     3
-  Voted                  42  1293
-```
-
-Notes: The same, sadly, cannot be said for the random forest model. Notice that here with the testing data, it did not correctly predict for any of the people who did not vote. 😱 What we're seeing here is evidence of dramatic overfitting, despite the fact that we used cross-validation. For the amount of data we have available to train this model, the power of a random forest ends up resulting in memorization of the features of the training set, instead of building a useful predictive model.
-
-
----
-
-# Comparing model performance
-
-```
-> library(yardstick)
-> 
-> sens(testing_results, truth = turnout16_2016, estimate = `Logistic regression`)
-# A tibble: 1 x 3
-  .metric .estimator .estimate
-  <chr>   <chr>          <dbl>
-1 sens    binary         0.667
-> 
-> spec(testing_results, truth = turnout16_2016, estimate = `Logistic regression`)
-# A tibble: 1 x 3
-  .metric .estimator .estimate
-  <chr>   <chr>          <dbl>
-1 spec    binary         0.723
-> 
-> sens(testing_results, truth = turnout16_2016, estimate = `Random forest`)
-# A tibble: 1 x 3
-  .metric .estimator .estimate
-  <chr>   <chr>          <dbl>
-1 sens    binary             0
-> 
-> spec(testing_results, truth = turnout16_2016, estimate = `Random forest`)
-# A tibble: 1 x 3
-  .metric .estimator .estimate
-  <chr>   <chr>          <dbl>
-1 spec    binary         0.998
-```
-
-Notes: When we look here at some of the individual model metrics, you can see this again, that the sensitivity, or true positive rate, is dramatically lower for the random forest model than for the logistic regression model when evaluated on the testing data. Notice that this is the first time that this has happened in this course. In the first and second case studies we did, the more powerful machine learning algorithm outperformed the simpler model.
+We can see that we did a better job identifying the people who voted than those who did not.
 
 ---
 

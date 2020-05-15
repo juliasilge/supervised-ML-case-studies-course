@@ -2,7 +2,7 @@
 type: slides
 ---
 
-# Getting started with caret 💫
+# Getting started with tidymodels 💫
 
 Notes: You just performed some exploratory data analysis and built a simple linear model using base R's `lm()` function.
 
@@ -11,7 +11,7 @@ Notes: You just performed some exploratory data analysis and built a simple line
 
 # Predicting fuel efficiency ⛽ 
 
-![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/histogram.png?raw=true)
+![Histogram](https://github.com/juliasilge/course-ML-tidymodels/blob/master/img/mpg_histogram.png?raw=true)
 
 Notes: You were able to see how the fuel efficiency for these cars is distributed and to get an idea about whether you will be able to train accurate models. Now it's time to bring out a more powerful and flexible set of tools for predictive modeling. 
 
@@ -19,15 +19,17 @@ Notes: You were able to see how the fuel efficiency for these cars is distribute
 
 # Tools for predictive modeling
 
-### the [tidymodels](https://github.com/tidymodels/tidymodels) metapackage
+![tidymodels](https://github.com/juliasilge/course-ML-tidymodels/blob/master/img/tidymodels_small.png?raw=true)
 
-### the [caret](https://topepo.github.io/caret/) package
+Learn more at [`tidymodels.org`](https://www.tidymodels.org/)!
 
-Notes: We are going to use packages from the tidymodels toolkit, as well as the caret package, in this course and the first thing we are going to practice is splitting your data into a training set and a testing set.
+Notes: We are going to use packages from tidymodels in this course. 
+
+When you type `library(tidymodels)`, you load a collection of packages for modeling and machine learning using tidyverse principles. I usually just load them all at once if I am working on a modeling project. All the packages are designed to be consistent, modular, and to support good modeling practices. The first thing we are going to practice is splitting your data into a training set and a testing set.
 
 ---
 
-![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/testtrain.png?raw=true)
+![test train](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/testtrain.png?raw=true)
 
 Notes: It is best practice to hold out some of your data for **testing** in order to get a better estimate of how your models will perform on new data, especially when you use very powerful machine learning techniques. Linear regression doesn't really fall into that category, but we are going to practice this anyway. The tidymodels package [rsample](https://tidymodels.github.io/rsample/) has functions that help you specify training and testing sets.
 
@@ -36,11 +38,11 @@ Notes: It is best practice to hold out some of your data for **testing** in orde
 # Training data and testing data with [rsample](https://tidymodels.github.io/rsample/)
 
 ```r
-library(rsample)
+library(tidymodels)
  
 car_split <- car_vars %>%
     initial_split(prop = 0.8,
-                  strata = "Aspiration")
+                  strata = Aspiration)
 
 car_training <- training(car_split)
 car_testing <- testing(car_split)
@@ -53,7 +55,7 @@ Notes: You can create these sets so that they balance some characteristic in you
 # Training data and testing data
 
 - **Build** your model with your training data 
-- **Choose** your model with your validation data 
+- **Choose** your model with your validation data, or resampled datasets 
 - **Evaluate** your model with your testing data 
 
 Notes:  Why are we even bothering with this? 
@@ -67,23 +69,42 @@ It's also possible to divide your data into *three* partitions as you build, cho
 # Training a model
 
 ```r
-library(caret)
+library(tidymodels)
 
-fit_lm <- train(log(MPG) ~ ., 
-                method = "lm", 
-                data = car_training,
-                trControl = trainControl(method = "none"))
+## a linear regression model specification
+lm_mod <- linear_reg() %>%
+    set_engine("lm")
+
+lm_fit <- lm_mod %>%
+    fit(log(MPG) ~ ., 
+        data = car_train)
+
+## a random forest model specification
+rf_mod <- rand_forest() %>%
+    set_mode("regression") %>%
+    set_engine("randomForest")
+
+fit_rf <- rf_mod %>%
+    fit(log(MPG) ~ ., 
+        data = car_train)        
 
 ```
 
-- Train a model
-- Evaluate that model using [yardstick](https://tidymodels.github.io/yardstick/)
+#### Three concepts in specifying a model
+
+- Model **type**
+- Model **mode**
+- Model **engine**
 
 Notes: Once you have a training dataset, you can train a model using that dataset! 
 
-In caret, you specify models using the `train()` function, with details of what kind of model it is, and in what way you want to train it. 
+In tidymodels, you specify models using three concepts. 
 
-We're going to start with `method = "none"` in `trainControl()`, as you see here. This means we're telling caret, "Just train the model one time, on the whole training set". Once your model is trained, you can evaluate how well the model is performing. 
+- Model **type** differentiates models such as logistic regression, decision tree models, and so forth. 
+- Model **mode** includes common options like regression and classification; some model types support either of these while some only have one mode. (Notice in the example on this slide that we didn't need to set the mode for `linear_reg()` because it only does regression.)
+- Model **engine** is the computational tool which will be used to fit the model. Often these are R packages, such as `"lm"` for OLS or the different implementations of random forest models.
+
+After a model has been _specified_, it can be _fit_, typically using a symbolic description of the model (a formula) and some data. We're going to start fitting models with `data = car_train`, as shown here. This means we're saying, "Just fit the model one time, on the whole training set". Once you have fit your model, you can evaluate how well the model is performing. 
 
 ---
 

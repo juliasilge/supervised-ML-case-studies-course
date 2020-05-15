@@ -1,11 +1,18 @@
-library(tidyverse)
-library(caret)
+library(tidymodels)
 
-vote_train <- readRDS("data/c3_training_full.rds")
+vote_train <- readRDS("data/c3_train.rds")
 
-# Perform logistic regression with upsampling and no resampling
-vote_glm <- train(turnout16_2016 ~ ., 
-                  method = "glm", family = "binomial",
-                  data = vote_train,
-                  trControl = trainControl(method = "none",
-                                           sampling = "up"))
+vote_recipe <- recipe(turnout16_2016 ~ ., data = vote_train) %>% 
+    step_upsample(turnout16_2016)
+
+## Specify a ranger model
+rf_spec <- rand_forest() %>%
+    set_engine("ranger") %>%
+    set_mode("classification")
+
+## Add the recipe + model to a workflow
+vote_wf <- workflow() %>%
+    add_recipe(vote_recipe) %>%
+    add_model(rf_spec)
+
+vote_wf

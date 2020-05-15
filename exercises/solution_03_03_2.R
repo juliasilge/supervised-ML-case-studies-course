@@ -1,7 +1,7 @@
 library(tidyverse)
 voters <- read_csv("data/voters.csv")
 
-# How do the reponses on the survey vary with voting behavior?
+# How do the responses on the survey vary with voting behavior?
 voters %>%
     group_by(turnout16_2016) %>%
     summarise(`Elections don't matter` = mean(RIGGED_SYSTEM_1_2016 <= 2),

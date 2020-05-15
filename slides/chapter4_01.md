@@ -38,32 +38,32 @@ Notes: There is demographic information in the survey, along with a lot of diver
 
 # Opinions and attitudes in the 1960s
 
-```
+```r
 > sisters67
-
+```
+```out
 # A tibble: 77,112 x 67
-     age sister  v116  v117  v118  v119  v120  v121  v122  v123  v124  v125
-   <dbl>  <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>
- 1  60.0      1     1     1     3     5     1     1     3     5     3     1
- 2  70.0      2     2     2     4     4     1     3     1     5     4     1
- 3  60.0      3     1     1     3     2     2     3     1     1     3     1
- 4  60.0      4     5     1     2     4     1     3     4     3     3     4
- 5  50.0      5     2     3     3     3     2     2     1     5     2     5
- 6  40.0      7     4     3     2     5     4     3     1     5     2     5
- 7  50.0      9     5     4     5     4     4     5     3     5     4     2
- 8  40.0     10     5     4     3     5     1     3     5     5     5     4
- 9  30.0     11     2     2     3     5     1     3     3     5     1     3
-10  30.0     12     4     1     5     5     1     4     3     5     1     5
-# ... with 77,102 more rows, and 55 more variables: v126 <int>, v127 <int>,
-#   v128 <int>, v129 <int>, v130 <int>, v131 <int>, v132 <int>, v133 <int>,
-#   v134 <int>, v135 <int>, v136 <int>, v137 <int>, v138 <int>, v139 <int>,
-#   v140 <int>, v141 <int>, v142 <int>, v143 <int>, v144 <int>, v145 <int>,
-#   v146 <int>, v147 <int>, v148 <int>, v149 <int>, v150 <int>, v151 <int>,
-#   v152 <int>, v153 <int>, v154 <int>, v155 <int>, v156 <int>, v157 <int>,
-#   v158 <int>, v159 <int>, v160 <int>, v161 <int>, v162 <int>, v163 <int>,
-#   v164 <int>, v165 <int>, v166 <int>, v167 <int>, v168 <int>, v169 <int>,
-#   v170 <int>, v171 <int>, v172 <int>, v173 <int>, v174 <int>, v175 <int>,
-#   v176 <int>, v177 <int>, v178 <int>, v179 <int>, v180 <int>
+     age sister  v116  v117  v118  v119  v120  v121  v122  v123  v124  v125  v126  v127
+   <dbl>  <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>
+ 1    60      1     1     1     3     5     1     1     3     5     3     1     1     3
+ 2    70      2     2     2     4     4     1     3     1     5     4     1     4     4
+ 3    60      3     1     1     3     2     2     3     1     1     3     1     1     1
+ 4    60      4     5     1     2     4     1     3     4     3     3     4     1     1
+ 5    50      5     2     3     3     3     2     2     1     5     2     5     5     5
+ 6    40      7     4     3     2     5     4     3     1     5     2     5     4     4
+ 7    50      9     5     4     5     4     4     5     3     5     4     2     1     5
+ 8    40     10     5     4     3     5     1     3     5     5     5     4     1     5
+ 9    30     11     2     2     3     5     1     3     3     5     1     3     1     2
+10    30     12     4     1     5     5     1     4     3     5     1     5     1     1
+# … with 77,102 more rows, and 53 more variables: v128 <dbl>, v129 <dbl>, v130 <dbl>,
+#   v131 <dbl>, v132 <dbl>, v133 <dbl>, v134 <dbl>, v135 <dbl>, v136 <dbl>, v137 <dbl>,
+#   v138 <dbl>, v139 <dbl>, v140 <dbl>, v141 <dbl>, v142 <dbl>, v143 <dbl>, v144 <dbl>,
+#   v145 <dbl>, v146 <dbl>, v147 <dbl>, v148 <dbl>, v149 <dbl>, v150 <dbl>, v151 <dbl>,
+#   v152 <dbl>, v153 <dbl>, v154 <dbl>, v155 <dbl>, v156 <dbl>, v157 <dbl>, v158 <dbl>,
+#   v159 <dbl>, v160 <dbl>, v161 <dbl>, v162 <dbl>, v163 <dbl>, v164 <dbl>, v165 <dbl>,
+#   v166 <dbl>, v167 <dbl>, v168 <dbl>, v169 <dbl>, v170 <dbl>, v171 <dbl>, v172 <dbl>,
+#   v173 <dbl>, v174 <dbl>, v175 <dbl>, v176 <dbl>, v177 <dbl>, v178 <dbl>, v179 <dbl>,
+#   v180 <dbl>
 ```
 
 Notes: The integer 1 corresponds to "disagree very much" and 5 corresponds to "agree very much". This kind of coding is convenient for our modeling purposes here. The data that you will have available within this case study is only this subset of the survey: the agree/disagree statements, plus age.
@@ -71,7 +71,7 @@ Notes: The integer 1 corresponds to "disagree very much" and 5 corresponds to "a
 
 ---
 
-![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/age_histogram.png?raw=true)
+![Alt text](https://github.com/juliasilge/course-ML-tidymodels/blob/master/img/age_histogram.png?raw=true)
 
 Notes: The original survey question asked for age in bins of 10 years, under 20, from 21 to 30, from 31 to 40, and so forth. I have recoded these as numeric values corresponding to the top of each age bin, 20, 30, 40, and so on. This means that this isn't quite a continuous variable, since we haven't measured these women's ages very precisely, but we can do a pretty good job modeling it as if it is. There are more sophisticated modeling approaches possible with these kinds of measurements that you could explore.  
 
@@ -95,27 +95,29 @@ I do want to point out that this survey was fielded during the 1960s and there a
 ```r
 sisters67 %>%
     select(-sister) %>%
-    gather(key, value, -age)
+    pivot_longer(-age, names_to = "question", values_to = "rating")
 ```
 
 ```out
 # A tibble: 5,012,280 x 3
-     age key   value
-   <dbl> <chr> <int>
- 1  60.0 v116      1
- 2  70.0 v116      2
- 3  60.0 v116      1
- 4  60.0 v116      5
- 5  50.0 v116      2
- 6  40.0 v116      4
- 7  50.0 v116      5
- 8  40.0 v116      5
- 9  30.0 v116      2
-10  30.0 v116      4
-# ... with 5,012,270 more rows
+     age question rating
+   <dbl> <chr>     <dbl>
+ 1    60 v116          1
+ 2    60 v117          1
+ 3    60 v118          3
+ 4    60 v119          5
+ 5    60 v120          1
+ 6    60 v121          1
+ 7    60 v122          3
+ 8    60 v123          5
+ 9    60 v124          3
+10    60 v125          1
+# … with 5,012,270 more rows
 ```
 
-Notes: In this case study, we are going to spend a bit more effort on exploratory data analysis. You are going to create a tidy version of the survey data with one row per observation. In the original way the data is structured, there is one row per respondent with a separate column for each answer. After you tidy the data, using the function [`gather()`](https://tidyr.tidyverse.org/reference/gather.html), you will have one row for each combination of respondent and question, a much longer and skinnier dataset. This kind of tidy data structure is well suited to exploratory data analysis.
+Notes: In this case study, we are going to spend a bit more effort on exploratory data analysis. You are going to create a tidy version of the survey data with one row per observation. 
+
+In the original way the data is structured, there is one row per respondent with a separate column for each answer. After you tidy the data, using the function [`pivot_longer()`](https://tidyr.tidyverse.org/reference/pivot_longer.html), you will have one row for each combination of respondent and question, a much longer and skinnier dataset. This kind of tidy data structure is well suited to exploratory data analysis.
 
 ---
 

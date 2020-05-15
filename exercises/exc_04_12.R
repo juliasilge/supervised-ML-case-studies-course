@@ -1,18 +1,32 @@
-library(tidyverse)
-library(caret)
+library(tidymodels)
 
-sisters_validate <- readRDS("data/c4_validation_full.rds")
-sisters_test <- readRDS("data/c4_testing_full.rds")
-sisters_cart <- readRDS("data/sisters_cart.rds")
-sisters_gbm <- readRDS("data/sisters_gbm.rds")
-sisters_xgb <- readRDS("data/sisters_xg.rds")
+sisters_other <- readRDS("data/c4_other.rds")
+sisters_val <- readRDS("data/c4_val.rds")
 
-# Make predictions on the three models
-modeling_results <- sisters_validate %>%
-    mutate(CART = predict(sisters_cart, ___),
-           GBM = predict(sisters_gbm, ___),
-           XGB = predict(sisters_xgb, ___))
+sisters_recipe <- recipe(age ~ ., data = sisters_other) %>% 
+    step_normalize(all_predictors()) %>%
+    step_pca(all_predictors(), num_comp = tune())
 
-# View the predictions
-modeling_results %>% 
-    select(CART, GBM, XGB)
+tree_spec <- decision_tree(
+    cost_complexity = tune(),
+    tree_depth = tune()
+) %>% 
+    set_engine("rpart") %>% 
+    set_mode("regression")
+
+tree_wf <- workflow() %>%
+    add_recipe(sisters_recipe) %>%
+    add_model(tree_spec)
+
+tree_grid <- grid_regular(num_comp(c(3, 12)),
+                          cost_complexity(),
+                          tree_depth(),
+                          levels = 2)
+set.seed(123)
+tree_res <- ___(
+    ___,
+    resamples = sisters_val,
+    grid = ___
+)
+
+glimpse(tree_res)

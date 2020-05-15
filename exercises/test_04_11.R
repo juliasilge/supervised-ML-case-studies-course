@@ -1,1 +1,1 @@
-test <- function(){success('Great job! In this case study, you will evaluate this model, plus two kinds of gradient boosting models.')}
+test <- function(){success('Great job! In this case study, you will fit a whole set of models for a grid of hyperparameters like this.')}

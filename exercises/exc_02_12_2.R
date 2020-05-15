@@ -1,15 +1,14 @@
-library(caret)
-library(tidyverse)
-library(yardstick)
+library(tidymodels)
 
-stack_train <- readRDS("data/c2_training_full.rds")
-stack_test <- readRDS("data/c2_testing_full.rds")
+stack_train <- readRDS("data/c2_train.rds")
+stack_test <- readRDS("data/c2_test.rds")
 stack_glm <- readRDS("data/stack_glm.rds")
-stack_rf <- readRDS("data/stack_rf.rds")
+stack_tree <- readRDS("data/stack_tree.rds")
 
-# Confusion matrix for random forest model
-stack_test %>%
-    mutate(`Random forest` = predict(stack_rf, ___)) %>%
-    ___(___ = Remote, ___ = "Random forest")
+results <- stack_test %>%
+    bind_cols(predict(stack_tree, ___) %>%
+                  rename(.pred_tree = .pred_class))
 
-
+# Confusion matrix for decision tree model
+results %>%
+    ___(___ = remote, ___ = .pred_tree)

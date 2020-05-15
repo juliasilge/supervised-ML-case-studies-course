@@ -1,11 +1,11 @@
 library(tidyverse)
-tidy_sisters <- readRDS("data/c4_tidy_sisters.rds")
+tidy_sisters <- readRDS("data/tidy_sisters.rds")
 
 # Visualize agreement with age
 tidy_sisters %>%
-    filter(key %in% paste0("v", 153:170)) %>%
-    ___(key, value) %>%
+    filter(question %in% paste0("v", 153:170)) %>%
+    ___(question, rating) %>%
     ___(age = mean(age, na.rm = TRUE)) %>%
-    ggplot(aes(value, age, color = key)) +
+    ggplot(aes(rating, age, color = question)) +
     ___(show.legend = FALSE) +
-    facet_wrap(~key, nrow = 3)
+    facet_wrap(~question, nrow = 3)
