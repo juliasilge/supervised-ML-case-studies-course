@@ -1,0 +1,2 @@
+test <- function(){success('Fantastic! 💫')}
+

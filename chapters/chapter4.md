@@ -15,7 +15,7 @@ id: 4
 
 </exercise>
 
-<exercise id="2" title="Choosing an appropriate model">
+<exercise id="2" title="Choose an appropriate model">
 
 In this case study, you will predict the age of Catholic nuns from their answers on a survey fielded in 1967 focusing on questions about social and religious issues. What kind of model will you build?
 
@@ -47,7 +47,7 @@ To predict a continuous, numeric quantity like age, use regression models.
 
 </exercise>
 
-<exercise id="3" title="Visualizing the age distribution">
+<exercise id="3" title="Visualize the age distribution">
 
 The first step before you start modeling is to explore your data, and we are going to spend a little more time on this step in this last case study. To start with, check out the distribution of ages for the respondents in this survey. 📊 (Keep in mind throughout this case study that the data you have in your environment is one quarter of the real survey data.)
 
@@ -64,7 +64,7 @@ You can build a histogram using [`geom_histogram()`](https://ggplot2.tidyverse.o
 
 </exercise>
 
-<exercise id="4" title="Tidying the survey data">
+<exercise id="4" title="Tidy the survey data">
 
 Embracing [tidy data principles](https://tidyverse.tidyverse.org/articles/manifesto.html) is a powerful option for exploratory data analysis. When your data is tidy, you can quickly iterate in getting to know your data better and making exploratory plots. Let's transform this wide data set into a tidy data frame with one observation per row, and then check out some characteristics of this subset of the original survey.
 
@@ -72,12 +72,12 @@ Note: There is a column called `sister` in this dataset that is an identifier fo
 
 **Instructions**
 
-- Use the [`gather()`](https://tidyr.tidyverse.org/reference/gather.html) function to transform the wide data set with each survey question in a separate column to a narrow, tidy data set with each survey question in a separate row.
+- Use the [`pivot_longer()`](https://tidyr.tidyverse.org/reference/pivot_longer.html) function to transform the wide data set with each survey question in a separate column to a narrow, tidy data set with each survey question in a separate row.
 - View the structure of this tidy data set using `glimpse()`.
 
 <codeblock id="04_04_1">
 
-When you implement `... %>% gather(key, value, -age)`, you transform the data set from wide (non-tidy) to narrow (tidy). The argument `-age` specifies that we want to keep the `age` column for each row.
+When you implement `... %>% pivot_longer(-age, names_to = "key", values_to = "value")`, you transform the data set from wide (non-tidy) to narrow (tidy). The argument `-age` specifies that we want to keep the `age` column for each row.
 
 </codeblock>
 
@@ -104,7 +104,7 @@ Next look at question agreement overall.
 
 </exercise>
 
-<exercise id="6" title="Visualizing agreement with age">
+<exercise id="6" title="Visualize agreement with age">
 
 The tidied version of the survey data that you constructed is available in your environment. You have many options at your fingertips with this tidy data now. Make a plot that shows how agreement on a subset of the questions changes with age.
  📉
@@ -125,47 +125,25 @@ In this exercise, we are using [`filter()`](https://dplyr.tidyverse.org/referenc
 
 </exercise>
 
-<exercise id="7" title="Building a simple linear model">
+<exercise id="7" title="Training, validation, and testing data">
 
-You have gotten to know this data a bit through exploratory data analysis, and now it's time to build the simplest possible model, in preparation for more complex predictive modeling. For this data set where we want to predict age from the survey responses (coded as integers), we can build a simple linear model for all our data using only the [`lm()`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/lm.html) function.
-
-**Instructions**
-
-- Remove the identifier column `sister` from the dataset to create `sisters_select`. 
-- Use the correct variable on the left-hand side of the equation so that you build a model predicting age as a function of all other columns. 
-- Call `summary()` for the simple model you've built to see the results.
-
-<codeblock id="04_07">
-
-- We want to predict age using all other variables, so the first argument to `lm()` should be `age ~ .`.
-- Remove the `sister` identifier from the data set with `select(sisters67, -sister)`.
-- You can examine the results of this simple modeling with `summary(simple_lm)`.
-
-</codeblock>
-
-</exercise>
-
-<exercise id="8" title="Training, validation, and testing data">
-
-It's time to split your data into different sets now. You've done this three times already in this course, but in this last case study we are also going to create a validation set. Using a validation set is important anytime you will compare multiple models and choose between them, or adjust hyperparameters in a model. 
-
-We are going to split the data into 60% training, 20% validation, 20% testing.
+It's time to split your data into different sets now. You've done this three times already in this course, but in this last case study we are also going to create a validation set. Using a validation set is a good option when you have enough data (otherwise, you can use resampling). 
 
 **Instructions**
 
 - Create two data partitions: 
-    - Specify one to split between training (60%) and validation/testing (40%).
-    - Specify another one to split between validation and testing (50% each).
+    - Specify one to split between testing and everything else.
+    - Specify another one to split between validation and training.
 
-<codeblock id="04_08">
+<codeblock id="04_07">
 
-The [`initial_split()`](https://tidymodels.github.io/rsample/reference/initial_split.html) function creates a vector that specifies which examples belong in the training set, or the test set.
+The [`initial_split()`](https://tidymodels.github.io/rsample/reference/initial_split.html) function splits off the testing set, and then [`validation_split()`](https://tidymodels.github.io/rsample/reference/validation_split.html) creates a single resample to be used for validation.
 
 </codeblock>
 
 </exercise>
 
-<exercise id="9" title="Using your validation set">
+<exercise id="8" title="Using your validation set">
 
 This new validation set you just created will be used to...
 
@@ -191,87 +169,152 @@ The final evaluation is done with the testing set. It is important to do this fi
 
 </exercise>
 
-<exercise id="10" title="Predicting age with supervised machine learning" type="slides">
+<exercise id="9" title="Tune model hyperparameters" type="slides">
 
-<slides source="chapter4_10">
+<slides source="chapter4_09">
 </slides>
 
 </exercise>
 
-<exercise id="11" title="Training, validation, and testing data">
+<exercise id="10" title="Identify tuning parameters">
 
-In this chapter, you will explore a few new kinds of models. Fun! 💃The `"gbm"` gradient boosting and `"xbgLinear"` extreme gradient boosting models take a very long time to train, so we'll upload trained models for you to evaluate in the next exercises. In this exercise, train a CART model with `"rpart"` to predict age with all the other columns.
-
-To allow the code in this exercise to evaluate quickly, the training set in your environment only contains 500 rows. (You'll see a warning because the training set here is so small.)
+It's time to build a modeling `workflow()` for this last dataset. We aren't going to fit this dataset just once, but instead _many_ times! We are going to use this `workflow()` to tune hyperparameters both in our model specification and our preprocessing recipe.
 
 **Instructions**
 
-- Using caret, train a CART model to predict `age` based on all other variables on `sisters_train` data. 
+Let's start with our preprocessing tuning.
 
-When you don't give any specific [`trainControl()`](https://topepo.github.io/caret/model-training-and-tuning.html#basic-parameter-tuning) argument to `train()`, the model training is implemented with a default resampling strategy, 25 bootstrap resamplings.
+- Add two preprocessing steps to this recipe, first to normalize and them to implement PCA.
+- Specify that we want to `tune()` the number of principal components.
+
+<codeblock id="04_10_1">
+
+- To normalize, use `step_normalize()`. 
+- To implement PCA, use `step_pca()`.
+
+</codeblock>
+
+Next let's build our model specification with tuning.
+
+**Instructions**
+
+- Start by specifying that we want to train a `decision_tree()` model.
+- Add the two parameters we want to tune, cost complexity and tree depth.
+
+<codeblock id="04_10_2">
+
+The variables for these parameters are `cost_complexity` and `tree_depth`.
+
+</codeblock>
+
+Finally, let's put our recipe and model specification together in a `workflow()`, for ease of use.
+
+**Instructions**
+
+- First set up a `workflow()` object.
+- Add the recipe to the `workflow()`.
+- Add the model to the `workflow()`
+
+<codeblock id="04_10_3">
+
+You start off any workflow with the `workflow()` function.
+
+</codeblock>
+
+</exercise>
+
+
+<exercise id="11" title="Create a tuning grid">
+
+Let's create a grid! 💃To tune our hyperparameters, we need a set of possible values for each parameter to try. In this case study, we'll work through a regular grid of hyperparameter values.
+
+**Instructions**
+
+- Use the function `grid_regular()` to create a grid of tuning parameters.
+- Add the function for the tree depth tuning parameter, after the cost complexity tuning parameter function.
 
 <codeblock id="04_11">
 
-- To train a model use the `train()` function. 
-- The `method` argument to `train()` should be `"rpart"`.
+Use the function `tree_depth()` for the third tuning parameter in the grid.
 
 </codeblock>
 
 </exercise>
 
-<exercise id="12" title="Making predictions">
+<exercise id="12" title="Time to tune">
 
-Three models are available in your environment (trained on the data set in its entirety), the CART model you just trained along with two kinds of gradient boosting models. Your next task is to decide which of these models to use for prediction on new data. If you use the training data to evaluate the models, you will underestimate your error for new data and might make the wrong choice altogether. That leaves the validation data and the testing data.
+It's time to finally tune! The recipe, model, workflow, and grid are built here for you, and now you can put them together to find out which combination of parameters results in the best performance. (There is a smaller grid created here so the tuning will evaluate faster.)
 
 **Instructions**
 
-- Which data set should you use to choose between these three models, `sisters_validate` or `sisters_test`? Use that option to create a data frame for comparing the models.
+- Use the function `tune_grid()` to tune your model.
+- For the first argument, add your tuneable workflow.
+- For the third argument, add the grid of possible parameters.
 
 <codeblock id="04_12">
 
-The validation data set is the appropriate option for choosing between models.
+Your function should be `tune_grid(tree_wf, sisters_val, tree_grid)`.
 
 </codeblock>
 
 </exercise>
 
-<exercise id="13" title="Choosing between models">
+<exercise id="13" title="Visualize tuning results">
 
-Now that you have created a data frame that contains all three models' predictions, let's compare their performance.
+Now that you have trained models for many possible tuning parameters, let's explore the results.
+
+(The results available in your environment were trained over a larger grid of tuning parameters.)
 
 **Instructions**
 
-- Load `yardstick`. 
-- Use the [`metrics()`](https://tidymodels.github.io/yardstick/reference/metrics.html) function from the yardstick package to see how each model performed. There are two important arguments that you need to supply to `metrics()`, `truth` (the true age of each nun) and `estimate` (the predicted age of each nun). Which column in the data frame you created corresponds to each?
+- As a first step, use the function `collect_metrics()` to extract the performance metrics from the tuning results.
+- In the call to `aes()`, put `cost_complexity` on the x-axis and assign `tree_depth` to the color aesthetic.
 
 <codeblock id="04_13">
 
-The `truth` argument should always be `age`, while the `estimate` column changes with each model.
+Set up your aesthetic call as `aes(cost_complexity, mean, color = tree_depth)`.
 
 </codeblock>
 
 </exercise>
 
-<exercise id="14" title="Estimating uncertainty for new data">
+<exercise id="14" title="Find the best parameters">
 
-You just compared the three models you trained, and the XGBoost model performed best on the validation data set. Gradient boosting models are very effective and are a powerful tool in your machine learning arsenal. Before you take a trained model like this and use it to make predictions on new data, you must estimate how your final chosen model will perform. Specifically, let's estimate the [`rmse()`](https://tidymodels.github.io/yardstick/reference/rmse.html) for this model.
+You just visualized the tuning results, but you can also select the best set of tuning parameters and update your `workflow()` with these values.
 
 **Instructions**
 
-- Which data set would you use to estimate how your model will perform on new data? You have `sisters_train`, `sisters_validate`, and `sisters_test` data sets available in your environment. Use the correct one *both* at the beginning of the pipe and within the call to `predict()`.
-- Calculate the RMSE (root mean squared error) using the appropriate function from [yardstick](https://tidymodels.github.io/yardstick/).
+- Use the function `select_best()` to extract the hyperparameters with the lowest RMSE from the tuning results.
+- Pipe the original workflow object to `finalize_workflow()` with that best decision tree as an argument, to update it.
 
 <codeblock id="04_14">
 
-You want to use the `sisters_test` data along with the `rmse()` function.
+After you execute `tree_wf %>% finalize_workflow(best_tree)`, the output can be used to predict on new data.
 
 </codeblock>
 
 </exercise>
 
-<exercise id="15" title="Wrapping up" type="slides">
+<exercise id="15" title="Use the testing data">
 
-<slides source="chapter4_15">
+We haven't touched the testing data throughout this analysis, but here at the very end, we can come back to it and estimate how well our model will perform on new data. If all has gone well, our performance metrics such as RMSE will be about the same as from the validation set, indicating that we did not overfit during our tuning procedure. Let's use the `last_fit()` function to fit to the entire training set and evaluate on the testing set.
+
+**Instructions**
+
+- Fit to the training set and evaluate on the testing set using `last_fit()`. 
+- Access the performance metrics for the testing set using `collect_metrics()`.
+
+<codeblock id="04_15">
+
+You don't need to specify anything to get the testing set metrics; you only need to use the `collect_metrics()` function.
+
+</codeblock>
+
+</exercise>
+
+<exercise id="16" title="Wrapping up" type="slides">
+
+<slides source="chapter4_16">
 </slides>
 
 </exercise>

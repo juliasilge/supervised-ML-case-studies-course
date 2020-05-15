@@ -147,7 +147,6 @@ Notes: Notice that some of these column names have spaces in them; you may not h
 ```r
 cars2018 %>%
     select(`Fuel injection`)
-    
 ```
 ```out
 # A tibble: 1,144 x 1

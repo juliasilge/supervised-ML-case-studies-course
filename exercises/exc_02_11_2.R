@@ -1,14 +1,23 @@
-library(tidyverse)
-library(caret)
+library(tidymodels)
 
-stack_train <- readRDS("data/c2_training_one_percent.rds")
+stack_train <- readRDS("data/c2_train.rds")
 
-# Build a random forest model
-stack_rf <- train(Remote ~ ., ___, 
-                  data = stack_train,
-                  trControl = trainControl(method = "boot",
-                                           ___))
+stack_recipe <- recipe(remote ~ ., data = stack_train) %>% 
+    step_downsample(remote)
 
-# Print the model object
-stack_rf
+## Build a decision tree model
+tree_spec <- ___ %>%         
+    set_engine("rpart") %>%      
+    set_mode("classification") 
 
+## Start a workflow (recipe only)
+stack_wf <- workflow() %>%
+    ___(___)
+
+## Add the model and fit the workflow
+stack_tree <- stack_wf %>%
+    add_model(tree_spec) %>%
+    __(data = stack_train)
+
+# Print the fitted model
+stack_tree

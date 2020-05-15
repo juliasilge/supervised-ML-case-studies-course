@@ -12,13 +12,13 @@ Notes: You just created a tidy version of this survey data, which allows you to 
 
 ```r
 tidy_sisters %>%
-    count(value)
+    count(rating)
 ```
 
 ```out
 # A tibble: 5 x 2
-  value       n
-  <int>   <int>
+  rating      n
+  <dbl>   <int>
 1     1 1303555
 2     2  844311
 3     3  645401
@@ -37,22 +37,22 @@ We can see here that 1 was the most commonly chosen option; this corresponds to 
 ```r
 tidy_sisters %>%
     group_by(age) %>%
-    summarise(value = mean(value))
+    summarise(rating = mean(rating))
 ```
 
 ```out
 # A tibble: 9 x 2
-    age value
-  <dbl> <dbl>
-1  20.0  2.86
-2  30.0  2.81
-3  40.0  2.83
-4  50.0  2.94
-5  60.0  3.10
-6  70.0  3.26
-7  80.0  3.42
-8  90.0  3.51
-9 100    3.60
+    age rating
+  <dbl>  <dbl>
+1    20   2.86
+2    30   2.81
+3    40   2.83
+4    50   2.94
+5    60   3.10
+6    70   3.26
+7    80   3.42
+8    90   3.51
+9   100   3.60
 ```
 
 Notes: You can also check out how the overall answers to all survey questions vary with age. There were more statements on the survey that older respondents agreed with than statements younger respondents agreed with.
@@ -63,13 +63,13 @@ Notes: You can also check out how the overall answers to all survey questions va
 
 ```r
 tidy_sisters %>%
-    filter(key %in% paste0("v", 153:170)) %>%
-    group_by(key, value) %>%
+    filter(question %in% paste0("v", 153:170)) %>%
+    group_by(question, rating) %>%
     summarise(age = mean(age)) %>%
-    ggplot(aes(value, age, color = key)) +
+    ggplot(aes(rating, age, color = question)) +
     geom_line(alpha = 0.5, size = 1.5) +
     geom_point(size = 2) +
-    facet_wrap(~key)
+    facet_wrap(~question)
 ```
 
 Notes: We can go a few steps further and dig into how the answers to individual questions depend on age. This code first filters to a subset of questions on the survey, groups by these survey questions and the possible answers to them, and then calculates the mean age for each possible answer to each of the questions we're considering. 
@@ -143,6 +143,41 @@ Notes: In this case study, you are going to split the original data into three s
 - test sets. 
 
 You've already used training and test sets throughout this course, and in this last case study we're going to talk about how to use a **validation set** to choose a model. 🧐
+
+---
+
+![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/validation.png?raw=true)
+
+Notes: In previous case studies, we used **resampling** to choose a model. Resampling lets you use your training data to create simulated datasets. These simulated datasets can help you learn which model is best without relying on performance metrics for the training set as a whole (which are overly optimistic) or the testing set (which can only be used one time at the very end of your analysis.)
+
+If you have enough data, you may not need resampling at all and instead can divide your data into a training set, a validation set, and a testing set. Instead of computing performance metrics on resampled datasets, you can compute them for the validation set. This survey of nuns is quite large so we can create a validation set to use for choosing a model. You can think of a validation set as a single resample.
+
+---
+
+```r
+set.seed(123)
+sisters_splits <- initial_split(sisters_select, strata = age)
+
+sisters_other <- training(sisters_splits)
+sisters_test <- testing(sisters_splits)
+
+set.seed(123)
+sisters_val <- validation_split(sisters_other, strata = age)
+
+sisters_val
+```
+
+```out
+# Validation Set Split (0.75/0.25)  using stratification 
+# A tibble: 1 x 2
+  splits                id        
+  <named list>          <chr>     
+1 <split [43.4K/14.5K]> validation
+```
+
+
+Notes: To split your data into **three** sets (training, validation, and testing), first make an `initial_split()` to split off your testing set from the rest. Then use the function `validation_split()` to create what you can think of as a single resample of that data.
+
 
 ---
 

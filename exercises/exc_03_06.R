@@ -1,15 +1,18 @@
 library(tidyverse)
-voters <- read_csv("data/voters.csv") %>%
-    mutate(turnout16_2016 = factor(turnout16_2016))
+voters_select <- read_csv("data/voters.csv") %>%
+    mutate(turnout16_2016 = factor(turnout16_2016)) %>% 
+    select(-case_identifier)
 
-# Remove the case_indetifier column
-voters_select <- voters %>%
-        ___(-case_identifier)
+# Load tidymodels
+___
 
-# Build a simple logistic regression model
-simple_glm <- glm(___,  family = ___, 
-                  data = voters_select)
+# Split data into training and testing sets
+set.seed(1234)
+vote_split <- ___ %>%
+    ___(p = ___,
+                  strata = ___)
+vote_train <- ___
+vote_test <- ___
 
-# Print the summary                  
-___(simple_glm)
-
+glimpse(vote_train)
+glimpse(vote_test)

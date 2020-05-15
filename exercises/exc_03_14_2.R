@@ -1,14 +1,26 @@
-library(tidyverse)
-library(caret)
-library(yardstick)
+library(tidymodels)
 
-vote_train <- readRDS("data/c3_training_full.rds")
-vote_test <- readRDS("data/c3_testing_full.rds")
-vote_glm <- readRDS("data/vote_glm.rds")
-vote_rf <- readRDS("data/vote_rf.rds")
+vote_train <- readRDS("data/c3_train_10_percent.rds")
 
-# Confusion matrix for random forest model on training data
-vote_train %>%
-    mutate(`Random forest` = ___(___, ___)) %>%
-    conf_mat(truth = ___, estimate = "Random forest")
+vote_folds <- vfold_cv(vote_train, v = 10)
 
+vote_recipe <- recipe(turnout16_2016 ~ ., data = vote_train) %>% 
+    step_upsample(turnout16_2016)
+
+rf_spec <- rand_forest() %>%
+    set_engine("ranger") %>%
+    set_mode("classification")
+
+vote_wf <- workflow() %>%
+    add_recipe(vote_recipe) %>%
+    add_model(rf_spec)
+
+set.seed(234)
+rf_res <- vote_wf %>%
+    fit_resamples(
+        ___,
+        metrics = metric_set(___),
+        control = control_resamples(save_pred = TRUE)
+    )
+
+glimpse(rf_res)

@@ -1,13 +1,13 @@
 library(tidyverse)
-stackoverflow <- read_csv("data/stackoverflow.csv")
+stack_overflow <- read_csv("data/stack_overflow.csv")
 
-# Print stackoverflow
+# Take a look at stack_overflow
 glimpse(___)
 
-# First count for Remote
-stackoverflow %>% 
+# First count for `remote`
+stack_overflow %>% 
     count(___, sort = TRUE)
 
-# then count for Country
-stackoverflow %>% 
+# then count for `country`
+stack_overflow %>% 
     ___(___, sort = TRUE)

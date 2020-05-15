@@ -1,23 +1,20 @@
-library(tidyverse)
-library(caret)
+library(tidymodels)
 
-stack_test <- readRDS("data/c2_testing_full.rds")
+stack_train <- readRDS("data/c2_train.rds")
+stack_test <- readRDS("data/c2_test.rds")
 stack_glm <- readRDS("data/stack_glm.rds")
-stack_rf <- readRDS("data/stack_rf.rds")
+stack_tree <- readRDS("data/stack_tree.rds")
 
-# Load yardstick
-library(___)
-
-# Predict values
-testing_results <- stack_test %>%
-    mutate(`Logistic regression` = predict(___, stack_test),
-           `Random forest` = predict(___, stack_test))
+results <- stack_test %>%
+    bind_cols(predict(stack_glm, ___) %>%
+                  rename(.pred_glm = .pred_class)) %>%
+    bind_cols(predict(stack_tree, ___) %>%
+                  rename(.pred_tree = .pred_class))
 
 ## Calculate accuracy
-___(testing_results, truth = Remote, estimate = `Logistic regression`)
-___(testing_results, truth = Remote, estimate = `Random forest`)
+___(results, truth = remote, estimate = .pred_glm)
+___(results, truth = remote, estimate = .pred_tree)
 
 ## Calculate positive predict value
-___(testing_results, truth = Remote, estimate = `Logistic regression`)
-___(testing_results, truth = Remote, estimate = `Random forest`)
-
+___(results, truth = remote, estimate = .pred_glm)
+___(results, truth = remote, estimate = .pred_tree)

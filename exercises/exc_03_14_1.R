@@ -1,14 +1,25 @@
-library(tidyverse)
-library(caret)
-library(yardstick)
+library(tidymodels)
 
-vote_train <- readRDS("data/c3_training_full.rds")
-vote_test <- readRDS("data/c3_testing_full.rds")
-vote_glm <- readRDS("data/vote_glm.rds")
-vote_rf <- readRDS("data/vote_rf.rds")
+vote_train <- readRDS("data/c3_train_10_percent.rds")
 
-# Confusion matrix for logistic regression model on training data
-vote_train %>%
-    mutate(`Logistic regression` = predict(vote_glm, ___)) %>%
-    ___(truth = ___, estimate = "Logistic regression")
+vote_folds <- vfold_cv(vote_train, v = 10)
 
+vote_recipe <- recipe(turnout16_2016 ~ ., data = vote_train) %>% 
+    step_upsample(turnout16_2016)
+
+glm_spec <- logistic_reg() %>%
+    set_engine("glm")
+
+vote_wf <- workflow() %>%
+    add_recipe(vote_recipe) %>%
+    add_model(glm_spec)
+
+set.seed(234)
+glm_res <- vote_wf %>%
+    ___(
+        vote_folds,
+        metrics = metric_set(roc_auc, sens, spec),
+        control = control_resamples(save_pred = TRUE)
+    )
+
+glimpse(glm_res)

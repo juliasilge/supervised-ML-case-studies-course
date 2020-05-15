@@ -7,7 +7,7 @@ glimpse(sisters67)
 # Tidy the data set
 tidy_sisters <- sisters67 %>%
     select(-sister) %>%
-    gather(key, value, -age)
+    pivot_longer(-age, names_to = "question", values_to = "rating")
 
 # Print the structure of tidy_sisters
 glimpse(tidy_sisters)
