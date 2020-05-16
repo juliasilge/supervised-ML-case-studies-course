@@ -16,7 +16,7 @@ Notes: Hi! I'm Julia Silge, and I built this free interactive course so you can 
 - explore which modeling approaches to use for different kinds of data
 - practice implementing supervised machine learning for classification and regression
 
-Notes: This course is intended for learners who have already been exposed to some introductory ideas about predicting modeling. Once you understand the basics of supervised machine learning, the next step is to **practice your skills** so you can apply these techniques wisely and appropriately. We are going to practice how to implement regression and classification, when to use each, and how to use exploratory data analysis to prepare for training models.
+Notes: This course is intended for learners who have already been exposed to some introductory ideas about predictive modeling. Once you understand the basics of supervised machine learning, the next step is to **practice your skills** so you can apply these techniques wisely and appropriately. We are going to practice how to implement regression and classification, when to use each, and how to use exploratory data analysis to prepare for training models.
 
 
 
