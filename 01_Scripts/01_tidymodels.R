@@ -42,3 +42,15 @@ results <- car_train %>%
 
 metrics(results, truth = mpg, estimate = .pred_lm)
 metrics(results, truth = mpg, estimate = .pred_rf)
+
+
+# evaluate using testing data
+results_test <- car_test %>%
+    mutate(mpg = log(mpg)) %>%
+    bind_cols(predict(lm_fit, car_test) %>%
+                  rename(.pred_lm = .pred)) %>%
+    bind_cols(predict(rf_fit, car_test) %>%
+                  rename(.pred_rf = .pred))
+
+metrics(results_test, truth = mpg, estimate = .pred_lm)
+metrics(results_test, truth = mpg, estimate = .pred_rf)
