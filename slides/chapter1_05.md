@@ -44,8 +44,8 @@ car_split <- car_vars %>%
     initial_split(prop = 0.8,
                   strata = Aspiration)
 
-car_training <- training(car_split)
-car_testing <- testing(car_split)
+car_train <- training(car_split)
+car_test <- testing(car_split)
 ```
 
 Notes: You can create these sets so that they balance some characteristic in your dataset. ⚖️ For example, the code here takes an input data set and puts 80% of it into a training dataset and 20% of it into a testing dataset; it chooses the individual cases so that both sets are balanced in aspiration types.
