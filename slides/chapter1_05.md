@@ -42,7 +42,7 @@ library(tidymodels)
  
 car_split <- car_vars %>%
     initial_split(prop = 0.8,
-                  strata = Aspiration)
+                  strata = aspiration)
 
 car_train <- training(car_split)
 car_test <- testing(car_split)
@@ -76,7 +76,7 @@ lm_mod <- linear_reg() %>%
     set_engine("lm")
 
 lm_fit <- lm_mod %>%
-    fit(log(MPG) ~ ., 
+    fit(log(mpg) ~ ., 
         data = car_train)
 
 ## a random forest model specification
@@ -85,7 +85,7 @@ rf_mod <- rand_forest() %>%
     set_engine("randomForest")
 
 fit_rf <- rf_mod %>%
-    fit(log(MPG) ~ ., 
+    fit(log(mpg) ~ ., 
         data = car_train)        
 
 ```

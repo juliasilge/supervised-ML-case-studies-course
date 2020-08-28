@@ -98,74 +98,25 @@ From the [US Department of Energy](https://www.fueleconomy.gov/feg/download.shtm
 > cars2018
 
 # A tibble: 1,144 x 15
-   Model          `Model Index` Displacement Cylinders Gears Transmission   MPG
-   <chr>                  <dbl>        <dbl>     <dbl> <dbl> <chr>        <dbl>
- 1 Acura NSX               57.0         3.50      6.00  9.00 Manual        21.0
- 2 ALFA ROMEO 4C          410           1.80      4.00  6.00 Manual        28.0
- 3 Audi R8 AWD             65.0         5.20     10.0   7.00 Manual        17.0
- 4 Audi R8 RWD             71.0         5.20     10.0   7.00 Manual        18.0
- 5 Audi R8 Spyde…          66.0         5.20     10.0   7.00 Manual        17.0
- 6 Audi R8 Spyde…          72.0         5.20     10.0   7.00 Manual        18.0
- 7 Audi TT Roads…          46.0         2.00      4.00  6.00 Manual        26.0
- 8 BMW M4 DTM Ch…         488           3.00      6.00  7.00 Manual        20.0
- 9 Bugatti Chiron          38.0         8.00     16.0   7.00 Manual        11.0
-10 Chevrolet COR…         278           6.20      8.00  8.00 Automatic     18.0
-# ... with 1,134 more rows, and 8 more variables: Aspiration <chr>, `Lockup
-#   Torque Converter` <chr>, Drive <chr>, `Max Ethanol` <dbl>, `Recommended
-#   Fuel` <fct>, `Intake Valves Per Cyl` <dbl>, `Exhaust Valves Per Cyl` <dbl>,
-#   `Fuel injection` <chr>
+   model model_index displacement cylinders gears transmission   mpg aspiration
+   <fct>       <dbl>        <dbl>     <dbl> <dbl> <fct>        <dbl> <fct>     
+ 1 Acur…          57          3.5         6     9 Manual          21 Turbochar…
+ 2 ALFA…         410          1.8         4     6 Manual          28 Turbochar…
+ 3 Audi…          65          5.2        10     7 Manual          17 Naturally…
+ 4 Audi…          71          5.2        10     7 Manual          18 Naturally…
+ 5 Audi…          66          5.2        10     7 Manual          17 Naturally…
+ 6 Audi…          72          5.2        10     7 Manual          18 Naturally…
+ 7 Audi…          46          2           4     6 Manual          26 Turbochar…
+ 8 BMW …         488          3           6     7 Manual          20 Turbochar…
+ 9 Buga…          38          8          16     7 Manual          11 Turbochar…
+10 Chev…         278          6.2         8     8 Automatic       18 Naturally…
+# … with 1,134 more rows, and 7 more variables: lockup_torque_converter <fct>,
+#   drive <fct>, max_ethanol <dbl>, recommended_fuel <fct>,
+#   intake_valves_per_cyl <dbl>, exhaust_valves_per_cyl <dbl>,
+#   fuel_injection <fct>
 ```
 
 Notes: Instead, we are going to use a dataset of real cars from today. This data is from the United States Department of Energy, and tabulates how much gas new cars use per mile, along with many characteristics of these cars, like the size of the engine, the type of transmission, the type of fuel injecton, and so forth. There's a lot more here than in `mtcars`, and just a lot more cars, and...it's not from the 1970s!
-
----
-
-# Fuel efficiency
-
-
-From the [US Department of Energy](https://www.fueleconomy.gov/feg/download.shtml)
-
-```out
-> names(cars2018)
-
- [1] "Model"                   "Model Index"            
- [3] "Displacement"            "Cylinders"              
- [5] "Gears"                   "Transmission"           
- [7] "MPG"                     "Aspiration"             
- [9] "Lockup Torque Converter" "Drive"                  
-[11] "Max Ethanol"             "Recommended Fuel"       
-[13] "Intake Valves Per Cyl"   "Exhaust Valves Per Cyl" 
-[15] "Fuel injection"
-```
-
-Notes: Notice that some of these column names have spaces in them; you may not have run into that before. R can handle some weird characters in variable names. 
-
----
-
-# Special characters in variable names
-
-```r
-cars2018 %>%
-    select(`Fuel injection`)
-```
-```out
-# A tibble: 1,144 x 1
-   `Fuel injection`              
-   <chr>                         
- 1 Direct ignition               
- 2 Direct ignition               
- 3 Direct ignition               
- 4 Direct ignition               
- 5 Direct ignition               
- 6 Direct ignition               
- 7 Direct ignition               
- 8 Direct ignition               
- 9 Multipoint/sequential ignition
-10 Direct ignition               
-# ... with 1,134 more rows
-```
-
-Notes: We deal with them by surrounding the variable name with backticks when we need to access it.
 
 ---
 

@@ -1,4 +1,4 @@
-Model,Model Index,Displacement,Cylinders,Gears,Transmission,MPG,Aspiration,Lockup Torque Converter,Drive,Max Ethanol,Recommended Fuel,Intake Valves Per Cyl,Exhaust Valves Per Cyl,Fuel injection
+model,model_index,displacement,cylinders,gears,transmission,mpg,aspiration,lockup_torque_converter,drive,max_ethanol,recommended_fuel,intake_valves_per_cyl,exhaust_valves_per_cyl,fuel_injection
 Acura NSX,57,3.5,6,9,Manual,21,Turbocharged/Supercharged,Y,All Wheel Drive,10,Premium Unleaded Required,2,2,Direct ignition
 ALFA ROMEO 4C,410,1.8,4,6,Manual,28,Turbocharged/Supercharged,Y,"2-Wheel Drive, Rear",10,Premium Unleaded Required,2,2,Direct ignition
 Audi R8 AWD,65,5.2,10,7,Manual,17,Naturally Aspirated,Y,All Wheel Drive,15,Premium Unleaded Recommended,2,2,Direct ignition

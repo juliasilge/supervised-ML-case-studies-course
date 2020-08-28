@@ -10,7 +10,7 @@ lm_mod <- linear_reg() %>%
 
 # Train a linear regression model
 fit_lm <- lm_mod %>%
-    fit(log(MPG) ~ ., 
+    fit(log(mpg) ~ ., 
         data = car_train)
 
 # Print the model object

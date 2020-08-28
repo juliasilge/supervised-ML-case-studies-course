@@ -59,13 +59,13 @@ The first time you run a code exercise, it may take a little while for your Dock
 
 The `tidyverse` metapackage is loaded for you, so you can use readr and ggplot2. 
 
-- Take a look at the `cars2018` object using `glimpse()`. Notice that some of the column names have spaces in them and are surrounded by backticks, like `` `Recommended Fuel` ``.
-- Use the appropriate column from the data set in the call to `aes()` so you can plot a histogram of fuel efficiency (MPG).
+- Take a look at the `cars2018` object using `glimpse()`.
+- Use the appropriate column from the data set in the call to `aes()` so you can plot a histogram of fuel efficiency (miles per gallon, `mpg`).
 - Set the correct `x` and `y` labels.
 
 <codeblock id="01_03">
 
-- The column `MPG` contains the fuel efficiency measurements so to make the plot, call `aes(x = MPG)`.
+- The column `mpg` contains the fuel efficiency measurements so to make the plot, call `aes(x = mpg)`.
 - The number of cars goes on the y-axis and the fuel efficiency goes on the x-axis.
 
 </codeblock>
@@ -78,13 +78,13 @@ Before embarking on more complex machine learning models, it's a good idea to bu
 
 **Instructions**
 
-- Use [`select()`](https://dplyr.tidyverse.org/reference/select.html) to deselect the two columns `Model` and `Model Index` from the model; these columns tell us the individual identifiers for each car and it would *not* make sense to include them in modeling. 
-- Fit `MPG` as the predicted quantity, explained by all the predictors, i.e., `.` in the R formula input to `lm()`. (You may have noticed the log distribution of MPG in the last exercise, but don't worry about fitting the logarithm of fuel efficiency yet.) 
+- Use [`select()`](https://dplyr.tidyverse.org/reference/select.html) to deselect the two columns `model` and `model_index` from the model; these columns tell us the individual identifiers for each car and it would *not* make sense to include them in modeling. 
+- Fit `mpg` as the predicted quantity, explained by all the predictors, i.e., `.` in the R formula input to `lm()`. (You may have noticed the log distribution of MPG in the last exercise, but don't worry about fitting the logarithm of fuel efficiency yet.) 
 - Print the `summary()` of the model.
 
 <codeblock id="01_04">
 
-- To deselect the `Model` column, use `cars2018 %>% select(-Model)`.
+- To deselect the `model` column, use `cars2018 %>% select(-model)`.
 
 </codeblock>
 
@@ -106,7 +106,7 @@ Creating training/testing splits reduces overfitting. When you evaluate your mod
 **Instructions**
 
 - Load the `tidymodels` metapackage, which also includes dplyr for data manipulation. 
-- Create a data split that divides the original data into 80%/20% sections and (roughly) evenly divides the partitions between the different types of `Transmission`.
+- Create a data split that divides the original data into 80%/20% sections and (roughly) evenly divides the partitions between the different types of `transmission`.
 - Assign the 80% partition to `car_train` and the 20% partition to `car_test`.
 
 <codeblock id="01_06">
@@ -128,7 +128,7 @@ Now that your `car_train` data is ready, you can fit a set of models with tidymo
 - Load the tidymodels metapackage. 
 - Fit a basic linear regression model to your `car_train` data. 
 
-(Notice that we are fitting to `log(MPG)` since the fuel efficiency had a log normal distribution.)
+(Notice that we are fitting to `log(mpg)` since the fuel efficiency had a log normal distribution.)
 
 <codeblock id="01_07_1">
 
@@ -163,7 +163,7 @@ For regression models, we will focus on evaluating using the **root mean squared
 <codeblock id="01_08">
 
 - Use `fit_lm` to predict the values for linear regression and `fit_rf` to predict values for random forest.
-- The "truth" column in `results` is the column that holds fuel efficiency, `MPG`.
+- The "truth" column in `results` is the column that holds fuel efficiency, `mpg`.
 
 </codeblock>
 

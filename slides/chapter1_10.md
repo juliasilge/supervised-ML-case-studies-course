@@ -78,7 +78,7 @@ The column `splits` is of type `list`. Instead of containing numbers or characte
 ```r
 lm_mod %>%
     fit_resamples(
-        log(MPG) ~ .,
+        log(mpg) ~ .,
         car_boot,
         control = control_resamples(save_pred = TRUE)
     )
@@ -96,7 +96,7 @@ To fit the random forest to these resamples and find performance metrics, we wou
 # Comparing predicted to real values ⛽ 
 
 ```out
-   `log(MPG)` .pred_lm .pred_rf
+   `log(mpg)` .pred_lm .pred_rf
         <dbl>    <dbl>    <dbl>
  1       2.71     2.77     2.84
  2       3.37     3.45     3.38
@@ -118,7 +118,7 @@ Each car has a real fuel efficiency as reported by the Department of Energy and 
 
 # Visualizing model predictions
 
-![Alt text](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/cars_metrics.png?raw=true)
+![](https://github.com/juliasilge/supervised-ML-case-studies-course/blob/master/img/cars_metrics.png?raw=true)
 
 Notes: In this lesson, you also are going to visualize these differences, like you see here. The x-axis has the actual fuel efficiency and the y-axis has the predicted fuel efficiency for each kind of model. 
 
