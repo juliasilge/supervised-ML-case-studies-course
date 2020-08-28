@@ -172,7 +172,7 @@ Downsampling removes from the majority class until the class distributions are e
 
 <exercise id="9" title="Downsampling in your workflow">
 
-We are starting to add more steps into the machine learning workflow. Think about when we implemented downsampling to deal with class imbalance. Which data set did we upsample?
+We are starting to add more steps into the machine learning workflow. Think about when we implemented downsampling to deal with class imbalance. Which data set did we downsample?
 
 <choice>
 <opt text="The original data.">

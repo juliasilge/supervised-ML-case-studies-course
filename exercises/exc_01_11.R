@@ -15,14 +15,14 @@ car_boot <- ___(car_train)
 # Evaluate the models with bootstrap resampling
 lm_res <- ___ %>%
     fit_resamples(
-        log(MPG) ~ .,
+        log(mpg) ~ .,
         resamples = ___,
         control = control_resamples(save_pred = TRUE)
     )
 
 rf_res <- ___ %>%
     fit_resamples(
-        log(MPG) ~ .,
+        log(mpg) ~ .,
         resamples = ___,
         control = control_resamples(save_pred = TRUE)
     )

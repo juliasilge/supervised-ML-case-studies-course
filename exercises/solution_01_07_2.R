@@ -10,7 +10,7 @@ rf_mod <- rand_forest() %>%
 
 # Train a random forest model
 fit_rf <- rf_mod %>%
-    fit(log(MPG) ~ ., 
+    fit(log(mpg) ~ ., 
         data = car_train)
 
 # Print the model object

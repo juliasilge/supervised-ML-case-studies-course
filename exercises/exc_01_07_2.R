@@ -10,7 +10,7 @@ rf_mod <- ___ %>%
 
 # Train a random forest model
 fit_rf <- rf_mod %>%
-    ___(log(MPG) ~ ., 
+    ___(log(mpg) ~ ., 
         data = ___)
 
 # Print the model object

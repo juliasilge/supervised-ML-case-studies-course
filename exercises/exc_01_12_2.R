@@ -1,4 +1,3 @@
-library(tidyverse)
 library(tidymodels)
 
 lm_res <- readRDS("data/c1_lm_res.rds")
@@ -12,7 +11,7 @@ results <-  bind_rows(lm_res %>%
                           mutate(model = "rf"))
 
 results %>%
-    ggplot(aes(`log(MPG)`, .pred)) +
+    ggplot(aes(`log(mpg)`, .pred)) +
     geom_abline(lty = 2, color = "gray50") +
     geom_point(aes(color = id), size = 1.5, alpha = 0.3, show.legend = FALSE) +
     geom_smooth(method = "lm") +
