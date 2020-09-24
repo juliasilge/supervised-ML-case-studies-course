@@ -77,7 +77,7 @@ Note: There is a column called `sister` in this dataset that is an identifier fo
 
 <codeblock id="04_04_1">
 
-When you implement `... %>% pivot_longer(-age, names_to = "key", values_to = "value")`, you transform the data set from wide (non-tidy) to narrow (tidy). The argument `-age` specifies that we want to keep the `age` column for each row.
+When you implement `... %>% pivot_longer(-age, names_to = "question", values_to = "rating")`, you transform the data set from wide (non-tidy) to narrow (tidy). The argument `-age` specifies that we want to keep the `age` column for each row.
 
 </codeblock>
 
@@ -85,13 +85,13 @@ Next look at question agreement overall.
 
 **Instructions**
 
-- Group by `age` and summarize the `value` column to see how the overall agreement with all questions varied by age.
-- Count the `value` column to check out how many respondents agreed or disagreed overall.
+- Group by `age` and summarize the `rating` column to see how the overall agreement with all questions varied by age.
+- Count the `rating` column to check out how many respondents agreed or disagreed overall.
 
 <codeblock id="04_04_2">
 
 - Call the `group_by()` function first, and then `summarize()`. 
-- To count the `value` column, use `count(value)`.
+- To count the `rating` column, use `count(rating)`.
 
 </codeblock>
 
@@ -112,13 +112,13 @@ In this exercise, we are using [`filter()`](https://dplyr.tidyverse.org/referenc
 
 **Instructions**
 
-- Group by two variables, `key` and `value`, so you can calculate an average age for each answer to each question.
+- Group by two variables, `question` and `rating`, so you can calculate an average age for each answer to each question.
 - Summarize for each grouping to find an average age.
 - Choose the correct `geom` to make a line plot.
 
 <codeblock id="04_06">
 
-- You want to `group_by(key, value)` and `summarize(age)` to find the average age for each ansewr to each question.
+- You want to `group_by(question, rating)` and `summarize(age)` to find the average age for each ansewr to each question.
 - You can build a line plot using [`geom_line()`](https://ggplot2.tidyverse.org/reference/geom_path.html).
 
 </codeblock>
