@@ -129,13 +129,13 @@ Once your recipe is defined, you can estimate the parameters required to actuall
 **Instructions**
 
 - First, `prep()` the recipe.
-- Then, `juice()` the prepped recipe.	
+- Then, `bake()` the prepped recipe with `new_data = NULL` to see the processed training data.	
 	
-Check out the results of counting remote status after downsampling! You likely will not need to `juice()` when building a model but you can use this for exploration.	
+Check out the results of counting remote status after downsampling! You likely will not need to `prep()` and `bake()` when building a model but you can use this to check and explore, as well as to troubleshoot when things go wrong.	
 	
 <codeblock id="02_07">
 
-When you `juice()` the prepped recipe `stack_prep`, you extract the processed (i.e. balanced) data.
+When you `bake()` the prepped recipe `stack_prep` with `new_data = NULL`, you extract the processed (i.e. balanced) training data.
 
 </codeblock>
 

@@ -6,7 +6,7 @@ stack_recipe <- recipe(remote ~ ., data = stack_train) %>%
     step_downsample(remote)
 
 stack_prep <- prep(___)
-stack_down <- juice(___)
+stack_down <- bake(___, new_data = NULL)
 
 stack_down %>%
     count(remote)
