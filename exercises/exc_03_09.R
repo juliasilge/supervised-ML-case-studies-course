@@ -1,4 +1,5 @@
 library(tidymodels)
+library(themis)
 
 vote_train <- readRDS("data/c3_train.rds")
 

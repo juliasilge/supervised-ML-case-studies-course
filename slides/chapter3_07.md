@@ -44,13 +44,15 @@ Notes: This is another case study with imbalanced data. We are again going to pr
 
 Notes: When we implement upsampling, we add more of the people who did not vote (just more of the same ones we already have) until the proportion is equal and the classes are balanced. 
 
-We are going to use [`step_upsample()`](https://tidymodels.github.io/recipes/reference/step_upsample.html) for oversampling because it is simple to implement and understand, but it can lead a classifier to overfit to just a few examples, if you're not lucky. There are other more complex approaches to oversampling available in the [themis](https://tidymodels.github.io/themis/) package, but we will focus on random upsampling with replacement here.
+We are going to use [`step_upsample()`](https://themis.tidymodels.org/reference/step_upsample.html) for oversampling because it is simple to implement and understand, but it can lead a classifier to overfit to just a few examples, if you're not lucky. There are other more complex approaches to oversampling available in the [themis](https://tidymodels.github.io/themis/) package as well, but we will focus on random upsampling with replacement here.
 
 ---
 
 # Preprocess your data
 
 ```r
+library(themis)
+
 vote_recipe <- recipe(turnout16_2016 ~ ., data = vote_train) %>% 
     step_upsample(turnout16_2016)
 ```
