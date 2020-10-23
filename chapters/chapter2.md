@@ -107,7 +107,7 @@ Use the output of `initial_split()` as the input of `training()` and `testing()`
 
 <exercise id="6" title="Preprocess with a recipe">
 
-There are multiple possible approaches to dealing with class imbalance. ⚖️ Here, you will implement downsampling using the [`step_downsample()`](https://tidymodels.github.io/recipes/reference/step_downsample.html) function.
+There are multiple possible approaches to dealing with class imbalance. ⚖️ Here, you will implement downsampling using the [`step_downsample()`](https://themis.tidymodels.org/reference/step_downsample.html) function from the [themis](https://themis.tidymodels.org/) package.
 
 **Instructions**
 

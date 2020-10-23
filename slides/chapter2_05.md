@@ -66,11 +66,13 @@ Notes: When we implement downsampling, we remove some of the non-remote develope
 # Implementing downsampling
 
 ```r
+library(themis)
+
 stack_recipe <- recipe(remote ~ ., data = stack_train) %>% 
     step_downsample(remote)
 ```
 
-Notes: Downsampling is an example of a preprocessing step for modeling. In tidymodels, you can preprocess your data using [recipes](https://tidymodels.github.io/recipes/). The recipe shown in this slide only has one preprocessing step (downsampling), but you can implement many steps on one dataset during preprocessing. There are an enormous number of different kinds of preprocessing you can do, from creating indicator variables to implementing principal component analysis to extracting date features and more.
+Notes: Downsampling is an example of a preprocessing step for modeling. In tidymodels, you can preprocess your data using [recipes](https://tidymodels.github.io/recipes/). The recipe shown in this slide only has one preprocessing step (downsampling, that comes from an extra add-on package called [themis](https://themis.tidymodels.org/)), but you can implement many steps on one dataset during preprocessing. There are an enormous number of different kinds of preprocessing you can do, from creating indicator variables to implementing principal component analysis to extracting date features and more.
 
 ---
 
