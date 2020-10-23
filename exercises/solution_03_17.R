@@ -1,5 +1,6 @@
 library(tidyverse)
 library(tidymodels)
+library(themis)
 
 voters_select <- read_csv("data/voters.csv") %>%
     mutate(turnout16_2016 = factor(turnout16_2016)) %>% 

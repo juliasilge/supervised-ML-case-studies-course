@@ -66,11 +66,13 @@ Notes: When we implement downsampling, we remove some of the non-remote develope
 # Implementing downsampling
 
 ```r
+library(themis)
+
 stack_recipe <- recipe(remote ~ ., data = stack_train) %>% 
     step_downsample(remote)
 ```
 
-Notes: Downsampling is an example of a preprocessing step for modeling. In tidymodels, you can preprocess your data using [recipes](https://tidymodels.github.io/recipes/). The recipe shown in this slide only has one preprocessing step (downsampling), but you can implement many steps on one dataset during preprocessing. There are an enormous number of different kinds of preprocessing you can do, from creating indicator variables to implementing principal component analysis to extracting date features and more.
+Notes: Downsampling is an example of a preprocessing step for modeling. In tidymodels, you can preprocess your data using [recipes](https://tidymodels.github.io/recipes/). The recipe shown in this slide only has one preprocessing step (downsampling, that comes from an extra add-on package called [themis](https://themis.tidymodels.org/)), but you can implement many steps on one dataset during preprocessing. There are an enormous number of different kinds of preprocessing you can do, from creating indicator variables to implementing principal component analysis to extracting date features and more.
 
 ---
 
@@ -80,7 +82,7 @@ Notes: Downsampling is an example of a preprocessing step for modeling. In tidym
 ```r
 stack_prep <- prep(stack_recipe)
 
-juice(stack_prep)
+bake(stack_prep, new_data = NULL)
 ```
 ```out
 # A tibble: 1,168 x 21
@@ -103,11 +105,11 @@ juice(stack_prep)
 #   systems_administrator <lgl>, web_developer <lgl>, remote <fct>
 ```
 
-Notes: When you [`prep()`](https://tidymodels.github.io/recipes/reference/prep.html) a recipe, you estimate the required parameters from a data set for the preprocessing steps in that recipe (as an example, think about finding the mean and standard deviation if you are centering and scaling). 
+Notes: When you [`prep()`](https://recipes.tidymodels.org/reference/prep.html) a recipe, you estimate the required parameters from a data set for the preprocessing steps in that recipe (as an example, think about finding the mean and standard deviation if you are centering and scaling). 
 
-When you [`juice()`](https://tidymodels.github.io/recipes/reference/juice.html) a prepped recipe, you get the preprocessed data back out. 
+When you [`bake()`](https://recipes.tidymodels.org/reference/bake.html) a prepped recipe with `new_data = NULL`, you get the preprocessed data back out. 
 
-You don't typically need to `prep()` and `juice()` recipes when you use tidymodels, but they are heplful functions to have in your toolkit for confirming that recipes are doing what you expect.
+You don't typically need to `prep()` and `bake()` recipes when you use tidymodels, but they are helpful functions to have in your toolkit for confirming that recipes are doing what you expect.
 
 ---
 
