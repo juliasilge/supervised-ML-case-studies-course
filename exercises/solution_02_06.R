@@ -1,4 +1,5 @@
 library(tidymodels)
+library(themis)
 
 stack_train <- readRDS("data/c2_train.rds")
 
