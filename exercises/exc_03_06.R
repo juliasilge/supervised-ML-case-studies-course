@@ -9,7 +9,7 @@ ___
 # Split data into training and testing sets
 set.seed(1234)
 vote_split <- ___ %>%
-    ___(p = ___,
+    ___(prop = ___,
                   strata = ___)
 vote_train <- ___
 vote_test <- ___
