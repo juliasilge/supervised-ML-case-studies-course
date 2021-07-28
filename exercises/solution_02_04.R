@@ -13,7 +13,7 @@ stack_select <- stack_overflow %>%
 # Split the data into training and testing sets
 set.seed(1234)
 stack_split <- stack_select %>%
-    initial_split(p = 0.8,
+    initial_split(prop = 0.8,
                   strata = remote)
 
 stack_train <- training(stack_split)

@@ -9,7 +9,7 @@ voters_select <- read_csv("data/voters.csv") %>%
 ## Training / testing split
 set.seed(1234)
 vote_split <- voters_select %>%
-    initial_split(p = 0.8,
+    initial_split(prop = 0.8,
                   strata = turnout16_2016)
 vote_train <- training(vote_split)
 vote_test <- testing(vote_split)
