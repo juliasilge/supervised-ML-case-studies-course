@@ -255,7 +255,7 @@ The workflow `vote_wf` contains both the recipe and the model specification, and
 **Instructions**
 
 - Now fit the resamples `vote_folds` to the random forest model.
-- Compute the metrics `roc_auc`, `sens`, and `spec`.
+- Compute the metrics `roc_auc`, `sensitivity`, and `specificity`.
 
 <codeblock id="03_14_2">
 
