@@ -16,14 +16,14 @@ Let's talk about that model performance now, how to set _non-default performance
 vote_wf %>%
     fit_resamples(
         vote_folds,
-        metrics = metric_set(roc_auc, sens, spec),
+        metrics = metric_set(roc_auc, sensitivity, specificity),
         control = control_resamples(save_pred = TRUE)
     )
 ```    
 
 Notes: Just like in our first case study, we can use the function `fit_resamples()` to fit a model (a workflow in this case, actually, that holds both a preprocessor and a model specification) to each cross-validation fold and compute performance metrics. The code shown on this slide will fit our workflow `vote_wf` to the cross-validation folds in `vote_folds` and determine how well the model performed each time.
 
-The fitted models themselves are not kept or stored because they are only used for computing performance metrics. However, we are saving the predictions with `save_pred = TRUE` so we can build a confusion matrix, and we have also set _specific performance metrics_ to be computed (instead of the defaults) with `metric_set(roc_auc, sens, spec)`. We will have: 
+The fitted models themselves are not kept or stored because they are only used for computing performance metrics. However, we are saving the predictions with `save_pred = TRUE` so we can build a confusion matrix, and we have also set _specific performance metrics_ to be computed (instead of the defaults) with `metric_set(roc_auc, sensitivity, specificity)`. We will have: 
 
 - the area under the ROC curve, 
 - sensitivity, and 

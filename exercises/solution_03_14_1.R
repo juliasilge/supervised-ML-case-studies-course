@@ -19,7 +19,7 @@ set.seed(234)
 glm_res <- vote_wf %>%
     fit_resamples(
         vote_folds,
-        metrics = metric_set(roc_auc, sens, spec),
+        metrics = metric_set(roc_auc, sensitivity, specificity),
         control = control_resamples(save_pred = TRUE)
     )
 
