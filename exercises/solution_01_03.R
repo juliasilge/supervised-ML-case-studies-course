@@ -1,5 +1,6 @@
 library(tidyverse)
-cars2018 <- read_csv("data/cars2018.csv")
+library(arrow)
+cars2018 <- read_parquet("data/cars2018.parquet")
 
 # Print the cars2018 object
 glimpse(cars2018)

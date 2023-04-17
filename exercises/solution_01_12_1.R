@@ -1,7 +1,8 @@
+library(tidyverse)
 library(tidymodels)
 
-lm_res <- readRDS("data/c1_lm_res.rds")
-rf_res <- readRDS("data/c1_rf_res.rds")
+lm_res <- read_rds("data/c1_lm_res.rds")
+rf_res <- read_rds("data/c1_rf_res.rds")
 
 results <-  bind_rows(lm_res %>%
                           collect_predictions() %>%

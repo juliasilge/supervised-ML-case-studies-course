@@ -1,8 +1,8 @@
 library(tidymodels)
-
-car_test <- readRDS("data/c1_test.rds")
-fit_lm <- readRDS("data/c1_fit_lm.rds")
-fit_rf <- readRDS("data/c1_fit_rf.rds")
+library(tidyverse)
+car_test <- read_parquet("data/c1_test.parquet")
+fit_lm <- read_rds("data/c1_fit_lm.rds")
+fit_rf <- read_rds("data/c1_fit_rf.rds")
 
 # Create the new columns
 results <- ___ %>%
