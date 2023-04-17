@@ -31,15 +31,13 @@ voters <- read_rds(here::here("data", "voters.rds"))
 
 <a href='https://tidymodels.tidymodels.org'><img src='https://raw.githubusercontent.com/tidymodels/tidymodels/main/man/figures/logo.png' align="right" height="139" /></a>
 
-Hi! I'm [Julia Silge](https://juliasilge.com/), and I built this free interactive course so you can learn more about supervised machine learning. Supervised machine learning, otherwise known as predictive modeling, is a powerful tool for using data to make predictions about the world around us. Once you understand the basic ideas of supervised machine learning, the next step is to practice your skills so you know how to apply these techniques well. In this course, you will work through four case studies using data from the real world; you will gain experience in exploratory data analysis, preparing data so it is ready for predictive modeling, training supervised machine learning models using [tidymodels](https://www.tidymodels.org/), and evaluating those models.
-
-In this course, you will...
+Hi! I'm [Julia Silge](https://juliasilge.com/), and I built this free interactive course so you can learn more about supervised machine learning. Supervised machine learning, otherwise known as predictive modeling, is a powerful tool for using data to make predictions about the world around us. Once you understand the basic ideas of supervised machine learning, the next step is to practice your skills so you know how to apply these techniques well. In this course, you will work through four case studies using data from the real world; you will...
 
 - use exploratory data analysis to prepare for predictive modeling
 - explore which modeling approaches to use for different kinds of data
-- practice implementing supervised machine learning for classification and regression
+- practice implementing supervised machine learning for **regression** and **classification** using [tidymodels](https://www.tidymodels.org/)
 
-The two types of models we'll train in this course are **regression** and **classification**. Think of regression models as predicting numeric, continuous quantities and classification models as predicting discrete quantities or class membership or labels.
+Think of regression models as predicting numeric, continuous quantities and classification models as predicting discrete quantities or class membership or labels.
 
 ### Working through this tutorial
 
@@ -210,7 +208,7 @@ Congratulations! You have finished these four case studies and learned so much a
 
 First, each time you have a new predictive modeling problem you are working on, you need to try out multiple different kinds of models. You don't know ahead of time which kind of model is going to perform best. [This paper](https://arxiv.org/abs/1708.05070v1) uses some super interesting analysis to show that most often, the two kinds of models that perform best are gradient tree boosting and random forest. However, depending on how much data you have and the specifics of your problem, that may not be true, so you have to try it for yourself. Also, start with a **simple model** to compare to. 
 
-Second but perhaps more importantly, never skip exploratory data analysis when you build machine learning models. It is time well spent, because when you understand a data set better, you can do a better job of building accurate models that perform better.
+Second but perhaps more importantly, never skip **exploratory data analysis** when you build machine learning models. It is time well spent, because when you understand a data set better, you can do a better job of building accurate models that perform better.
 
 We've linked to the documentation sites for tidymodels packages several times throughout this tutorial, but there are also other resources available for you to **extend your learning**.
 
