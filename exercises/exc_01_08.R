@@ -1,6 +1,8 @@
-car_train <- readRDS("data/c1_train.rds")
-fit_lm <- readRDS("data/c1_fit_lm.rds")
-fit_rf <- readRDS("data/c1_fit_rf.rds")
+library(tidyverse)
+library(arrow)
+car_train <- read_parquet("data/c1_train.parquet")
+fit_lm <- read_rds("data/c1_fit_lm.rds")
+fit_rf <- read_rds("data/c1_fit_rf.rds")
 
 # Load tidymodels
 library(___)

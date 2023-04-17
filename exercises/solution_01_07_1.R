@@ -1,5 +1,6 @@
-car_train <- readRDS("data/c1_train.rds")
-car_test <- readRDS("data/c1_test.rds")
+library(arrow)
+car_train <- read_parquet("data/c1_train.parquet")
+car_test <- read_parquet("data/c1_test.parquet")
 
 # Load tidymodels
 library(tidymodels)

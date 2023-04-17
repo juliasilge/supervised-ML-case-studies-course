@@ -1,4 +1,5 @@
-car_vars <- readRDS("data/c1_car_vars.rds")
+library(arrow)
+car_vars <- read_parquet("data/c1_car_vars.parquet")
 
 # Load tidymodels
 ___

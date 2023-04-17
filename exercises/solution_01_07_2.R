@@ -1,7 +1,7 @@
 library(tidymodels)
-
-car_train <- readRDS("data/c1_train.rds")
-car_test <- readRDS("data/c1_test.rds")
+library(arrow)
+car_train <- read_parquet("data/c1_train.parquet")
+car_test <- read_parquet("data/c1_test.parquet")
 
 # Build a random forest model specification
 rf_mod <- rand_forest() %>%

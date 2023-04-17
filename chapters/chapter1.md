@@ -57,7 +57,7 @@ The first time you run a code exercise, it may take a little while for your Dock
 
 **Wherever you see `___` in a code exercise, replace it with the correct code as instructed. Run the code (via the button) to see if it will run, and submit it (via the other button) to check if it's correct.**
 
-The `tidyverse` metapackage is loaded for you, so you can use readr and ggplot2. 
+The tidyverse metapackage is loaded for you, so you can use ggplot2 and other functions for exploratory data analysis. The arrow package is also loaded, so you can read our data stored as a [Parquet](https://parquet.apache.org/) file. 
 
 - Take a look at the `cars2018` object using `glimpse()`.
 - Use the appropriate column from the data set in the call to `aes()` so you can plot a histogram of fuel efficiency (miles per gallon, `mpg`).

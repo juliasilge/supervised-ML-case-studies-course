@@ -1,6 +1,6 @@
 library(tidymodels)
-
-car_train <- readRDS("data/c1_train_10_percent.rds")
+library(arrow)
+car_train <- read_parquet("data/c1_train_10_percent.parquet")
 
 lm_mod <- linear_reg() %>%
     set_engine("lm")

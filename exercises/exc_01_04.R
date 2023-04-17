@@ -1,5 +1,6 @@
 library(tidyverse)
-cars2018 <- read_csv("data/cars2018.csv")
+library(arrow)
+cars2018 <- read_parquet("data/cars2018.parquet")
 
 # Deselect the 2 columns to create cars_vars
 car_vars <- cars2018 %>%
