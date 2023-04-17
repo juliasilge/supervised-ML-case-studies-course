@@ -32,6 +32,7 @@ knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
 theme_set(theme_light())
 
 cars_doe <- read_rds(here::here("data", "cars.rds"))
+stack_overflow <- read_rds(here::here("data", "stack_overflow.rds"))
 voters <- read_rds(here::here("data", "voters.rds"))
 ```
 
