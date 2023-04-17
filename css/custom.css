@@ -1,0 +1,360 @@
+/******
+tidymodels
+*******/
+
+/*-------- Google font imports --------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/*-------- Background color & body font --------*/
+
+body, button, input, textarea {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #404040;
+  font-size: 17px;
+  line-height: 1.6em;
+}
+
+/*-------- White Space --------*/
+
+.band {
+  margin-top: 3em;
+}
+
+div.section {  /* so anchorized headers have breathing room above */
+  padding-top: 4em;
+  margin-top: -3em;
+}
+
+h2 {
+  margin-bottom: 1.5em;
+}
+
+.topicsContainer {
+  margin-right: 4em;
+}
+
+.topics {
+  margin-top: 3em;
+  padding-left: 4em;
+}
+
+
+/* Remove extra space on mobile */
+
+@media screen and (max-width: 767px) {
+
+  .band {
+    margin-top: 0;
+  }
+
+  div.section {
+    padding-top: 1em;
+    margin-top: -0.5em;
+  }
+
+  .topicsContainer{
+      width: 1%;
+      min-width: 1px;
+      margin-right: 0;
+  }
+
+  .topics {
+      padding-top: 1em;
+      width: 99% !important;
+      border-left: none !important;
+  }
+}
+
+
+/*-------- Content / Main Panel ---------*/
+
+.topics {
+    width: 75%;
+    overflow-x: auto;
+    padding-bottom: 600px;
+    background-color: white;
+    border-left: 1pt solid #d9d9d9;
+}
+
+
+
+/*--------- Headers ---------*/
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1.5pt;
+}
+
+h1 {
+  color: #CA225E;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #1a162d;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.3em;
+  color: #1a162d99;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #1a162d;
+  text-transform: none;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  color: #1a162d99;
+  text-transform: none;
+}
+
+h2 code,
+h3 code {
+  text-transform: none;
+  font-size: 100%;
+  background-color: #e8e8e847;
+}
+
+
+/* Side Panel Start Over Button */
+
+.topicsFooter .resetButton {
+  display: block;
+  max-width: 60%;
+  padding: 10px 20px;
+  /* background-color: #eab0c46b; */
+  border: solid 1pt #ca225e47;
+  color: #CA225E;
+  font-size: 12px;
+  letter-spacing: 1pt;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+/*-------- Code chunk header panel ---------*/
+.panel-default > .panel-heading {
+
+}
+
+/*------- Rectangle panels --------*/
+
+.panel, pre {
+}
+
+
+/*-------- Code chunk main panel --------*/
+
+.ace-tm {
+}
+
+/*-------- Line # cells --------*/
+
+.ace_gutter-cell {
+    padding-left: 10px;
+    padding-right: 4px;
+}
+
+/*-------- Code returns --------*/
+.tutorial-exercise-output > pre {
+}
+
+
+/*------- In line code aesthetic --------*/
+code {
+
+}
+
+/*------- Hyperlinks --------*/
+
+a,
+a:hover,
+a:focus {
+  color: #CA225E;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/*------- Sidebar/Main Menu -------*/
+
+/*--Title--*/
+
+h2.tutorialTitle,
+.topicsHeader h2.tutorialTitle {
+  font-size: 2.4em;
+  color: #CA225E;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1em;
+}
+
+/*--Name, Date etc.--*/
+
+#doc-metadata {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: solid 1pt #d9d9d9;
+}
+
+#doc-metadata h3,
+#doc-metadata h4 {
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  line-height: 1.6em;
+}
+
+
+.topicsContainer {
+}
+
+/* sidebar item */
+
+.topicsList .topic {
+  color: #1a162d99;
+  font-size: 15px;
+  letter-spacing: 1pt;
+  line-height: 1.25em;
+  padding: 0.75em 0;
+  background-image: none;
+  /*border-left: 2px solid white;*/
+  border-bottom: none;
+}
+
+/*--- When hovering ---*/
+
+.topicsList .topic:hover {
+    background-color: white;
+    color: #1a162d;
+    /* border-left: 2px solid #CA225E40;*/
+}
+
+/*------- Selected menu item -------*/
+
+.topicsList .topic.current {
+    background-color: white;
+    color: #CA225E;
+    /*border-left: 2px solid #CA225E;*/
+}
+
+/* CODE WINDOWS */
+
+/*------- Solution / Hint buttons -------*/
+.tutorial-exercise-input .btn-tutorial-solution {
+    margin-left: 15px;
+    background-color: #bd2a62;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    border: 0;
+    text-shadow: none;
+}
+
+/*------- Solution popover --------*/
+.popover-title {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: #bd2a62;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    text-shadow: none;
+    font-family: 'Lato', sans-serif;
+}
+
+/*------- BUTTONS -------*/
+
+.topicActions .btn-primary,
+.topicActions .btn-success,
+.topicActions .btn-info,
+.topicActions .btn-xs,
+.topicActions .btn-default {
+    background-image: none;
+    border: 0;
+    text-shadow: none;
+    border-radius: 0;
+    letter-spacing: 1pt;
+}
+
+.topicActions .btn-primary,
+.topicActions .btn-primary:active,
+.topicActions .btn-primary:focus {
+  color: white;
+  background-color: #CA225E;
+}
+
+/*------- Buttons when hovering -------*/
+
+.topicActions .btn-default:hover,
+.topicActions .btn-primary:hover {
+  background-color: #CA225E80;
+  color: white;
+}
+
+/*-------- Code chunk buttons hover aesthetic -------*/
+
+.tutorial-exercise-input .btn-xs {
+    /*font-size: 13px; */
+  color: white;
+  background-color: #CA225E;
+}
+
+.tutorial-exercise-input .btn-xs:hover {
+    /*margin-right: 0;
+    margin-top: -1px;
+    font-size: 13px;
+    margin-left: 12px;
+    padding-right: 8px;*/
+    font-weight: normal;
+    background-color: #801945;
+    color: white;
+    border: 0;
+}
+
+/*------- Button disabled -------*/
+.btn-primary.disabled {
+    background-color: lightgray;
+}
+
+
+/*-------Colored Bullets-------*/
+
+.section ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.section ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #CA225E; /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.5em; /* Also needed for space (tweak if needed) */
+  margin-left: -1.5em; /* Also needed for space (tweak if needed) */
+}
+
+.section ul > li > p {
+  display: inline; /* to have content show up next to bullet */
+}
+
+.section ul > li { /*to add back in space between bullet items that I took away by making p display inline */
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

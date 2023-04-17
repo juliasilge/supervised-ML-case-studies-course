@@ -1,22 +1,12 @@
 ---
-title: "Supervised machine learning case studies in R! 💫"
-author: "Julia Silge"
+title: "Supervised machine learning case studies in R!"
 output: 
   learnr::tutorial:
     allow_skip: true
+    css: css/custom.css
 runtime: shiny_prerendered
 description: "Learn how to use tidymodels!"
 ---
-
-```{=html}
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Open+Sans+Condensed&family=Opens+Sans:wght@300;400&display=swap');
-</style>
-```
-
-```{r custom-css, echo=FALSE}
-#shiny::includeCSS("css/custom_css.css")
-```
 
 ```{r setup, include=FALSE}
 library(learnr)
@@ -41,7 +31,7 @@ voters <- read_rds(here::here("data", "voters.rds"))
 
 <a href='https://tidymodels.tidymodels.org'><img src='https://raw.githubusercontent.com/tidymodels/tidymodels/main/man/figures/logo.png' align="right" height="139" /></a>
 
-Predictive modeling, or supervised machine learning, is a powerful tool for using data to make predictions about the world around us. Once you understand the basic ideas of supervised machine learning, the next step is to practice your skills so you know how to apply these techniques well. In this course, you will work through four case studies using data from the real world; you will gain experience in exploratory data analysis, preparing data so it is ready for predictive modeling, training supervised machine learning models using [tidymodels](https://www.tidymodels.org/), and evaluating those models.
+Hi! I'm [Julia Silge](https://juliasilge.com/), and I built this free interactive course so you can learn more about supervised machine learning. Supervised machine learning, otherwise known as predictive modeling, is a powerful tool for using data to make predictions about the world around us. Once you understand the basic ideas of supervised machine learning, the next step is to practice your skills so you know how to apply these techniques well. In this course, you will work through four case studies using data from the real world; you will gain experience in exploratory data analysis, preparing data so it is ready for predictive modeling, training supervised machine learning models using [tidymodels](https://www.tidymodels.org/), and evaluating those models.
 
 In this course, you will...
 
