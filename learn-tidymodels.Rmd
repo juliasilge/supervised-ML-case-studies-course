@@ -1,0 +1,240 @@
+---
+title: "Supervised machine learning case studies in R! 💫"
+author: "Julia Silge"
+output: 
+  learnr::tutorial:
+    allow_skip: true
+runtime: shiny_prerendered
+description: "Learn how to use tidymodels!"
+---
+
+```{=html}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Open+Sans+Condensed&family=Opens+Sans:wght@300;400&display=swap');
+</style>
+```
+
+```{r custom-css, echo=FALSE}
+#shiny::includeCSS("css/custom_css.css")
+```
+
+```{r setup, include=FALSE}
+library(learnr)
+library(tidyverse)
+library(tidymodels)
+library(randomForest)
+library(rpart)
+library(ranger)
+library(themis)
+library(here)
+library(gradethis)
+knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
+theme_set(theme_light())
+
+cars_doe <- read_rds(here::here("data", "cars.rds"))
+
+```
+
+
+## 1. Introduction
+
+<a href='https://tidymodels.tidymodels.org'><img src='https://raw.githubusercontent.com/tidymodels/tidymodels/main/man/figures/logo.png' align="right" height="139" /></a>
+
+Predictive modeling, or supervised machine learning, is a powerful tool for using data to make predictions about the world around us. Once you understand the basic ideas of supervised machine learning, the next step is to practice your skills so you know how to apply these techniques well. In this course, you will work through four case studies using data from the real world; you will gain experience in exploratory data analysis, preparing data so it is ready for predictive modeling, training supervised machine learning models using [tidymodels](https://www.tidymodels.org/), and evaluating those models.
+
+In this course, you will...
+
+- use exploratory data analysis to prepare for predictive modeling
+- explore which modeling approaches to use for different kinds of data
+- practice implementing supervised machine learning for classification and regression
+
+The two types of models we'll train in this course are **regression** and **classification**. Think of regression models as predicting numeric, continuous quantities and classification models as predicting discrete quantities or class membership or labels.
+
+### Working through this tutorial
+
+Throughout this tutorial, you will see code exercises that look like this:
+
+```{r library-tidymodels, exercise=TRUE}
+# load the tidymodels metapackage
+```
+
+```{r library-tidymodels-solution}
+# load the tidymodels metapackage
+library(tidymodels)
+```
+
+```{r library-tidymodels-check}
+grade_code("Be sure to click \"Submit Answer \" on exercises throughout the tutorial because there are hints, answers, and other content available to you after you submit.")
+```
+
+You can type in these code exercises. **Give it a try now!** If you mess up, click "Start Over" to get back to the original state. Use the "Run Code" button to see what happens, and click on "Solution" to check out the solution.
+
+In the exercise above, type `library(tidymodels)` and click "Submit Answer".
+
+This tutorial is organized into **four case studies**, each with its own data set:
+
+- Fuel efficiency of cars 🚗
+- Developers working remotely in the Stack Overflow survey 💻
+- Voter turnout in 2016 🗳
+- Catholic nuns' ages based on beliefs and attitudes ⛪
+
+Each of these case studies will provide you the opportunity to practice your data handling and model training skills. Some of these datasets are large enough that it is not realistic to work with them in their entirety for all parts of a machine learning workflow here in this browser environment, so in those cases you'll work with subsets of these datasets. I'll be sure to point out when that occurs.
+
+### Prerequisites
+
+To get the most from this tutorial, you should have some familiarity with R and [tidyverse](https://www.tidyverse.org/) functions like those from dplyr and ggplot2, as well as some exposure to machine learning or modeling basics. Once you understand the basics of supervised machine learning, the next step is to **practice your skills** so you can apply these techniques wisely and appropriately. We are going to practice how to implement regression and classification, when to use each, and how to use exploratory data analysis to prepare for training models. Let's get started!
+
+## 2. Not `mtcars` AGAIN {data-progressive=TRUE}
+
+In this first case study, we are going to use the mtcars dataset to train regression models. 
+
+```{r, echo=TRUE}
+mtcars
+```
+
+No, I'm kidding! 😜 I would never do that to you! I can only imagine that *you* are as sick of mtcars as *I* am. 😩
+
+### Fuel efficiency for cars
+
+Instead, we are going to use a dataset of real cars from today:
+
+```{r, echo=TRUE}
+cars_doe
+```
+
+This data is from the [United States Department of Energy](https://www.fueleconomy.gov/feg/download.shtml), and tabulates how much gas new cars use per mile, along with many characteristics of these cars, like the size of the engine, the type of transmission, the type of fuel injecton, and so forth.
+
+### Exploratory data analysis
+
+<a href='https://www.tidyverse.org/'><img src='https://raw.githubusercontent.com/tidyverse/tidyverse/main/man/figures/logo.png' align="right" height="139" /></a>
+
+A hugely important part of any modeling approach is exploratory data analysis. In this course, we'll be using [tidyverse](https://www.tidyverse.org/) packages for getting to know your data, manipulating it, and visualizing it. The tidyverse is a collection of R packages designed for data science that share common APIs and an underlying philosophy. 💖
+
+When you type `library(tidyverse)`, what you're doing is loading this collection of related packages for handling data using tidy data principles. These packages include ggplot2 for data visualization, and dplyr and tidyr for data manipulation and transformation. During this course, I'll point out when we use functions from these different packages. 
+
+I typically load the tidyverse packages all at once in my daily work because these functions all work together and are so convenient for dealing with real world data.
+
+### Choose an appropriate model
+
+In this case study, you will predict the fuel efficiency ⛽  of modern cars from characteristics of these cars, like transmission and engine displacement. Fuel efficiency is a numeric value that ranges smoothly from about 15 to 40 miles per gallon. What kind of model will you build?
+
+```{r cars-model-type-quiz}
+question('What kind of model will you build?',
+         answer("Summarization"),
+         answer("Clustering"),
+         answer("Classification"),
+         answer("Regression", correct = TRUE),
+         allow_retry = TRUE,
+         random_answer_order = TRUE,
+         incorrect = "Incorrect. Which of these kinds of models is for a continuous, numeric quantity?",
+         correct = "👏 To predict a continuous, numeric quantity like fuel efficiency, use regression models."
+)
+```
+
+### Visualize the fuel efficiency distribution
+
+The first step before you start modeling is to explore your data. In this course we'll practice using tidyverse functions for exploratory data analysis. Start off this case study by examining your data set and visualizing the distribution of fuel efficiency. The ggplot2 package, with functions like [`ggplot()`](https://ggplot2.tidyverse.org/reference/ggplot.html) and [`geom_histogram()`](https://ggplot2.tidyverse.org/reference/geom_histogram.html), is included in the tidyverse.
+
+The tidyverse metapackage is loaded for you, so you can use ggplot2. 
+
+- Take a look at the `cars2018` object using `glimpse()`.
+- Use the appropriate column from the data set in the call to `aes()` so you can plot a histogram of fuel efficiency (miles per gallon, `mpg`).
+- Set the correct `x` and `y` labels.
+
+```{r cars-histogram, exercise=TRUE}
+# glimpse `cars_doe` to see what is in the data set
+glimpse(___)
+
+# plot the histogram
+ggplot(cars_doe, aes(x = ___)) +
+    geom_histogram(bins = 25) +
+    labs(___ = "Fuel efficiency (mpg)",
+         ___ = "Number of cars")
+```
+
+```{r cars-histogram-solution}
+# glimpse `cars_doe` to see what is in the data set
+glimpse(cars_doe)
+
+# Plot the histogram
+ggplot(cars_doe, aes(x = mpg)) +
+    geom_histogram(bins = 25) +
+    labs(x = "Fuel efficiency (mpg)",
+         y = "Number of cars")
+
+```
+
+```{r cars-histogram-check}
+grade_code("Notice that this distribution is not normal, but instead **log normal**. It will be best for us to take this into account when we build models.")
+```
+
+### Build a simple linear model
+
+Before embarking on more complex machine learning models, it's a good idea to build the simplest possible model to get an idea of what is going on. In this case, that means fitting a simple linear model using base R's `lm()` function.
+
+**Instructions**
+
+- Use [`select()`](https://dplyr.tidyverse.org/reference/select.html) to deselect the two columns `model` and `model_index` from the model; these columns tell us the individual identifiers for each car and it would *not* make sense to include them in modeling. 
+- Fit `mpg` as the predicted quantity, explained by all the predictors, i.e., `.` in the R formula input to `lm()`. (You may have noticed the log distribution of MPG in the last exercise, but don't worry about fitting the logarithm of fuel efficiency yet.) 
+- Print the `summary()` of the model.
+
+```{r cars-lm, exercise=TRUE}
+# deselect the 2 columns to create cars_vars
+car_vars <- cars_doe %>%
+    ___(-model, -model_index)
+
+# fit a linear model
+fit_all <- ___(___ ~ ., data = ___)
+
+# print the summary of the model
+___(fit_all)
+```
+
+```{r cars-lm-solution}
+# deselect the 2 columns to create cars_vars
+car_vars <- cars_doe %>%
+    select(-model, -model_index)
+
+# fit a linear model
+fit_all <- lm(mpg ~ ., data = car_vars)
+
+# print the summary of the model
+summary(fit_all)
+```
+
+```{r cars-lm-check}
+grade_code("This is not the best model we will build in this chapter, but notice which predictors have larger effect sizes and which are significant or not significant.")
+```
+
+
+## 3. Stack Overflow Developer Survey {data-progressive=TRUE}
+
+## 4. Get out the vote {data-progressive=TRUE}
+
+## 5. But what do the nuns think? {data-progressive=TRUE}
+
+## 6. Going further
+
+Congratulations! You have finished these four case studies and learned so much about how to build supervised machine learning models. What should you remember from this course? 
+
+First, each time you have a new predictive modeling problem you are working on, you need to try out multiple different kinds of models. You don't know ahead of time which kind of model is going to perform best. [This paper](https://arxiv.org/abs/1708.05070v1) uses some super interesting analysis to show that most often, the two kinds of models that perform best are gradient tree boosting and random forest. However, depending on how much data you have and the specifics of your problem, that may not be true, so you have to try it for yourself. Also, start with a **simple model** to compare to. 
+
+Second but perhaps more importantly, never skip exploratory data analysis when you build machine learning models. It is time well spent, because when you understand a data set better, you can do a better job of building accurate models that perform better.
+
+We've linked to the documentation sites for tidymodels packages several times throughout this tutorial, but there are also other resources available for you to **extend your learning**.
+
+### Visit <https://www.tidymodels.org/>
+
+To keep going in your machine learning journey, check out the resources at <https://www.tidymodels.org/>. This site is a central location for resources and documentation for tidymodels packages, and there is a ton to explore and learn. 🚀
+
+There are five articles at [**Get Started**](https://www.tidymodels.org/start/) that guide you through what you need to know to use tidymodels, and many more resources at [**Learn**](https://www.tidymodels.org/learn/).
+
+### Dig deeper with *Tidy Modeling with R*
+
+For deeper reading and more fundamental understanding of these topics, check out [*Tidy Modeling with R*](https://www.tmwr.org/), published in 2022.
+
+### Learn more about learnr
+
+This tutorial was made with the learnr package in R. See the learnr introduction and some example tutorials here: https://rstudio.github.io/learnr/
+
+
