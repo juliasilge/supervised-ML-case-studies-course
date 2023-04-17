@@ -47,6 +47,36 @@ cars2018 %>%
 
 #---------------------------------------------------------------------#
 
+voters_raw <- read_csv("VOTER_Survey_December16_Release1.csv") %>%
+    filter(!is.na(turnout16_2016)) %>%
+    select(case_identifier, 
+           turnout16_2016,
+           contains("RIGGED_SYSTEM"),
+           track_2016,
+           persfinretro_2016,
+           econtrend_2016,
+           Americatrend_2016,
+           futuretrend_2016,
+           wealth_2016,
+           values_culture_2016,
+           US_respect_2016,
+           trustgovt_2016,
+           trust_people_2016,
+           helpful_people_2016,
+           fair_people_2016,
+           contains("imiss_"),
+           -contains("rnd"),
+           -contains("baseline"))
 
+
+voters <- voters_raw %>%
+    mutate(turnout16_2016 = factor(turnout16_2016, 
+                                   labels = c("Voted", "Did not vote")),
+           turnout16_2016 = fct_relevel(turnout16_2016, "Did not vote"))
+
+voters <- voters[complete.cases(voters),]
+
+voters %>%
+    write_rds(here::here("data", "voters.rds"))
 
 #---------------------------------------------------------------------#
