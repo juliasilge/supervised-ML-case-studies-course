@@ -21,8 +21,47 @@ library(gradethis)
 knitr::opts_chunk$set(echo = FALSE, exercise.checker = gradethis::grade_learnr)
 theme_set(theme_light())
 
+### Not mtcars again
 cars_doe <- read_rds(here::here("data", "cars.rds"))
+car_vars <- cars_doe |>  select(-model, -model_index)
+set.seed(1234)
+car_split <- car_vars |> 
+    initial_split(prop = 0.8, strata = transmission)
+car_train <- training(car_split)
+car_test <- testing(car_split)
+car_boot <- bootstraps(car_train)
+lm_spec <- linear_reg()
+rf_spec <- rand_forest() |> 
+    set_engine("randomForest") |> 
+    set_mode("regression")
+lm_fit <- lm_spec |> fit(log(mpg) ~ ., data = car_train)
+rf_fit <- rf_spec |> fit(log(mpg) ~ ., data = car_train)
+lm_res <- lm_spec |> 
+    fit_resamples(
+        log(mpg) ~ .,
+        resamples = car_boot,
+        control = control_resamples(save_pred = TRUE)
+    )
+
+rf_res <- rf_spec |> 
+    fit_resamples(
+        log(mpg) ~ .,
+        resamples = car_boot,
+        control = control_resamples(save_pred = TRUE)
+    )
+car_results <-  bind_rows(
+    lm_res |> 
+        collect_predictions() |> 
+        mutate(model = "lm"),
+    rf_res |> 
+        collect_predictions() |> 
+        mutate(model = "rf")
+)
+
+### Stack Overflow Developer Survey
 stack_overflow <- read_rds(here::here("data", "stack_overflow.rds"))
+
+### Get out the vote
 voters <- read_rds(here::here("data", "voters.rds"))
 ```
 
@@ -78,7 +117,7 @@ To get the most from this tutorial, you should have some familiarity with R and 
 In this first case study, we are going to use the mtcars dataset to train regression models. 
 
 ```{r, echo=TRUE}
-mtcars
+glimpse(mtcars)
 ```
 
 No, I'm kidding! 😜 I would never do that to you! I can only imagine that *you* are as sick of mtcars as *I* am. 😩
@@ -88,10 +127,10 @@ No, I'm kidding! 😜 I would never do that to you! I can only imagine that *you
 Instead, we are going to use a dataset of real cars from today:
 
 ```{r, echo=TRUE}
-cars_doe
+glimpse(cars_doe)
 ```
 
-This data is from the [United States Department of Energy](https://www.fueleconomy.gov/feg/download.shtml), and tabulates how much gas new cars use per mile, along with many characteristics of these cars, like the size of the engine, the type of transmission, the type of fuel injecton, and so forth.
+This data is from the [United States Department of Energy](https://www.fueleconomy.gov/feg/download.shtml), and tabulates how much gas new cars use per mile, along with many characteristics of these cars, like the size of the engine, the type of transmission, the type of fuel injection, and so forth.
 
 ### Exploratory data analysis
 
@@ -126,11 +165,13 @@ The first step before you start modeling is to explore your data. In this course
 
 The tidyverse metapackage is loaded for you, so you can use ggplot2. 
 
-- Take a look at the `cars2018` object using `glimpse()`.
+- Take a look at the `cars_doe` object using `glimpse()`.
 - Use the appropriate column from the data set in the call to `aes()` so you can plot a histogram of fuel efficiency (miles per gallon, `mpg`).
 - Set the correct `x` and `y` labels.
 
 ```{r cars-histogram, exercise=TRUE}
+library(tidyverse)
+
 # glimpse `cars_doe` to see what is in the data set
 glimpse(___)
 
@@ -142,6 +183,8 @@ ggplot(cars_doe, aes(x = ___)) +
 ```
 
 ```{r cars-histogram-solution}
+library(tidyverse)
+
 # glimpse `cars_doe` to see what is in the data set
 glimpse(cars_doe)
 
@@ -169,7 +212,7 @@ Before embarking on more complex machine learning models, it's a good idea to bu
 
 ```{r cars-lm, exercise=TRUE}
 # deselect the 2 columns to create cars_vars
-car_vars <- cars_doe %>%
+car_vars <- cars_doe |> 
     ___(-model, -model_index)
 
 # fit a linear model
@@ -181,7 +224,7 @@ ___(fit_all)
 
 ```{r cars-lm-solution}
 # deselect the 2 columns to create cars_vars
-car_vars <- cars_doe %>%
+car_vars <- cars_doe |> 
     select(-model, -model_index)
 
 # fit a linear model
@@ -193,6 +236,484 @@ summary(fit_all)
 
 ```{r cars-lm-check}
 grade_code("This is not the best model we will build in this chapter, but notice which predictors have larger effect sizes and which are significant or not significant.")
+```
+
+### Getting started with tidymodels 💫
+
+You just performed some exploratory data analysis and built a simple linear model using base R's `lm()` function. You were able to see how the fuel efficiency for these cars is distributed and to get an idea about whether you will be able to train accurate models. Now it's time to bring out a more powerful and flexible set of tools for predictive modeling. 
+
+#### Tools for predictive modeling
+
+We are going to use packages from tidymodels in this course. Learn more at <https://www.tidymodels.org>!
+
+When you type `library(tidymodels)`, you load a collection of packages for modeling and machine learning using tidyverse principles. I usually just load them all at once if I am working on a modeling project. All the packages are designed to be consistent, modular, and to support good modeling practices. The first thing we are going to practice is splitting your data into a training set and a testing set.
+
+<img src='https://raw.githubusercontent.com/juliasilge/supervised-ML-case-studies-course/master/img/testtrain.png' align="center" height="350" />
+
+It is best practice to hold out some of your data for **testing** in order to get a better estimate of how your models will perform on new data, especially when you use very powerful machine learning techniques. Linear regression doesn't really fall into that category, but we are going to practice this anyway. The tidymodels package [rsample](https://tidymodels.github.io/rsample/) has functions that help you specify training and testing sets.
+
+#### Training data and testing data with [rsample](https://rsample.tidymodels.org/)
+
+```{r}
+#| echo: true
+library(tidymodels)
+
+car_split <- initial_split(car_vars, prop = 0.8, strata = aspiration)
+car_train <- training(car_split)
+car_test <- testing(car_split)
+```
+
+You can create these sets so that they _balance_ some characteristic in your dataset. ⚖️ 
+
+For example, the code here takes an input data set and puts 80% of it into a training dataset and 20% of it into a testing dataset; it chooses the individual cases so that both sets are balanced in aspiration types.
+
+#### Training data and testing data
+
+Why are we even bothering with this strategy? 
+
+- **Build** your model with your training data 
+- **Choose** your model with your validation data, or resampled datasets 
+- **Evaluate** your model with your testing data 
+
+The point of holding data back from the model training process is to have something to test that model on. We want to be able to estimate how well our model will perform on new data, and the best way to do that is to use data that was not an input to training the model at all. Holding out testing data allows you to assess if your model is overfitting. 
+
+It's also possible to divide your data into *three* partitions as you build, choose, and assess models, and we'll talk about this later in the course.
+
+#### Three concepts in specifying a model
+
+Once you have a training dataset, you can train a model using that dataset! 
+
+In tidymodels, you specify models using three concepts:
+
+- Model **type** differentiates models such as logistic regression, decision tree models, and so forth. 
+- Model **mode** includes common options like regression and classification; some model types support either of these while some only have one mode. (Notice in the example on this slide that we didn't need to set the mode for `linear_reg()` because it only does regression.)
+- Model **engine** is the computational tool which will be used to fit the model. Often this is R code or packages, such as `stats::lm()` for OLS or the different implementations of random forest models.
+
+After a model has been _specified_, it can be _fit_, often using a symbolic description of the model (a formula) and some data. We're going to start fitting models with `data = car_train`, as shown here.  
+
+```{r}
+#| echo: true
+## a linear regression model specification
+lm_spec <- linear_reg() |> 
+    set_engine("lm")
+
+lm_fit <- lm_spec |> 
+    fit(log(mpg) ~ ., 
+        data = car_train)
+
+## a random forest model specification
+rf_spec <- rand_forest() |> 
+    set_mode("regression") |> 
+    set_engine("randomForest")
+
+rf_fit <- rf_spec |> 
+    fit(log(mpg) ~ ., 
+        data = car_train)        
+```
+
+This means we're saying, "Just fit the model one time, on the whole training set". 
+
+#### Evaluating a model
+
+Once you have fit your model, you can evaluate how well the model is performing. In this course, we're going to use tidymodels package [yardstick](https://yardstick.tidymodels.org/) package 📏 for that. Functions from this package will give us metrics to measure how well our models are doing.
+
+OK, it's time! Let's try some examples where you train a linear regression model and random forest model on our fuel efficiency data. ⛽ 
+
+### Training and testing data
+
+Training models based on all of your data at once is typically not a good choice. 🚫 Instead, you can create subsets of your data that you use for different purposes, such as *training* your model and then *testing* your model. 
+
+Creating training/testing splits reduces overfitting. When you evaluate your model on data that it was not trained on, you get a better estimate of how it will perform on new data.
+
+**Instructions**
+
+- Create a data split that divides the original data into 80%/20% sections and (roughly) evenly divides the partitions between the different types of `transmission`.
+- Assign the 80% partition to `car_train` and the 20% partition to `car_test`.
+
+```{r cars-split, exercise=TRUE}
+# Split the data into training and test sets
+set.seed(1234)
+car_split <- initial_split(car_vars, prop = ___, strata = ___)
+car_train <- training(___)
+car_test <- testing(___)
+
+glimpse(car_train)
+glimpse(car_test)
+```
+
+```{r cars-split-solution}
+## Split the data into training and test sets
+set.seed(1234)
+car_split <- initial_split(car_vars, prop = 0.8, strata = transmission)
+car_train <- training(car_split)
+car_test <- testing(car_split)
+
+glimpse(car_train)
+glimpse(car_test)
+```
+
+```{r cars-split-check}
+grade_code()
+```
+
+
+### Train models with tidymodels
+
+Now that your `car_train` data is ready, you can fit a set of models with tidymodels. When we model data, we deal with model **type** (such as linear regression or random forest), **mode** (regression or classification), and model **engine** (how the models are actually fit). In tidymodels, we capture that modeling information in a model specification, so setting up your model specification can be a good place to start. In these exercises, fit one linear regression model and one random forest model, without any resampling of your data.
+
+**Instructions**
+
+- Fit a basic linear regression model to your `car_train` data. 
+
+(Notice that we are fitting to `log(mpg)` since the fuel efficiency had a log normal distribution.)
+
+```{r cars-linear-reg, exercise=TRUE}
+# Build a linear regression model specification
+lm_spec <- ___ |> 
+    set_engine("lm")
+
+# Train a linear regression model
+lm_fit <- lm_spec |> 
+    fit(log(mpg) ~ ., 
+        data = ___)
+
+# Print the model object
+lm_fit
+```
+
+```{r cars-linear-reg-solution}
+# Build a linear regression model specification
+lm_spec <- linear_reg() |> 
+    set_engine("lm")
+
+# Train a linear regression model
+lm_fit <- lm_spec |> 
+    fit(log(mpg) ~ ., 
+        data = car_train)
+
+# Print the model object
+lm_fit
+```
+
+```{r cars-linear-reg-check}
+grade_code()
+```
+
+**Instructions**
+
+- Fit a random forest model to your `car_train` data.
+
+```{r cars-rand-forest, exercise=TRUE}
+# Build a random forest model specification
+rf_spec <- ___ |> 
+    set_engine("randomForest") |> 
+    set_mode("regression")
+
+# Train a random forest model
+rf_fit <- rf_spec |> 
+    ___(log(mpg) ~ ., 
+        data = ___)
+
+# Print the model object
+rf_fit
+```
+
+```{r cars-rand-forest-solution}
+# Build a random forest model specification
+rf_spec <- rand_forest() |> 
+    set_engine("randomForest") |> 
+    set_mode("regression")
+
+# Train a random forest model
+rf_fit <- rf_spec |> 
+    fit(log(mpg) ~ ., 
+        data = car_train)
+
+# Print the model object
+rf_fit
+```
+
+```{r cars-rand-forest-check}
+grade_code("You just trained two models with tidymodels. 💪")
+```
+
+### Evaluate model performance
+
+You just trained both `lm_fit` and `rf_fit`, and it's time to see how they did! 🤩 How are we doing do this, though?! 🤔 There are several things to consider, including both what _metrics_ and what _data_ to use.
+
+For regression models, we will focus on evaluating using the **root mean squared error** metric. This quantity is measured in the same units as the original data (log of miles per gallon, in our case). Lower values indicate a better fit to the data. It's not too hard to calculate root mean squared error manually, but the [yardstick](https://yardstick.tidymodels.org/) package offers convenient functions for this and many other model performance metrics.
+
+**Instructions**
+
+- Create new columns for model predictions from each of the models you have trained, first linear regression and then random forest.
+- Evaluate the performance of these models using [`metrics()`](https://yardstick.tidymodels.org/reference/metrics.html) by specifying the column that contains the real fuel efficiency. The "truth" column in `results` is the column that holds fuel efficiency, `mpg`.
+
+```{r cars-metrics, exercise=TRUE}
+# Create the new columns
+results <- car_train |> 
+    mutate(mpg = log(mpg)) |> 
+    bind_cols(predict(___, car_train) |> 
+                  rename(.pred_lm = .pred)) |> 
+    bind_cols(predict(___, car_train) |> 
+                  rename(.pred_rf = .pred))
+
+# Evaluate the performance
+metrics(results, truth = ___, estimate = .pred_lm)
+metrics(results, truth = ___, estimate = .pred_rf)
+```
+
+```{r cars-metrics-solution}
+# Create the new columns
+results <- car_train |> 
+    mutate(mpg = log(mpg)) |> 
+    bind_cols(predict(lm_fit, car_train) |> 
+                  rename(.pred_lm = .pred)) |> 
+    bind_cols(predict(rf_fit, car_train) |> 
+                  rename(.pred_rf = .pred))
+
+# Evaluate the performance
+metrics(results, truth = mpg, estimate = .pred_lm)
+metrics(results, truth = mpg, estimate = .pred_rf)
+```
+
+```{r cars-metrics-check}
+grade_code("You predicted with your models, but think about the data used here. Is that a good idea?!")
+```
+
+### Use the testing data
+
+"But wait!" you say, because you have been paying attention. 🤔 "That is how these models perform on the *training* data, the data that we used to build these models in the first place." This is _not_ a good idea because when you evaluate on the same data you used to train a model, the performance you estimate is too optimistic.
+
+Let's evaluate how these simple models perform on the testing data instead.
+
+**Instructions**
+
+What do you need to change to evaluate how the models perform on the testing data, instead of the training data?
+
+
+```{r cars-metrics-test, exercise=TRUE}
+# Create the new columns
+results <- ___ |> 
+    mutate(mpg = log(mpg)) |> 
+    bind_cols(predict(lm_fit, ___) |> 
+                  rename(.pred_lm = .pred)) |> 
+    bind_cols(predict(rf_fit, ___) |> 
+                  rename(.pred_rf = .pred))
+
+# Evaluate the performance
+metrics(results, truth = mpg, estimate = .pred_lm)
+metrics(results, truth = mpg, estimate = .pred_rf)
+```
+
+```{r cars-metrics-test-solution}
+# Create the new columns
+results <- car_test |> 
+    mutate(mpg = log(mpg)) |> 
+    bind_cols(predict(lm_fit, car_test) |> 
+                  rename(.pred_lm = .pred)) |> 
+    bind_cols(predict(rf_fit, car_test) |> 
+                  rename(.pred_rf = .pred))
+
+# Evaluate the performance
+metrics(results, truth = mpg, estimate = .pred_lm)
+metrics(results, truth = mpg, estimate = .pred_rf)
+```
+
+```{r cars-metrics-test-check}
+grade_code("These metrics using the testing data will be more reliable.")
+```
+
+
+### Let's sample our data
+
+You just trained models one time on the whole training set and then evaluated them on the testing set. Statisticians have come up with a slew of approaches to evaluate models in better ways than this; many important ones fall under the category of **resampling**.
+
+The idea of resampling is to create simulated data sets that can be used to estimate the performance of your model, say, because you want to compare models. You can create these resampled data sets instead of using either your training set (which can give overly optimistic results, especially for powerful ML algorithms) or your testing set (which is extremely valuable and can only be used once or at most twice).
+
+#### Bootstrap resampling
+
+The first resampling approach we're going to try in this course is called the bootstrap. Bootstrap resampling means drawing *with replacement* from our original dataset and then fitting on that dataset.
+
+Let's think about...cars! 🚗🚌🚙🚕 
+
+Let's say our training dataset has 900 cars in it. To make a bootstrap sample, we draw with replacement 900 times from that training data to get the same size sample that we started with. 
+
+<img src='https://raw.githubusercontent.com/juliasilge/supervised-ML-case-studies-course/master/img/bootstrap.png' align="center" height="350" />
+
+Since we're drawing with replacement, we will probably draw some cars more than once. We then fit our model on that new set of 900 cars that contains some duplicates, and evaluate the model on the cars that are not included in the new set of 900. Then we do that again!
+
+<img src='https://raw.githubusercontent.com/juliasilge/supervised-ML-case-studies-course/master/img/bootstrap2.png' align="center" height="350" />
+
+We draw 900 times from the training dataset with replacement again and fit another model. We repeat that some number of times, look at all the models we fit on the bootstrap samples, determine each model's individual performance by evaluating on the cars that were not included in each bootstrap resample, and then take an average of the performance metrics.
+
+This approach does take longer, obviously, than fitting on the data one time. In your exercise, you will have a subset of the complete dataset to try this out with.
+
+#### Bootstrap resampling with tidymodels
+
+I am very happy to be able to tell you that creating resamples is not too complicated with tidymodels. There are functions such as `bootstraps()` and similar for other types of resampling. 
+
+```{r}
+#| echo: true
+#| paged.print: false
+bootstraps(car_train)
+```
+
+The default behavior is to do 25 bootstrap resamplings, but you can change this if you want to. Notice that we resampled the `car_train` dataset, which is the _training_ data. 
+
+The column `splits` is of type `list`. Instead of containing numbers or characters, this column contains lists. Each split in that column keeps track of which of the original data points are in the analysis set for that resample.
+
+#### Evaluating models with resampling
+
+Once you have created a set of resamples, you can use the function `fit_resamples()` to fit a model to each resample and compute performance metrics for each. 
+
+The code below shows how to fit our model specification `lm_spec` to 25 bootstrap resamples stored in `car_boot`. This will fit our regression model 25 times, each time to a different bootstrapped version of the training data. We also determine how well our regression model performed 25 times, each time on the smaller subset of training data set aside when fitting. The fitted models themselves are just thrown away and not stored in the output, because they are only used for computing performance metrics. (To fit the random forest to these resamples and find performance metrics, we would use `rf_spec` instead.) 
+
+```{r}
+#| echo: true
+#| paged.print: false
+lm_spec |> 
+    fit_resamples(
+        log(mpg) ~ .,
+        car_boot,
+        control = control_resamples(save_pred = TRUE)
+    )
+```
+
+We did not save the fitted models but we *are* going to save our predictions in `fit_resamples()` using `save_pred = TRUE`. This is so we can be especially clear about what it is that we are comparing during this process. 
+
+Each car has a real fuel efficiency as reported by the Department of Energy and then we have built models that predict fuel efficiency for each car. When we evaluate a model, we are calculating how far apart each *predicted* value is from each *real* value.
+
+In this lesson, you also are going to visualize these differences, like you see here. The x-axis has the actual fuel efficiency and the y-axis has the predicted fuel efficiency for each kind of model. 
+
+<img src='https://raw.githubusercontent.com/juliasilge/supervised-ML-case-studies-course/master/img/cars_metrics.png' align="center" height="350" /></a>
+
+The difference between linear regression and random forest isn't huge here, but in this case, we can see visually that the random forest model is performing better. The slope for the random forest model is closer to the dotted line (the `slope = 1` dashed line) and the spread around the line is smaller for the random forest model.
+
+OK, now it's your turn. Let's see if you can evaluate these kinds of models with bootstrap resampling and discover which model performs better.
+
+### Bootstrap resampling
+
+In the last set of exercises, you trained linear regression and random forest models without any resampling. Resampling can help us evaluate our machine learning models more accurately.
+
+Let's try bootstrap resampling, which means creating data sets the same size as the original one by randomly drawing with replacement from the original. In tidymodels, the default behavior for bootstrapping is 25 resamplings, but you can change this using the `times` argument in [`bootstraps()`](https://tidymodels.github.io/rsample/reference/bootstraps.html) if desired.
+
+**Instructions**
+
+- Create bootstrap resamples to evaluate these models. The function to create this kind of resample is `bootstraps()`. (We have set `times = 10` here to keep this exercise from taking too long to run.)
+- Evaluate both kinds of models, the linear regression model and the random forest model.
+- Use the bootstrap resamples `car_boot` for evaluating both models.
+
+```{r cars-resamples, exercise=TRUE, warning=FALSE}
+## Create bootstrap resamples
+car_boot <- ___(car_train, times = 5)
+
+# Evaluate the models with bootstrap resampling
+lm_res <- ___ |> 
+    fit_resamples(
+        log(mpg) ~ .,
+        resamples = ___,
+        control = control_resamples(save_pred = TRUE)
+    )
+
+rf_res <- ___ |> 
+    fit_resamples(
+        log(mpg) ~ .,
+        resamples = ___,
+        control = control_resamples(save_pred = TRUE)
+    )
+```
+
+```{r cars-resamples-solution, exercise.eval=TRUE}
+## Create bootstrap resamples
+car_boot <- bootstraps(car_train, times = 10)
+
+# Evaluate the models with bootstrap resampling
+lm_res <- lm_spec |> 
+    fit_resamples(
+        log(mpg) ~ .,
+        resamples = car_boot,
+        control = control_resamples(save_pred = TRUE)
+    )
+
+rf_res <- rf_spec |> 
+    fit_resamples(
+        log(mpg) ~ .,
+        resamples = car_boot,
+        control = control_resamples(save_pred = TRUE)
+    )
+```
+
+```{r cars-resamples-check}
+grade_code("You bootstrapped!")
+```
+
+
+### Plot modeling results
+
+You just trained models on bootstrap resamples of the training set and now have the results in `lm_res` and `rf_res` (for this exercise, fit to the default 25 resamples). Now let's compare them. 
+
+Notice in this code how we use [`bind_rows()`](https://dplyr.tidyverse.org/reference/bind.html) from dplyr to combine the results from both models, along with [`collect_predictions()`](https://tune.tidymodels.org/reference/collect_predictions.html) to obtain and format predictions from each resample.
+
+**Instructions**
+
+- First `collect_predictions()` for the linear model.
+- Then `collect_predictions()` for the random forest model.
+
+```{r cars-bind-rows, exercise=TRUE}
+car_results <-  bind_rows(
+    ___ |> 
+        collect_predictions() |> 
+        mutate(model = "lm"),
+    ___ |> 
+        collect_predictions() |> 
+        mutate(model = "rf")
+)
+
+glimpse(car_results)
+```
+
+```{r cars-bind-rows-solution}
+car_results <-  bind_rows(
+    lm_res |> 
+        collect_predictions() |> 
+        mutate(model = "lm"),
+    rf_res |> 
+        collect_predictions() |> 
+        mutate(model = "rf")
+)
+
+glimpse(car_results)
+```
+
+```{r cars-bind-rows-check}
+grade_code()
+```
+
+
+**Instructions**
+
+Wonderful! Sit back and run the given code to visualize the results!
+
+```{r cars-final-viz, exercise=TRUE}
+car_results |> 
+    ggplot(aes(`log(mpg)`, .pred)) +
+    geom_abline(lty = 2, color = "gray50") +
+    geom_point(aes(color = id), size = 1.5, alpha = 0.3, show.legend = FALSE) +
+    geom_smooth(method = "lm") +
+    facet_wrap(~ model)
+```
+
+```{r cars-final-viz-solution}
+car_results |> 
+    ggplot(aes(`log(mpg)`, .pred)) +
+    geom_abline(lty = 2, color = "gray50") +
+    geom_point(aes(color = id), size = 1.5, alpha = 0.3, show.legend = FALSE) +
+    geom_smooth(method = "lm") +
+    facet_wrap(~ model)
+```
+
+```{r cars-final-viz-check}
+grade_code("Congratulations on finishing the first case study! 🙌 Both the model metrics and the plots show that the random forest model is performing better. We can predict fuel efficiency more accurately with a random forest model.")
 ```
 
 
